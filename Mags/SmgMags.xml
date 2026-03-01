@@ -7,7 +7,7 @@
         <Body width="14" height="40" density="25" />
         <ItemContainer capacity="1" maxstacksize="1" keepopenwhenequipped="true" movableframe="true" ShowConditionInContainedStateIndicator="true"  containedstateindicatorstyle="bullet">
             <Containable items="smground">
-                <StatusEffect type="OnInserted" target="This" AllowWhenBroken="true" disabledeltatime="true">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.1">
                     <SpawnItem identifier="smgmagazine" condition="0.048" spawnposition="sameinventory"  spawnifinventoryfull="true" />
                     <!-- when in SpawnItem,  condition="1.0" == 100% Max Condition -->
                     <SpawnItem identifier="smground" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
