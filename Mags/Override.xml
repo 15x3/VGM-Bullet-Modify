@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+    <Override>
+        <Item name="" identifier="smgmagazine" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light">
+        <PreferredContainer primary="smg,smgunique,machinepistol" amount="1" spawnprobability="1" />
+        <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true" notpvp="true" />
+        <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.5" />
+        <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.2" />
+        <PreferredContainer secondary="secarmcab" />
+        <PreferredContainer secondary="respawncontainer_kingofthehull" amount="8" spawnprobability="1" notcampaign="true"/>
+        <Price baseprice="100" displaynonempty="true" minleveldifficulty="15">
+            <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" sold="false" />
+            <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="4" />
+            <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="4" />
+        </Price>
+        <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
+            <RequiredSkill identifier="weapons" level="40" />
+            <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+            <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
+            <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
+            <RequiredItem identifier="steel" />
+        </Fabricate>
+        <Fabricate suitablefabricators="fabricator" requiredtime="15" requiresrecipe="true" displayname="recycleitem">
+            <RequiredSkill identifier="weapons" level="40" />
+            <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+            <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
+            <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
+            <RequiredItem identifier="smgmagazine" mincondition="0.0" maxcondition="0.1" usecondition="false" />
+        </Fabricate>
+        <Deconstruct time="10">
+            <Item identifier="steel" />
+        </Deconstruct>
+        <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="960,960,64,64" />
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.54" sourcerect="146,157,21,44" origin="0.5,0.5" />
+        <Body width="14" height="40" density="25" />
+        <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
+        </Holdable>
+        
+
+        <!-- <ItemContainer hideitems="true" capacity="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <Containable items="smground" >
+                <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="true" disabledeltatime="true">
+                    <Conditional TargetContainer="true" condition="lt 100" />
+                    <Remove />
+                </StatusEffect>
+                <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" stackable="true">
+                    <Conditional condition="lt 100" />
+                </StatusEffect>
+            </Containable>
+            <SubContainer>
+                <Containable identifier="smground">
+                    <StatusEffect type="OnRemoved" target="This" condition="-4.8" comparison="and" AllowWhenBroken="true" disabledeltatime="true">
+                        <Conditional condition="gt 0" />
+                        <SpawnItem identifiers="smground" spawnposition="ThisInventory" spawnifinventoryfull="true" />
+                    </StatusEffect>
+                </Containable>
+            </SubContainer>
+            <StatusEffect type="OnBroken" target="This" AllowWhenBroken="true" disabledeltatime="true">
+                <SpawnItem identifier="emptySmgMagVGM" condition="0.0" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                <Remove />
+            </StatusEffect>
+            <StatusEffect type="OnSpawn" target="This" statuseffecttags="FirstInitialized" duration="0.1" evententitytag="gun">
+                <Conditional HasBeenInstantiatedOnce="false" />
+                <TriggerEvent>
+                    <ScriptedEvent identifier="VGM_TrySpawnSmgRound">
+                        <StatusEffectAction targettag="gun">
+                            <StatusEffect type="OnSpawn" target="This">
+                                <SpawnItem identifier="smground" spawnposition="ThisInventory" SpawnIfCantBeContained="false" SpawnIfInventoryFull="false" />
+                                <Conditional hasstatustag="FirstInitialized" />
+                            </StatusEffect>
+                        </StatusEffectAction>
+                    </ScriptedEvent>
+                </TriggerEvent>
+            </StatusEffect>
+        </ItemContainer> -->
+        <ItemContainer capacity="1" maxstacksize="1" hideitems="true" movableframe="true" showcontainedstateindicator="false" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <Containable items="smground" >
+                    <!-- 子弹拿出的逻辑 -->
+                <StatusEffect type="OnRemoved" target="This" condition="-4.8" comparison="and" AllowWhenBroken="false" disabledeltatime="true">
+                    <Conditional condition="gt 0" />
+                    <SpawnItem identifiers="smground" spawnposition="ThisInventory" spawnifinventoryfull="true" />
+                </StatusEffect>
+                <!-- 子弹放入的逻辑 -->
+                <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="true" disabledeltatime="true">
+                    <Conditional TargetContainer="true" condition="lt 100" />
+                    <Remove />
+                </StatusEffect>
+                <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" stackable="true">
+                    <Conditional condition="lt 100" />
+                </StatusEffect>                
+            </Containable>
+                <!-- 正常的使用逻辑 -->
+            <StatusEffect type="OnBroken" target="This" AllowWhenBroken="true" disabledeltatime="true">
+                <SpawnItem identifier="emptySmgMagVGM" condition="0.0" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                <Remove />
+            </StatusEffect>
+        </ItemContainer>
+    </Item>
+    <Item name="" identifier="smground" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,smgammo" impactsoundtag="impact_metal_light" hideinmenus="false" scale="0.5" maxstacksize="8">
+        <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+        <Body width="40" height="14" density="30" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+        <Projectile characterusable="false" hitscan="true" removeonhit="true">
+            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
+            <Attack structuredamage="4" targetforce="5" itemdamage="4" severlimbsprobability="0.1">
+                <Affliction identifier="gunshotwound" strength="12.5" />
+                <Affliction identifier="bleeding" strength="12.5" />
+                <Affliction identifier="stun" strength="0.2" probability="0.1" />
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Conditional entitytype="eq Structure" />
+                <Conditional hastag="eq door" />
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="This" Condition="-100" />
+            <StatusEffect type="OnBroken" target="This" stackable="false" delay="1">
+                <Remove />
+            </StatusEffect>
+        </Projectile>
+        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+    </Override>
+</Items>

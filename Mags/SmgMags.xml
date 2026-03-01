@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+    <Item name="" identifier="emptySmgMagVGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light">
+        <!-- 当smgammo被去掉时，就会变成生成后因为Container不符强制弹出，可以做出类似M1弹匣弹出的效果 -->
+        <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="960,960,64,64" />
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.54" sourcerect="146,157,21,44" origin="0.5,0.5" />
+        <Body width="14" height="40" density="25" />
+        <ItemContainer capacity="1" maxstacksize="1" keepopenwhenequipped="true" movableframe="true" ShowConditionInContainedStateIndicator="true"  containedstateindicatorstyle="bullet">
+            <Containable items="smground">
+                <StatusEffect type="OnInserted" target="This" AllowWhenBroken="true" disabledeltatime="true">
+                    <SpawnItem identifier="smgmagazine" condition="0.048" spawnposition="sameinventory"  spawnifinventoryfull="true" />
+                    <!-- when in SpawnItem,  condition="1.0" == 100% Max Condition -->
+                    <SpawnItem identifier="smground" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                    <!-- ContainedInventory果然是什么都没生成，看来想要立刻生成一个还是得想办法在弹匣里面做文章 -->
+                </StatusEffect>
+                </Containable>
+        </ItemContainer>
+        <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
+            <StatusEffect type="OnSpawn" target="This" condition="0.0" setvalue="true" disabledeltatime="true" AllowWhenBroken="true"/>
+        </Holdable>
+        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+</Items>

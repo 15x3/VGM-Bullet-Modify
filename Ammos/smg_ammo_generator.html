@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMG弹药XML生成器</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 25px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="number"], select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .sprite-selector {
+            position: relative;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+            overflow: hidden;
+            cursor: crosshair;
+        }
+        .selection-box {
+            position: absolute;
+            border: 2px dashed #ff0000;
+            background-color: rgba(255, 0, 0, 0.1);
+        }
+        .affliction-item {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .affliction-controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .xml-output {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 4px;
+            white-space: pre-wrap;
+            font-family: monospace;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .tabs {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .tab {
+            padding: 10px 20px;
+            background-color: #e0e0e0;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+        .tab.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .notification {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .required-item {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .required-item-controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .sprite-tabs {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .sprite-tab {
+            padding: 10px 20px;
+            background-color: #e0e0e0;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+        .sprite-tab.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .sprite-tab-content {
+            display: none;
+        }
+        .sprite-tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SMG弹药XML生成器</h1>
+
+        <div class="tabs">
+            <div class="tab active" data-tab="basic">基本信息</div>
+            <div class="tab" data-tab="sprite">精灵图设置</div>
+            <div class="tab" data-tab="fabricate">制作配方</div>
+            <div class="tab" data-tab="attack">攻击属性</div>
+            <div class="tab" data-tab="output">生成XML</div>
+        </div>
+
+        <div id="basic" class="tab-content active">
+            <div class="section">
+                <h2>基本属性</h2>
+                <div class="form-group">
+                    <label for="item-name">物品名称:</label>
+                    <input type="text" id="item-name" placeholder="例如: 5.56mm子弹">
+                </div>
+                <div class="form-group">
+                    <label for="item-identifier">物品标识符:</label>
+                    <input type="text" id="item-identifier" placeholder="例如: smg556">
+                </div>
+                <div class="form-group">
+                    <label for="item-category">物品类别:</label>
+                    <select id="item-category">
+                        <option value="Weapon">武器</option>
+                        <option value="Ammo">弹药</option>
+                        <option value="Material">材料</option>
+                        <option value="Medical">医疗</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="item-tags">标签:</label>
+                    <input type="text" id="item-tags" value="smallitem">
+                </div>
+                <div class="form-group">
+                    <label for="item-scale">缩放比例:</label>
+                    <input type="number" id="item-scale" value="0.5" step="0.1" min="0.1" max="2">
+                </div>
+                <div class="form-group">
+                    <label for="body-width">物体宽度:</label>
+                    <input type="number" id="body-width" value="40" min="1">
+                </div>
+                <div class="form-group">
+                    <label for="body-height">物体高度:</label>
+                    <input type="number" id="body-height" value="14" min="1">
+                </div>
+                <div class="form-group">
+                    <label for="body-density">物体密度:</label>
+                    <input type="number" id="body-density" value="30" min="1">
+                </div>
+            </div>
+        </div>
+
+        <div id="sprite" class="tab-content">
+            <div class="section">
+                <h2>精灵图设置</h2>
+
+                <!-- 精灵图类型选择标签 -->
+                <div class="sprite-tabs">
+                    <div class="sprite-tab active" data-sprite-tab="sprite">Sprite（物品精灵图）</div>
+                    <div class="sprite-tab" data-sprite-tab="inventoryicon">InventoryIcon（物品图标）</div>
+                </div>
+
+                <!-- Sprite设置 -->
+                <div id="sprite-tab-content" class="sprite-tab-content active">
+                    <div class="form-group">
+                        <label for="sprite-upload">上传Sprite精灵图:</label>
+                        <input type="file" id="sprite-upload" accept="image/*">
+                        <div id="notification"></div>
+                    </div>
+                    <div class="form-group">
+                        <label>Sprite精灵图预览与框选:</label>
+                        <div id="sprite-container" class="sprite-selector" style="width: 100%; height: 400px; background-color: #f0f0f0; display: flex; justify-content: center; align-items: center;">
+                            <p>请上传精灵图</p>
+                        </div>
+                        <div id="sprite-coords" style="margin-top: 10px;">
+                            <p>框选坐标: <span id="coords-text">未框选</span></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="sprite-texture">Sprite贴图路径:</label>
+                        <input type="text" id="sprite-texture" value="Content/Items/Weapons/weapons_new.png" placeholder="贴图文件路径">
+                    </div>
+                    <div class="form-group">
+                        <label for="sprite-coords-manual">Sprite坐标 (x,y,width,height):</label>
+                        <input type="text" id="sprite-coords-manual" placeholder="例如: 100,50,64,32">
+                        <button id="apply-sprite-coords" style="margin-top: 5px;">应用坐标</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="sprite-depth">精灵深度:</label>
+                        <input type="number" id="sprite-depth" value="0.55" step="0.01" min="0" max="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="sprite-origin">精灵原点:</label>
+                        <input type="text" id="sprite-origin" value="0.5,0.5" placeholder="格式: x,y">
+                    </div>
+                </div>
+
+                <!-- InventoryIcon设置 -->
+                <div id="inventoryicon-tab-content" class="sprite-tab-content">
+                    <div class="form-group">
+                        <label for="inventoryicon-upload">上传InventoryIcon精灵图:</label>
+                        <input type="file" id="inventoryicon-upload" accept="image/*">
+                        <div id="notification-inventoryicon"></div>
+                    </div>
+                    <div class="form-group">
+                        <label>InventoryIcon精灵图预览与框选:</label>
+                        <div id="inventoryicon-container" class="sprite-selector" style="width: 100%; height: 400px; background-color: #f0f0f0; display: flex; justify-content: center; align-items: center;">
+                            <p>请上传精灵图</p>
+                        </div>
+                        <div id="inventoryicon-coords" style="margin-top: 10px;">
+                            <p>框选坐标: <span id="coords-text-inventoryicon">未框选</span></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inventoryicon-texture">InventoryIcon贴图路径:</label>
+                        <input type="text" id="inventoryicon-texture" value="Content/Items/InventoryIconAtlas.png" placeholder="贴图文件路径">
+                    </div>
+                    <div class="form-group">
+                        <label for="inventoryicon-coords-manual">InventoryIcon坐标 (x,y,width,height):</label>
+                        <input type="text" id="inventoryicon-coords-manual" placeholder="例如: 896,960,64,64">
+                        <button id="apply-inventoryicon-coords" style="margin-top: 5px;">应用坐标</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="inventoryicon-origin">图标原点:</label>
+                        <input type="text" id="inventoryicon-origin" value="0.5,0.5" placeholder="格式: x,y">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="fabricate" class="tab-content">
+            <div class="section">
+                <h2>制作配方</h2>
+                <div class="form-group">
+                    <label for="fabricator-type">制作器类型:</label>
+                    <select id="fabricator-type">
+                        <option value="fabricator">制作器</option>
+                        <option value="medicalfabricator">医疗制作器</option>
+                        <option value="deconstructor">分解器</option>
+                        <option value="VGMfabricator">VGM制作器</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="required-time">制作时间:</label>
+                    <input type="number" id="required-time" value="20" min="1">
+                </div>
+                <div class="form-group">
+                    <label for="fabricate-amount">制作数量:</label>
+                    <input type="number" id="fabricate-amount" value="1" min="1">
+                </div>
+
+                <h3>所需技能</h3>
+                <div class="form-group">
+                    <label for="required-skill">技能类型:</label>
+                    <select id="required-skill">
+                        <option value="mechanical">机械</option>
+                        <option value="electrical">电气</option>
+                        <option value="medical">医疗</option>
+                        <option value="weapons">武器</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="required-skill-level">技能等级:</label>
+                    <input type="number" id="required-skill-level" value="20" min="0" max="100">
+                </div>
+
+                <h3>所需材料</h3>
+                <div id="required-items-container">
+                    <!-- 初始所需材料 -->
+                    <div class="required-item">
+                        <div class="required-item-controls">
+                            <select class="required-item-type">
+                                <optgroup label="组合">
+                                    <option value="munition_propulsion">推进药原料</option>
+                                    <option value="munition_core">子弹弹身原料</option>
+                                    <option value="munition_jacket">弹尖披甲原料</option>
+                                </optgroup>
+                                <optgroup label="基础材料">
+                                    <option value="carbon">碳</option>
+                                    <option value="iron">铁</option>
+                                    <option value="tin">锡</option>
+                                    <option value="lead">铅</option>
+                                    <option value="phosphorus">磷</option>
+                                    <option value="copper">铜</option>
+                                    <option value="zinc">锌</option>
+                                    <option value="sodium">钠</option>
+                                    <option value="silicon">硅</option>
+                                    <option value="calcium">钙</option>
+                                    <option value="aluminium">铝</option>
+                                    <option value="uranium">铀</option>
+                                    <option value="titanium">钛</option>
+                                    <option value="magnesium">镁</option>
+                                    <option value="lithium">锂</option>
+                                    <option value="chlorine">氯</option>
+                                    <option value="thorium">钍</option>
+                                    <option value="steel">钢</option>
+                                    <option value="plastic">塑料</option>
+                                    <option value="ballisticfiber">防弹纤维</option>
+                                    <option value="organicfiber">有机纤维</option>
+                                    <option value="rubber">橡胶</option>
+                                    <option value="flashpowder">闪光粉</option>
+                                    <option value="scrap">废料</option>
+                                    <option value="titaniumaluminiumalloy">钛铝合金</option>
+                                    <option value="fulgurium">雷素块</option>
+                                    <option value="physicorium">钢素块</option>
+                                    <option value="dementonite">燃素块</option>
+                                </optgroup>
+                                <optgroup label="医疗材料">
+                                    <option value="fiberplant">纤维植物</option>
+                                    <option value="elastinplant">弹性植物</option>
+                                    <option value="aquaticpoppy">水生罂粟</option>
+                                    <option value="yeastshroom">酵母蘑菇</option>
+                                    <option value="slimebacteria">粘液细菌</option>
+                                    <option value="paralyxis">麻痹素</option>
+                                    <option value="organicfiber">有机纤维</option>
+                                    <option value="elastin">弹性蛋白</option>
+                                    <option value="opium">鸦片</option>
+                                    <option value="ethanol">乙醇</option>
+                                    <option value="antibiotics">抗生素</option>
+                                </optgroup>
+                                <optgroup label="毒药">
+                                    <option value="morbusine">莫尔比辛</option>
+                                    <option value="chloralhydrate">水合氯醛</option>
+                                    <option value="cyanide">氰化物</option>
+                                    <option value="radiotoxin">辐射毒素</option>
+                                    <option value="sufforin">窒息素</option>
+                                    <option value="deliriumine">谵妄毒剂</option>
+                                    <option value="paralyzant">麻痹剂</option>
+                                    <option value="raptorbaneextract">猛禽提取物</option>
+                                    <option value="hallucinogenicbufotoxin">致幻蟾毒素</option>
+                                    <option value="sulphuricacid">硫酸</option>
+                                </optgroup>
+                                <optgroup label="医疗用品">
+                                    <option value="antibleeding1">绷带</option>
+                                    <option value="antibleeding2">塑料密封剂</option>
+                                    <option value="antibleeding3">抗生素胶水</option>
+                                    <option value="antidama1">吗啡</option>
+                                    <option value="antidama2">芬太尼</option>
+                                    <option value="pomegrenadeextract">石榴提取物</option>
+                                    <option value="antibloodloss1">生理盐水</option>
+                                    <option value="antibloodloss2">血袋</option>
+                                    <option value="stabilozine">稳定素</option>
+                                    <option value="adrenaline">肾上腺素</option>
+                                    <option value="antipsychosis">抗精神病药</option>
+                                    <option value="antitoxin">抗毒素</option>
+                                    <option value="oxygenitrogen">氧气氮气罐</option>
+                                    <option value="alienblood">外星血液</option>
+                                    <option value="fpgs">FPGs</option>
+                                    <option value="glue">胶水</option>
+                                    <option value="calyxanide">花萼氰化物</option>
+                                    <option value="sufforin">窒息素</option>
+                                    <option value="opiate">阿片类</option>
+                                    <option value="opium">药用鸦片</option>
+                                    <option value="chlorine">氯</option>
+                                    <option value="sodium">钠</option>
+                                    <option value="potassium">钾</option>
+                                    <option value="sulphuricacid">硫酸</option>
+                                    <option value="calcium">钙</option>
+                                    <option value="chloralhydrate">水合氯醛</option>
+                                    <option value="ethanol">乙醇</option>
+                                    <option value="paralyxis">麻痹素</option>
+                                    <option value="thorium">钍</option>
+                                    <option value="uranium">铀</option>
+                                    <option value="raptorbane">猛禽克星</option>
+                                    <option value="antibloodloss1">抗失血1</option>
+                                    <option value="antibloodloss2">抗失血2</option>
+                                    <option value="stabilozine">稳定素</option>
+                                    <option value="adrenaline">肾上腺素</option>
+                                    <option value="antibiotics">抗生素</option>
+                                    <option value="elastin">弹性蛋白</option>
+                                    <option value="antibleeding1">抗出血1</option>
+                                    <option value="antibleeding2">抗出血2</option>
+                                    <option value="antibleeding3">抗出血3</option>
+                                    <option value="antidama1">抗损伤1</option>
+                                    <option value="antidama2">抗损伤2</option>
+                                    <option value="pomegrenadeextract">石榴提取物</option>
+                                    <option value="creepingorange">爬行橙</option>
+                                </optgroup>
+                            </select>
+                            <input type="number" class="required-item-amount" placeholder="数量" min="1" value="1">
+                            <button class="remove-required-item">移除</button>
+                        </div>
+                    </div>
+                </div>
+                <button id="add-required-item">添加材料</button>
+            </div>
+        </div>
+
+        <div id="attack" class="tab-content">
+            <div class="section">
+                <h2>攻击属性</h2>
+                <div class="form-group">
+                    <label for="structuredamage">结构伤害:</label>
+                    <input type="number" id="structuredamage" value="4" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="targetforce">目标力度:</label>
+                    <input type="number" id="targetforce" value="5" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="itemdamage">物品伤害:</label>
+                    <input type="number" id="itemdamage" value="4" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="severlimbsprobability">断肢概率:</label>
+                    <input type="number" id="severlimbsprobability" value="0.1" step="0.1" min="0" max="1">
+                </div>
+
+                <h3>伤害类型 (Affliction)</h3>
+                <div id="afflictions-container">
+                    <!-- 初始伤害类型 -->
+                    <div class="affliction-item">
+                        <div class="affliction-controls">
+                            <select class="affliction-type">
+                                <option value="gunshotwound">枪伤</option>
+                                <option value="bleeding">流血</option>
+                                <option value="stun">眩晕</option>
+                                <option value="burn">烧伤</option>
+                                <option value="incrementalstun">累积眩晕</option>
+                                <option value="blunttrauma">钝器创伤</option>
+                                <option value="acidburn">酸蚀烧伤</option>
+                                <option value="electricshock">电击</option>
+                                <option value="lacerations">撕裂伤</option>
+                                <option value="emp">电磁脉冲</option>
+                                <option value="bitewounds">咬伤</option>
+                                <option value="bleedingnonstop">持续流血</option>
+                                <option value="infection">感染</option>
+                                <option value="concussion">脑震荡</option>
+                                <option value="sensoryoverload">感官过载</option>
+                                <option value="organdamage">器官损伤</option>
+                                <option value="bloodloss">失血</option>
+                                <option value="blind">失明</option>
+                                <option value="explosiondamage">爆炸伤害</option>
+                                <option value="blind_hard">严重失明</option>
+                                <option value="radiationsickness">辐射病</option>
+                                <option value="hallucinating">幻觉</option>
+                                <option value="burning">燃烧</option>
+                                <option value="morbusinepoisoning">莫尔比辛中毒</option>
+                                <option value="cyanidepoisoning">氰化物中毒</option>
+                                <option value="paralysis">麻痹</option>
+                                <option value="slowparalysis">缓慢麻痹</option>
+                                <option value="deliriuminepoisoning">谵妄明中毒</option>
+                                <option value="sufforinpoisoning">窒息中毒</option>
+                                <option value="opiateoverdose">阿片类药物过量</option>
+                                <option value="nausea">恶心</option>
+                                <option value="psychosis">精神病</option>
+                            </select>
+                            <input type="number" class="affliction-strength" placeholder="强度" value="12.5" min="0">
+                            <input type="number" class="affliction-probability" placeholder="概率(0-1)" step="0.1" min="0" max="1">
+                            <button class="remove-affliction">移除</button>
+                        </div>
+                    </div>
+                </div>
+                <button id="add-affliction">添加伤害类型</button>
+            </div>
+        </div>
+
+        <div id="output" class="tab-content">
+            <div class="section">
+                <h2>生成的XML</h2>
+                <button id="generate-xml">生成XML</button>
+                <button id="copy-xml">复制XML</button>
+                <div id="xml-output" class="xml-output">点击"生成XML"按钮生成代码</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 标签页切换功能
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                // 移除所有活动状态
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+
+                // 添加活动状态到当前标签
+                this.classList.add('active');
+                document.getElementById(this.dataset.tab).classList.add('active');
+            });
+        });
+
+        // 精灵图类型切换功能
+        document.querySelectorAll('.sprite-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                // 移除所有活动状态
+                document.querySelectorAll('.sprite-tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.sprite-tab-content').forEach(c => c.classList.remove('active'));
+
+                // 添加活动状态到当前标签
+                this.classList.add('active');
+                document.getElementById(this.dataset.spriteTab + '-tab-content').classList.add('active');
+            });
+        });
+
+        // Sprite精灵图上传和框选功能
+        let spriteImage = null;
+        let isSelecting = false;
+        let startX, startY;
+        let selectionBox = null;
+
+        document.getElementById('sprite-upload').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file && file.type.startsWith('image/')) {
+                const reader = new FileReader();
+
+                reader.onload = function(event) {
+                    spriteImage = new Image();
+                    spriteImage.onload = function() {
+                        const container = document.getElementById('sprite-container');
+                        container.innerHTML = '';
+
+                        // 创建图片元素
+                        const img = document.createElement('img');
+                        img.src = event.target.result;
+                        img.style.maxWidth = '100%';
+                        img.style.maxHeight = '100%';
+                        // 防止图片拖动
+                        img.draggable = false;
+                        img.ondragstart = function() { return false; };
+                        container.appendChild(img);
+
+                        // 显示通知
+                        showNotification('图片上传成功，请在图片上框选精灵区域');
+
+                        // 添加框选事件
+                        container.addEventListener('mousedown', startSelection);
+                        container.addEventListener('mousemove', updateSelection);
+                        container.addEventListener('mouseup', endSelection);
+                    };
+                    spriteImage.src = event.target.result;
+                };
+
+                reader.readAsDataURL(file);
+            } else {
+                showNotification('请选择有效的图片文件', 'error');
+            }
+        });
+
+        // InventoryIcon精灵图上传和框选功能
+        let inventoryIconImage = null;
+        let isSelectingInventoryIcon = false;
+        let startXInventoryIcon, startYInventoryIcon;
+        let selectionBoxInventoryIcon = null;
+
+        document.getElementById('inventoryicon-upload').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file && file.type.startsWith('image/')) {
+                const reader = new FileReader();
+
+                reader.onload = function(event) {
+                    inventoryIconImage = new Image();
+                    inventoryIconImage.onload = function() {
+                        const container = document.getElementById('inventoryicon-container');
+                        container.innerHTML = '';
+
+                        // 创建图片元素
+                        const img = document.createElement('img');
+                        img.src = event.target.result;
+                        img.style.maxWidth = '100%';
+                        img.style.maxHeight = '100%';
+                        // 防止图片拖动
+                        img.draggable = false;
+                        img.ondragstart = function() { return false; };
+                        container.appendChild(img);
+
+                        // 显示通知
+                        showNotificationInventoryIcon('图片上传成功，请在图片上框选图标区域');
+
+                        // 添加框选事件
+                        container.addEventListener('mousedown', startSelectionInventoryIcon);
+                        container.addEventListener('mousemove', updateSelectionInventoryIcon);
+                        container.addEventListener('mouseup', endSelectionInventoryIcon);
+                    };
+                    inventoryIconImage.src = event.target.result;
+                };
+
+                reader.readAsDataURL(file);
+            } else {
+                showNotificationInventoryIcon('请选择有效的图片文件', 'error');
+            }
+        });
+
+        // InventoryIcon框选功能函数
+        function startSelectionInventoryIcon(e) {
+            if (!inventoryIconImage) return;
+
+            isSelectingInventoryIcon = true;
+            const rect = e.currentTarget.getBoundingClientRect();
+            startXInventoryIcon = e.clientX - rect.left;
+            startYInventoryIcon = e.clientY - rect.top;
+
+            // 移除旧的框选框
+            if (selectionBoxInventoryIcon) {
+                selectionBoxInventoryIcon.remove();
+            }
+
+            // 创建新的框选框
+            selectionBoxInventoryIcon = document.createElement('div');
+            selectionBoxInventoryIcon.className = 'selection-box';
+            selectionBoxInventoryIcon.style.left = startXInventoryIcon + 'px';
+            selectionBoxInventoryIcon.style.top = startYInventoryIcon + 'px';
+            e.currentTarget.appendChild(selectionBoxInventoryIcon);
+        }
+
+        function updateSelectionInventoryIcon(e) {
+            if (!isSelectingInventoryIcon || !selectionBoxInventoryIcon) return;
+
+            const rect = e.currentTarget.getBoundingClientRect();
+            const currentX = e.clientX - rect.left;
+            const currentY = e.clientY - rect.top;
+
+            const width = Math.abs(currentX - startXInventoryIcon);
+            const height = Math.abs(currentY - startYInventoryIcon);
+            const left = Math.min(startXInventoryIcon, currentX);
+            const top = Math.min(startYInventoryIcon, currentY);
+
+            selectionBoxInventoryIcon.style.left = left + 'px';
+            selectionBoxInventoryIcon.style.top = top + 'px';
+            selectionBoxInventoryIcon.style.width = width + 'px';
+            selectionBoxInventoryIcon.style.height = height + 'px';
+        }
+
+        function endSelectionInventoryIcon(e) {
+            if (!isSelectingInventoryIcon || !selectionBoxInventoryIcon) return;
+
+            isSelectingInventoryIcon = false;
+
+            // 计算坐标
+            const rect = e.currentTarget.getBoundingClientRect();
+            const img = e.currentTarget.querySelector('img');
+
+            if (!img) return;
+
+            // 获取图片在容器中的实际显示尺寸和位置
+            const imgRect = img.getBoundingClientRect();
+            const containerRect = e.currentTarget.getBoundingClientRect();
+
+            // 计算缩放比例
+            const scaleX = inventoryIconImage.width / imgRect.width;
+            const scaleY = inventoryIconImage.height / imgRect.height;
+
+            // 计算框选区域的坐标（相对于原始图片）
+            const selectionLeft = parseInt(selectionBoxInventoryIcon.style.left);
+            const selectionTop = parseInt(selectionBoxInventoryIcon.style.top);
+            const selectionWidth = parseInt(selectionBoxInventoryIcon.style.width);
+            const selectionHeight = parseInt(selectionBoxInventoryIcon.style.height);
+
+            // 修正计算方式，考虑图片在容器中的位置
+            const imgOffsetX = imgRect.left - containerRect.left;
+            const imgOffsetY = imgRect.top - containerRect.top;
+
+            // 检查框选是否在图片范围内
+            const effectiveLeft = Math.max(0, selectionLeft - imgOffsetX);
+            const effectiveTop = Math.max(0, selectionTop - imgOffsetY);
+            const effectiveRight = Math.min(imgRect.width, selectionLeft + selectionWidth - imgOffsetX);
+            const effectiveBottom = Math.min(imgRect.height, selectionTop + selectionHeight - imgOffsetY);
+
+            // 计算实际框选区域
+            const effectiveWidth = Math.max(0, effectiveRight - effectiveLeft);
+            const effectiveHeight = Math.max(0, effectiveBottom - effectiveTop);
+
+            // 转换为原始图片坐标
+            const x = Math.round(effectiveLeft * scaleX);
+            const y = Math.round(effectiveTop * scaleY);
+            const width = Math.round(effectiveWidth * scaleX);
+            const height = Math.round(effectiveHeight * scaleY);
+
+            // 更新坐标显示
+            document.getElementById('coords-text-inventoryicon').textContent = `${x},${y},${width},${height}`;
+
+            // 更新手动输入框
+            document.getElementById('inventoryicon-coords-manual').value = `${x},${y},${width},${height}`;
+
+            // 保存坐标供生成XML使用
+            e.currentTarget.dataset.coords = `${x},${y},${width},${height}`;
+        }
+
+        // InventoryIcon通知显示函数
+        function showNotificationInventoryIcon(message, type = 'success') {
+            const notification = document.getElementById('notification-inventoryicon');
+            notification.className = 'notification';
+
+            if (type === 'error') {
+                notification.style.backgroundColor = '#f8d7da';
+                notification.style.color = '#721c24';
+                notification.style.borderColor = '#f5c6cb';
+            } else {
+                notification.style.backgroundColor = '#d4edda';
+                notification.style.color = '#155724';
+                notification.style.borderColor = '#c3e6cb';
+            }
+
+            notification.textContent = message;
+            notification.style.display = 'block';
+
+            // 3秒后自动隐藏
+            setTimeout(() => {
+                notification.style.display = 'none';
+            }, 3000);
+        }
+
+        function startSelection(e) {
+            if (!spriteImage) return;
+
+            isSelecting = true;
+            const rect = e.currentTarget.getBoundingClientRect();
+            startX = e.clientX - rect.left;
+            startY = e.clientY - rect.top;
+
+            // 移除旧的框选框
+            if (selectionBox) {
+                selectionBox.remove();
+            }
+
+            // 创建新的框选框
+            selectionBox = document.createElement('div');
+            selectionBox.className = 'selection-box';
+            selectionBox.style.left = startX + 'px';
+            selectionBox.style.top = startY + 'px';
+            e.currentTarget.appendChild(selectionBox);
+        }
+
+        function updateSelection(e) {
+            if (!isSelecting || !selectionBox) return;
+
+            const rect = e.currentTarget.getBoundingClientRect();
+            const currentX = e.clientX - rect.left;
+            const currentY = e.clientY - rect.top;
+
+            const width = Math.abs(currentX - startX);
+            const height = Math.abs(currentY - startY);
+            const left = Math.min(startX, currentX);
+            const top = Math.min(startY, currentY);
+
+            selectionBox.style.left = left + 'px';
+            selectionBox.style.top = top + 'px';
+            selectionBox.style.width = width + 'px';
+            selectionBox.style.height = height + 'px';
+        }
+
+        function endSelection(e) {
+            if (!isSelecting || !selectionBox) return;
+
+            isSelecting = false;
+
+            // 计算坐标
+            const rect = e.currentTarget.getBoundingClientRect();
+            const img = e.currentTarget.querySelector('img');
+
+            if (!img) return;
+
+            // 获取图片在容器中的实际显示尺寸和位置
+            const imgRect = img.getBoundingClientRect();
+            const containerRect = e.currentTarget.getBoundingClientRect();
+
+            // 计算缩放比例
+            const scaleX = spriteImage.width / imgRect.width;
+            const scaleY = spriteImage.height / imgRect.height;
+
+            // 计算框选区域的坐标（相对于原始图片）
+            const selectionLeft = parseInt(selectionBox.style.left);
+            const selectionTop = parseInt(selectionBox.style.top);
+            const selectionWidth = parseInt(selectionBox.style.width);
+            const selectionHeight = parseInt(selectionBox.style.height);
+
+            // 修正计算方式，考虑图片在容器中的位置
+            const imgOffsetX = imgRect.left - containerRect.left;
+            const imgOffsetY = imgRect.top - containerRect.top;
+
+            // 检查框选是否在图片范围内
+            const effectiveLeft = Math.max(0, selectionLeft - imgOffsetX);
+            const effectiveTop = Math.max(0, selectionTop - imgOffsetY);
+            const effectiveRight = Math.min(imgRect.width, selectionLeft + selectionWidth - imgOffsetX);
+            const effectiveBottom = Math.min(imgRect.height, selectionTop + selectionHeight - imgOffsetY);
+
+            // 计算实际框选区域
+            const effectiveWidth = Math.max(0, effectiveRight - effectiveLeft);
+            const effectiveHeight = Math.max(0, effectiveBottom - effectiveTop);
+
+            // 转换为原始图片坐标
+            const x = Math.round(effectiveLeft * scaleX);
+            const y = Math.round(effectiveTop * scaleY);
+            const width = Math.round(effectiveWidth * scaleX);
+            const height = Math.round(effectiveHeight * scaleY);
+
+            // 更新坐标显示
+            document.getElementById('coords-text').textContent = `${x},${y},${width},${height}`;
+
+            // 更新手动输入框
+            document.getElementById('sprite-coords-manual').value = `${x},${y},${width},${height}`;
+
+            // 保存坐标供生成XML使用
+            e.currentTarget.dataset.coords = `${x},${y},${width},${height}`;
+        }
+
+        // 添加/移除伤害类型
+        document.getElementById('add-affliction').addEventListener('click', function() {
+            const container = document.getElementById('afflictions-container');
+            const afflictionItem = document.createElement('div');
+            afflictionItem.className = 'affliction-item';
+
+            afflictionItem.innerHTML = `
+                <div class="affliction-controls">
+                    <select class="affliction-type">
+                        <option value="gunshotwound">枪伤</option>
+                        <option value="bleeding">流血</option>
+                        <option value="stun">眩晕</option>
+                        <option value="burn">烧伤</option>
+                        <option value="incrementalstun">累积眩晕</option>
+                        <option value="blunttrauma">钝器创伤</option>
+                        <option value="acidburn">酸蚀烧伤</option>
+                        <option value="electricshock">电击</option>
+                        <option value="lacerations">撕裂伤</option>
+                        <option value="emp">电磁脉冲</option>
+                        <option value="bitewounds">咬伤</option>
+                        <option value="bleedingnonstop">持续流血</option>
+                        <option value="infection">感染</option>
+                        <option value="concussion">脑震荡</option>
+                        <option value="sensoryoverload">感官过载</option>
+                        <option value="organdamage">器官损伤</option>
+                        <option value="bloodloss">失血</option>
+                        <option value="blind">失明</option>
+                        <option value="explosiondamage">爆炸伤害</option>
+                        <option value="blind_hard">严重失明</option>
+                        <option value="radiationsickness">辐射病</option>
+                        <option value="hallucinating">幻觉</option>
+                        <option value="burning">燃烧</option>
+                        <option value="morbusinepoisoning">莫尔比辛中毒</option>
+                        <option value="cyanidepoisoning">氰化物中毒</option>
+                        <option value="paralysis">麻痹</option>
+                        <option value="slowparalysis">缓慢麻痹</option>
+                        <option value="deliriuminepoisoning">谵妄明中毒</option>
+                        <option value="sufforinpoisoning">窒息中毒</option>
+                        <option value="opiateoverdose">阿片类药物过量</option>
+                        <option value="nausea">恶心</option>
+                        <option value="psychosis">精神病</option>
+                    </select>
+                    <input type="number" class="affliction-strength" placeholder="强度" value="12.5" min="0">
+                    <input type="number" class="affliction-probability" placeholder="概率(0-1)" step="0.1" min="0" max="1">
+                    <button class="remove-affliction">移除</button>
+                </div>
+            `;
+
+            container.appendChild(afflictionItem);
+
+            // 添加移除事件
+            afflictionItem.querySelector('.remove-affliction').addEventListener('click', function() {
+                afflictionItem.remove();
+            });
+        });
+
+        // 移除伤害类型事件委托
+        document.getElementById('afflictions-container').addEventListener('click', function(e) {
+            if (e.target.classList.contains('remove-affliction')) {
+                e.target.closest('.affliction-item').remove();
+            }
+        });
+
+        // 生成XML
+        document.getElementById('generate-xml').addEventListener('click', function() {
+            // 获取基本属性
+            const itemName = document.getElementById('item-name').value;
+            const itemIdentifier = document.getElementById('item-identifier').value;
+            const itemCategory = document.getElementById('item-category').value;
+            const itemTags = document.getElementById('item-tags').value;
+            const itemScale = document.getElementById('item-scale').value;
+
+            // 获取物体属性
+            const bodyWidth = document.getElementById('body-width').value;
+            const bodyHeight = document.getElementById('body-height').value;
+            const bodyDensity = document.getElementById('body-density').value;
+
+            // 获取精灵图属性
+            const spriteContainer = document.getElementById('sprite-container');
+            const spriteCoords = spriteContainer.dataset.coords || '0,0,0,0';
+            const spriteDepth = document.getElementById('sprite-depth').value;
+            const spriteOrigin = document.getElementById('sprite-origin').value;
+
+            // 获取InventoryIcon属性
+            const inventoryIconContainer = document.getElementById('inventoryicon-container');
+            const inventoryIconCoords = inventoryIconContainer.dataset.coords || '0,0,0,0';
+            const inventoryIconOrigin = document.getElementById('inventoryicon-origin').value;
+
+            // 获取fabricate属性
+            const fabricatorType = document.getElementById('fabricator-type').value;
+            const requiredTime = document.getElementById('required-time').value;
+            const fabricateAmount = document.getElementById('fabricate-amount').value;
+            const requiredSkill = document.getElementById('required-skill').value;
+            const requiredSkillLevel = document.getElementById('required-skill-level').value;
+
+            // 获取所需材料
+            let requiredItemsXML = '';
+            document.querySelectorAll('.required-item').forEach(item => {
+                const type = item.querySelector('.required-item-type').value;
+                const amount = item.querySelector('.required-item-amount').value;
+                if (amount && amount > 0) {
+                    requiredItemsXML += `            <RequiredItem identifier="${type}" count="${amount}" />
+`;
+                } else {
+                    requiredItemsXML += `            <RequiredItem identifier="${type}" />
+`;
+                }
+            });
+
+            // 获取攻击属性
+            const structureDamage = document.getElementById('structuredamage').value;
+            const targetForce = document.getElementById('targetforce').value;
+            const itemDamage = document.getElementById('itemdamage').value;
+            const severLimbsProbability = document.getElementById('severlimbsprobability').value;
+
+            // 获取伤害类型
+            let afflictionsXML = '';
+            document.querySelectorAll('.affliction-item').forEach(item => {
+                const type = item.querySelector('.affliction-type').value;
+                const strength = item.querySelector('.affliction-strength').value;
+                const probability = item.querySelector('.affliction-probability').value;
+
+                if (probability && probability > 0) {
+                    afflictionsXML += `                <Affliction identifier="${type}" strength="${strength}" probability="${probability}" />
+`;
+                } else {
+                    afflictionsXML += `                <Affliction identifier="${type}" strength="${strength}" />
+`;
+                }
+            });
+
+            // 获取贴图路径
+            const spriteTexture = document.getElementById('sprite-texture').value;
+            const inventoryIconTexture = document.getElementById('inventoryicon-texture').value;
+
+            // 生成XML
+            const xml = `<Item name="${itemName}" identifier="${itemIdentifier}" category="${itemCategory}" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="${itemTags}" impactsoundtag="impact_metal_light" hideinmenus="true" scale="${itemScale}">
+    <InventoryIcon texture="${inventoryIconTexture}" sourcerect="${inventoryIconCoords}" origin="${inventoryIconOrigin}" />
+    <Sprite texture="${spriteTexture}" sourcerect="${spriteCoords}" depth="${spriteDepth}" origin="${spriteOrigin}" />
+    <Body width="${bodyWidth}" height="${bodyHeight}" density="${bodyDensity}" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Fabricate suitablefabricators="${fabricatorType}" requiredtime="${requiredTime}" amount="${fabricateAmount}">
+        <RequiredSkill identifier="${requiredSkill}" level="${requiredSkillLevel}" />
+${requiredItemsXML}    </Fabricate>
+    <Projectile characterusable="false" hitscan="true" removeonhit="true">
+        <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
+        <Attack structuredamage="${structureDamage}" targetforce="${targetForce}" itemdamage="${itemDamage}" severlimbsprobability="${severLimbsProbability}">
+${afflictionsXML}        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+            <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget">
+            <Conditional entitytype="eq Structure" />
+            <Conditional hastag="eq door" />
+            <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+        </StatusEffect>
+    </Projectile>
+</Item>`;
+
+            // 显示XML
+            document.getElementById('xml-output').textContent = xml;
+
+            // 切换到输出标签页
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            document.querySelector('[data-tab="output"]').classList.add('active');
+            document.getElementById('output').classList.add('active');
+        });
+
+        // 复制XML
+        document.getElementById('copy-xml').addEventListener('click', function() {
+            const xmlText = document.getElementById('xml-output').textContent;
+
+            if (!xmlText || xmlText === '点击"生成XML"按钮生成代码') {
+                showNotification('请先生成XML', 'error');
+                return;
+            }
+
+            // 创建临时文本区域
+            const textArea = document.createElement('textarea');
+            textArea.value = xmlText;
+            document.body.appendChild(textArea);
+
+            // 选择并复制文本
+            textArea.select();
+            document.execCommand('copy');
+
+            // 移除临时文本区域
+            document.body.removeChild(textArea);
+
+            showNotification('XML已复制到剪贴板');
+        });
+
+        // Sprite手动输入坐标按钮事件
+        document.getElementById('apply-sprite-coords').addEventListener('click', function() {
+            const coords = document.getElementById('sprite-coords-manual').value;
+            if (coords) {
+                // 更新显示的坐标
+                document.getElementById('coords-text').textContent = coords;
+
+                // 保存坐标到容器
+                const container = document.getElementById('sprite-container');
+                container.dataset.coords = coords;
+
+                // 创建或更新可视化框选区域
+                const coordsArray = coords.split(',').map(Number);
+                if (coordsArray.length === 4 && !coordsArray.some(isNaN)) {
+                    const [x, y, width, height] = coordsArray;
+
+                    // 获取图片元素和容器
+                    const img = container.querySelector('img');
+                    if (!img) {
+                        showNotification('请先上传精灵图', 'error');
+                        return;
+                    }
+
+                    // 获取图片在容器中的位置
+                    const imgRect = img.getBoundingClientRect();
+                    const containerRect = container.getBoundingClientRect();
+                    const imgOffsetX = imgRect.left - containerRect.left;
+                    const imgOffsetY = imgRect.top - containerRect.top;
+
+                    // 计算缩放比例
+                    const scaleX = img.offsetWidth / spriteImage.width;
+                    const scaleY = img.offsetHeight / spriteImage.height;
+
+                    // 转换为显示坐标
+                    const displayX = x * scaleX;
+                    const displayY = y * scaleY;
+                    const displayWidth = width * scaleX;
+                    const displayHeight = height * scaleY;
+
+                    // 移除旧的框选框
+                    const oldSelectionBox = container.querySelector('.selection-box');
+                    if (oldSelectionBox) {
+                        oldSelectionBox.remove();
+                    }
+
+                    // 创建新的框选框，并考虑图片在容器中的偏移
+                    selectionBox = document.createElement('div');
+                    selectionBox.className = 'selection-box';
+                    selectionBox.style.left = (imgOffsetX + displayX) + 'px';
+                    selectionBox.style.top = (imgOffsetY + displayY) + 'px';
+                    selectionBox.style.width = displayWidth + 'px';
+                    selectionBox.style.height = displayHeight + 'px';
+                    container.appendChild(selectionBox);
+                }
+
+                showNotification('Sprite坐标已更新');
+            } else {
+                showNotification('请输入有效的坐标', 'error');
+            }
+        });
+
+        // InventoryIcon手动输入坐标按钮事件
+        document.getElementById('apply-inventoryicon-coords').addEventListener('click', function() {
+            const coords = document.getElementById('inventoryicon-coords-manual').value;
+            if (coords) {
+                // 更新显示的坐标
+                document.getElementById('coords-text-inventoryicon').textContent = coords;
+
+                // 保存坐标到容器
+                const container = document.getElementById('inventoryicon-container');
+                container.dataset.coords = coords;
+
+                // 创建或更新可视化框选区域
+                const coordsArray = coords.split(',').map(Number);
+                if (coordsArray.length === 4 && !coordsArray.some(isNaN)) {
+                    const [x, y, width, height] = coordsArray;
+
+                    // 获取图片元素和容器
+                    const img = container.querySelector('img');
+                    if (!img) {
+                        showNotificationInventoryIcon('请先上传精灵图', 'error');
+                        return;
+                    }
+
+                    // 获取图片在容器中的位置
+                    const imgRect = img.getBoundingClientRect();
+                    const containerRect = container.getBoundingClientRect();
+                    const imgOffsetX = imgRect.left - containerRect.left;
+                    const imgOffsetY = imgRect.top - containerRect.top;
+
+                    // 计算缩放比例
+                    const scaleX = img.offsetWidth / inventoryIconImage.width;
+                    const scaleY = img.offsetHeight / inventoryIconImage.height;
+
+                    // 转换为显示坐标
+                    const displayX = x * scaleX;
+                    const displayY = y * scaleY;
+                    const displayWidth = width * scaleX;
+                    const displayHeight = height * scaleY;
+
+                    // 移除旧的框选框
+                    const oldSelectionBox = container.querySelector('.selection-box');
+                    if (oldSelectionBox) {
+                        oldSelectionBox.remove();
+                    }
+
+                    // 创建新的框选框，并考虑图片在容器中的偏移
+                    selectionBoxInventoryIcon = document.createElement('div');
+                    selectionBoxInventoryIcon.className = 'selection-box';
+                    selectionBoxInventoryIcon.style.left = (imgOffsetX + displayX) + 'px';
+                    selectionBoxInventoryIcon.style.top = (imgOffsetY + displayY) + 'px';
+                    selectionBoxInventoryIcon.style.width = displayWidth + 'px';
+                    selectionBoxInventoryIcon.style.height = displayHeight + 'px';
+                    container.appendChild(selectionBoxInventoryIcon);
+                }
+
+                showNotificationInventoryIcon('InventoryIcon坐标已更新');
+            } else {
+                showNotificationInventoryIcon('请输入有效的坐标', 'error');
+            }
+        });
+
+        // 添加所需材料
+        document.getElementById('add-required-item').addEventListener('click', function() {
+            const container = document.getElementById('required-items-container');
+            const requiredItem = document.createElement('div');
+            requiredItem.className = 'required-item';
+
+            requiredItem.innerHTML = `
+                <div class="required-item-controls">
+                    <select class="required-item-type">
+                                <optgroup label="组合">
+                                    <option value="munition_propulsion">推进药原料</option>
+                                    <option value="munition_core">子弹弹身原料</option>
+                                    <option value="munition_jacket">弹尖披甲原料</option>
+                                </optgroup>
+                                <optgroup label="基础材料">
+                                    <option value="carbon">碳</option>
+                                    <option value="iron">铁</option>
+                                    <option value="tin">锡</option>
+                                    <option value="lead">铅</option>
+                                    <option value="phosphorus">磷</option>
+                                    <option value="copper">铜</option>
+                                    <option value="zinc">锌</option>
+                                    <option value="sodium">钠</option>
+                                    <option value="silicon">硅</option>
+                                    <option value="calcium">钙</option>
+                                    <option value="aluminium">铝</option>
+                                    <option value="uranium">铀</option>
+                                    <option value="titanium">钛</option>
+                                    <option value="magnesium">镁</option>
+                                    <option value="lithium">锂</option>
+                                    <option value="chlorine">氯</option>
+                                    <option value="thorium">钍</option>
+                                    <option value="steel">钢</option>
+                                    <option value="plastic">塑料</option>
+                                    <option value="ballisticfiber">防弹纤维</option>
+                                    <option value="organicfiber">有机纤维</option>
+                                    <option value="rubber">橡胶</option>
+                                    <option value="flashpowder">闪光粉</option>
+                                    <option value="scrap">废料</option>
+                                    <option value="titaniumaluminiumalloy">钛铝合金</option>
+                                    <option value="fulgurium">富格瑞姆</option>
+                                    <option value="physicorium">物理素</option>
+                                    <option value="dementonite">戴门石</option>
+                                </optgroup>
+                                <optgroup label="医疗材料">
+                                    <option value="fiberplant">纤维植物</option>
+                                    <option value="elastinplant">弹性植物</option>
+                                    <option value="aquaticpoppy">水生罂粟</option>
+                                    <option value="yeastshroom">酵母蘑菇</option>
+                                    <option value="slimebacteria">粘液细菌</option>
+                                    <option value="paralyxis">麻痹素</option>
+                                    <option value="organicfiber">有机纤维</option>
+                                    <option value="elastin">弹性蛋白</option>
+                                    <option value="opium">鸦片</option>
+                                    <option value="ethanol">乙醇</option>
+                                    <option value="antibiotics">抗生素</option>
+                                </optgroup>
+                                <optgroup label="毒药">
+                                    <option value="morbusine">莫尔比辛</option>
+                                    <option value="chloralhydrate">水合氯醛</option>
+                                    <option value="cyanide">氰化物</option>
+                                    <option value="radiotoxin">辐射毒素</option>
+                                    <option value="sufforin">窒息素</option>
+                                    <option value="deliriumine">谵妄明</option>
+                                    <option value="paralyzant">麻痹剂</option>
+                                    <option value="raptorbaneextract">猛禽提取物</option>
+                                    <option value="hallucinogenicbufotoxin">致幻蟾毒素</option>
+                                    <option value="sulphuricacid">硫酸</option>
+                                </optgroup>
+                                <optgroup label="医疗用品">
+                                    <option value="antibleeding1">绷带</option>
+                                    <option value="antibleeding2">塑料密封剂</option>
+                                    <option value="antibleeding3">抗生素胶水</option>
+                                    <option value="antidama1">吗啡</option>
+                                    <option value="antidama2">芬太尼</option>
+                                    <option value="pomegrenadeextract">石榴提取物</option>
+                                    <option value="antibloodloss1">生理盐水</option>
+                                    <option value="antibloodloss2">血袋</option>
+                                    <option value="stabilozine">稳定素</option>
+                                    <option value="adrenaline">肾上腺素</option>
+                                    <option value="antipsychosis">抗精神病药</option>
+                                    <option value="antitoxin">抗毒素</option>
+                                    <option value="oxygenitrogen">氧气氮气罐</option>
+                                    <option value="alienblood">外星血液</option>
+                                    <option value="fpgs">FPGs</option>
+                                    <option value="glue">胶水</option>
+                                    <option value="calyxanide">花萼氰化物</option>
+                                    <option value="sufforin">窒息素</option>
+                                    <option value="opiate">阿片类</option>
+                                    <option value="opium">鸦片</option>
+                                    <option value="chlorine">氯</option>
+                                    <option value="sodium">钠</option>
+                                    <option value="potassium">钾</option>
+                                    <option value="sulphuricacid">硫酸</option>
+                                    <option value="calcium">钙</option>
+                                    <option value="chloralhydrate">水合氯醛</option>
+                                    <option value="ethanol">乙醇</option>
+                                    <option value="paralyxis">麻痹素</option>
+                                    <option value="thorium">钍</option>
+                                    <option value="uranium">铀</option>
+                                    <option value="raptorbane">猛禽克星</option>
+                                    <option value="antibloodloss1">抗失血1</option>
+                                    <option value="antibloodloss2">抗失血2</option>
+                                    <option value="stabilozine">稳定素</option>
+                                    <option value="adrenaline">肾上腺素</option>
+                                    <option value="antibiotics">抗生素</option>
+                                    <option value="elastin">弹性蛋白</option>
+                                    <option value="antibleeding1">抗出血1</option>
+                                    <option value="antibleeding2">抗出血2</option>
+                                    <option value="antibleeding3">抗出血3</option>
+                                    <option value="antidama1">抗损伤1</option>
+                                    <option value="antidama2">抗损伤2</option>
+                                    <option value="pomegrenadeextract">石榴提取物</option>
+                                    <option value="creepingorange">爬行橙</option>
+                                </optgroup>
+                            </select>
+                            <input type="number" class="required-item-amount" placeholder="数量" min="1" value="1">
+                            <button class="remove-required-item">移除</button>
+                        </div>
+            `;
+
+            container.appendChild(requiredItem);
+
+            // 添加移除事件
+            requiredItem.querySelector('.remove-required-item').addEventListener('click', function() {
+                requiredItem.remove();
+            });
+        });
+
+        // 移除所需材料事件委托
+        document.getElementById('required-items-container').addEventListener('click', function(e) {
+            if (e.target.classList.contains('remove-required-item')) {
+                e.target.closest('.required-item').remove();
+            }
+        });
+
+        // 显示通知
+        function showNotification(message, type = 'success') {
+            const notification = document.getElementById('notification');
+            notification.className = 'notification';
+
+            if (type === 'error') {
+                notification.style.backgroundColor = '#f8d7da';
+                notification.style.color = '#721c24';
+                notification.style.borderColor = '#f5c6cb';
+            } else {
+                notification.style.backgroundColor = '#d4edda';
+                notification.style.color = '#155724';
+                notification.style.borderColor = '#c3e6cb';
+            }
+
+            notification.textContent = message;
+            notification.style.display = 'block';
+
+            // 3秒后自动隐藏
+            setTimeout(() => {
+                notification.style.display = 'none';
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
