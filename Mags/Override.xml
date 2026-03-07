@@ -45,15 +45,12 @@
                     <SpawnItem identifiers="smground" spawnposition="ThisInventory" spawnifinventoryfull="true" />
                 </StatusEffect>
             </Containable>
-            <SubContainer maxstacksize="1">
+            <SubContainer maxstacksize="32">
                 <Containable identifier="smground">
-                <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="true" disabledeltatime="true">
-                    <Conditional TargetContainer="true" condition="lt 100" />
-                    <Remove />
-                </StatusEffect>
-                <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" stackable="true">
-                    <Conditional condition="lt 100" />
-                </StatusEffect>
+                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="true" disabledeltatime="true">
+                        <Conditional TargetContainer="true" condition="lt 100" />
+                        <Remove /> </StatusEffect>
+                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
                 </Containable>
             </SubContainer>
             <StatusEffect type="OnBroken" target="This" AllowWhenBroken="true" disabledeltatime="true">
