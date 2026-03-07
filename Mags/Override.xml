@@ -51,15 +51,38 @@
                         <Conditional TargetContainer="true" condition="lt 100" />
                         <Remove /> </StatusEffect>
                     <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
+                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="true" disabledeltatime="true">
+                            <Conditional TargetContainer="true" condition="eq 100" />
+                            <Remove /> 
+                            <SpawnItem identifiers="smground" spawnposition="SameInventory" spawnifinventoryfull="true" />
+                    </StatusEffect>
                 </Containable>
             </SubContainer>
             <StatusEffect type="OnBroken" target="This" AllowWhenBroken="true" disabledeltatime="true">
                 <SpawnItem identifier="emptySmgMagVGM" condition="0.0" spawnposition="sameinventory" spawnifinventoryfull="true" />
                 <Remove />
             </StatusEffect>
-            <StatusEffect type="OnSpawn" target="This" disabledeltatime="true">
-                    <SpawnItem identifiers="smground" spawnposition="ThisInventory" spawnifinventoryfull="true" />
+            <StatusEffect type="Always" oneshot="true" target="This" condition="4.8" setvalue="true" delay="0.1">
+                    <Conditional condition="eq 0.1" />
+                    <SpawnItem identifiers="smground" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
             </StatusEffect>
+            <!-- <StatusEffect type="Always" oneshot="true" target="This" disabledeltatime="true">
+                <SpawnItem identifiers="smground" spawnposition="ThisInventory" spawnifinventoryfull="true" />
+            </StatusEffect> -->
+                 <!-- OnSpawn有问题：每过一张图，OnSpawn都会被自动触发一次，这导致每次加载新图都会刷一发子弹，看来这个问题无法被解决，那就只好每次都多塞一发子弹了 -->
+            <!-- <StatusEffect type="OnSpawn" target="This" statuseffecttags="FirstInitialized" duration="0.1" evententitytag="smgammo">
+                <Conditional HasBeenInstantiatedOnce="false" />
+                <TriggerEvent>
+                    <ScriptedEvent identifier="VGM_TrySpawnSmgAmmo">
+                        <StatusEffectAction targettag="smgammo">
+                            <StatusEffect type="OnSpawn" target="This">
+                                <SpawnItem identifier="smground" spawnposition="ThisInventory" SpawnIfCantBeContained="false" SpawnIfInventoryFull="false" />
+                                <Conditional hasstatustag="FirstInitialized" />
+                            </StatusEffect>
+                        </StatusEffectAction>
+                    </ScriptedEvent>
+                </TriggerEvent>
+            </StatusEffect> -->
         </ItemContainer>
     </Item>
     <Item name="" identifier="smground" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,smgammo" impactsoundtag="impact_metal_light" hideinmenus="false" scale="0.5" maxstacksize="8">

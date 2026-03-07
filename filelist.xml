@@ -5,4 +5,5 @@
   <Item file="%ModDir%/Mags/SmgMags.xml" />
   <Item file="%ModDir%/Ammos/45ammos.xml" />
   <Text file="%ModDir%/Localization/Chinese.xml" />
+  <!-- <Item file="%ModDir%/test/smg2.xml" />  -->
 </contentpackage>

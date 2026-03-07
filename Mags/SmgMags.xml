@@ -8,7 +8,7 @@
         <ItemContainer capacity="1" maxstacksize="1" keepopenwhenequipped="true" movableframe="true" ShowConditionInContainedStateIndicator="true"  containedstateindicatorstyle="bullet">
             <Containable items="smground">
                 <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.1">
-                    <SpawnItem identifier="smgmagazine" condition="0.048" spawnposition="sameinventory"  spawnifinventoryfull="true" />
+                    <SpawnItem identifier="smgmagazine" condition="0.001" spawnposition="sameinventory"  spawnifinventoryfull="true" />
                     <!-- when in SpawnItem,  condition="1.0" == 100% Max Condition -->
                     <SpawnItem identifier="smground" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
                     <Remove />
