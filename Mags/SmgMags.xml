@@ -20,17 +20,22 @@
         </Holdable>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-    <Item name="" identifier="SmgMagBlank_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light">
+    <Item name="" identifier="SmgMagBlank_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
         </Deconstruct>
-        <InventoryIcon texture="%ModDir%/Mags/smgMags.png" sourcerect="0,0,64,64" />
+        <InventoryIcon texture="%ModDir%/Mags/smgMags.png" sourcerect="64,0,64,64" />
         <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.54" sourcerect="146,157,21,44" origin="0.5,0.5" />
         <Body width="14" height="40" density="25" />
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
         </Holdable>
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
+                <Conditional condition="eq 99" />
+                <SpawnItem identifiers="45Blank_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
+            </StatusEffect>
+            <!-- 确保当弹匣生成时有准备好的子弹，防止地图内生成的弹匣无法工作，不会在地图中刷新的物品不需要这段xml -->
             <Containable items="45Blank_VGB" >
                 <StatusEffect type="OnRemoved" target="This" condition="-4.8" AllowWhenBroken="false">
                     <Conditional condition="gt 0" />
@@ -44,17 +49,17 @@
             <SubContainer maxstacksize="32">
                 <!-- 最大堆叠设置为32,防止因栈溢出出现弹匣复制问题 -->
                 <Containable identifier="45Blank_VGB">
-                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
-                        <Conditional TargetContainer="true" condition="lt 100" />
-                        <Remove /> </StatusEffect>
-                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
-                    <!-- 子弹压入时,增加耐久,并让子弹消失 -->
                     <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true" >
                         <Conditional TargetContainer="true" condition="eq 100" />
                         <Remove /> 
                         <SpawnItem identifiers="45Blank_VGB" spawnposition="SameInventory" spawnifinventoryfull="false" />
                     </StatusEffect>
                     <!-- 当弹匣已满依旧塞入子弹时,子弹还是会消失,不过会在玩家物品栏中重新生成对应的多余子弹 -->
+                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
+                        <Conditional TargetContainer="true" condition="lt 100" />
+                        <Remove /> </StatusEffect>
+                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
+                    <!-- 子弹压入时,增加耐久,并让子弹消失 -->
                 </Containable>
             </SubContainer>
             <StatusEffect type="OnBroken" target="This" AllowWhenBroken="true" disabledeltatime="true">
@@ -68,18 +73,9 @@
             </StatusEffect>
             <!-- 当弹匣以压入的形式生成时，将condition设置为正确值，并在弹匣内生成一发子弹，确保弹匣能正常工作 -->
             <!-- 别问我为什么不用OnSpawn和SpawnWithID，这俩B会在地图加载时自动触发一次 -->
-            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" AllowWhenBroken="false" conditionalComparison="And">
-                <Conditional condition="eq 100" />
-                <Conditional Hastag="NeedAmmoOverflow" />
-                <SpawnItem identifiers="45Blank_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
-            </StatusEffect>
-            <StatusEffect type="OnSpawn" target="This" tags="NeedAmmoOverflow" interval="0.1" AllowWhenBroken="false" >
-                <Conditional condition="eq 100" />
-            </StatusEffect>
-            <!-- 确保当弹匣生成时有准备好的子弹，防止地图内生成的弹匣无法工作，不会在地图中刷新的物品不需要这段xml -->
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagFMJ_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light">
+    <Item name="" identifier="SmgMagFMJ_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -90,6 +86,10 @@
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
         </Holdable>
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
+                <Conditional condition="eq 99" />
+                <SpawnItem identifiers="45FMJ_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
+            </StatusEffect>
             <Containable items="45FMJ_VGB" >
                 <StatusEffect type="OnRemoved" target="This" condition="-4.8" AllowWhenBroken="false">
                     <Conditional condition="gt 0" />
@@ -101,15 +101,15 @@
             </Containable>
             <SubContainer maxstacksize="32">
                 <Containable identifier="45FMJ_VGB">
-                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
-                        <Conditional TargetContainer="true" condition="lt 100" />
-                        <Remove /> </StatusEffect>
-                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
                     <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true" >
                         <Conditional TargetContainer="true" condition="eq 100" />
                         <Remove />
                         <SpawnItem identifiers="45FMJ_VGB" spawnposition="SameInventory" spawnifinventoryfull="false" />
                     </StatusEffect>
+                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
+                        <Conditional TargetContainer="true" condition="lt 100" />
+                        <Remove /> </StatusEffect>
+                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
                 </Containable>
             </SubContainer>
             <StatusEffect type="OnBroken" target="This" AllowWhenBroken="true" disabledeltatime="true">
@@ -120,17 +120,9 @@
                 <Conditional condition="eq 0.1" />
                 <SpawnItem identifiers="45FMJ_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
             </StatusEffect>
-            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" AllowWhenBroken="false" conditionalComparison="And">
-                <Conditional condition="eq 100" />
-                <Conditional Hastag="NeedAmmoOverflow" />
-                <SpawnItem identifiers="45FMJ_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
-            </StatusEffect>
-            <StatusEffect type="OnSpawn" target="This" tags="NeedAmmoOverflow" interval="0.1" AllowWhenBroken="false" >
-                <Conditional condition="eq 100" />
-            </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagJHP_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light">
+    <Item name="" identifier="SmgMagJHP_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -141,6 +133,10 @@
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
         </Holdable>
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
+                <Conditional condition="eq 99" />
+                <SpawnItem identifiers="45JHP_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
+            </StatusEffect>
             <Containable items="45JHP_VGB" >
                 <StatusEffect type="OnRemoved" target="This" condition="-4.8" AllowWhenBroken="false">
                     <Conditional condition="gt 0" />
@@ -152,15 +148,15 @@
             </Containable>
             <SubContainer maxstacksize="32">
                 <Containable identifier="45JHP_VGB">
-                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
-                        <Conditional TargetContainer="true" condition="lt 100" />
-                        <Remove /> </StatusEffect>
-                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
                     <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true" >
                         <Conditional TargetContainer="true" condition="eq 100" />
                         <Remove />
                         <SpawnItem identifiers="45JHP_VGB" spawnposition="SameInventory" spawnifinventoryfull="false" />
                     </StatusEffect>
+                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
+                        <Conditional TargetContainer="true" condition="lt 100" />
+                        <Remove /> </StatusEffect>
+                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
                 </Containable>
             </SubContainer>
             <StatusEffect type="OnBroken" target="This" AllowWhenBroken="true" disabledeltatime="true">
@@ -171,17 +167,9 @@
                 <Conditional condition="eq 0.1" />
                 <SpawnItem identifiers="45JHP_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
             </StatusEffect>
-            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" AllowWhenBroken="false" conditionalComparison="And">
-                <Conditional condition="eq 100" />
-                <Conditional Hastag="NeedAmmoOverflow" />
-                <SpawnItem identifiers="45JHP_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
-            </StatusEffect>
-            <StatusEffect type="OnSpawn" target="This" tags="NeedAmmoOverflow" interval="0.1" AllowWhenBroken="false" >
-                <Conditional condition="eq 100" />
-            </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagAP_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light">
+    <Item name="" identifier="SmgMagAP_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -192,6 +180,10 @@
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
         </Holdable>
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
+                <Conditional condition="eq 99" />
+                <SpawnItem identifiers="45AP_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
+            </StatusEffect>
             <Containable items="45AP_VGB" >
                 <StatusEffect type="OnRemoved" target="This" condition="-4.8" AllowWhenBroken="false">
                     <Conditional condition="gt 0" />
@@ -203,15 +195,15 @@
             </Containable>
             <SubContainer maxstacksize="32">
                 <Containable identifier="45AP_VGB">
-                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
-                        <Conditional TargetContainer="true" condition="lt 100" />
-                        <Remove /> </StatusEffect>
-                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
                     <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true" >
                         <Conditional TargetContainer="true" condition="eq 100" />
                         <Remove />
                         <SpawnItem identifiers="45AP_VGB" spawnposition="SameInventory" spawnifinventoryfull="false" />
                     </StatusEffect>
+                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
+                        <Conditional TargetContainer="true" condition="lt 100" />
+                        <Remove /> </StatusEffect>
+                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
                 </Containable>
             </SubContainer>
             <StatusEffect type="OnBroken" target="This" AllowWhenBroken="true" disabledeltatime="true">
@@ -222,17 +214,9 @@
                 <Conditional condition="eq 0.1" />
                 <SpawnItem identifiers="45AP_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
             </StatusEffect>
-            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" AllowWhenBroken="false" conditionalComparison="And">
-                <Conditional condition="eq 100" />
-                <Conditional Hastag="NeedAmmoOverflow" />
-                <SpawnItem identifiers="45AP_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
-            </StatusEffect>
-            <StatusEffect type="OnSpawn" target="This" tags="NeedAmmoOverflow" interval="0.1" AllowWhenBroken="false" >
-                <Conditional condition="eq 100" />
-            </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagExp_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light">
+    <Item name="" identifier="SmgMagExp_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -243,6 +227,10 @@
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
         </Holdable>
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
+                <Conditional condition="eq 99" />
+                <SpawnItem identifiers="45Exp_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
+            </StatusEffect>
             <Containable items="45Exp_VGB" >
                 <StatusEffect type="OnRemoved" target="This" condition="-4.8" AllowWhenBroken="false">
                     <Conditional condition="gt 0" />
@@ -254,15 +242,15 @@
             </Containable>
             <SubContainer maxstacksize="32">
                 <Containable identifier="45Exp_VGB">
-                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
-                        <Conditional TargetContainer="true" condition="lt 100" />
-                        <Remove /> </StatusEffect>
-                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
                     <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true" >
                         <Conditional TargetContainer="true" condition="eq 100" />
                         <Remove />
                         <SpawnItem identifiers="45Exp_VGB" spawnposition="SameInventory" spawnifinventoryfull="false" />
                     </StatusEffect>
+                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
+                        <Conditional TargetContainer="true" condition="lt 100" />
+                        <Remove /> </StatusEffect>
+                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
                 </Containable>
             </SubContainer>
             <StatusEffect type="OnBroken" target="This" AllowWhenBroken="true" disabledeltatime="true">
@@ -273,17 +261,9 @@
                 <Conditional condition="eq 0.1" />
                 <SpawnItem identifiers="45Exp_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
             </StatusEffect>
-            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" AllowWhenBroken="false" conditionalComparison="And">
-                <Conditional condition="eq 100" />
-                <Conditional Hastag="NeedAmmoOverflow" />
-                <SpawnItem identifiers="45Exp_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
-            </StatusEffect>
-            <StatusEffect type="OnSpawn" target="This" tags="NeedAmmoOverflow" interval="0.1" AllowWhenBroken="false" >
-                <Conditional condition="eq 100" />
-            </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagChloralhydrate_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light">
+    <Item name="" identifier="SmgMagChloralhydrate_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -294,6 +274,10 @@
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
         </Holdable>
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
+                <Conditional condition="eq 99" />
+                <SpawnItem identifiers="45Chloralhydrate_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
+            </StatusEffect>
             <Containable items="45Chloralhydrate_VGB" >
                 <StatusEffect type="OnRemoved" target="This" condition="-4.8" AllowWhenBroken="false">
                     <Conditional condition="gt 0" />
@@ -305,15 +289,15 @@
             </Containable>
             <SubContainer maxstacksize="32">
                 <Containable identifier="45Chloralhydrate_VGB">
-                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
-                        <Conditional TargetContainer="true" condition="lt 100" />
-                        <Remove /> </StatusEffect>
-                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
                     <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true" >
                         <Conditional TargetContainer="true" condition="eq 100" />
                         <Remove />
                         <SpawnItem identifiers="45Chloralhydrate_VGB" spawnposition="SameInventory" spawnifinventoryfull="false" />
                     </StatusEffect>
+                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
+                        <Conditional TargetContainer="true" condition="lt 100" />
+                        <Remove /> </StatusEffect>
+                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
                 </Containable>
             </SubContainer>
             <StatusEffect type="OnBroken" target="This" AllowWhenBroken="true" disabledeltatime="true">
@@ -324,17 +308,9 @@
                 <Conditional condition="eq 0.1" />
                 <SpawnItem identifiers="45Chloralhydrate_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
             </StatusEffect>
-            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" AllowWhenBroken="false" conditionalComparison="And">
-                <Conditional condition="eq 100" />
-                <Conditional Hastag="NeedAmmoOverflow" />
-                <SpawnItem identifiers="45Chloralhydrate_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
-            </StatusEffect>
-            <StatusEffect type="OnSpawn" target="This" tags="NeedAmmoOverflow" interval="0.1" AllowWhenBroken="false" >
-                <Conditional condition="eq 100" />
-            </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagOpium_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light">
+    <Item name="" identifier="SmgMagOpium_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -345,6 +321,10 @@
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
         </Holdable>
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
+                <Conditional condition="eq 99" />
+                <SpawnItem identifiers="45Opium_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
+            </StatusEffect>
             <Containable items="45Opium_VGB" >
                 <StatusEffect type="OnRemoved" target="This" condition="-4.8" AllowWhenBroken="false">
                     <Conditional condition="gt 0" />
@@ -356,15 +336,15 @@
             </Containable>
             <SubContainer maxstacksize="32">
                 <Containable identifier="45Opium_VGB">
-                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
-                        <Conditional TargetContainer="true" condition="lt 100" />
-                        <Remove /> </StatusEffect>
-                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
                     <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true" >
                         <Conditional TargetContainer="true" condition="eq 100" />
                         <Remove />
                         <SpawnItem identifiers="45Opium_VGB" spawnposition="SameInventory" spawnifinventoryfull="false" />
                     </StatusEffect>
+                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
+                        <Conditional TargetContainer="true" condition="lt 100" />
+                        <Remove /> </StatusEffect>
+                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
                 </Containable>
             </SubContainer>
             <StatusEffect type="OnBroken" target="This" AllowWhenBroken="true" disabledeltatime="true">
@@ -375,17 +355,9 @@
                 <Conditional condition="eq 0.1" />
                 <SpawnItem identifiers="45Opium_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
             </StatusEffect>
-            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" AllowWhenBroken="false" conditionalComparison="And">
-                <Conditional condition="eq 100" />
-                <Conditional Hastag="NeedAmmoOverflow" />
-                <SpawnItem identifiers="45Opium_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
-            </StatusEffect>
-            <StatusEffect type="OnSpawn" target="This" tags="NeedAmmoOverflow" interval="0.1" AllowWhenBroken="false" >
-                <Conditional condition="eq 100" />
-            </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagSufforin_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light">
+    <Item name="" identifier="SmgMagSufforin_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -396,6 +368,10 @@
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
         </Holdable>
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
+                <Conditional condition="eq 99" />
+                <SpawnItem identifiers="45Sufforin_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
+            </StatusEffect>
             <Containable items="45Sufforin_VGB" >
                 <StatusEffect type="OnRemoved" target="This" condition="-4.8" AllowWhenBroken="false">
                     <Conditional condition="gt 0" />
@@ -407,15 +383,15 @@
             </Containable>
             <SubContainer maxstacksize="32">
                 <Containable identifier="45Sufforin_VGB">
-                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
-                        <Conditional TargetContainer="true" condition="lt 100" />
-                        <Remove /> </StatusEffect>
-                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
                     <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true" >
                         <Conditional TargetContainer="true" condition="eq 100" />
                         <Remove />
                         <SpawnItem identifiers="45Sufforin_VGB" spawnposition="SameInventory" spawnifinventoryfull="false" />
                     </StatusEffect>
+                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
+                        <Conditional TargetContainer="true" condition="lt 100" />
+                        <Remove /> </StatusEffect>
+                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
                 </Containable>
             </SubContainer>
             <StatusEffect type="OnBroken" target="This" AllowWhenBroken="true" disabledeltatime="true">
@@ -426,17 +402,9 @@
                 <Conditional condition="eq 0.1" />
                 <SpawnItem identifiers="45Sufforin_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
             </StatusEffect>
-            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" AllowWhenBroken="false" conditionalComparison="And">
-                <Conditional condition="eq 100" />
-                <Conditional Hastag="NeedAmmoOverflow" />
-                <SpawnItem identifiers="45Sufforin_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
-            </StatusEffect>
-            <StatusEffect type="OnSpawn" target="This" tags="NeedAmmoOverflow" interval="0.1" AllowWhenBroken="false" >
-                <Conditional condition="eq 100" />
-            </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagMorbusine_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light">
+    <Item name="" identifier="SmgMagMorbusine_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -447,6 +415,10 @@
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
         </Holdable>
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
+                <Conditional condition="eq 99" />
+                <SpawnItem identifiers="45Morbusine_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
+            </StatusEffect>
             <Containable items="45Morbusine_VGB" >
                 <StatusEffect type="OnRemoved" target="This" condition="-4.8" AllowWhenBroken="false">
                     <Conditional condition="gt 0" />
@@ -458,15 +430,15 @@
             </Containable>
             <SubContainer maxstacksize="32">
                 <Containable identifier="45Morbusine_VGB">
-                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
-                        <Conditional TargetContainer="true" condition="lt 100" />
-                        <Remove /> </StatusEffect>
-                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
                     <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true" >
                         <Conditional TargetContainer="true" condition="eq 100" />
                         <Remove />
                         <SpawnItem identifiers="45Morbusine_VGB" spawnposition="SameInventory" spawnifinventoryfull="false" />
                     </StatusEffect>
+                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
+                        <Conditional TargetContainer="true" condition="lt 100" />
+                        <Remove /> </StatusEffect>
+                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
                 </Containable>
             </SubContainer>
             <StatusEffect type="OnBroken" target="This" AllowWhenBroken="true" disabledeltatime="true">
@@ -477,17 +449,9 @@
                 <Conditional condition="eq 0.1" />
                 <SpawnItem identifiers="45Morbusine_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
             </StatusEffect>
-            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" AllowWhenBroken="false" conditionalComparison="And">
-                <Conditional condition="eq 100" />
-                <Conditional Hastag="NeedAmmoOverflow" />
-                <SpawnItem identifiers="45Morbusine_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
-            </StatusEffect>
-            <StatusEffect type="OnSpawn" target="This" tags="NeedAmmoOverflow" interval="0.1" AllowWhenBroken="false" >
-                <Conditional condition="eq 100" />
-            </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagCyanide_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light">
+    <Item name="" identifier="SmgMagCyanide_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -498,6 +462,10 @@
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
         </Holdable>
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
+                <Conditional condition="eq 99" />
+                <SpawnItem identifiers="45Cyanide_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
+            </StatusEffect>
             <Containable items="45Cyanide_VGB" >
                 <StatusEffect type="OnRemoved" target="This" condition="-4.8" AllowWhenBroken="false">
                     <Conditional condition="gt 0" />
@@ -509,15 +477,15 @@
             </Containable>
             <SubContainer maxstacksize="32">
                 <Containable identifier="45Cyanide_VGB">
-                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
-                        <Conditional TargetContainer="true" condition="lt 100" />
-                        <Remove /> </StatusEffect>
-                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
                     <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true" >
                         <Conditional TargetContainer="true" condition="eq 100" />
                         <Remove />
                         <SpawnItem identifiers="45Cyanide_VGB" spawnposition="SameInventory" spawnifinventoryfull="false" />
                     </StatusEffect>
+                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
+                        <Conditional TargetContainer="true" condition="lt 100" />
+                        <Remove /> </StatusEffect>
+                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
                 </Containable>
             </SubContainer>
             <StatusEffect type="OnBroken" target="This" AllowWhenBroken="true" disabledeltatime="true">
@@ -528,17 +496,9 @@
                 <Conditional condition="eq 0.1" />
                 <SpawnItem identifiers="45Cyanide_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
             </StatusEffect>
-            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" AllowWhenBroken="false" conditionalComparison="And">
-                <Conditional condition="eq 100" />
-                <Conditional Hastag="NeedAmmoOverflow" />
-                <SpawnItem identifiers="45Cyanide_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
-            </StatusEffect>
-            <StatusEffect type="OnSpawn" target="This" tags="NeedAmmoOverflow" interval="0.1" AllowWhenBroken="false" >
-                <Conditional condition="eq 100" />
-            </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagCalyx_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light">
+    <Item name="" identifier="SmgMagCalyx_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -549,6 +509,10 @@
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
         </Holdable>
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
+                <Conditional condition="eq 99" />
+                <SpawnItem identifiers="45Calyx_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
+            </StatusEffect>
             <Containable items="45Calyx_VGB" >
                 <StatusEffect type="OnRemoved" target="This" condition="-4.8" AllowWhenBroken="false">
                     <Conditional condition="gt 0" />
@@ -560,15 +524,15 @@
             </Containable>
             <SubContainer maxstacksize="32">
                 <Containable identifier="45Calyx_VGB">
-                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
-                        <Conditional TargetContainer="true" condition="lt 100" />
-                        <Remove /> </StatusEffect>
-                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
                     <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true" >
                         <Conditional TargetContainer="true" condition="eq 100" />
                         <Remove />
                         <SpawnItem identifiers="45Calyx_VGB" spawnposition="SameInventory" spawnifinventoryfull="false" />
                     </StatusEffect>
+                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
+                        <Conditional TargetContainer="true" condition="lt 100" />
+                        <Remove /> </StatusEffect>
+                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
                 </Containable>
             </SubContainer>
             <StatusEffect type="OnBroken" target="This" AllowWhenBroken="true" disabledeltatime="true">
@@ -579,17 +543,9 @@
                 <Conditional condition="eq 0.1" />
                 <SpawnItem identifiers="45Calyx_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
             </StatusEffect>
-            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" AllowWhenBroken="false" conditionalComparison="And">
-                <Conditional condition="eq 100" />
-                <Conditional Hastag="NeedAmmoOverflow" />
-                <SpawnItem identifiers="45Calyx_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
-            </StatusEffect>
-            <StatusEffect type="OnSpawn" target="This" tags="NeedAmmoOverflow" interval="0.1" AllowWhenBroken="false" >
-                <Conditional condition="eq 100" />
-            </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagPhysicorium_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light">
+    <Item name="" identifier="SmgMagPhysicorium_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -600,6 +556,10 @@
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
         </Holdable>
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
+                <Conditional condition="eq 99" />
+                <SpawnItem identifiers="45Physicorium_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
+            </StatusEffect>
             <Containable items="45Physicorium_VGB" >
                 <StatusEffect type="OnRemoved" target="This" condition="-4.8" AllowWhenBroken="false">
                     <Conditional condition="gt 0" />
@@ -611,15 +571,15 @@
             </Containable>
             <SubContainer maxstacksize="32">
                 <Containable identifier="45Physicorium_VGB">
-                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
-                        <Conditional TargetContainer="true" condition="lt 100" />
-                        <Remove /> </StatusEffect>
-                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
                     <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true" >
                         <Conditional TargetContainer="true" condition="eq 100" />
                         <Remove />
                         <SpawnItem identifiers="45Physicorium_VGB" spawnposition="SameInventory" spawnifinventoryfull="false" />
                     </StatusEffect>
+                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
+                        <Conditional TargetContainer="true" condition="lt 100" />
+                        <Remove /> </StatusEffect>
+                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
                 </Containable>
             </SubContainer>
             <StatusEffect type="OnBroken" target="This" AllowWhenBroken="true" disabledeltatime="true">
@@ -630,17 +590,9 @@
                 <Conditional condition="eq 0.1" />
                 <SpawnItem identifiers="45Physicorium_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
             </StatusEffect>
-            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" AllowWhenBroken="false" conditionalComparison="And">
-                <Conditional condition="eq 100" />
-                <Conditional Hastag="NeedAmmoOverflow" />
-                <SpawnItem identifiers="45Physicorium_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
-            </StatusEffect>
-            <StatusEffect type="OnSpawn" target="This" tags="NeedAmmoOverflow" interval="0.1" AllowWhenBroken="false" >
-                <Conditional condition="eq 100" />
-            </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagDementonite_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light">
+    <Item name="" identifier="SmgMagDementonite_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -651,6 +603,10 @@
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
         </Holdable>
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
+                <Conditional condition="eq 99" />
+                <SpawnItem identifiers="45Dementonite_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
+            </StatusEffect>
             <Containable items="45Dementonite_VGB" >
                 <StatusEffect type="OnRemoved" target="This" condition="-4.8" AllowWhenBroken="false">
                     <Conditional condition="gt 0" />
@@ -662,15 +618,15 @@
             </Containable>
             <SubContainer maxstacksize="32">
                 <Containable identifier="45Dementonite_VGB">
-                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
-                        <Conditional TargetContainer="true" condition="lt 100" />
-                        <Remove /> </StatusEffect>
-                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
                     <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true" >
                         <Conditional TargetContainer="true" condition="eq 100" />
                         <Remove />
                         <SpawnItem identifiers="45Dementonite_VGB" spawnposition="SameInventory" spawnifinventoryfull="false" />
                     </StatusEffect>
+                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
+                        <Conditional TargetContainer="true" condition="lt 100" />
+                        <Remove /> </StatusEffect>
+                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
                 </Containable>
             </SubContainer>
             <StatusEffect type="OnBroken" target="This" AllowWhenBroken="true" disabledeltatime="true">
@@ -681,17 +637,9 @@
                 <Conditional condition="eq 0.1" />
                 <SpawnItem identifiers="45Dementonite_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
             </StatusEffect>
-            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" AllowWhenBroken="false" conditionalComparison="And">
-                <Conditional condition="eq 100" />
-                <Conditional Hastag="NeedAmmoOverflow" />
-                <SpawnItem identifiers="45Dementonite_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
-            </StatusEffect>
-            <StatusEffect type="OnSpawn" target="This" tags="NeedAmmoOverflow" interval="0.1" AllowWhenBroken="false" >
-                <Conditional condition="eq 100" />
-            </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagIncendium_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light">
+    <Item name="" identifier="SmgMagIncendium_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -702,6 +650,10 @@
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
         </Holdable>
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
+                <Conditional condition="eq 99" />
+                <SpawnItem identifiers="45Incendium_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
+            </StatusEffect>
             <Containable items="45Incendium_VGB" >
                 <StatusEffect type="OnRemoved" target="This" condition="-4.8" AllowWhenBroken="false">
                     <Conditional condition="gt 0" />
@@ -713,15 +665,15 @@
             </Containable>
             <SubContainer maxstacksize="32">
                 <Containable identifier="45Incendium_VGB">
-                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
-                        <Conditional TargetContainer="true" condition="lt 100" />
-                        <Remove /> </StatusEffect>
-                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
                     <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true" >
                         <Conditional TargetContainer="true" condition="eq 100" />
                         <Remove />
                         <SpawnItem identifiers="45Incendium_VGB" spawnposition="SameInventory" spawnifinventoryfull="false" />
                     </StatusEffect>
+                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
+                        <Conditional TargetContainer="true" condition="lt 100" />
+                        <Remove /> </StatusEffect>
+                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
                 </Containable>
             </SubContainer>
             <StatusEffect type="OnBroken" target="This" AllowWhenBroken="true" disabledeltatime="true">
@@ -732,17 +684,9 @@
                 <Conditional condition="eq 0.1" />
                 <SpawnItem identifiers="45Incendium_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
             </StatusEffect>
-            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" AllowWhenBroken="false" conditionalComparison="And">
-                <Conditional condition="eq 100" />
-                <Conditional Hastag="NeedAmmoOverflow" />
-                <SpawnItem identifiers="45Incendium_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
-            </StatusEffect>
-            <StatusEffect type="OnSpawn" target="This" tags="NeedAmmoOverflow" interval="0.1" AllowWhenBroken="false" >
-                <Conditional condition="eq 100" />
-            </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagFulgurium_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light">
+    <Item name="" identifier="SmgMagFulgurium_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -753,6 +697,10 @@
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
         </Holdable>
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
+                <Conditional condition="eq 99" />
+                <SpawnItem identifiers="45Fulgurium_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
+            </StatusEffect>
             <Containable items="45Fulgurium_VGB" >
                 <StatusEffect type="OnRemoved" target="This" condition="-4.8" AllowWhenBroken="false">
                     <Conditional condition="gt 0" />
@@ -764,15 +712,15 @@
             </Containable>
             <SubContainer maxstacksize="32">
                 <Containable identifier="45Fulgurium_VGB">
-                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
-                        <Conditional TargetContainer="true" condition="lt 100" />
-                        <Remove /> </StatusEffect>
-                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
                     <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true" >
                         <Conditional TargetContainer="true" condition="eq 100" />
                         <Remove />
                         <SpawnItem identifiers="45Fulgurium_VGB" spawnposition="SameInventory" spawnifinventoryfull="false" />
                     </StatusEffect>
+                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
+                        <Conditional TargetContainer="true" condition="lt 100" />
+                        <Remove /> </StatusEffect>
+                    <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
                 </Containable>
             </SubContainer>
             <StatusEffect type="OnBroken" target="This" AllowWhenBroken="true" disabledeltatime="true">
@@ -782,14 +730,6 @@
             <StatusEffect type="Always" oneshot="true" target="This" condition="4.8" setvalue="true" delay="0.1" AllowWhenBroken="false">
                 <Conditional condition="eq 0.1" />
                 <SpawnItem identifiers="45Fulgurium_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
-            </StatusEffect>
-            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" AllowWhenBroken="false" conditionalComparison="And">
-                <Conditional condition="eq 100" />
-                <Conditional Hastag="NeedAmmoOverflow" />
-                <SpawnItem identifiers="45Fulgurium_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
-            </StatusEffect>
-            <StatusEffect type="OnSpawn" target="This" tags="NeedAmmoOverflow" interval="0.1" AllowWhenBroken="false" >
-                <Conditional condition="eq 100" />
             </StatusEffect>
         </ItemContainer>
     </Item>

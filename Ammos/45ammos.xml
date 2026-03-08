@@ -28,7 +28,7 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="45Blank_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45Blank_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,smgammo" impactsoundtag="impact_metal_light"  scale="0.5">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="64,0,64,64" depth="0.55" origin="0.5,0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
@@ -431,5 +431,62 @@
                 <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1"/>
             </StatusEffect>
         </Projectile>
+    </Item>
+    <Item name="" identifier="45ERASER_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,smgammo" impactsoundtag="impact_metal_light"  scale="0.5">
+        <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.001" />
+        <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.001" />
+        <PreferredContainer secondary="secarmcab" />
+        <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="896,0,64,64" origin="0.5,0.5"/>
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
+        <Body width="40" height="14" density="30"/>
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
+        <Projectile characterusable="false" hitscan="true" removeonhit="true">
+            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6"/>
+            <Attack structuredamage="3" targetforce="5" itemdamage="3" severlimbsprobability="0.01">
+                <Affliction identifier="gunshotwound" strength="12.5"/>
+                <Affliction identifier="bleeding" strength="2.5"/>
+                <Affliction identifier="electricshock" strength="5" probability="0.6"/>
+            </Attack>
+            <StatusEffect type="OnImpact" target="This" Condition="-100.0" setvalue="true" allowwhenbroken="true">
+                <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" range="50000" />
+                <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" range="50000" />
+                <SteamTimeLineEvent title="Nuke detonated" description="A nuclear shell detonated!" icon="steam_explosion"/>
+                <Explosion range="1550.0" structuredamage="600" itemdamage="1000" ballastfloradamage="1000" force="50.0" severlimbsprobability="2" debris="true" decal="explosion" decalsize="1.0" camerashake="1000" camerashakerange="50000" flashrange="10000" flashduration="5.0" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="5.0" penetration="0.6">
+                    <Affliction identifier="explosiondamage" strength="1000" />
+                    <Affliction identifier="burn" strength="1000" />
+                    <Affliction identifier="radiationsickness" strength="100" />
+                    <Affliction identifier="bleeding" strength="40" probability="0.05" dividebylimbcount="false" />
+                    <Affliction identifier="stun" strength="30" />
+                </Explosion>
+                <Explosion range="2000" force="0.0" smoke="false" sparks="false" empstrength="2.5" applyfireeffects="false" ignorecover="true">
+                    <Affliction identifier="emp" strength="50" multiplybymaxvitality="true" />
+                </Explosion>
+                <ParticleEmitter particle="underwaterexplosion" anglemin="0" anglemax="360" particleamount="3" velocitymin="0" velocitymax="0" scalemin="15" scalemax="15" />
+                <SpawnItem identifier="nuclearaftereffectemitter" spawnposition="This" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="This">
+                <sound file="Content/Items/Weapons/ExplosionDebris4.ogg" range="5000" />
+                <sound file="Content/Items/Weapons/ExplosionDebris5.ogg" range="5000" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="This">
+                <SpawnItem identifier="EASE THE PAIN OF EUROPEA,TEAR FLASH FROM BONE" spawnposition="This" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="This">
+                <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+            </StatusEffect>
+        </Projectile>
+    </Item>
+    <Item name="" identifier="EASE THE PAIN OF EUROPEA,TEAR FLASH FROM BONE" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,smgammo" impactsoundtag="impact_metal_light"  scale="0.5">
+        <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="896,0,64,64" origin="0.5,0.5"/>
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
+        <Body width="40" height="14" density="30"/>
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect">
+            <StatusEffect type="OnSpawn" target="This">
+                <SpawnItem identifier="EASE PAIN FROM MADNESS,TEAR FLASH FROM BONE -- Thanks you for using AnTech product XAn01513 'ERASER' four-dimensional strike weapon. Anarchy Technologies, WE ARE THE EVOLUTION" spawnposition="This" />
+            </StatusEffect>
+            <StatusEffect type="OnSpawn" target="This" delay="1.0">
+                <Remove />
+            </StatusEffect>
+        </Pickable>
     </Item>
 </Items>

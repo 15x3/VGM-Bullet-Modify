@@ -30,4 +30,7 @@
     <entitydescription.45Incendium_VGB>使用燃素弹头的.45爆破弹，燃素炸药使得它的彻伤力堪比一些小型榴弹</entitydescription.45Incendium_VGB>
     <entityname.45Fulgurium_VGB>.45雷素电击弹</entityname.45Fulgurium_VGB>
     <entitydescription.45Fulgurium_VGB>奢侈的雷素.45金属披甲弹，会造成电击效果，快速使目标失去战斗能力</entitydescription.45Fulgurium_VGB>
+    <entityname.45ERASER_VGB>安泰科技™ .45"橡皮擦"</entityname.45ERASER_VGB>
+    <entitydescription.45ERASER_VGB>这个子弹不兼容任何弹匣，它只能直接塞入枪膛击发 \n底火上刻着:"极端实用主义" \n握在手里时，有一种不详的预感 \n最好别在室内使用</entitydescription.45ERASER_VGB>
+    
 </infotexts>
