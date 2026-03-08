@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <Items>
-    <Item name="" identifier="VGB45fmj" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45FMJ_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="0,0,64,64" depth="0.55" origin="0.5,0.5" scale="0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
@@ -28,7 +28,7 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="VGB45blank" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45Blank_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="64,0,64,64" depth="0.55" origin="0.5,0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
@@ -54,7 +54,7 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="VGB45jhp" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45JHP_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="128,0,64,64" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
@@ -82,7 +82,7 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="VGB45ap" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45AP_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="192,0,64,64" origin="0.5,0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
@@ -111,7 +111,7 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="VGB45exp" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45Exp_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="256,0,64,64" origin="0.5,0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
@@ -141,7 +141,7 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="VGB45chloralhydrate" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45Chloralhydrate_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="320,0,64,64" origin="0.5,0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
@@ -171,7 +171,7 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="VGB45opium" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45Opium_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="384,0,64,64" origin="0.5,0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
@@ -201,7 +201,7 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="VGB45sufforin" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45Sufforin_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="448,0,64,64" origin="0.5,0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
@@ -231,7 +231,7 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="VGB45morbusine" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45Morbusine_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="512,0,64,64" origin="0.5,0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
@@ -261,7 +261,7 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="VGB45cyanide" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45Cyanide_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="576,0,64,64" origin="0.5,0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
@@ -291,7 +291,7 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="VGB45calyx" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45Calyx_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="640,0,64,64" origin="0.5,0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
@@ -320,7 +320,7 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="VGB45physicorium" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45Physicorium_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="704,0,64,64" origin="0.5,0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
@@ -348,7 +348,7 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="VGB45dementonite" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45Dementonite_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="768,0,64,64" origin="0.5,0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
@@ -376,7 +376,7 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="VGB45incendium" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45Incendium_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="832,0,64,64" origin="0.5,0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
@@ -404,7 +404,7 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="VGB45fulgurium" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45Fulgurium_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="896,0,64,64" origin="0.5,0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
