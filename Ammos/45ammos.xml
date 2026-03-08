@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <Items>
     <Item name="" identifier="VGB45fmj" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
-        <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="0,0,64,64" depth="0.55" origin="0.5,0.5"/>
+        <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="0,0,64,64" depth="0.55" origin="0.5,0.5" scale="0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
         <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>

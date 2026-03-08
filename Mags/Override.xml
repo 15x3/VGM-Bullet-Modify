@@ -47,28 +47,44 @@
                     <Conditional condition="gt 0.001" />
                     <SpawnItem identifiers="smground" spawnposition="ThisInventory" spawnifinventoryfull="false" />
                 </StatusEffect>
+                <!-- 子弹开火(OnRemoved)时,减少耐久,生成对应的子弹 -->
             </Containable>
             <SubContainer maxstacksize="32">
+                    <!-- 最大堆叠设置为32,防止因栈溢出出现弹匣复制问题 -->
                 <Containable identifier="smground">
                     <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
                         <Conditional TargetContainer="true" condition="lt 100" />
                         <Remove /> </StatusEffect>
                     <StatusEffect type="OnInserted" target="This" condition="4.8" AllowWhenBroken="true" disabledeltatime="true" />
-                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
+                    <!-- 子弹压入时,增加耐久,并让子弹消失 -->
+                    <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true" >
                             <Conditional TargetContainer="true" condition="eq 100" />
                             <Remove /> 
                             <SpawnItem identifiers="smground" spawnposition="SameInventory" spawnifinventoryfull="false" />
                     </StatusEffect>
+                    <!-- 当弹匣已满依旧塞入子弹时,子弹还是会消失,不过会在玩家物品栏中重新生成对应的多余子弹 -->
                 </Containable>
             </SubContainer>
             <StatusEffect type="OnBroken" target="This" AllowWhenBroken="true" disabledeltatime="true">
                 <SpawnItem identifier="emptySmgMagVGM" condition="0.0" spawnposition="sameinventory" spawnifinventoryfull="true" />
                 <Remove />
             </StatusEffect>
+            <!-- 耐久为0时生成空弹匣 -->
             <StatusEffect type="Always" oneshot="true" target="This" condition="4.8" setvalue="true" delay="0.1" AllowWhenBroken="false">
                     <Conditional condition="eq 0.1" />
                     <SpawnItem identifiers="smground" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
             </StatusEffect>
+            <!-- 当弹匣以压入的形式生成时，将condition设置为正确值，并在弹匣内生成一发子弹，确保弹匣能正常工作 -->
+            <!-- 别问我为什么不用OnSpawn和SpawnWithID，这俩B会在地图加载时自动触发一次 -->
+            <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" AllowWhenBroken="false" conditionalComparison="And">
+                <Conditional condition="eq 100" />
+                <Conditional Hastag="NeedAmmoOverflow" />
+                <SpawnItem identifiers="smground" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
+            </StatusEffect>
+            <StatusEffect type="OnSpawn" target="This" tags="NeedAmmoOverflow" interval="0.1" AllowWhenBroken="false" >
+                <Conditional condition="eq 100" />
+            </StatusEffect>
+            <!-- 确保当弹匣生成时有准备好的子弹，防止地图内生成的弹匣无法工作，不会在地图中刷新的物品不需要这段xml -->
         </ItemContainer>
     </Item>
     <Item name="" identifier="smground" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,smgammo" impactsoundtag="impact_metal_light" hideinmenus="false" scale="0.5" maxstacksize="8">
