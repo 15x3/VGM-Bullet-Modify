@@ -129,10 +129,11 @@
                 <Affliction identifier="gunshotwound" strength="5"/>
                 <Affliction identifier="bleeding" strength="2.5" probability="0.1"/>
                 <Affliction identifier="stun" strength="0.3" probability="0.5"/>
-                <Affliction identifier="organdamage" strength="0.5" probability="0.3"/>
+                <Affliction identifier="explosiondamage" strength="1" />
             </Attack>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0"/>
+                <Explosion range="10" force="0.1" smoke="false" sparks="true" flames="false" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <Conditional entitytype="eq Structure"/>
@@ -284,7 +285,7 @@
             <Attack structuredamage="3" targetforce="5" itemdamage="3" severlimbsprobability="0.01" penetration="0.3">
                 <Affliction identifier="gunshotwound" strength="5"/>
                 <Affliction identifier="bleeding" strength="2.5" probability="0.3"/>
-                <Affliction identifier="cyanidepoisoning" amount="0.5"/>
+                <Affliction identifier="cyanidepoisoning" amount="0.66"/>
                 <Affliction identifier="organdamage" strength="6" probability="0.6"/>
             </Attack>
             <StatusEffect type="OnImpact" target="UseTarget">
@@ -403,6 +404,7 @@
             </Attack>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0"/>
+                <Explosion range="10" force="0.1" smoke="true" sparks="false" flames="true"/>
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <Conditional entitytype="eq Structure"/>
@@ -483,7 +485,7 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="EASE THE PAIN OF EUROPEA,TEAR FLASH FROM BONE" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,smgammo" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="unknown" identifier="EASE THE PAIN OF EUROPEA,TEAR FLASH FROM BONE" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,smgammo" impactsoundtag="impact_metal_light"  scale="0.5">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="896,0,64,64" origin="0.5,0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
