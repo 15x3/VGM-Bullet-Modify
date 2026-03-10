@@ -30,4 +30,36 @@
   <entitydescription.45Incendium_VGB>45Incendium_VGB.description</entitydescription.45Incendium_VGB>
   <entityname.45Fulgurium_VGB>45Fulgurium_VGB.name</entityname.45Fulgurium_VGB>
   <entitydescription.45Fulgurium_VGB>45Fulgurium_VGB.description</entitydescription.45Fulgurium_VGB>
+  <entityname.EmptySmgMag_VGM>EmptySmgMag_VGM.name</entityname.EmptySmgMag_VGM>
+  <entitydescription.EmptySmgMag_VGM>EmptySmgMag_VGM.description</entitydescription.EmptySmgMag_VGM>
+  <entityname.SmgMagBlank_VGM>SmgMagBlank_VGM.name</entityname.SmgMagBlank_VGM>
+  <entitydescription.SmgMagBlank_VGB>SmgMagBlank_VGB.description</entitydescription.SmgMagBlank_VGB>
+  <entityname.SmgMagFMJ_VGM>SmgMagFMJ_VGM.name</entityname.SmgMagFMJ_VGM>
+  <entitydescription.SmgMagFMJ_VGM>SmgMagFMJ_VGM.description</entitydescription.SmgMagFMJ_VGM>
+  <entityname.SmgMagJHP_VGM>SmgMagJHP_VGM.name</entityname.SmgMagJHP_VGM>
+  <entitydescription.SmgMagJHP_VGM>SmgMagJHP_VGM.description</entitydescription.SmgMagJHP_VGM>
+  <entityname.SmgMagAP_VGM>SmgMagAP_VGM.name</entityname.SmgMagAP_VGM>
+  <entitydescription.SmgMagAP_VGM>SmgMagAP_VGM.description</entitydescription.SmgMagAP_VGM>
+  <entityname.SmgMagExp_VGM>SmgMagExp_VGM.name</entityname.SmgMagExp_VGM>
+  <entitydescription.SmgMagExp_VGM>SmgMagExp_VGM.description</entitydescription.SmgMagExp_VGM>
+  <entityname.SmgMagChloralhydrate_VGM>SmgMagChloralhydrate_VGM.name</entityname.SmgMagChloralhydrate_VGM>
+  <entitydescription.SmgMagChloralhydrate_VGM>SmgMagChloralhydrate_VGM.description</entitydescription.SmgMagChloralhydrate_VGM>
+  <entityname.SmgMagOpium_VGM>SmgMagOpium_VGM.name</entityname.SmgMagOpium_VGM>
+  <entitydescription.SmgMagOpium_VGM>SmgMagOpium_VGM.description</entitydescription.SmgMagOpium_VGM>
+  <entityname.SmgMagSufforin_VGM>SmgMagSufforin_VGM.name</entityname.SmgMagSufforin_VGM>
+  <entitydescription.SmgMagSufforin_VGM>SmgMagSufforin_VGM.description</entitydescription.SmgMagSufforin_VGM>
+  <entityname.SmgMagMorbusine_VGM>SmgMagMorbusine_VGM.name</entityname.SmgMagMorbusine_VGM>
+  <entitydescription.SmgMagMorbusine_VGM>SmgMagMorbusine_VGM.description</entitydescription.SmgMagMorbusine_VGM>
+  <entityname.SmgMagCyanide_VGM>SmgMagCyanide_VGM.name</entityname.SmgMagCyanide_VGM>
+  <entitydescription.SmgMagCyanide_VGM>SmgMagCyanide_VGM.description</entitydescription.SmgMagCyanide_VGM>
+  <entityname.SmgMagCalyx_VGM>SmgMagCalyx_VGM.name</entityname.SmgMagCalyx_VGM>
+  <entitydescription.SmgMagCalyx_VGM>SmgMagCalyx_VGM.description</entitydescription.SmgMagCalyx_VGM>
+  <entityname.SmgMagPhysicorium_VGM>SmgMagPhysicorium_VGM.name</entityname.SmgMagPhysicorium_VGM>
+  <entitydescription.SmgMagPhysicorium_VGM>SmgMagPhysicorium_VGM.description</entitydescription.SmgMagPhysicorium_VGM>
+  <entityname.SmgMagDementonite_VGM>SmgMagDementonite_VGM.name</entityname.SmgMagDementonite_VGM>
+  <entitydescription.SmgMagDementonite_VGM>SmgMagDementonite_VGM.description</entitydescription.SmgMagDementonite_VGM>
+  <entityname.SmgMagIncendium_VGM>SmgMagIncendium_VGM.name</entityname.SmgMagIncendium_VGM>
+  <entitydescription.SmgMagIncendium_VGM>SmgMagIncendium_VGM.description</entitydescription.SmgMagIncendium_VGM>
+  <entityname.SmgMagFulgurium_VGM>SmgMagFulgurium_VGM.name</entityname.SmgMagFulgurium_VGM>
+  <entitydescription.SmgMagFulgurium_VGM>SmgMagFulgurium_VGM.description</entitydescription.SmgMagFulgurium_VGM>
 </infotexts>

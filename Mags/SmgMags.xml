@@ -7,20 +7,126 @@
         <Body width="14" height="40" density="25" />
         <ItemContainer capacity="1" maxstacksize="1" keepopenwhenequipped="true" movableframe="true" ShowConditionInContainedStateIndicator="true"  containedstateindicatorstyle="bullet">
             <Containable items="smground">
-                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.1">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
                     <SpawnItem identifier="smgmagazine" condition="0.001" spawnposition="sameinventory"  spawnifinventoryfull="true" />
                     <!-- when in SpawnItem,  condition="1.0" == 100% Max Condition -->
                     <SpawnItem identifier="smground" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
                     <Remove />
                 </StatusEffect>
-                </Containable>
+            </Containable>
+            <Containable items="45Blank_VGB">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="SmgMagBlank_VGM" condition="0.001" spawnposition="sameinventory"  spawnifinventoryfull="true" />
+                    <!-- when in SpawnItem,  condition="1.0" == 100% Max Condition -->
+                    <SpawnItem identifier="45Blank_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+            <Containable items="45FMJ_VGB">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="SmgMagFMJ_VGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <SpawnItem identifier="45FMJ_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+            <Containable items="45JHP_VGB">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="SmgMagJHP_VGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <SpawnItem identifier="45JHP_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+            <Containable items="45AP_VGB">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="SmgMagAP_VGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <SpawnItem identifier="45AP_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+            <Containable items="45Exp_VGB">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="SmgMagExp_VGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <SpawnItem identifier="45Exp_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+            <Containable items="45Chloralhydrate_VGB">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="SmgMagChloralhydrate_VGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <SpawnItem identifier="45Chloralhydrate_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+            <Containable items="45Opium_VGB">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="SmgMagOpium_VGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <SpawnItem identifier="45Opium_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+            <Containable items="45Sufforin_VGB">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="SmgMagSufforin_VGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <SpawnItem identifier="45Sufforin_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+            <Containable items="45Morbusine_VGB">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="SmgMagMorbusine_VGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <SpawnItem identifier="45Morbusine_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+            <Containable items="45Cyanide_VGB">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="SmgMagCyanide_VGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <SpawnItem identifier="45Cyanide_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+            <Containable items="45Calyx_VGB">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="SmgMagCalyx_VGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <SpawnItem identifier="45Calyx_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+            <Containable items="45Physicorium_VGB">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="SmgMagPhysicorium_VGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <SpawnItem identifier="45Physicorium_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+            <Containable items="45Dementonite_VGB">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="SmgMagDementonite_VGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <SpawnItem identifier="45Dementonite_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+            <Containable items="45Incendium_VGB">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="SmgMagIncendium_VGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <SpawnItem identifier="45Incendium_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+            <Containable items="45Fulgurium_VGB">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="SmgMagFulgurium_VGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <SpawnItem identifier="45Fulgurium_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
         </ItemContainer>
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnSpawn" target="This" condition="0.0" setvalue="true" disabledeltatime="true" AllowWhenBroken="true"/>
         </Holdable>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-    <Item name="" identifier="SmgMagBlank_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
+    <Item name="" identifier="SmgMagBlank_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -75,7 +181,7 @@
             <!-- 别问我为什么不用OnSpawn和SpawnWithID，这俩B会在地图加载时自动触发一次 -->
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagFMJ_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
+    <Item name="" identifier="SmgMagFMJ_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -122,7 +228,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagJHP_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
+    <Item name="" identifier="SmgMagJHP_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -169,7 +275,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagAP_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
+    <Item name="" identifier="SmgMagAP_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -216,7 +322,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagExp_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
+    <Item name="" identifier="SmgMagExp_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -263,7 +369,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagChloralhydrate_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
+    <Item name="" identifier="SmgMagChloralhydrate_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -310,7 +416,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagOpium_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
+    <Item name="" identifier="SmgMagOpium_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -357,7 +463,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagSufforin_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
+    <Item name="" identifier="SmgMagSufforin_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -404,7 +510,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagMorbusine_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
+    <Item name="" identifier="SmgMagMorbusine_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -451,7 +557,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagCyanide_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
+    <Item name="" identifier="SmgMagCyanide_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -498,7 +604,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagCalyx_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
+    <Item name="" identifier="SmgMagCalyx_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -545,7 +651,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagPhysicorium_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
+    <Item name="" identifier="SmgMagPhysicorium_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -592,7 +698,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagDementonite_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
+    <Item name="" identifier="SmgMagDementonite_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -639,7 +745,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagIncendium_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
+    <Item name="" identifier="SmgMagIncendium_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -686,7 +792,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagFulgurium_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
+    <Item name="" identifier="SmgMagFulgurium_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />

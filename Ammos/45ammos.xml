@@ -1,15 +1,15 @@
 <?xml version="1.0" ?>
 <Items>
-    <Item name="" identifier="45FMJ_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45FMJ_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="0,0,64,64" depth="0.55" origin="0.5,0.5" scale="0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
         <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
         <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="30">
             <RequiredSkill identifier="weapons" level="50"/>
-            <RequiredItem identifier="munition_propulsion" count="1"/>
-            <RequiredItem identifier="munition_core" count="1"/>
-            <RequiredItem identifier="munition_jacket" count="1"/>
+            <RequiredItem tag="munition_propulsion" count="1"/>
+            <RequiredItem tag="munition_core" count="1"/>
+            <RequiredItem tag="munition_jacket" count="1"/>
         </Fabricate>
         <Projectile characterusable="false" hitscan="true" removeonhit="true">
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6"/>
@@ -28,15 +28,15 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="45Blank_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,smgammo" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45Blank_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,smgammo" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="64,0,64,64" depth="0.55" origin="0.5,0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
         <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
-        <Fabricate suitablefabricators="VGMfabricator" requiredtime="20" amount="30">
-            <RequiredSkill identifier="weapons" level="50"/>
-            <RequiredItem identifier="munition_propulsion" count="1"/>
-            <RequiredItem identifier="munition_core" count="1"/>
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="30">
+            <RequiredSkill identifier="weapons" level="30"/>
+            <RequiredItem tag="munition_propulsion" count="1"/>
+            <RequiredItem tag="munition_core" count="1"/>
         </Fabricate>
         <Projectile characterusable="false" hitscan="true" removeonhit="true">
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6"/>
@@ -54,16 +54,16 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="45JHP_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45JHP_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="128,0,64,64" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
         <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
-        <Fabricate suitablefabricators="VGMfabricator" requiredtime="20" amount="30">
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="30">
             <RequiredSkill identifier="weapons" level="40"/>
             <RequiredItem identifier="lead" count="1"/>
-            <RequiredItem identifier="munition_propulsion" count="1"/>
-            <RequiredItem identifier="munition_core" count="1"/>
+            <RequiredItem tag="munition_propulsion" count="1"/>
+            <RequiredItem tag="munition_core" count="1"/>
         </Fabricate>
         <Projectile characterusable="false" hitscan="true" removeonhit="true">
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6"/>
@@ -82,16 +82,16 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="45AP_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45AP_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="192,0,64,64" origin="0.5,0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
         <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
-        <Fabricate suitablefabricators="VGMfabricator" requiredtime="20" amount="60">
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="60">
             <RequiredSkill identifier="weapons" level="50"/>
-            <RequiredItem identifier="munition_propulsion" count="2"/>
-            <RequiredItem identifier="munition_core" count="2"/>
-            <RequiredItem identifier="munition_jacket" count="1"/>
+            <RequiredItem tag="munition_propulsion" count="2"/>
+            <RequiredItem tag="munition_core" count="2"/>
+            <RequiredItem tag="munition_jacket" count="1"/>
             <RequiredItem identifier="titaniumaluminiumalloy" count="1"/>
         </Fabricate>
         <Projectile characterusable="false" hitscan="true" removeonhit="true">
@@ -111,16 +111,16 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="45Exp_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45Exp_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="256,0,64,64" origin="0.5,0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
         <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
-        <Fabricate suitablefabricators="VGMfabricator" requiredtime="20" amount="60">
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="60">
             <RequiredSkill identifier="weapons" level="50"/>
-            <RequiredItem identifier="munition_propulsion" count="2"/>
-            <RequiredItem identifier="munition_core" count="2"/>
-            <RequiredItem identifier="munition_jacket" count="1"/>
+            <RequiredItem tag="munition_propulsion" count="2"/>
+            <RequiredItem tag="munition_core" count="2"/>
+            <RequiredItem tag="munition_jacket" count="1"/>
             <RequiredItem identifier="c4block" count="1"/>
         </Fabricate>
         <Projectile characterusable="false" hitscan="true" removeonhit="true">
@@ -141,15 +141,16 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="45Chloralhydrate_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45Chloralhydrate_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="320,0,64,64" origin="0.5,0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
         <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
-        <Fabricate suitablefabricators="VGMfabricator" requiredtime="20" amount="30">
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="30">
             <RequiredSkill identifier="weapons" level="50"/>
-            <RequiredItem identifier="munition_propulsion" count="1"/>
-            <RequiredItem identifier="munition_core" count="1"/>
+            <RequiredSkill identifier="medical" level="30"/>
+            <RequiredItem tag="munition_propulsion" count="1"/>
+            <RequiredItem tag="munition_core" count="1"/>
             <RequiredItem identifier="steel" count="1"/>
             <RequiredItem identifier="chloralhydrate" count="1"/>
         </Fabricate>
@@ -158,7 +159,7 @@
             <Attack structuredamage="3" targetforce="5" itemdamage="3" severlimbsprobability="0.01">
                 <Affliction identifier="gunshotwound" strength="5"/>
                 <Affliction identifier="bleeding" strength="2.5" probability="0.3"/>
-                <Affliction identifier="incrementalstun" strength="5"/>
+                <Affliction identifier="incrementalstun" amount="10.0"/>
                 <Affliction identifier="organdamage" strength="0.5" probability="0.3"/>
             </Attack>
             <StatusEffect type="OnImpact" target="UseTarget">
@@ -171,24 +172,26 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="45Opium_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45Opium_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="384,0,64,64" origin="0.5,0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
         <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
-        <Fabricate suitablefabricators="VGMfabricator" requiredtime="20" amount="30">
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="30">
             <RequiredSkill identifier="weapons" level="50"/>
-            <RequiredItem identifier="munition_propulsion" count="1"/>
-            <RequiredItem identifier="munition_core" count="1"/>
+            <RequiredSkill identifier="medical" level="30"/>
+            <RequiredItem tag="munition_propulsion" count="1"/>
+            <RequiredItem tag="munition_core" count="1"/>
             <RequiredItem identifier="steel" count="1"/>
-            <RequiredItem identifier="opiate" count="1"/>
+            <RequiredItem identifier="opium" count="1"/>
         </Fabricate>
         <Projectile characterusable="false" hitscan="true" removeonhit="true">
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6"/>
             <Attack structuredamage="3" targetforce="5" itemdamage="3" severlimbsprobability="0.01">
                 <Affliction identifier="gunshotwound" strength="5"/>
                 <Affliction identifier="bleeding" strength="2.5" probability="0.3"/>
-                <Affliction identifier="opiateoverdose" strength="1.5"/>
+                <Affliction identifier="opiateoverdose" amount="1.75"/>
+                <Affliction identifier="opiateaddiction" amount="0.5"/>
                 <Affliction identifier="organdamage" strength="0.5" probability="0.3"/>
             </Attack>
             <StatusEffect type="OnImpact" target="UseTarget">
@@ -201,15 +204,16 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="45Sufforin_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45Sufforin_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="448,0,64,64" origin="0.5,0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
         <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
-        <Fabricate suitablefabricators="VGMfabricator" requiredtime="20" amount="30">
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="30">
             <RequiredSkill identifier="weapons" level="50"/>
-            <RequiredItem identifier="munition_propulsion" count="1"/>
-            <RequiredItem identifier="munition_core" count="1"/>
+            <RequiredSkill identifier="medical" level="30"/>
+            <RequiredItem tag="munition_propulsion" count="1"/>
+            <RequiredItem tag="munition_core" count="1"/>
             <RequiredItem identifier="steel" count="1"/>
             <RequiredItem identifier="sufforin" count="1"/>
         </Fabricate>
@@ -218,7 +222,7 @@
             <Attack structuredamage="3" targetforce="5" itemdamage="3" severlimbsprobability="0.01">
                 <Affliction identifier="gunshotwound" strength="5"/>
                 <Affliction identifier="bleeding" strength="2.5" probability="0.3"/>
-                <Affliction identifier="sufforinpoisoning" strength="0.5"/>
+                <Affliction identifier="sufforinpoisoning" amount="0.66"/>
                 <Affliction identifier="organdamage" strength="0.5" probability="0.3"/>
             </Attack>
             <StatusEffect type="OnImpact" target="UseTarget">
@@ -231,15 +235,16 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="45Morbusine_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45Morbusine_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="512,0,64,64" origin="0.5,0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
         <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
-        <Fabricate suitablefabricators="VGMfabricator" requiredtime="20" amount="30">
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="30">
             <RequiredSkill identifier="weapons" level="50"/>
-            <RequiredItem identifier="munition_propulsion" count="1"/>
-            <RequiredItem identifier="munition_core" count="1"/>
+            <RequiredSkill identifier="medical" level="30"/>
+            <RequiredItem tag="munition_propulsion" count="1"/>
+            <RequiredItem tag="munition_core" count="1"/>
             <RequiredItem identifier="steel" count="1"/>
             <RequiredItem identifier="sufforin" count="1"/>
         </Fabricate>
@@ -248,7 +253,7 @@
             <Attack structuredamage="3" targetforce="5" itemdamage="3" severlimbsprobability="0.01">
                 <Affliction identifier="gunshotwound" strength="5"/>
                 <Affliction identifier="bleeding" strength="2.5" probability="0.3"/>
-                <Affliction identifier="morbusinepoisoning" strength="0.5"/>
+                <Affliction identifier="morbusinepoisoning" amount="0.66"/>
                 <Affliction identifier="organdamage" strength="0.5" probability="0.3"/>
             </Attack>
             <StatusEffect type="OnImpact" target="UseTarget">
@@ -261,15 +266,16 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="45Cyanide_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45Cyanide_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="576,0,64,64" origin="0.5,0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
         <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
-        <Fabricate suitablefabricators="VGMfabricator" requiredtime="20" amount="30">
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="30">
             <RequiredSkill identifier="weapons" level="50"/>
-            <RequiredItem identifier="munition_propulsion" count="1"/>
-            <RequiredItem identifier="munition_core" count="1"/>
+            <RequiredSkill identifier="medical" level="30"/>
+            <RequiredItem tag="munition_propulsion" count="1"/>
+            <RequiredItem tag="munition_core" count="1"/>
             <RequiredItem identifier="steel" count="1"/>
             <RequiredItem identifier="cyanide" count="1"/>
         </Fabricate>
@@ -278,7 +284,7 @@
             <Attack structuredamage="3" targetforce="5" itemdamage="3" severlimbsprobability="0.01" penetration="0.3">
                 <Affliction identifier="gunshotwound" strength="5"/>
                 <Affliction identifier="bleeding" strength="2.5" probability="0.3"/>
-                <Affliction identifier="cyanidepoisoning" strength="0.5"/>
+                <Affliction identifier="cyanidepoisoning" amount="0.5"/>
                 <Affliction identifier="organdamage" strength="6" probability="0.6"/>
             </Attack>
             <StatusEffect type="OnImpact" target="UseTarget">
@@ -291,15 +297,16 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="45Calyx_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45Calyx_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="640,0,64,64" origin="0.5,0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
         <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
-        <Fabricate suitablefabricators="VGMfabricator" requiredtime="20" amount="30">
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="30">
             <RequiredSkill identifier="weapons" level="50"/>
-            <RequiredItem identifier="munition_propulsion" count="1"/>
-            <RequiredItem identifier="munition_core" count="1"/>
+            <RequiredSkill identifier="medical" level="50"/>
+            <RequiredItem tag="munition_propulsion" count="1"/>
+            <RequiredItem tag="munition_core" count="1"/>
             <RequiredItem identifier="steel" count="1"/>
             <RequiredItem identifier="huskeggs" count="1"/>
         </Fabricate>
@@ -308,7 +315,7 @@
             <Attack structuredamage="3" targetforce="5" itemdamage="3" severlimbsprobability="0.01">
                 <Affliction identifier="gunshotwound" strength="5"/>
                 <Affliction identifier="bleeding" strength="2.5" probability="0.3"/>
-                <Affliction identifier="huskinfection" strength="0.5" probability="0.03"/>
+                <Affliction identifier="huskinfection" amount="1" probability="0.1"/>
             </Attack>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0"/>
@@ -320,15 +327,15 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="45Physicorium_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45Physicorium_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="704,0,64,64" origin="0.5,0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
         <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
-        <Fabricate suitablefabricators="VGMfabricator" requiredtime="20" amount="60">
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="60">
             <RequiredSkill identifier="weapons" level="50"/>
-            <RequiredItem identifier="munition_propulsion" count="2"/>
-            <RequiredItem identifier="munition_core" count="2"/>
+            <RequiredItem tag="munition_propulsion" count="2"/>
+            <RequiredItem tag="munition_core" count="2"/>
             <RequiredItem identifier="physicorium" count="1"/>
         </Fabricate>
         <Projectile characterusable="false" hitscan="true" removeonhit="true">
@@ -348,15 +355,15 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="45Dementonite_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45Dementonite_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="768,0,64,64" origin="0.5,0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
         <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
-        <Fabricate suitablefabricators="VGMfabricator" requiredtime="20" amount="60">
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="60">
             <RequiredSkill identifier="weapons" level="50"/>
-            <RequiredItem identifier="munition_propulsion" count="2"/>
-            <RequiredItem identifier="munition_core" count="2"/>
+            <RequiredItem tag="munition_propulsion" count="2"/>
+            <RequiredItem tag="munition_core" count="2"/>
             <RequiredItem identifier="dementonite" count="1"/>
         </Fabricate>
         <Projectile characterusable="false" hitscan="true" removeonhit="true">
@@ -376,15 +383,15 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="45Incendium_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45Incendium_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="832,0,64,64" origin="0.5,0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
         <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
-        <Fabricate suitablefabricators="VGMfabricator" requiredtime="20" amount="60">
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="60">
             <RequiredSkill identifier="weapons" level="50"/>
-            <RequiredItem identifier="munition_propulsion" count="2"/>
-            <RequiredItem identifier="munition_core" count="2"/>
+            <RequiredItem tag="munition_propulsion" count="2"/>
+            <RequiredItem tag="munition_core" count="2"/>
             <RequiredItem identifier="incendium" count="1"/>
         </Fabricate>
         <Projectile characterusable="false" hitscan="true" removeonhit="true">
@@ -404,15 +411,15 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="45Fulgurium_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5">
+    <Item name="" identifier="45Fulgurium_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="896,0,64,64" origin="0.5,0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
         <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
-        <Fabricate suitablefabricators="VGMfabricator" requiredtime="20" amount="60">
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="60">
             <RequiredSkill identifier="weapons" level="50"/>
-            <RequiredItem identifier="munition_propulsion" count="2"/>
-            <RequiredItem identifier="munition_core" count="2"/>
+            <RequiredItem tag="munition_propulsion" count="2"/>
+            <RequiredItem tag="munition_core" count="2"/>
             <RequiredItem identifier="carbon" count="1"/>
         </Fabricate>
         <Projectile characterusable="false" hitscan="true" removeonhit="true">

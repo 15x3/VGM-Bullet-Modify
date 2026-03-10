@@ -21,7 +21,7 @@
     <entityname.45Cyanide_VGB>.45氰化物毒弹</entityname.45Cyanide_VGB>
     <entitydescription.45Cyanide_VGB>装有氰化物毒素的.45针头弹，可在受击者体内缓慢累积氰化物毒素，每发子弹毒素含量极少，需要持续射击一定时间才会发挥其作用</entitydescription.45Cyanide_VGB>
     <entityname.45Calyx_VGB>.45画皮脏弹</entityname.45Calyx_VGB>
-    <entitydescription.45Calyx_VGB>载有少量画皮寄生虫卵的.45针头弹，大多数画皮卵会在子弹撞击的瞬间死亡，所以使用这种子弹传播画皮的效率不如直接注射。\n至于那些"幸运"挺过了冲击的虫卵...就有了个深入宿主体内的机会</entitydescription.45Calyx_VGB>
+    <entitydescription.45Calyx_VGB>载有少量画皮寄生虫卵的.45针头弹，理论上，这种子弹能实现仅用单人剂量传播多个宿主，但考虑到大多数画皮卵会在子弹撞击的瞬间死亡，所以实际传播效率相当看运气。</entitydescription.45Calyx_VGB>
     <entityname.45Physicorium_VGB>.45钢素穿甲弹</entityname.45Physicorium_VGB>
     <entitydescription.45Physicorium_VGB>使用刚素弹头的.45异星尖头穿甲弹，在不影响子弹初速的前提下换用更为坚硬的弹头材料，穿甲效果出众</entitydescription.45Physicorium_VGB>
     <entityname.45Dementonite_VGB>.45摄魂重力弹</entityname.45Dementonite_VGB>
@@ -32,5 +32,37 @@
     <entitydescription.45Fulgurium_VGB>奢侈的雷素.45金属披甲弹，会造成电击效果，快速使目标失去战斗能力</entitydescription.45Fulgurium_VGB>
     <entityname.45ERASER_VGB>安泰科技™ .45"橡皮擦"</entityname.45ERASER_VGB>
     <entitydescription.45ERASER_VGB>这个子弹不兼容任何弹匣，它只能直接塞入枪膛击发 \n底火上刻着:"极端实用主义" \n握在手里时，有一种不详的预感 \n最好别在室内使用</entitydescription.45ERASER_VGB>
-    
+    <entityname.EmptySmgMag_VGM>空冲锋枪弹匣</entityname.EmptySmgMag_VGM>
+    <entitydescription.EmptySmgMag_VGM>一个空的冲锋枪弹匣，需要压入对应子弹才能使用</entitydescription.EmptySmgMag_VGM>
+    <entityname.SmgMagBlank_VGM>.45空包弹弹匣</entityname.SmgMagBlank_VGM>
+    <entitydescription.SmgMagBlank_VGM>装有.45空包弹的冲锋枪弹匣，用于演习和训练</entitydescription.SmgMagBlank_VGM>
+    <entityname.SmgMagFMJ_VGM>.45披甲弹弹匣</entityname.SmgMagFMJ_VGM>
+    <entitydescription.SmgMagFMJ_VGM>装有.45披甲弹的冲锋枪弹匣，最基础的弹药配置</entitydescription.SmgMagFMJ_VGM>
+    <entityname.SmgMagJHP_VGM>.45空尖弹弹匣</entityname.SmgMagJHP_VGM>
+    <entitydescription.SmgMagJHP_VGM>装有.45空尖弹的冲锋枪弹匣，对付无装甲目标效果出色</entitydescription.SmgMagJHP_VGM>
+    <entityname.SmgMagAP_VGM>.45穿甲弹弹匣</entityname.SmgMagAP_VGM>
+    <entitydescription.SmgMagAP_VGM>装有.45穿甲弹的冲锋枪弹匣，可穿透轻型装甲</entitydescription.SmgMagAP_VGM>
+    <entityname.SmgMagExp_VGM>.45爆炸弹弹匣</entityname.SmgMagExp_VGM>
+    <entitydescription.SmgMagExp_VGM>装有.45爆炸弹的冲锋枪弹匣，可用于破拆结构</entitydescription.SmgMagExp_VGM>
+    <entityname.SmgMagChloralhydrate_VGM>.45化学镇静弹弹匣</entityname.SmgMagChloralhydrate_VGM>
+    <entitydescription.SmgMagChloralhydrate_VGM>装有.45化学镇静弹的冲锋枪弹匣，用于镇暴和非致命制服</entitydescription.SmgMagChloralhydrate_VGM>
+    <entityname.SmgMagOpium_VGM>.45药用鸦片弹弹匣</entityname.SmgMagOpium_VGM>
+    <entitydescription.SmgMagOpium_VGM>装有.45药用鸦片弹的冲锋枪弹匣，可阻止目标使用吗啡自救</entitydescription.SmgMagOpium_VGM>
+    <entityname.SmgMagSufforin_VGM>.45升天毒弹弹匣</entityname.SmgMagSufforin_VGM>
+    <entitydescription.SmgMagSufforin_VGM>装有.45升天毒弹的冲锋枪弹匣，可在目标体内累积升天毒素</entitydescription.SmgMagSufforin_VGM>
+    <entityname.SmgMagMorbusine_VGM>.45窒息毒弹弹匣</entityname.SmgMagMorbusine_VGM>
+    <entitydescription.SmgMagMorbusine_VGM>装有.45窒息毒弹的冲锋枪弹匣，可在目标体内累积窒息毒素</entitydescription.SmgMagMorbusine_VGM>
+    <entityname.SmgMagCyanide_VGM>.45氰化物毒弹弹匣</entityname.SmgMagCyanide_VGM>
+    <entitydescription.SmgMagCyanide_VGM>装有.45氰化物毒弹的冲锋枪弹匣，可在目标体内累积氰化物毒素</entitydescription.SmgMagCyanide_VGM>
+    <entityname.SmgMagCalyx_VGM>.45画皮脏弹弹匣</entityname.SmgMagCalyx_VGM>
+    <entitydescription.SmgMagCalyx_VGM>载有少量画皮寄生虫卵的.45冲锋枪弹匣，效率不如直接注射，但仍有机会传播感染</entitydescription.SmgMagCalyx_VGM>
+    <entityname.SmgMagPhysicorium_VGM>.45钢素穿甲弹弹匣</entityname.SmgMagPhysicorium_VGM>
+    <entitydescription.SmgMagPhysicorium_VGM>装有.45钢素穿甲弹的冲锋枪弹匣，穿甲效果出众</entitydescription.SmgMagPhysicorium_VGM>
+    <entityname.SmgMagDementonite_VGM>.45摄魂重力弹弹匣</entityname.SmgMagDementonite_VGM>
+    <entitydescription.SmgMagDementonite_VGM>装有.45摄魂重力弹的冲锋枪弹匣，可造成深层组织伤并诱发精神病</entitydescription.SmgMagDementonite_VGM>
+    <entityname.SmgMagIncendium_VGM>.45燃素增压爆破弹弹匣</entityname.SmgMagIncendium_VGM>
+    <entitydescription.SmgMagIncendium_VGM>装有.45燃素增压爆破弹的冲锋枪弹匣，彻伤力堪比小型榴弹</entitydescription.SmgMagIncendium_VGM>
+    <entityname.SmgMagFulgurium_VGM>.45雷素电击弹弹匣</entityname.SmgMagFulgurium_VGM>
+    <entitydescription.SmgMagFulgurium_VGM>装有.45雷素电击弹的冲锋枪弹匣，可快速使目标失去战斗能力</entitydescription.SmgMagFulgurium_VGM>
+
 </infotexts>
