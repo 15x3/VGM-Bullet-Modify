@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <Items>
-    <Item name="" identifier="45FMJ_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
+    <!-- <Item name="" identifier="45FMJ_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="0,0,64,64" depth="0.55" origin="0.5,0.5" scale="0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="14" density="30"/>
@@ -27,7 +27,7 @@
                 <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1"/>
             </StatusEffect>
         </Projectile>
-    </Item>
+    </Item> -->
     <Item name="" identifier="45Blank_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,smgammo" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
         <InventoryIcon texture="%ModDir%/Ammos/45ammos.png" sourcerect="64,0,64,64" depth="0.55" origin="0.5,0.5"/>
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>

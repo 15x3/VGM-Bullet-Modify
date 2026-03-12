@@ -5,6 +5,10 @@
         <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="960,960,64,64" />
         <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.54" sourcerect="146,157,21,44" origin="0.5,0.5" />
         <Body width="14" height="40" density="25" />
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="30">
+            <RequiredSkill identifier="weapons" level="30" />
+            <RequiredItem identifier="steel" />
+        </Fabricate>
         <ItemContainer capacity="1" maxstacksize="1" keepopenwhenequipped="true" movableframe="true" ShowConditionInContainedStateIndicator="true"  containedstateindicatorstyle="bullet">
             <Containable items="smground">
                 <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
@@ -22,13 +26,13 @@
                     <Remove />
                 </StatusEffect>
             </Containable>
-            <Containable items="45FMJ_VGB">
+            <!-- <Containable items="45FMJ_VGB">
                 <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
                     <SpawnItem identifier="SmgMagFMJ_VGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
                     <SpawnItem identifier="45FMJ_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
                     <Remove />
                 </StatusEffect>
-            </Containable>
+            </Containable> -->
             <Containable items="45JHP_VGB">
                 <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
                     <SpawnItem identifier="SmgMagJHP_VGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
@@ -120,6 +124,13 @@
                     <Remove />
                 </StatusEffect>
             </Containable>
+            <Containable items="smgrounddepletedfuel">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="smgmagazinedepletedfuel" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <SpawnItem identifier="smgrounddepletedfuel" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
         </ItemContainer>
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnSpawn" target="This" condition="0.0" setvalue="true" disabledeltatime="true" AllowWhenBroken="true"/>
@@ -181,7 +192,7 @@
             <!-- 别问我为什么不用OnSpawn和SpawnWithID，这俩B会在地图加载时自动触发一次 -->
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagFMJ_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <!-- <Item name="" identifier="SmgMagFMJ_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -227,7 +238,7 @@
                 <SpawnItem identifiers="45FMJ_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
             </StatusEffect>
         </ItemContainer>
-    </Item>
+    </Item> -->
     <Item name="" identifier="SmgMagJHP_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">

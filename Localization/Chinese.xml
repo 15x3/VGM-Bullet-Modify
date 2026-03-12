@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <infotexts language="Simplified Chinese" nowhitespace="true" translatedname="中文(简体)">
-    <entityname.45FMJ_VGB>.45披甲弹</entityname.45FMJ_VGB>
-    <entitydescription.45FMJ_VGB>.45口径金属披甲弹，最基本的冲锋枪弹药，可压入冲锋枪弹匣中</entitydescription.45FMJ_VGB>
+    <entityname.smground>.45披甲弹</entityname.smground>
+    <entitydescription.smground>.45口径金属披甲弹，最基本的冲锋枪弹药，可压入冲锋枪弹匣中</entitydescription.smground>
     <entityname.45Blank_VGB>.45空包弹</entityname.45Blank_VGB>
     <entitydescription.45Blank_VGB>只有弹壳、易碎弹头、以及少量底火的子弹，基本造不成什么伤害，通常只用于演习和武器测试，或者是给精力无处发泄的安全官们打着玩</entitydescription.45Blank_VGB>
     <entityname.45JHP_VGB>.45空尖弹</entityname.45JHP_VGB>
@@ -36,8 +36,8 @@
     <entitydescription.EmptySmgMag_VGM>一个空的冲锋枪弹匣，需要压入对应子弹才能使用</entitydescription.EmptySmgMag_VGM>
     <entityname.SmgMagBlank_VGM>.45空包弹弹匣</entityname.SmgMagBlank_VGM>
     <entitydescription.SmgMagBlank_VGM>装有.45空包弹的冲锋枪弹匣，用于演习和训练</entitydescription.SmgMagBlank_VGM>
-    <entityname.SmgMagFMJ_VGM>.45披甲弹弹匣</entityname.SmgMagFMJ_VGM>
-    <entitydescription.SmgMagFMJ_VGM>装有.45披甲弹的冲锋枪弹匣，最基础的弹药配置</entitydescription.SmgMagFMJ_VGM>
+    <entityname.smgmagazine>.45披甲弹弹匣</entityname.smgmagazine>
+    <entitydescription.smgmagazine>装有.45披甲弹的冲锋枪弹匣，最基础的弹药配置</entitydescription.smgmagazine>
     <entityname.SmgMagJHP_VGM>.45空尖弹弹匣</entityname.SmgMagJHP_VGM>
     <entitydescription.SmgMagJHP_VGM>装有.45空尖弹的冲锋枪弹匣，对付无装甲目标效果出色</entitydescription.SmgMagJHP_VGM>
     <entityname.SmgMagAP_VGM>.45穿甲弹弹匣</entityname.SmgMagAP_VGM>
