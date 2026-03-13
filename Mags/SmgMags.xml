@@ -850,4 +850,133 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
+    <Item name="" identifier="EmptySmgLongMag_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light">
+        <InventoryIcon texture="%ModDir:Vanilla Gun Modify%/GunMods/mags_alphadev.png" depth="0.54" sourcerect="63,2,22,73" origin="0.5,0.5" />
+        <Sprite texture="%ModDir:Vanilla Gun Modify%/GunMods/mags_alphadev.png" depth="0.54" sourcerect="63,2,22,73" origin="0.5,0.5" />
+        <Body width="14" height="40" density="25" />
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="30">
+            <RequiredSkill identifier="weapons" level="30" />
+            <RequiredItem identifier="steel" />
+        </Fabricate>
+        <ItemContainer capacity="1" maxstacksize="1" keepopenwhenequipped="true" movableframe="true" ShowConditionInContainedStateIndicator="true"  containedstateindicatorstyle="bullet">
+            <Containable items="smground">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="smgmagazine" condition="0.001" spawnposition="sameinventory"  spawnifinventoryfull="true" />
+                    <!-- when in SpawnItem,  condition="1.0" == 100% Max Condition -->
+                    <SpawnItem identifier="smground" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+            <Containable items="45Blank_VGB">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="SmgLongMagBlank_VGM" condition="0.001" spawnposition="sameinventory"  spawnifinventoryfull="true" />
+                    <!-- when in SpawnItem,  condition="1.0" == 100% Max Condition -->
+                    <SpawnItem identifier="45Blank_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+            <Containable items="45JHP_VGB">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="SmgLongMagJHP_VGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <SpawnItem identifier="45JHP_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+            <Containable items="45AP_VGB">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="SmgLongMagAP_VGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <SpawnItem identifier="45AP_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+            <Containable items="45Exp_VGB">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="SmgLongMagExp_VGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <SpawnItem identifier="45Exp_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+            <Containable items="45Chloralhydrate_VGB">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="SmgLongMagChloralhydrate_VGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <SpawnItem identifier="45Chloralhydrate_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+            <Containable items="45Opium_VGB">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="SmgLongMagOpium_VGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <SpawnItem identifier="45Opium_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+            <Containable items="45Sufforin_VGB">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="SmgLongMagSufforin_VGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <SpawnItem identifier="45Sufforin_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+            <Containable items="45Morbusine_VGB">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="SmgLongMagMorbusine_VGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <SpawnItem identifier="45Morbusine_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+            <Containable items="45Cyanide_VGB">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="SmgLongMagCyanide_VGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <SpawnItem identifier="45Cyanide_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+            <Containable items="45Calyx_VGB">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="SmgLongMagCalyx_VGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <SpawnItem identifier="45Calyx_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+            <Containable items="45Physicorium_VGB">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="SmgLongMagPhysicorium_VGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <SpawnItem identifier="45Physicorium_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+            <Containable items="45Dementonite_VGB">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="SmgLongMagDementonite_VGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <SpawnItem identifier="45Dementonite_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+            <Containable items="45Incendium_VGB">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="SmgLongMagIncendium_VGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <SpawnItem identifier="45Incendium_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+            <Containable items="45Fulgurium_VGB">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="SmgLongMagFulgurium_VGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <SpawnItem identifier="45Fulgurium_VGB" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+            <Containable items="smgrounddepletedfuel">
+                <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
+                    <SpawnItem identifier="smgDFuelLongMagVGM" condition="0.001" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <SpawnItem identifier="smgrounddepletedfuel" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+            </Containable>
+        </ItemContainer>
+        <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
+            <StatusEffect type="OnSpawn" target="This" condition="0.0" setvalue="true" disabledeltatime="true" AllowWhenBroken="true"/>
+        </Holdable>
+        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
 </Items>

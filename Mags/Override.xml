@@ -205,5 +205,62 @@
                 </StatusEffect>
             </ItemContainer>
         </Item>
+        <Item name="" identifier="smgLongmagVGM" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0">
+            <PreferredContainer primary="smg,smgunique,machinepistol" amount="1" spawnprobability="1" />
+            <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true" notpvp="true" />
+            <PreferredContainer secondary="secarmcab" />
+            <Price baseprice="150" displaynonempty="true" minleveldifficulty="15">
+                <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+                <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" sold="false" />
+                <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+                <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="4" />
+                <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+                <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="4" />
+            </Price>
+            <Deconstruct time="10">
+                <Item identifier="steel" />
+            </Deconstruct>
+            <InventoryIcon texture="%ModDir%/Mags/smgLongMags.png" sourcerect="0,0,64,64" />
+            <Sprite texture="%ModDir:Vanilla Gun Modify%/GunMods/mags_alphadev.png" depth="0.54" sourcerect="63,2,22,73" origin="0.5,0.5" />
+            <Body width="22" height="70" density="25" />
+            <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+            <Upgrade gameversion="0.10.0.0" scale="0.5" />
+            <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+                <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
+                    <Conditional condition="eq 99" />
+                    <SpawnItem identifiers="smground" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
+                </StatusEffect>
+                <Containable items="smground" >
+                    <StatusEffect type="OnRemoved" target="This" condition="-2.4" AllowWhenBroken="false">
+                        <Conditional condition="gt 0" />
+                    </StatusEffect>
+                    <StatusEffect type="OnRemoved" target="This" AllowWhenBroken="false">
+                        <Conditional condition="gt 0.001" />
+                        <SpawnItem identifiers="smground" spawnposition="ThisInventory" spawnifinventoryfull="false" />
+                    </StatusEffect>
+                </Containable>
+                <SubContainer maxstacksize="32">
+                    <Containable identifier="smground">
+                        <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true" >
+                            <Conditional TargetContainer="true" condition="eq 100" />
+                            <Remove /> 
+                            <SpawnItem identifiers="smground" spawnposition="SameInventory" spawnifinventoryfull="false" />
+                        </StatusEffect>
+                        <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
+                            <Conditional TargetContainer="true" condition="lt 100" />
+                            <Remove /> </StatusEffect>
+                        <StatusEffect type="OnInserted" target="This" condition="2.4" AllowWhenBroken="true" disabledeltatime="true" />
+                    </Containable>
+                </SubContainer>
+                <StatusEffect type="OnBroken" target="This" AllowWhenBroken="true" disabledeltatime="true">
+                    <SpawnItem identifier="EmptySmgLongMag_VGM" condition="0.0" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+                <StatusEffect type="Always" oneshot="true" target="This" condition="2.4" setvalue="true" delay="0.1" AllowWhenBroken="false">
+                    <Conditional condition="eq 0.1" />
+                    <SpawnItem identifiers="smground" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
+                </StatusEffect>
+            </ItemContainer>
+        </Item>
     </Override>
 </Items>
