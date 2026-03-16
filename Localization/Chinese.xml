@@ -128,5 +128,24 @@
     <entitydescription.SmgDrumMagFulgurium_VGM>装有.45雷素电击弹的冲锋枪弹鼓，可快速使目标失去战斗能力</entitydescription.SmgDrumMagFulgurium_VGM>
     <entityname.smgDFuelDrumMagVGM>.45贫油弹弹鼓</entityname.smgDFuelDrumMagVGM>
     <entitydescription.smgDFuelDrumMagVGM>装有.45贫油弹的冲锋枪弹鼓，造成辐射伤害并有效穿透装甲</entitydescription.smgDFuelDrumMagVGM>
-
+    <entityname.NoRopeSpear_VGB>无绳鱼叉</entityname.NoRopeSpear_VGB>
+    <entitydescription.NoRopeSpear_VGB>不带绳索的标准鱼叉，能射到远处，就是一旦射失不好回收了</entitydescription.NoRopeSpear_VGB>
+    <entityname.ToolSpear_VGB>撞针鱼叉</entityname.ToolSpear_VGB>
+    <entitydescription.ToolSpear_VGB>带有固定器和撞针的鱼叉，会在撞击时激活装载的物品\n它能装的东西非常多：从照明棒到爆炸物均可，但不是所有物品都能被鱼叉触发</entitydescription.ToolSpear_VGB>
+    <entityname.12gBirdShot_VGB>12G鸟弹</entityname.12gBirdShot_VGB>
+    <entitydescription.12gBirdShot_VGB>内含16枚小弹丸。单发伤害较低但覆盖面广，适合对付小型快速生物和无装甲目标</entitydescription.12gBirdShot_VGB>
+    <entityname.12gDestructionShot_VGB>12G破坏弹</entityname.12gDestructionShot_VGB>
+    <entitydescription.12gDestructionShot_VGB>破拆能力特化的12G鸟弹，使用大量碎片取代弹丸，能两枪打穿常规安全门，不适合用于对抗生物</entitydescription.12gDestructionShot_VGB>
+    <entityname.12gArrowShot_VGB>12G箭弹</entityname.12gArrowShot_VGB>
+    <entitydescription.12gArrowShot_VGB>内含5枚重型箭形弹丸。以减少弹丸数为代价增强其破甲能力</entitydescription.12gArrowShot_VGB>
+    <entityname.12gRaptorKiller_VGB>"屠龙"12G箭弹</entityname.12gRaptorKiller_VGB>
+    <entitydescription.12gRaptorKiller_VGB>针对迅猛龙设计的12G箭弹，弹体涂有迅猛龙精华</entitydescription.12gRaptorKiller_VGB>
+    <entityname.12gCalyxKiller_VGB>"杀虫剂"12G箭弹</entityname.12gCalyxKiller_VGB>
+    <entitydescription.12gCalyxKiller_VGB>针对画皮生物设计的箭弹，弹体涂有皮虫净。\n必要时也能拿来缓解画皮寄生问题——当然，用法是对着自己来一枪。</entitydescription.12gCalyxKiller_VGB>
+    <entityname.12gFlashShot_VGB>12G霰射闪光弹</entityname.12gFlashShot_VGB>
+    <entitydescription.12gFlashShot_VGB>12号口径闪光弹，造成致盲和感官过载效果的非致命弹药。适合镇暴和临时逃避</entitydescription.12gFlashShot_VGB>
+    <entityname.12gFlareShot_VGB>12G霰射照明弹</entityname.12gFlareShot_VGB>
+    <entitydescription.12gFlareShot_VGB>通过霰弹枪发射的照明弹，发出黄色闪光</entitydescription.12gFlareShot_VGB>
+    <entityname.12gDragonShot_VGB>12G龙息弹</entityname.12gDragonShot_VGB>
+    <entitydescription.12gDragonShot_VGB>装填易燃物质的12G霰弹，能够高效地引发火灾或是点燃他人</entitydescription.12gDragonShot_VGB>
 </infotexts>

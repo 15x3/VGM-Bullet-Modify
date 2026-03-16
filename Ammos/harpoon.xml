@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<Items>
+    <Item name="" identifier="NoRopeSpear_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="6" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="mediumitem,harpoonammo,handheldammo" Scale="0.5" impactsoundtag="impact_metal_light">
+        <PreferredContainer primary="harpoongun" amount="6" spawnprobability="1" />
+        <PreferredContainer primary="armcab" minamount="3" maxamount="6" spawnprobability="1" notcampaign="true" notpvp="true" />
+        <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" minamount="1" maxamount="3" spawnprobability="0.2" />
+        <PreferredContainer primary="secarmcab" />
+        <PreferredContainer secondary="respawncontainer_kingofthehull" amount="32" spawnprobability="1" notcampaign="true"/>
+        <Price baseprice="7">
+            <Price storeidentifier="merchantoutpost" minavailable="12" multiplier="1.5" />
+            <Price storeidentifier="merchantcity" minavailable="12" multiplier="1.25" />
+            <Price storeidentifier="merchantresearch" minavailable="6" multiplier="1.25" />
+            <Price storeidentifier="merchantmilitary" minavailable="24" multiplier="0.9" />
+            <Price storeidentifier="merchantmine" minavailable="6" multiplier="1.25" />
+            <Price storeidentifier="merchantarmory" minavailable="24" multiplier="0.9" />
+        </Price>
+        <Deconstruct time="5" />
+        <Fabricate suitablefabricators="fabricator,fabricatorVGM" requiredtime="10" amount="6">
+            <RequiredSkill identifier="weapons" level="30" />
+            <RequiredItem identifier="steel" />
+        </Fabricate>
+        <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,968,55,55" origin="0.5,0.5" />
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="85,368,168,11" depth="0.55" origin="0.5,0.5" />
+        <Body width="160" height="10" density="30" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+        <Projectile characterusable="false" launchimpulse="5" sticktocharacters="true" sticktoitems="true" sticktostructures="true" sticktodeflective="true" sticktodoors="false" sticktolighttargets="true">
+            <Attack structuredamage="15" itemdamage="15" targetforce="20" severlimbsprobability="0.1">
+                <Affliction identifier="lacerations" strength="35" />
+                <Affliction identifier="bleeding" strength="35" />
+                <Affliction identifier="stun" strength="0.5" />
+            </Attack>
+        </Projectile>
+        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+    <Item name="" identifier="ToolSpear_VGB" category="Weapon" maxstacksize="6" maxstacksizecharacterinventory="1" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="mediumitem,harpoonammo,handheldammo" Scale="0.7" impactsoundtag="impact_metal_light">
+        <PreferredContainer primary="armcab"/>
+        <PreferredContainer primary="secarmcab" />
+        <PreferredContainer secondary="respawncontainer_kingofthehull" amount="32" spawnprobability="1" notcampaign="true"/>
+        <Price baseprice="7">
+            <Price storeidentifier="merchantoutpost" minavailable="12" multiplier="1.5" />
+            <Price storeidentifier="merchantcity" minavailable="12" multiplier="1.25" />
+            <Price storeidentifier="merchantresearch" minavailable="6" multiplier="1.25" />
+            <Price storeidentifier="merchantmilitary" minavailable="24" multiplier="0.9" />
+            <Price storeidentifier="merchantmine" minavailable="6" multiplier="1.25" />
+            <Price storeidentifier="merchantarmory" minavailable="24" multiplier="0.9" />
+        </Price>
+        <Deconstruct time="5" />
+        <Fabricate suitablefabricators="fabricator,fabricatorVGM" requiredtime="10" amount="6">
+            <RequiredSkill identifier="weapons" level="30" />
+            <RequiredItem identifier="steel" />
+        </Fabricate>
+        <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,968,55,55" origin="0.5,0.5" />
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="85,368,168,11" depth="0.55" origin="0.5,0.5" />
+        <Body width="160" height="10" density="40" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+        <Projectile characterusable="false" launchimpulse="5" sticktocharacters="true" sticktoitems="true" sticktostructures="true" sticktodeflective="true" sticktodoors="true" sticktolighttargets="true">
+            <Attack structuredamage="15" itemdamage="15" targetforce="20" severlimbsprobability="0.1">
+                <Affliction identifier="lacerations" strength="35" />
+                <Affliction identifier="bleeding" strength="35" />
+                <Affliction identifier="stun" strength="0.5" />
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="Contained" delay="0.5">
+                <Use />
+            </StatusEffect>
+        </Projectile>
+        <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56" >
+            <Containable items="smallitem" rotation="45"/>
+        </ItemContainer>
+        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+</Items>

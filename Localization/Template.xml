@@ -62,4 +62,24 @@
   <entitydescription.SmgMagIncendium_VGM>SmgMagIncendium_VGM.description</entitydescription.SmgMagIncendium_VGM>
   <entityname.SmgMagFulgurium_VGM>SmgMagFulgurium_VGM.name</entityname.SmgMagFulgurium_VGM>
   <entitydescription.SmgMagFulgurium_VGM>SmgMagFulgurium_VGM.description</entitydescription.SmgMagFulgurium_VGM>
+  <entityname.NoRopeSpear_VGB>NoRopeSpear_VGB.name</entityname.NoRopeSpear_VGB>
+  <entitydescription.NoRopeSpear_VGB>NoRopeSpear_VGB.description</entitydescription.NoRopeSpear_VGB>
+  <entityname.ToolSpear_VGB>ToolSpear_VGB.name</entityname.ToolSpear_VGB>
+  <entitydescription.ToolSpear_VGB>ToolSpear_VGB.description</entitydescription.ToolSpear_VGB>
+  <entityname.12gBirdShot_VGB>12gBirdShot_VGB.name</entityname.12gBirdShot_VGB>
+  <entitydescription.12gBirdShot_VGB>12gBirdShot_VGB.description</entitydescription.12gBirdShot_VGB>
+  <entityname.12gDestructionShot_VGB>12gDestructionShot_VGB.name</entityname.12gDestructionShot_VGB>
+  <entitydescription.12gDestructionShot_VGB>12gDestructionShot_VGB.description</entitydescription.12gDestructionShot_VGB>
+  <entityname.12gArrowShot_VGB>12gArrowShot_VGB.name</entityname.12gArrowShot_VGB>
+  <entitydescription.12gArrowShot_VGB>12gArrowShot_VGB.description</entitydescription.12gArrowShot_VGB>
+  <entityname.12gRaptorKiller_VGB>12gRaptorKiller_VGB.name</entityname.12gRaptorKiller_VGB>
+  <entitydescription.12gRaptorKiller_VGB>12gRaptorKiller_VGB.description</entitydescription.12gRaptorKiller_VGB>
+  <entityname.12gCalyxKiller_VGB>12gCalyxKiller_VGB.name</entityname.12gCalyxKiller_VGB>
+  <entitydescription.12gCalyxKiller_VGB>12gCalyxKiller_VGB.description</entitydescription.12gCalyxKiller_VGB>
+  <entityname.12gFlashShot_VGB>12gFlashShot_VGB.name</entityname.12gFlashShot_VGB>
+  <entitydescription.12gFlashShot_VGB>12gFlashShot_VGB.description</entitydescription.12gFlashShot_VGB>
+  <entityname.12gFlareShot_VGB>12gFlareShot_VGB.name</entityname.12gFlareShot_VGB>
+  <entitydescription.12gFlareShot_VGB>12gFlareShot_VGB.description</entitydescription.12gFlareShot_VGB>
+  <entityname.12gDragonShot_VGB>12gDragonShot_VGB.name</entityname.12gDragonShot_VGB>
+  <entitydescription.12gDragonShot_VGB>12gDragonShot_VGB.description</entitydescription.12gDragonShot_VGB>
 </infotexts>

@@ -4,6 +4,8 @@
   <Item file="%ModDir%/Mags/Override.xml" />
   <Item file="%ModDir%/Mags/SmgMags.xml" />
   <Item file="%ModDir%/Ammos/45ammos.xml" />
+  <Item file="%ModDir%/Ammos/harpoon.xml" />
+  <Item file="%ModDir%/Ammos/12Gammos.xml" />
   <Text file="%ModDir%/Localization/Chinese.xml" />
   <!-- <Item file="%ModDir%/test/smg2.xml" />  -->
 </contentpackage>

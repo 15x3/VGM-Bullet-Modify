@@ -1,0 +1,352 @@
+<?xml version="1.0" ?>
+<Items>
+    <Item name="" identifier="12gBirdShot_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammo,handheldammo" Scale="0.5" impactsoundtag="impact_metal_light">
+        <PreferredContainer primary="shotgun" amount="6" spawnprobability="1" />
+        <PreferredContainer primary="autoshotgun" amount="8" spawnprobability="1" />
+        <PreferredContainer primary="shotgununique" amount="2" spawnprobability="1" />
+        <PreferredContainer primary="armcab" minamount="6" maxamount="12" spawnprobability="1" notcampaign="true" notpvp="true" />
+        <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="6" spawnprobability="0.5" />
+        <PreferredContainer secondary="wreckarmcab,wrecksecarmcab,abandonedarmcab,piratearmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="3" spawnprobability="0.2" />
+        <PreferredContainer secondary="secarmcab" />
+        <PreferredContainer secondary="respawncontainer_kingofthehull" amount="32" spawnprobability="1" notcampaign="true"/>
+        <Price baseprice="30" minleveldifficulty="30">
+            <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="4" sold="true" />
+            <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="12" />
+            <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="12" />
+        </Price>
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="12">
+            <RequiredSkill identifier="weapons" level="30" />
+            <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+            <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
+            <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
+            <RequiredItem identifier="plastic" />
+        </Fabricate>
+        <InventoryIcon texture="%ModDir%/Ammos/12Gammos.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Ammos/12Gammos.png" sourcerect="0,64,23,11" depth="0.55" origin="0.5,0.5" />
+        <Body width="23" height="10" density="15" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+        <Projectile characterusable="false" hitscan="true" hitscancount="16" removeonhit="true" spread="25">
+            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
+            <Attack structuredamage="1" targetforce="4" itemdamage="2" severlimbsprobability="0.5">
+                <Affliction identifier="gunshotwound" strength="5" />
+                <Affliction identifier="bleeding" strength="3" />
+                <Affliction identifier="stun" strength="0.2" />
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Conditional entitytype="eq Structure" />
+                <Conditional hastag="eq door" />
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+            </StatusEffect>
+        </Projectile>
+        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+    <Item name="" identifier="12gDestructionShot_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammo,handheldammo" Scale="0.5" impactsoundtag="impact_metal_light">
+        <PreferredContainer primary="armcab" />
+        <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="6" spawnprobability="0.5" />
+        <PreferredContainer secondary="wreckarmcab,wrecksecarmcab,abandonedarmcab,piratearmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="3" spawnprobability="0.2" />
+        <PreferredContainer secondary="secarmcab" />
+        <PreferredContainer secondary="respawncontainer_kingofthehull" amount="32" spawnprobability="1" notcampaign="true"/>
+        <Price baseprice="30" minleveldifficulty="30">
+            <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="4" sold="true" />
+            <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="12" />
+            <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="12" />
+        </Price>
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="12">
+            <RequiredSkill identifier="weapons" level="30" />
+            <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+            <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
+            <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
+            <RequiredItem identifier="plastic" />
+        </Fabricate>
+        <InventoryIcon texture="%ModDir%/Ammos/12Gammos.png" sourcerect="64,0,64,64" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Ammos/12Gammos.png" sourcerect="0,75,23,11" depth="0.55" origin="0.5,0.5" />
+        <Body width="23" height="10" density="15" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+        <Projectile characterusable="false" hitscan="true" hitscancount="20" removeonhit="true" spread="45">
+            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
+            <Attack structuredamage="2" targetforce="4" itemdamage="3" severlimbsprobability="0.5">
+                <Affliction identifier="gunshotwound" strength="0.5" />
+                <Affliction identifier="stun" strength="0.1" />
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Conditional entitytype="eq Structure" />
+                <Conditional hastag="eq door" />
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+            </StatusEffect>
+        </Projectile>
+        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+    <Item name="" identifier="12gArrowShot_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammo,handheldammo" Scale="0.5" impactsoundtag="impact_metal_light">
+        <PreferredContainer primary="armcab" />
+        <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="6" spawnprobability="0.5" />
+        <PreferredContainer secondary="wreckarmcab,wrecksecarmcab,abandonedarmcab,piratearmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="3" spawnprobability="0.2" />
+        <PreferredContainer secondary="secarmcab" />
+        <PreferredContainer secondary="respawncontainer_kingofthehull" amount="32" spawnprobability="1" notcampaign="true"/>
+        <Price baseprice="30" minleveldifficulty="30">
+            <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="4" sold="true" />
+            <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="12" />
+            <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="12" />
+        </Price>
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="12">
+            <RequiredSkill identifier="weapons" level="50" />
+            <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+            <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2"/>
+            <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
+            <RequiredItem identifier="plastic" />
+        </Fabricate>
+        <InventoryIcon texture="%ModDir%/Ammos/12Gammos.png" sourcerect="128,0,64,64" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Ammos/12Gammos.png" sourcerect="0,86,23,11" depth="0.55" origin="0.5,0.5" />
+        <Body width="23" height="10" density="15" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+        <Projectile characterusable="false" hitscan="true" hitscancount="5" removeonhit="true" spread="15">
+            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="2.0,1.0" />
+            <Attack structuredamage="3" targetforce="4" itemdamage="6" severlimbsprobability="0.5" penetration="0.1">
+                <Affliction identifier="gunshotwound" strength="10" />
+                <Affliction identifier="bleeding" strength="10" />
+                <Affliction identifier="stun" strength="0.1" />
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Conditional entitytype="eq Structure" />
+                <Conditional hastag="eq door" />
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+            </StatusEffect>
+        </Projectile>
+        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+    <Item name="" identifier="12gRaptorKiller_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammo,handheldammo" Scale="0.5" impactsoundtag="impact_metal_light">
+        <PreferredContainer primary="armcab" />
+        <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="6" spawnprobability="0.5" />
+        <PreferredContainer secondary="wreckarmcab,wrecksecarmcab,abandonedarmcab,piratearmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="3" spawnprobability="0.2" />
+        <PreferredContainer secondary="secarmcab" />
+        <PreferredContainer secondary="respawncontainer_kingofthehull" amount="32" spawnprobability="1" notcampaign="true"/>
+        <Price baseprice="30" minleveldifficulty="30">
+            <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="4" sold="true" />
+            <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="12" />
+            <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="12" />
+        </Price>
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="12">
+            <RequiredSkill identifier="weapons" level="50" />
+            <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+            <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2"/>
+            <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
+            <RequiredItem identifier="plastic" />
+            <RequiredItem identifier="raptorbaneextract" />
+        </Fabricate>
+        <InventoryIcon texture="%ModDir%/Ammos/12Gammos.png" sourcerect="192,0,64,64" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Ammos/12Gammos.png" sourcerect="0,97,23,11" depth="0.55" origin="0.5,0.5" />
+        <Body width="23" height="10" density="15" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+        <Projectile characterusable="false" hitscan="true" hitscancount="5" removeonhit="true" spread="15">
+            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="2.0,1.0" />
+            <Attack structuredamage="3" targetforce="4" itemdamage="6" severlimbsprobability="0.5" penetration="0.1">
+                <Affliction identifier="gunshotwound" strength="10" />
+                <Affliction identifier="bleeding" strength="10" />
+                <Affliction identifier="stun" strength="0.1" />
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget" duration="2">
+                <Conditional speciesgroup="mudraptor"/>
+                <Conditional speciesname="Mudraptor_pet"/>
+                <Affliction identifier="organdamage" amount="10" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Conditional entitytype="eq Structure" />
+                <Conditional hastag="eq door" />
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+            </StatusEffect>
+        </Projectile>
+        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+    <Item name="" identifier="12gCalyxKiller_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammo,handheldammo" Scale="0.5" impactsoundtag="impact_metal_light">
+        <PreferredContainer primary="armcab" />
+        <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="6" spawnprobability="0.5" />
+        <PreferredContainer secondary="wreckarmcab,wrecksecarmcab,abandonedarmcab,piratearmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="3" spawnprobability="0.2" />
+        <PreferredContainer secondary="secarmcab" />
+        <PreferredContainer secondary="respawncontainer_kingofthehull" amount="32" spawnprobability="1" notcampaign="true"/>
+        <Price baseprice="30" minleveldifficulty="30">
+            <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="4" sold="true" />
+            <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="12" />
+            <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="12" />
+        </Price>
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="12">
+            <RequiredSkill identifier="weapons" level="50" />
+            <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+            <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2"/>
+            <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
+            <RequiredItem identifier="plastic" />
+            <RequiredItem identifier="calyxanide" />
+        </Fabricate>
+        <InventoryIcon texture="%ModDir%/Ammos/12Gammos.png" sourcerect="256,0,64,64" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Ammos/12Gammos.png" sourcerect="0,108,23,11" depth="0.55" origin="0.5,0.5" />
+        <Body width="23" height="10" density="15" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+        <Projectile characterusable="false" hitscan="true" hitscancount="5" removeonhit="true" spread="15">
+            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="2.0,1.0" />
+            <Attack structuredamage="3" targetforce="4" itemdamage="6" severlimbsprobability="0.5" penetration="0.1">
+                <Affliction identifier="gunshotwound" strength="10" />
+                <Affliction identifier="bleeding" strength="10" />
+                <Affliction identifier="stun" strength="0.1" />
+            </Attack>
+            <!-- Funny thing about Husk start-->
+            <StatusEffect type="OnImpact" target="UseTarget" duration="5.0">
+                <Conditional IsHusk="true" />
+                <Affliction identifier="organdamage" amount="12" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget" duration="1">
+                <Conditional huskinfection="lt 100.0" />
+                <ReduceAffliction identifier="huskinfection" amount="10" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget" duration="10.0">
+                <Conditional huskinfection="eq 100.0" />
+                <Affliction identifier="organdamage" amount="0.3" />
+            </StatusEffect>
+            <!-- Funny thing about Husk end-->
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Conditional entitytype="eq Structure" />
+                <Conditional hastag="eq door" />
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+            </StatusEffect>
+        </Projectile>
+        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+    <Item name="" identifier="12gFlashShot_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammo,handheldammo" Scale="0.5" impactsoundtag="impact_metal_light">
+        <PreferredContainer primary="armcab" />
+        <PreferredContainer secondary="secarmcab" />
+        <Price baseprice="30" minleveldifficulty="30">
+            <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="4" />
+            <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="12" />
+            <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="12" />
+        </Price>
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="12">
+            <RequiredSkill identifier="weapons" level="50" />
+            <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+            <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2"/>
+            <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
+            <RequiredItem identifier="plastic" />
+            <!-- need additional item -->
+        </Fabricate>
+        <InventoryIcon texture="%ModDir%/Ammos/12Gammos.png" sourcerect="320,0,64,64" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Ammos/12Gammos.png" sourcerect="0,119,23,11" depth="0.55" origin="0.5,0.5" />
+        <Body width="23" height="10" density="15" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+        <Projectile characterusable="false" hitscan="true" hitscancount="10" removeonhit="true" spread="15">
+            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,255,255" scalemultiplier="1,1.5" />
+            <Attack structuredamage="0" targetforce="4" itemdamage="0" severlimbsprobability="0.5" >
+                <Affliction identifier="gunshotwound" strength="1" />
+                <Affliction identifier="bleeding" strength="1" />
+                <Affliction identifier="stun" strength="0.1" />
+                <Affliction identifier="blind" strength="3" />
+                <Affliction identifier="sensoryoverload" strength="1.5" />
+            </Attack>
+        </Projectile>
+        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+    <Item name="" identifier="12gFlareShot_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammo,handheldammo,light,provocative" Scale="0.5" impactsoundtag="impact_metal_light">
+        <PreferredContainer primary="armcab" />
+        <PreferredContainer secondary="secarmcab" />
+        <Price baseprice="30" minleveldifficulty="30">
+            <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="4" />
+            <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="12" />
+            <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="12" />
+        </Price>
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="12">
+            <RequiredSkill identifier="weapons" level="50" />
+            <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+            <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2"/>
+            <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
+            <RequiredItem identifier="plastic" />
+            <!-- need additional item -->
+        </Fabricate>
+        <InventoryIcon texture="%ModDir%/Ammos/12Gammos.png" sourcerect="384,0,64,64" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Ammos/12Gammos.png" sourcerect="0,130,23,11" depth="0.55" origin="0.5,0.5" />
+        <Body width="23" height="10" density="10" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+        <Projectile characterusable="false" hitscan="false" removeonhit="false">
+            <StatusEffect type="OnUse" target="This" IsOn="true" targetitemcomponent="LightComponent" />
+            
+            <StatusEffect type="OnImpact" target="This" IsOn="true" targetitemcomponent="LightComponent" />
+            
+        </Projectile>
+        <LightComponent LightColor="255,255,0.0,255" Flicker="0.5" range="600" IsOn="false">
+            <StatusEffect type="OnActive" target="This">
+                <ParticleEmitter particle="flare" emitinterval="2.1" particleamount="10" particlespersecond="60" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" />
+                <ParticleEmitter particle="FlareBubbles" particlespersecond="40" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" scalemin="0.8" scalemax="1.2" />
+                <ReduceCondition amount="0.066" /> 
+            </StatusEffect>
+            <StatusEffect type="OnBroken" target="This">
+                <Remove/>
+            </StatusEffect>            
+            <sound file="Content/Items/Tools/FlareLoop.ogg" type="OnActive" range="800.0" loop="true" />
+        </LightComponent>
+        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+    <Item name="" identifier="12gDragonShot_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammo,handheldammo" Scale="0.5" impactsoundtag="impact_metal_light">
+        <PreferredContainer primary="armcab" />
+        <PreferredContainer secondary="secarmcab" />
+        <Price baseprice="30" minleveldifficulty="30">
+            <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="4" />
+            <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="12" />
+            <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="12" />
+        </Price>
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="12">
+            <RequiredSkill identifier="weapons" level="50" />
+            <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+            <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2"/>
+            <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
+            <RequiredItem identifier="plastic" />
+            <!-- need additional item -->
+        </Fabricate>
+        <InventoryIcon texture="%ModDir%/Ammos/12Gammos.png" sourcerect="448,0,64,64" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Ammos/12Gammos.png" sourcerect="0,141,23,11" depth="0.55" origin="0.5,0.5" />
+        <Body width="23" height="10" density="15" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+        <Projectile characterusable="false" hitscan="true" hitscancount="10" removeonhit="true" spread="15">
+            <ParticleEmitter particle="tracerpulselazer" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,0,155" scalemultiplier="1,1.5" />
+            <Attack structuredamage="0" targetforce="4" itemdamage="0" severlimbsprobability="0.5" >
+                <Affliction identifier="gunshotwound" strength="1" />
+                <Affliction identifier="bleeding" strength="1" />
+                <Affliction identifier="burn" strength="0.1" />
+                <Affliction identifier="burning" strength="5" probably="0.1" />
+            </Attack>
+        </Projectile>
+        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+</Items>
