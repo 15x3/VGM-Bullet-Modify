@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<Items>
+    <Item name="" identifier="AmmoBox_VGM" category="Equipment" tags="mediumitem,mobilecontainer,tool" cargocontaineridentifier="" showcontentsintooltip="true" Scale="0.4" fireproof="true" description="" impactsoundtag="impact_metal_heavy" RequireAimToUse="True">
+        <PreferredContainer primary="locker"/>
+        <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,piratestoragecab"/>
+        <PreferredContainer secondary="outpostcrewcabinet"/>
+        <Deconstruct time="10">
+            <Item identifier="steel" />
+        </Deconstruct>
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20">
+            <RequiredSkill identifier="mechanical" level="20" />
+            <Item identifier="steel" amount="2" />
+        </Fabricate>
+        <Price baseprice="60">
+            <Price storeidentifier="merchantoutpost" minavailable="1" />
+            <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="2" />
+            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="1" />
+            <Price storeidentifier="merchantmilitary" multiplier="1.25" minavailable="1" />
+            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="4" />
+        </Price>
+        <Sprite texture="%ModDir%/Others/ammocrate.png" sourcerect="2,2,96,80" origin="0.5,0.5" depth="0.6" />
+        <Body width="90" height="60" density="20" />
+        <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,18" holdangle="90" reload="1" range="50" combatpriority="6" msg="ItemMsgPickUpSelect" DisableWhenRangedWeaponEquipped="true">
+            <Attack structuredamage="0" itemdamage="1" targetimpulse="2">
+                <Affliction identifier="blunttrauma" strength="2" />
+                <Affliction identifier="stun" strength="0.6" />
+                <StatusEffect type="OnUse" target="UseTarget">
+                    <Conditional entitytype="eq Character"/>
+                    <Sound file="Content/Items/Weapons/Smack1.ogg" selectionmode="random" range="500"/>
+                    <Sound file="Content/Items/Weapons/Smack2.ogg" range="500" />
+                </StatusEffect>
+            </Attack>
+        </MeleeWeapon>
+        <ItemContainer capacity="20" maxstacksize="64" keepopenwhenequipped="true" movableframe="true" QuickUseMovesItemsInside="false">
+            <Containable items="shotgunammo,smgammo,rifleammo,handcannonammo,assaultrifleammo,hmgammo,revolverammo" />
+        </ItemContainer>
+        <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+        <!-- the item used to have the (default) 64 max stack size, i.e. stack size was only limited by the max stack size of the contained items -->
+        <!-- set the stack size back in old saves/subs to prevent items from dropping from containers -->
+        <Upgrade gameversion="1.1.0.0" maxstacksize="64">
+            <ItemContainer maxstacksize="64" />
+        </Upgrade>
+    </Item>
+</Items>
