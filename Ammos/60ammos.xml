@@ -1,4 +1,40 @@
 <?xml version="1.0" ?>
 <Items>
     <!-- .60手炮弹，和.45相比，枪伤560%，流血效果2000%，异常效果数学期望75000%，自带0.5穿甲penetration="0.5" -->
+    <Item name="" identifier="60FMJ_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" allowasextracargo="true" Scale="0.5" tags="smallitem,handcannonammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
+        <PreferredContainer primary="secarmcab" secondary="armcab"/>
+        <PreferredContainer primary="handcannon" amount="6" spawnprobability="1.0"/>
+        <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="6" spawnprobability="0.02"/>    
+        <Price baseprice="50" sold="false" />
+        <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true" amount="8">
+            <!-- Fabricate当中配方的请不要做出变动 -->
+            <RequiredSkill identifier="weapons" level="45" />
+            <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+            <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" />
+            <RequiredItem tag="advmunition_core" description="fabricationdescription.advmunition_core" />
+            <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" />
+        </Fabricate>
+        <InventoryIcon texture="" sourcerect="0,0,40,43" origin="0.5,0.5" />
+        <!-- InventoryIcon的texture留空 -->
+        <Sprite texture="Content/Items/Jobgear/TalentGear.png" sourcerect="3,118,24,9" depth="0.55" origin="0.5,0.5" />
+        <Body width="34" height="14" density="30" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+        <Projectile characterusable="false" hitscan="true" removeonhit="true">
+            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,115,200" scalemultiplier="1,1" />
+            <Attack structuredamage="20" targetforce="20" itemdamage="20" severlimbsprobability="1.0" penetration="0.5">
+                <!-- Affliction的各项数值请参考45ammos.xml当中已有的模板，以及对数值做出的规定 -->
+                <Affliction identifier="gunshotwound" strength="70" />
+                <Affliction identifier="bleeding" strength="50" />
+                <Affliction identifier="stun" strength="1.5" />
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6,6" colormultiplier="255,200,115,200" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Conditional entitytype="eq Structure" />
+                <Conditional hastag="eq door" />
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.75" scalemax="1" />
+            </StatusEffect>
+        </Projectile>
+    </Item>
 </Items>

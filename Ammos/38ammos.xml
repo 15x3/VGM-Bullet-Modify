@@ -1,4 +1,49 @@
 <?xml version="1.0" ?>
 <Items>
     <!-- .38左轮弹，和.45相比，枪伤200%，流血效果600%，异常效果数学期望15000%，自带0.1穿甲penetration="0.1" -->
+    <Item name="" identifier="38FMJ_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
+        <PreferredContainer primary="revolver" amount="6" spawnprobability="1" />
+        <PreferredContainer primary="armcab" amount="6" spawnprobability="1" notpvp="true" />
+        <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="6" spawnprobability="0.2" />
+        <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" minamount="1" maxamount="3" spawnprobability="0.25" />
+        <PreferredContainer secondary="secarmcab" />
+        <Price baseprice="12">
+            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" />
+            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" />
+            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" />
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" />
+            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" />
+            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" />
+        </Price>
+        <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true" amount="12">
+            <RequiredSkill identifier="weapons" level="30" />
+            <!-- Fabricate当中配方的请不要做出变动 -->
+            <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+            <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
+            <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
+        </Fabricate>
+        <InventoryIcon texture="" sourcerect="0,0,64,64" origin="0.5,0.5" />
+        <!-- InventoryIcon的texture留空 -->
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="191,290,21,7" depth="0.55" origin="0.5,0.5" />
+        <Body width="29" height="10" density="30" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+        <Projectile characterusable="false" hitscan="true" removeonhit="true">
+            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
+            <Attack structuredamage="10" targetforce="10" itemdamage="10" severlimbsprobability="0.2" penetration="0.1">
+                <!-- Affliction的各项数值请参考45ammos.xml当中已有的模板，以及对数值做出的规定 -->
+                <Affliction identifier="gunshotwound" strength="24" />
+                <Affliction identifier="bleeding" strength="16" />
+                <Affliction identifier="stun" strength="0.3" />
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Conditional entitytype="eq Structure" />
+                <Conditional hastag="eq door" />
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+            </StatusEffect>
+        </Projectile>
+        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
 </Items>
