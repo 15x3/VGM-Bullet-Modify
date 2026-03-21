@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
-    <Item name="" identifier="EmptySmgMag_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light">
+    <Item name="" identifier="EmptySmgMag_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light">
         <!-- 当smgammo被去掉时，就会变成生成后因为Container不符强制弹出，可以做出类似M1弹匣弹出的效果 -->
         <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="960,960,64,64" />
         <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.54" sourcerect="146,157,21,44" origin="0.5,0.5" />
@@ -137,7 +137,7 @@
         </Holdable>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-    <Item name="" identifier="SmgMagBlank_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgMagBlank_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -192,7 +192,7 @@
             <!-- 别问我为什么不用OnSpawn和SpawnWithID，这俩B会在地图加载时自动触发一次 -->
         </ItemContainer>
     </Item>
-    <!-- <Item name="" identifier="SmgMagFMJ_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <!-- <Item name="" identifier="SmgMagFMJ_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -239,7 +239,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item> -->
-    <Item name="" identifier="SmgMagJHP_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgMagJHP_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -286,7 +286,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagAP_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgMagAP_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -333,7 +333,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagExp_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgMagExp_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -380,7 +380,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagChloralhydrate_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgMagChloralhydrate_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -427,7 +427,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagOpium_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgMagOpium_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -474,7 +474,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagSufforin_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgMagSufforin_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -521,7 +521,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagMorbusine_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgMagMorbusine_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -568,7 +568,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagCyanide_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgMagCyanide_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -615,7 +615,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagCalyx_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgMagCalyx_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -662,7 +662,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagPhysicorium_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgMagPhysicorium_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -709,7 +709,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagDementonite_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgMagDementonite_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -756,7 +756,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagIncendium_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgMagIncendium_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -803,7 +803,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgMagFulgurium_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgMagFulgurium_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -850,7 +850,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="EmptySmgLongMag_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light">
+    <Item name="" identifier="EmptySmgLongMag_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light">
         <InventoryIcon texture="%ModDir:Vanilla Gun Modify%/GunMods/mags_alphadev.png" depth="0.54" sourcerect="63,2,22,73" origin="0.5,0.5" />
         <Sprite texture="%ModDir:Vanilla Gun Modify%/GunMods/mags_alphadev.png" depth="0.54" sourcerect="63,2,22,73" origin="0.5,0.5" />
         <Body width="14" height="40" density="25" />
@@ -977,7 +977,7 @@
         </Holdable>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-    <Item name="" identifier="SmgLongMagBlank_VGM" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgLongMagBlank_VGM" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -1024,7 +1024,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgLongMagJHP_VGM" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgLongMagJHP_VGM" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -1071,7 +1071,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgLongMagAP_VGM" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgLongMagAP_VGM" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -1118,7 +1118,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgLongMagExp_VGM" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgLongMagExp_VGM" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -1165,7 +1165,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgLongMagChloralhydrate_VGM" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgLongMagChloralhydrate_VGM" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -1212,7 +1212,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgLongMagOpium_VGM" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgLongMagOpium_VGM" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -1259,7 +1259,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgLongMagSufforin_VGM" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgLongMagSufforin_VGM" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -1306,7 +1306,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgLongMagMorbusine_VGM" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgLongMagMorbusine_VGM" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -1353,7 +1353,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgLongMagCyanide_VGM" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgLongMagCyanide_VGM" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -1400,7 +1400,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgLongMagCalyx_VGM" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgLongMagCalyx_VGM" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -1447,7 +1447,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgLongMagPhysicorium_VGM" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgLongMagPhysicorium_VGM" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -1494,7 +1494,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgLongMagDementonite_VGM" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgLongMagDementonite_VGM" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -1541,7 +1541,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgLongMagIncendium_VGM" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgLongMagIncendium_VGM" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -1588,7 +1588,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgLongMagFulgurium_VGM" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgLongMagFulgurium_VGM" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" />
@@ -1635,7 +1635,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="EmptySmgDrumMag_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light">
+    <Item name="" identifier="EmptySmgDrumMag_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light">
         <InventoryIcon texture="%ModDir:Vanilla Gun Modify%/GunMods/mags_alphadev.png" sourcerect="19,1,23,58"/>
         <Sprite texture="%ModDir:Vanilla Gun Modify%/GunMods/mags_alphadev.png" depth="0.54" sourcerect="19,1,23,58" origin="0.5,0.5" />
         <Body width="14" height="40" density="25" />
@@ -1764,7 +1764,7 @@
         </Holdable>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-    <Item name="" identifier="SmgDrumMagBlank_VGM" maxstacksize="4" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgDrumMagBlank_VGM" maxstacksize="4" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" amount="2"/>
@@ -1811,7 +1811,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgDrumMagJHP_VGM" maxstacksize="4" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgDrumMagJHP_VGM" maxstacksize="4" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" amount="2"/>
@@ -1858,7 +1858,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgDrumMagAP_VGM" maxstacksize="4" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgDrumMagAP_VGM" maxstacksize="4" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" amount="2"/>
@@ -1905,7 +1905,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgDrumMagExp_VGM" maxstacksize="4" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgDrumMagExp_VGM" maxstacksize="4" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" amount="2"/>
@@ -1952,7 +1952,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgDrumMagChloralhydrate_VGM" maxstacksize="4" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgDrumMagChloralhydrate_VGM" maxstacksize="4" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" amount="2"/>
@@ -1999,7 +1999,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgDrumMagOpium_VGM" maxstacksize="4" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgDrumMagOpium_VGM" maxstacksize="4" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" amount="2"/>
@@ -2046,7 +2046,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgDrumMagSufforin_VGM" maxstacksize="4" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgDrumMagSufforin_VGM" maxstacksize="4" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" amount="2"/>
@@ -2093,7 +2093,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgDrumMagMorbusine_VGM" maxstacksize="4" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgDrumMagMorbusine_VGM" maxstacksize="4" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" amount="2"/>
@@ -2140,7 +2140,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgDrumMagCyanide_VGM" maxstacksize="4" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgDrumMagCyanide_VGM" maxstacksize="4" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" amount="2"/>
@@ -2187,7 +2187,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgDrumMagCalyx_VGM" maxstacksize="4" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgDrumMagCalyx_VGM" maxstacksize="4" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" amount="2"/>
@@ -2234,7 +2234,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgDrumMagPhysicorium_VGM" maxstacksize="4" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgDrumMagPhysicorium_VGM" maxstacksize="4" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" amount="2"/>
@@ -2281,7 +2281,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgDrumMagDementonite_VGM" maxstacksize="4" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgDrumMagDementonite_VGM" maxstacksize="4" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" amount="2"/>
@@ -2328,7 +2328,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgDrumMagIncendium_VGM" maxstacksize="4" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgDrumMagIncendium_VGM" maxstacksize="4" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" amount="2"/>
@@ -2375,7 +2375,7 @@
             </StatusEffect>
         </ItemContainer>
     </Item>
-    <Item name="" identifier="SmgDrumMagFulgurium_VGM" maxstacksize="4" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+    <Item name="" identifier="SmgDrumMagFulgurium_VGM" maxstacksize="4" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo,longMagVGM" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
         <PreferredContainer secondary="secarmcab" />
         <Deconstruct time="10">
             <Item identifier="steel" amount="2"/>

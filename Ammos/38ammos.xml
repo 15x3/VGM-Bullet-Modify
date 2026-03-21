@@ -1,26 +1,26 @@
 <?xml version="1.0" ?>
 <Items>
-    <!-- <Item name="" identifier="38FMJ_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
+    <!-- <Item name="" identifier="38FMJ_VGB"  category="Weapon" subcategory="VGB"  maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="revolver" amount="6" spawnprobability="1" />
         <PreferredContainer primary="armcab" amount="6" spawnprobability="1" notpvp="true" />
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="6" spawnprobability="0.2" />
         <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" minamount="1" maxamount="3" spawnprobability="0.25" />
         <PreferredContainer secondary="secarmcab" />
         <Price baseprice="12">
-            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" />
-            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" />
-            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" />
+            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" sold="false"/>
+            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" sold="false"/>
         </Price>
-        <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true" amount="12">
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" requiresrecipe="true" amount="12">
             <RequiredSkill identifier="weapons" level="30" />
             <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
             <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
             <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
         </Fabricate>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" origin="0.5,0.5" />
+        <InventoryIcon texture="%ModDir%/Ammos/38ammos.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="191,290,21,7" depth="0.55" origin="0.5,0.5" />
         <Body width="29" height="10" density="30" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -42,32 +42,30 @@
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item> -->
-    <Item name="" identifier="38Blank_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
+    <Item name="" identifier="38Blank_VGB"  category="Weapon" subcategory="VGB"  maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="revolver" amount="6" spawnprobability="1" />
-        <PreferredContainer primary="armcab" amount="6" spawnprobability="1" notpvp="true" />
-        <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="6" spawnprobability="0.2" />
-        <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" minamount="1" maxamount="3" spawnprobability="0.25" />
+        <PreferredContainer primary="armcab" amount="6" />
         <PreferredContainer secondary="secarmcab" />
         <Price baseprice="12">
-            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" />
-            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" />
-            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" />
+            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" sold="false"/>
+            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" sold="false"/>
         </Price>
-        <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true" amount="12">
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="18">
             <RequiredSkill identifier="weapons" level="30" />
             <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
-            <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
+            <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
         </Fabricate>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" origin="0.5,0.5" />
+        <InventoryIcon texture="%ModDir%/Ammos/38ammos.png" sourcerect="64,0,64,64" origin="0.5,0.5" />
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="191,290,21,7" depth="0.55" origin="0.5,0.5" />
         <Body width="29" height="10" density="30" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
         <Projectile characterusable="false" hitscan="true" removeonhit="true">
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
-            <Attack structuredamage="5" targetforce="10" itemdamage="5" severlimbsprobability="0.01" penetration="0.1">
+            <Attack structuredamage="2" targetforce="10" itemdamage="2" severlimbsprobability="0.01" penetration="0.1">
                 <Affliction identifier="gunshotwound" strength="5" />
                 <Affliction identifier="stun" strength="0.3" probability="0.5"/>
             </Attack>
@@ -82,36 +80,36 @@
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-    <Item name="" identifier="38JHP_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
+    <Item name="" identifier="38JHP_VGB"  category="Weapon" subcategory="VGB"  maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="revolver" amount="6" spawnprobability="1" />
         <PreferredContainer primary="armcab" amount="6" spawnprobability="1" notpvp="true" />
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="6" spawnprobability="0.2" />
         <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" minamount="1" maxamount="3" spawnprobability="0.25" />
         <PreferredContainer secondary="secarmcab" />
         <Price baseprice="12">
-            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" />
-            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" />
-            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" />
+            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" sold="false"/>
+            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" sold="false"/>
         </Price>
-        <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true" amount="12">
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="18">
             <RequiredSkill identifier="weapons" level="30" />
             <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
             <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
-            <RequiredItem identifier="lead" count="1"/>
+            <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
         </Fabricate>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" origin="0.5,0.5" />
+        <InventoryIcon texture="%ModDir%/Ammos/38ammos.png" sourcerect="128,0,64,64" origin="0.5,0.5" />
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="191,290,21,7" depth="0.55" origin="0.5,0.5" />
         <Body width="29" height="10" density="30" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
         <Projectile characterusable="false" hitscan="true" removeonhit="true">
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
-            <Attack structuredamage="2" targetforce="10" itemdamage="2" severlimbsprobability="0.4" penetration="0.1">
+            <Attack structuredamage="2" targetforce="10" itemdamage="2" severlimbsprobability="0.4">
                 <Affliction identifier="gunshotwound" strength="35" />
                 <Affliction identifier="stun" strength="0.45" probability="0.5"/>
-                <Affliction identifier="bleeding" strength="7.5" probability="0.3"/>
+                <Affliction identifier="bleeding" strength="16" />
             </Attack>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -124,28 +122,28 @@
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-    <Item name="" identifier="38AP_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
+    <Item name="" identifier="38AP_VGB"  category="Weapon" subcategory="VGB"  maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="revolver" amount="6" spawnprobability="1" />
         <PreferredContainer primary="armcab" amount="6" spawnprobability="1" notpvp="true" />
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="6" spawnprobability="0.2" />
         <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" minamount="1" maxamount="3" spawnprobability="0.25" />
         <PreferredContainer secondary="secarmcab" />
         <Price baseprice="12">
-            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" />
-            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" />
-            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" />
+            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" sold="false"/>
+            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" sold="false"/>
         </Price>
-        <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true" amount="24">
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="18">
             <RequiredSkill identifier="weapons" level="30" />
             <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
             <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
             <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
             <RequiredItem identifier="titaniumaluminiumalloy" count="1"/>
         </Fabricate>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" origin="0.5,0.5" />
+        <InventoryIcon texture="%ModDir%/Ammos/38ammos.png" sourcerect="192,0,64,64" origin="0.5,0.5" />
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="191,290,21,7" depth="0.55" origin="0.5,0.5" />
         <Body width="29" height="10" density="30" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -167,28 +165,28 @@
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-    <Item name="" identifier="38Exp_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
+    <Item name="" identifier="38Exp_VGB"  category="Weapon" subcategory="VGB"  maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="revolver" amount="6" spawnprobability="1" />
         <PreferredContainer primary="armcab" amount="6" spawnprobability="1" notpvp="true" />
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="6" spawnprobability="0.2" />
         <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" minamount="1" maxamount="3" spawnprobability="0.25" />
         <PreferredContainer secondary="secarmcab" />
         <Price baseprice="12">
-            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" />
-            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" />
-            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" />
+            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" sold="false"/>
+            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" sold="false"/>
         </Price>
-        <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true" amount="24">
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" requiresrecipe="true" amount="24">
             <RequiredSkill identifier="weapons" level="30" />
             <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
             <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
             <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
             <RequiredItem identifier="c4block" count="1"/>
         </Fabricate>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" origin="0.5,0.5" />
+        <InventoryIcon texture="%ModDir%/Ammos/38ammos.png" sourcerect="256,0,64,64" origin="0.5,0.5" />
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="191,290,21,7" depth="0.55" origin="0.5,0.5" />
         <Body width="29" height="10" density="30" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -196,9 +194,9 @@
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
             <Attack structuredamage="25" targetforce="25" itemdamage="25" severlimbsprobability="0.2" penetration="0.1">
                 <Affliction identifier="gunshotwound" strength="10" />
-                <Affliction identifier="bleeding" strength="32.5" probability="0.1"/>
+                <Affliction identifier="bleeding" strength="32.5" probability="0.5"/>
                 <Affliction identifier="stun" strength="0.45" probability="0.5"/>
-                <Affliction identifier="explosiondamage" strength="1" />
+                <Affliction identifier="explosiondamage" strength="10" />
             </Attack>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -209,24 +207,29 @@
                 <Conditional hastag="eq door" />
                 <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
             </StatusEffect>
+            <StatusEffect type="OnImpact" target="This" disabledeltatime="true">
+                <Explosion range="25.0" ballastfloradamage="25" severlimbsprobability="0.5" structuredamage="8" levelwalldamage="40" itemdamage="100" force="3.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" flashcolor="255,115,95,150">
+                    <Affliction identifier="burn" strength="15" />
+                </Explosion>
+            </StatusEffect>
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-    <!-- <Item name="" identifier="38Chloralhydrate_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
+    <!-- <Item name="" identifier="38Chloralhydrate_VGB"  category="Weapon" subcategory="VGB"  maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="revolver" amount="6" spawnprobability="1" />
         <PreferredContainer primary="armcab" amount="6" spawnprobability="1" notpvp="true" />
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="6" spawnprobability="0.2" />
         <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" minamount="1" maxamount="3" spawnprobability="0.25" />
         <PreferredContainer secondary="secarmcab" />
         <Price baseprice="12">
-            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" />
-            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" />
-            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" />
+            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" sold="false"/>
+            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" sold="false"/>
         </Price>
-        <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true" amount="12">
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" requiresrecipe="true" amount="12">
             <RequiredSkill identifier="weapons" level="30" />
             <RequiredSkill identifier="medical" level="30" />
             <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
@@ -234,7 +237,7 @@
             <RequiredItem identifier="steel" count="1"/>
             <RequiredItem identifier="chloralhydrate" count="1"/>
         </Fabricate>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" origin="0.5,0.5" />
+        <InventoryIcon texture="%ModDir%/Ammos/38ammos.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="191,290,21,7" depth="0.55" origin="0.5,0.5" />
         <Body width="29" height="10" density="30" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -256,21 +259,21 @@
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item> -->
-    <!-- <Item name="" identifier="38Opium_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
+    <!-- <Item name="" identifier="38Opium_VGB"  category="Weapon" subcategory="VGB"  maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="revolver" amount="6" spawnprobability="1" />
         <PreferredContainer primary="armcab" amount="6" spawnprobability="1" notpvp="true" />
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="6" spawnprobability="0.2" />
         <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" minamount="1" maxamount="3" spawnprobability="0.25" />
         <PreferredContainer secondary="secarmcab" />
         <Price baseprice="12">
-            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" />
-            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" />
-            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" />
+            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" sold="false"/>
+            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" sold="false"/>
         </Price>
-        <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true" amount="12">
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" requiresrecipe="true" amount="12">
             <RequiredSkill identifier="weapons" level="30" />
             <RequiredSkill identifier="medical" level="30" />
             <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
@@ -278,7 +281,7 @@
             <RequiredItem identifier="steel" count="1"/>
             <RequiredItem identifier="opium" count="1"/>
         </Fabricate>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" origin="0.5,0.5" />
+        <InventoryIcon texture="%ModDir%/Ammos/38ammos.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="191,290,21,7" depth="0.55" origin="0.5,0.5" />
         <Body width="29" height="10" density="30" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -301,21 +304,21 @@
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item> -->
-    <!-- <Item name="" identifier="38Sufforin_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
+    <!-- <Item name="" identifier="38Sufforin_VGB"  category="Weapon" subcategory="VGB"  maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="revolver" amount="6" spawnprobability="1" />
         <PreferredContainer primary="armcab" amount="6" spawnprobability="1" notpvp="true" />
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="6" spawnprobability="0.2" />
         <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" minamount="1" maxamount="3" spawnprobability="0.25" />
         <PreferredContainer secondary="secarmcab" />
         <Price baseprice="12">
-            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" />
-            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" />
-            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" />
+            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" sold="false"/>
+            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" sold="false"/>
         </Price>
-        <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true" amount="12">
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" requiresrecipe="true" amount="12">
             <RequiredSkill identifier="weapons" level="30" />
             <RequiredSkill identifier="medical" level="30" />
             <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
@@ -323,7 +326,7 @@
             <RequiredItem identifier="steel" count="1"/>
             <RequiredItem identifier="sufforin" count="1"/>
         </Fabricate>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" origin="0.5,0.5" />
+        <InventoryIcon texture="%ModDir%/Ammos/38ammos.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="191,290,21,7" depth="0.55" origin="0.5,0.5" />
         <Body width="29" height="10" density="30" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -345,21 +348,21 @@
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item> -->
-    <!-- <Item name="" identifier="38Morbusine_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
+    <!-- <Item name="" identifier="38Morbusine_VGB"  category="Weapon" subcategory="VGB"  maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="revolver" amount="6" spawnprobability="1" />
         <PreferredContainer primary="armcab" amount="6" spawnprobability="1" notpvp="true" />
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="6" spawnprobability="0.2" />
         <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" minamount="1" maxamount="3" spawnprobability="0.25" />
         <PreferredContainer secondary="secarmcab" />
         <Price baseprice="12">
-            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" />
-            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" />
-            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" />
+            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" sold="false"/>
+            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" sold="false"/>
         </Price>
-        <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true" amount="12">
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" requiresrecipe="true" amount="12">
             <RequiredSkill identifier="weapons" level="30" />
             <RequiredSkill identifier="medical" level="30" />
             <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
@@ -367,7 +370,7 @@
             <RequiredItem identifier="steel" count="1"/>
             <RequiredItem identifier="sufforin" count="1"/>
         </Fabricate>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" origin="0.5,0.5" />
+        <InventoryIcon texture="%ModDir%/Ammos/38ammos.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="191,290,21,7" depth="0.55" origin="0.5,0.5" />
         <Body width="29" height="10" density="30" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -389,21 +392,21 @@
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item> -->
-    <!-- <Item name="" identifier="38Cyanide_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
+    <!-- <Item name="" identifier="38Cyanide_VGB"  category="Weapon" subcategory="VGB"  maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="revolver" amount="6" spawnprobability="1" />
         <PreferredContainer primary="armcab" amount="6" spawnprobability="1" notpvp="true" />
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="6" spawnprobability="0.2" />
         <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" minamount="1" maxamount="3" spawnprobability="0.25" />
         <PreferredContainer secondary="secarmcab" />
         <Price baseprice="12">
-            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" />
-            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" />
-            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" />
+            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" sold="false"/>
+            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" sold="false"/>
         </Price>
-        <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true" amount="12">
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" requiresrecipe="true" amount="12">
             <RequiredSkill identifier="weapons" level="30" />
             <RequiredSkill identifier="medical" level="30" />
             <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
@@ -411,7 +414,7 @@
             <RequiredItem identifier="steel" count="1"/>
             <RequiredItem identifier="cyanide" count="1"/>
         </Fabricate>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" origin="0.5,0.5" />
+        <InventoryIcon texture="%ModDir%/Ammos/38ammos.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="191,290,21,7" depth="0.55" origin="0.5,0.5" />
         <Body width="29" height="10" density="30" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -434,21 +437,21 @@
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item> -->
-    <!-- <Item name="" identifier="38Calyx_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
+    <!-- <Item name="" identifier="38Calyx_VGB"  category="Weapon" subcategory="VGB"  maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="revolver" amount="6" spawnprobability="1" />
         <PreferredContainer primary="armcab" amount="6" spawnprobability="1" notpvp="true" />
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="6" spawnprobability="0.2" />
         <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" minamount="1" maxamount="3" spawnprobability="0.25" />
         <PreferredContainer secondary="secarmcab" />
         <Price baseprice="12">
-            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" />
-            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" />
-            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" />
+            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" sold="false"/>
+            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" sold="false"/>
         </Price>
-        <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true" amount="12">
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" requiresrecipe="true" amount="12">
             <RequiredSkill identifier="weapons" level="30" />
             <RequiredSkill identifier="medical" level="50" />
             <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
@@ -456,7 +459,7 @@
             <RequiredItem identifier="steel" count="1"/>
             <RequiredItem identifier="huskeggs" count="1"/>
         </Fabricate>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" origin="0.5,0.5" />
+        <InventoryIcon texture="%ModDir%/Ammos/38ammos.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="191,290,21,7" depth="0.55" origin="0.5,0.5" />
         <Body width="29" height="10" density="30" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -478,27 +481,27 @@
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item> -->
-    <!-- <Item name="" identifier="38Physicorium_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
+    <!-- <Item name="" identifier="38Physicorium_VGB"  category="Weapon" subcategory="VGB"  maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="revolver" amount="6" spawnprobability="1" />
         <PreferredContainer primary="armcab" amount="6" spawnprobability="1" notpvp="true" />
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="6" spawnprobability="0.2" />
         <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" minamount="1" maxamount="3" spawnprobability="0.25" />
         <PreferredContainer secondary="secarmcab" />
         <Price baseprice="12">
-            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" />
-            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" />
-            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" />
+            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" sold="false"/>
+            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" sold="false"/>
         </Price>
-        <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true" amount="24">
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" requiresrecipe="true" amount="24">
             <RequiredSkill identifier="weapons" level="30" />
             <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
             <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
             <RequiredItem identifier="physicorium" count="1"/>
         </Fabricate>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" origin="0.5,0.5" />
+        <InventoryIcon texture="%ModDir%/Ammos/38ammos.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="191,290,21,7" depth="0.55" origin="0.5,0.5" />
         <Body width="29" height="10" density="30" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -520,27 +523,27 @@
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item> -->
-    <!-- <Item name="" identifier="38Dementonite_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
+    <!-- <Item name="" identifier="38Dementonite_VGB"  category="Weapon" subcategory="VGB"  maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="revolver" amount="6" spawnprobability="1" />
         <PreferredContainer primary="armcab" amount="6" spawnprobability="1" notpvp="true" />
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="6" spawnprobability="0.2" />
         <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" minamount="1" maxamount="3" spawnprobability="0.25" />
         <PreferredContainer secondary="secarmcab" />
         <Price baseprice="12">
-            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" />
-            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" />
-            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" />
+            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" sold="false"/>
+            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" sold="false"/>
         </Price>
-        <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true" amount="24">
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" requiresrecipe="true" amount="24">
             <RequiredSkill identifier="weapons" level="30" />
             <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
             <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
             <RequiredItem identifier="dementonite" count="1"/>
         </Fabricate>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" origin="0.5,0.5" />
+        <InventoryIcon texture="%ModDir%/Ammos/38ammos.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="191,290,21,7" depth="0.55" origin="0.5,0.5" />
         <Body width="29" height="10" density="30" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -562,27 +565,27 @@
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item> -->
-    <!-- <Item name="" identifier="38Incendium_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
+    <!-- <Item name="" identifier="38Incendium_VGB"  category="Weapon" subcategory="VGB"  maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="revolver" amount="6" spawnprobability="1" />
         <PreferredContainer primary="armcab" amount="6" spawnprobability="1" notpvp="true" />
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="6" spawnprobability="0.2" />
         <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" minamount="1" maxamount="3" spawnprobability="0.25" />
         <PreferredContainer secondary="secarmcab" />
         <Price baseprice="12">
-            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" />
-            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" />
-            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" />
+            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" sold="false"/>
+            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" sold="false"/>
         </Price>
-        <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true" amount="24">
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" requiresrecipe="true" amount="24">
             <RequiredSkill identifier="weapons" level="30" />
             <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
             <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
             <RequiredItem identifier="incendium" count="1"/>
         </Fabricate>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" origin="0.5,0.5" />
+        <InventoryIcon texture="%ModDir%/Ammos/38ammos.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="191,290,21,7" depth="0.55" origin="0.5,0.5" />
         <Body width="29" height="10" density="30" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -605,27 +608,27 @@
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item> -->
-    <!-- <Item name="" identifier="38Fulgurium_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
+    <!-- <Item name="" identifier="38Fulgurium_VGB"  category="Weapon" subcategory="VGB"  maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="revolver" amount="6" spawnprobability="1" />
         <PreferredContainer primary="armcab" amount="6" spawnprobability="1" notpvp="true" />
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="6" spawnprobability="0.2" />
         <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" minamount="1" maxamount="3" spawnprobability="0.25" />
         <PreferredContainer secondary="secarmcab" />
         <Price baseprice="12">
-            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" />
-            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" />
-            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" />
-            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" />
+            <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="60" sold="false"/>
+            <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" sold="false"/>
+            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" sold="false"/>
         </Price>
-        <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true" amount="24">
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" requiresrecipe="true" amount="24">
             <RequiredSkill identifier="weapons" level="30" />
             <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
             <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
             <RequiredItem identifier="carbon" count="1"/>
         </Fabricate>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" origin="0.5,0.5" />
+        <InventoryIcon texture="%ModDir%/Ammos/38ammos.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="191,290,21,7" depth="0.55" origin="0.5,0.5" />
         <Body width="29" height="10" density="30" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />

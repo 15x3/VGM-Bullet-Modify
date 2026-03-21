@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <Items>
-    <!-- <Item name="" identifier="556FMJ_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,hmgammo" impactsoundtag="impact_metal_light" scale="0.5">
+    <!-- <Item name="" identifier="556FMJ_VGB"  category="Weapon" subcategory="VGB"  interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,hmgammo" impactsoundtag="impact_metal_light" scale="0.5">
         <InventoryIcon texture="" sourcerect="0,0,64,64" origin="0.5,0.5" />
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
         <Body width="17" height="6" density="30" />
@@ -28,7 +28,7 @@
             </StatusEffect>
         </Projectile>
     </Item> -->
-    <Item name="" identifier="556Blank_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,hmgammo" impactsoundtag="impact_metal_light" scale="0.5">
+    <Item name="" identifier="556Blank_VGB"  category="Weapon" subcategory="VGB"  interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,hmgammo" impactsoundtag="impact_metal_light" scale="0.5">
         <InventoryIcon texture="%ModDir%/Ammos/556ammos.png" sourcerect="64,0,64,64" origin="0.5,0.5" />
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
         <Body width="17" height="6" density="30" />
@@ -53,22 +53,24 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="556JHP_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,hmgammo" impactsoundtag="impact_metal_light" scale="0.5">
+    <Item name="" identifier="556JHP_VGB"  category="Weapon" subcategory="VGB"  interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,hmgammo" impactsoundtag="impact_metal_light" scale="0.5">
         <InventoryIcon texture="%ModDir%/Ammos/556ammos.png" sourcerect="128,0,64,64" origin="0.5,0.5" />
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
         <Body width="17" height="6" density="30" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
         <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="100">
-            <RequiredSkill identifier="weapons" level="30" />
-            <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
-            <RequiredItem identifier="lead" count="1"/>
+            <RequiredSkill identifier="weapons" level="50" />
+            <RequiredItem identifier="magnesium" />
+            <RequiredItem identifier="titaniumaluminiumalloy" />
+            <RequiredItem tag="advmunition_core" description="fabricationdescription.advmunition_core" />
+            <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" />
         </Fabricate>
         <Projectile characterusable="false" hitscan="true" removeonhit="true">
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
-            <Attack structuredamage="1" targetforce="7.5" itemdamage="1" severlimbsprobability="0.2" penetration="0.4">
-                <Affliction identifier="gunshotwound" strength="16.6" />
-                <Affliction identifier="stun" strength="0.15" probability="0.5"/>
-                <Affliction identifier="bleeding" strength="10" probability="0.3"/>
+            <Attack structuredamage="1" targetforce="7.5" itemdamage="1" severlimbsprobability="0.2" penetration="0.2">
+                <Affliction identifier="gunshotwound" strength="20" />
+                <Affliction identifier="stun" strength="0.3"/>
+                <Affliction identifier="bleeding" strength="20"/>
             </Attack>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2,2" />
@@ -80,23 +82,24 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="556AP_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,hmgammo" impactsoundtag="impact_metal_light" scale="0.5">
+    <Item name="" identifier="556AP_VGB"  category="Weapon" subcategory="VGB"  interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,hmgammo" impactsoundtag="impact_metal_light" scale="0.5">
         <InventoryIcon texture="%ModDir%/Ammos/556ammos.png" sourcerect="192,0,64,64" origin="0.5,0.5" />
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
         <Body width="17" height="6" density="30" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="200">
-            <RequiredSkill identifier="weapons" level="30" />
-            <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
-            <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
-            <RequiredItem identifier="titaniumaluminiumalloy" count="1"/>
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="100">
+            <RequiredSkill identifier="weapons" level="50" />
+            <RequiredItem identifier="magnesium" />
+            <RequiredItem identifier="titaniumaluminiumalloy" />
+            <RequiredItem tag="advmunition_core" description="fabricationdescription.advmunition_core" />
+            <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" />
         </Fabricate>
         <Projectile characterusable="false" hitscan="true" removeonhit="true">
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
             <Attack structuredamage="8" targetforce="7.5" itemdamage="8" severlimbsprobability="0.1" penetration="0.6">
                 <Affliction identifier="gunshotwound" strength="9.5" />
                 <Affliction identifier="bleeding" strength="6" />
-                <Affliction identifier="stun" strength="0.1" probability="0.1"/>
+                <Affliction identifier="stun" strength="0.1"/>
             </Attack>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2,2" />
@@ -108,24 +111,26 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="556Exp_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,hmgammo" impactsoundtag="impact_metal_light" scale="0.5">
+    <Item name="" identifier="556Exp_VGB"  category="Weapon" subcategory="VGB"  interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,hmgammo" impactsoundtag="impact_metal_light" scale="0.5">
         <InventoryIcon texture="%ModDir%/Ammos/556ammos.png" sourcerect="256,0,64,64" origin="0.5,0.5" />
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
         <Body width="17" height="6" density="30" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
         <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="200">
-            <RequiredSkill identifier="weapons" level="30" />
-            <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
-            <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
+            <RequiredSkill identifier="weapons" level="50" />
+            <RequiredItem identifier="magnesium" />
+            <RequiredItem identifier="titaniumaluminiumalloy" />
+            <RequiredItem tag="advmunition_core" description="fabricationdescription.advmunition_core" />
+            <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" />
             <RequiredItem identifier="c4block" count="1"/>
         </Fabricate>
         <Projectile characterusable="false" hitscan="true" removeonhit="true">
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
-            <Attack structuredamage="10" targetforce="10" itemdamage="10" severlimbsprobability="0.1" penetration="0.4">
+            <Attack structuredamage="20" targetforce="10" itemdamage="20" severlimbsprobability="0.1" penetration="0.5">
                 <Affliction identifier="gunshotwound" strength="4.75" />
-                <Affliction identifier="bleeding" strength="10" probability="0.1"/>
-                <Affliction identifier="stun" strength="0.15" probability="0.5"/>
-                <Affliction identifier="explosiondamage" strength="1" />
+                <Affliction identifier="bleeding" strength="10" probability="0.5"/>
+                <Affliction identifier="stun" strength="0.3" />
+                <Affliction identifier="explosiondamage" strength="10" />
             </Attack>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2,2" />
@@ -135,6 +140,11 @@
                 <Conditional entitytype="eq Structure" />
                 <Conditional hastag="eq door" />
                 <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="This" disabledeltatime="true">
+                <Explosion range="15.0" ballastfloradamage="25" severlimbsprobability="0.5" structuredamage="8" levelwalldamage="40" itemdamage="100" force="3.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" flashcolor="255,115,95,150">
+                    <Affliction identifier="burn" strength="10" />
+                </Explosion>
             </StatusEffect>
         </Projectile>
     </Item>
