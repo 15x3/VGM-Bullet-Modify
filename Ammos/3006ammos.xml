@@ -1,22 +1,18 @@
 <?xml version="1.0" ?>
 <Items>
-    <!-- 30-06子弹，步枪口径，与.45相比：枪伤440%，流血效果1300%，异常效果数学期望3000%，并自带默认0.6穿甲（penetration="0.6"） -->
-    <Item name="" identifier="3006FMJ_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,rifleammo" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
+    <!-- <Item name="" identifier="3006FMJ_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,rifleammo" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
         <InventoryIcon texture="" sourcerect="0,0,64,64" depth="0.55" origin="0.5,0.5"/>
-        <!-- InventoryIcon的texture留空 -->
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
         <Body width="23" height="9" density="30" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
         <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="7">
             <RequiredSkill identifier="weapons" level="30" />
-            <!-- Fabricate当中配方的请不要做出变动 -->
             <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
             <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
         </Fabricate>
         <Projectile launchimpulse="35.0" characterusable="false" hitscan="true" removeonhit="true">
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
             <Attack structuredamage="15" targetforce="12" itemdamage="15" severlimbsprobability="0.5" penetration="0.6">
-                <!-- Affliction的各项数值请参考45ammos.xml当中已有的模板，以及对数值做出的规定 -->
                 <Affliction identifier="gunshotwound" strength="11"/>
                 <Affliction identifier="stun" strength="0.6"/>
             </Attack>
@@ -29,6 +25,400 @@
                 <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1"/>
             </StatusEffect>
         </Projectile>
+    </Item> -->
+    <Item name="" identifier="3006Blank_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,rifleammo" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
+        <InventoryIcon texture="" sourcerect="0,0,64,64" depth="0.55" origin="0.5,0.5"/>
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
+        <Body width="23" height="9" density="30" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="7">
+            <RequiredSkill identifier="weapons" level="30" />
+            <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+        </Fabricate>
+        <Projectile launchimpulse="35.0" characterusable="false" hitscan="true" removeonhit="true">
+            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
+            <Attack structuredamage="7.5" targetforce="12" itemdamage="7.5" severlimbsprobability="0.01" penetration="0.6">
+                <Affliction identifier="gunshotwound" strength="2.2"/>
+                <Affliction identifier="stun" strength="0.6" probability="0.5"/>
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Conditional entitytype="eq Structure"/>
+                <Conditional hastag="eq door"/>
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1"/>
+            </StatusEffect>
+        </Projectile>
     </Item>
-    <!-- 需要的子弹数量：与.45一致 -->
+    <Item name="" identifier="3006JHP_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,rifleammo" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
+        <InventoryIcon texture="" sourcerect="0,0,64,64" depth="0.55" origin="0.5,0.5"/>
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
+        <Body width="23" height="9" density="30" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="7">
+            <RequiredSkill identifier="weapons" level="30" />
+            <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+            <RequiredItem identifier="lead" count="1"/>
+        </Fabricate>
+        <Projectile launchimpulse="35.0" characterusable="false" hitscan="true" removeonhit="true">
+            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
+            <Attack structuredamage="3.75" targetforce="12" itemdamage="3.75" severlimbsprobability="1.0" penetration="0.6">
+                <Affliction identifier="gunshotwound" strength="15.4"/>
+                <Affliction identifier="stun" strength="0.9" probability="0.5"/>
+                <Affliction identifier="bleeding" strength="3.25" probability="0.3"/>
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Conditional entitytype="eq Structure"/>
+                <Conditional hastag="eq door"/>
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1"/>
+            </StatusEffect>
+        </Projectile>
+    </Item>
+    <Item name="" identifier="3006AP_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,rifleammo" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
+        <InventoryIcon texture="" sourcerect="0,0,64,64" depth="0.55" origin="0.5,0.5"/>
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
+        <Body width="23" height="9" density="30" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="14">
+            <RequiredSkill identifier="weapons" level="30" />
+            <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+            <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
+            <RequiredItem identifier="titaniumaluminiumalloy" count="1"/>
+        </Fabricate>
+        <Projectile launchimpulse="35.0" characterusable="false" hitscan="true" removeonhit="true">
+            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
+            <Attack structuredamage="30" targetforce="12" itemdamage="30" severlimbsprobability="0.5" penetration="0.8">
+                <Affliction identifier="gunshotwound" strength="8.8"/>
+                <Affliction identifier="bleeding" strength="1.95"/>
+                <Affliction identifier="stun" strength="0.6" probability="0.1"/>
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Conditional entitytype="eq Structure"/>
+                <Conditional hastag="eq door"/>
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1"/>
+            </StatusEffect>
+        </Projectile>
+    </Item>
+    <Item name="" identifier="3006Exp_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,rifleammo" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
+        <InventoryIcon texture="" sourcerect="0,0,64,64" depth="0.55" origin="0.5,0.5"/>
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
+        <Body width="23" height="9" density="30" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="14">
+            <RequiredSkill identifier="weapons" level="30" />
+            <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+            <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
+            <RequiredItem identifier="c4block" count="1"/>
+        </Fabricate>
+        <Projectile launchimpulse="35.0" characterusable="false" hitscan="true" removeonhit="true">
+            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
+            <Attack structuredamage="37.5" targetforce="37.5" itemdamage="37.5" severlimbsprobability="0.5" penetration="0.6">
+                <Affliction identifier="gunshotwound" strength="4.4"/>
+                <Affliction identifier="bleeding" strength="3.25" probability="0.1"/>
+                <Affliction identifier="stun" strength="0.9" probability="0.5"/>
+                <Affliction identifier="explosiondamage" strength="1" />
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0"/>
+                <Explosion range="10" force="0.1" smoke="false" sparks="true" flames="false" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Conditional entitytype="eq Structure"/>
+                <Conditional hastag="eq door"/>
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1"/>
+            </StatusEffect>
+        </Projectile>
+    </Item>
+    <Item name="" identifier="3006Chloralhydrate_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,rifleammo" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
+        <InventoryIcon texture="" sourcerect="0,0,64,64" depth="0.55" origin="0.5,0.5"/>
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
+        <Body width="23" height="9" density="30" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="7">
+            <RequiredSkill identifier="weapons" level="30" />
+            <RequiredSkill identifier="medical" level="30" />
+            <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+            <RequiredItem identifier="steel" count="1"/>
+            <RequiredItem identifier="chloralhydrate" count="1"/>
+        </Fabricate>
+        <Projectile launchimpulse="35.0" characterusable="false" hitscan="true" removeonhit="true">
+            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
+            <Attack structuredamage="11.25" targetforce="12" itemdamage="11.25" severlimbsprobability="0.01" penetration="0.6">
+                <Affliction identifier="gunshotwound" strength="8.8"/>
+                <Affliction identifier="bleeding" strength="48.75" probability="0.3"/>
+                <Affliction identifier="incrementalstun" amount="75"/>
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Conditional entitytype="eq Structure"/>
+                <Conditional hastag="eq door"/>
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1"/>
+            </StatusEffect>
+        </Projectile>
+    </Item>
+    <Item name="" identifier="3006Opium_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,rifleammo" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
+        <InventoryIcon texture="" sourcerect="0,0,64,64" depth="0.55" origin="0.5,0.5"/>
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
+        <Body width="23" height="9" density="30" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="7">
+            <RequiredSkill identifier="weapons" level="30" />
+            <RequiredSkill identifier="medical" level="30" />
+            <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+            <RequiredItem identifier="steel" count="1"/>
+            <RequiredItem identifier="opium" count="1"/>
+        </Fabricate>
+        <Projectile launchimpulse="35.0" characterusable="false" hitscan="true" removeonhit="true">
+            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
+            <Attack structuredamage="11.25" targetforce="12" itemdamage="11.25" severlimbsprobability="0.01" penetration="0.6">
+                <Affliction identifier="gunshotwound" strength="8.8"/>
+                <Affliction identifier="bleeding" strength="48.75" probability="0.3"/>
+                <Affliction identifier="opiateoverdose" amount="52.5"/>
+                <Affliction identifier="opiateaddiction" amount="15"/>
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Conditional entitytype="eq Structure"/>
+                <Conditional hastag="eq door"/>
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1"/>
+            </StatusEffect>
+        </Projectile>
+    </Item>
+    <Item name="" identifier="3006Sufforin_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,rifleammo" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
+        <InventoryIcon texture="" sourcerect="0,0,64,64" depth="0.55" origin="0.5,0.5"/>
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
+        <Body width="23" height="9" density="30" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="7">
+            <RequiredSkill identifier="weapons" level="30" />
+            <RequiredSkill identifier="medical" level="30" />
+            <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+            <RequiredItem identifier="steel" count="1"/>
+            <RequiredItem identifier="sufforin" count="1"/>
+        </Fabricate>
+        <Projectile launchimpulse="35.0" characterusable="false" hitscan="true" removeonhit="true">
+            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
+            <Attack structuredamage="11.25" targetforce="12" itemdamage="11.25" severlimbsprobability="0.01" penetration="0.6">
+                <Affliction identifier="gunshotwound" strength="8.8"/>
+                <Affliction identifier="bleeding" strength="48.75" probability="0.3"/>
+                <Affliction identifier="sufforinpoisoning" amount="0.33"/>
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Conditional entitytype="eq Structure"/>
+                <Conditional hastag="eq door"/>
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1"/>
+            </StatusEffect>
+        </Projectile>
+    </Item>
+    <Item name="" identifier="3006Morbusine_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,rifleammo" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
+        <InventoryIcon texture="" sourcerect="0,0,64,64" depth="0.55" origin="0.5,0.5"/>
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
+        <Body width="23" height="9" density="30" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="7">
+            <RequiredSkill identifier="weapons" level="30" />
+            <RequiredSkill identifier="medical" level="30" />
+            <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+            <RequiredItem identifier="steel" count="1"/>
+            <RequiredItem identifier="sufforin" count="1"/>
+        </Fabricate>
+        <Projectile launchimpulse="35.0" characterusable="false" hitscan="true" removeonhit="true">
+            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
+            <Attack structuredamage="11.25" targetforce="12" itemdamage="11.25" severlimbsprobability="0.01" penetration="0.6">
+                <Affliction identifier="gunshotwound" strength="8.8"/>
+                <Affliction identifier="bleeding" strength="48.75" probability="0.3"/>
+                <Affliction identifier="morbusinepoisoning" amount="0.33"/>
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Conditional entitytype="eq Structure"/>
+                <Conditional hastag="eq door"/>
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1"/>
+            </StatusEffect>
+        </Projectile>
+    </Item>
+    <Item name="" identifier="3006Cyanide_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,rifleammo" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
+        <InventoryIcon texture="" sourcerect="0,0,64,64" depth="0.55" origin="0.5,0.5"/>
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
+        <Body width="23" height="9" density="30" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="7">
+            <RequiredSkill identifier="weapons" level="30" />
+            <RequiredSkill identifier="medical" level="30" />
+            <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+            <RequiredItem identifier="steel" count="1"/>
+            <RequiredItem identifier="cyanide" count="1"/>
+        </Fabricate>
+        <Projectile launchimpulse="35.0" characterusable="false" hitscan="true" removeonhit="true">
+            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
+            <Attack structuredamage="11.25" targetforce="12" itemdamage="11.25" severlimbsprobability="0.01" penetration="0.9">
+                <Affliction identifier="gunshotwound" strength="8.8"/>
+                <Affliction identifier="bleeding" strength="48.75" probability="0.3"/>
+                <Affliction identifier="cyanidepoisoning" amount="0.33"/>
+                <Affliction identifier="organdamage" strength="1.5" probability="0.6"/>
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Conditional entitytype="eq Structure"/>
+                <Conditional hastag="eq door"/>
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1"/>
+            </StatusEffect>
+        </Projectile>
+    </Item>
+    <Item name="" identifier="3006Calyx_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,rifleammo" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
+        <InventoryIcon texture="" sourcerect="0,0,64,64" depth="0.55" origin="0.5,0.5"/>
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
+        <Body width="23" height="9" density="30" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="7">
+            <RequiredSkill identifier="weapons" level="30" />
+            <RequiredSkill identifier="medical" level="50" />
+            <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+            <RequiredItem identifier="steel" count="1"/>
+            <RequiredItem identifier="huskeggs" count="1"/>
+        </Fabricate>
+        <Projectile launchimpulse="35.0" characterusable="false" hitscan="true" removeonhit="true">
+            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
+            <Attack structuredamage="11.25" targetforce="12" itemdamage="11.25" severlimbsprobability="0.01" penetration="0.6">
+                <Affliction identifier="gunshotwound" strength="8.8"/>
+                <Affliction identifier="bleeding" strength="48.75" probability="0.3"/>
+                <Affliction identifier="huskinfection" amount="0.5" probability="0.1"/>
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Conditional entitytype="eq Structure"/>
+                <Conditional hastag="eq door"/>
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1"/>
+            </StatusEffect>
+        </Projectile>
+    </Item>
+    <Item name="" identifier="3006Physicorium_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,rifleammo" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
+        <InventoryIcon texture="" sourcerect="0,0,64,64" depth="0.55" origin="0.5,0.5"/>
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
+        <Body width="23" height="9" density="30" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="14">
+            <RequiredSkill identifier="weapons" level="30" />
+            <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+            <RequiredItem identifier="physicorium" count="1"/>
+        </Fabricate>
+        <Projectile launchimpulse="35.0" characterusable="false" hitscan="true" removeonhit="true">
+            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
+            <Attack structuredamage="11.25" targetforce="12" itemdamage="11.25" severlimbsprobability="0.01" penetration="0.9">
+                <Affliction identifier="gunshotwound" strength="22"/>
+                <Affliction identifier="bleeding" strength="48.75"/>
+                <Affliction identifier="stun" strength="0.6" probability="0.1"/>
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Conditional entitytype="eq Structure"/>
+                <Conditional hastag="eq door"/>
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1"/>
+            </StatusEffect>
+        </Projectile>
+    </Item>
+    <Item name="" identifier="3006Dementonite_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,rifleammo" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
+        <InventoryIcon texture="" sourcerect="0,0,64,64" depth="0.55" origin="0.5,0.5"/>
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
+        <Body width="23" height="9" density="30" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="14">
+            <RequiredSkill identifier="weapons" level="30" />
+            <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+            <RequiredItem identifier="dementonite" count="1"/>
+        </Fabricate>
+        <Projectile launchimpulse="35.0" characterusable="false" hitscan="true" removeonhit="true">
+            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
+            <Attack structuredamage="11.25" targetforce="12" itemdamage="11.25" severlimbsprobability="0.01" penetration="0.6">
+                <Affliction identifier="gunshotwound" strength="22"/>
+                <Affliction identifier="lacerations" strength="39" probability="0.6"/>
+                <Affliction identifier="burn" strength="13"/>
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Conditional entitytype="eq Structure"/>
+                <Conditional hastag="eq door"/>
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1"/>
+            </StatusEffect>
+        </Projectile>
+    </Item>
+    <Item name="" identifier="3006Incendium_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,rifleammo" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
+        <InventoryIcon texture="" sourcerect="0,0,64,64" depth="0.55" origin="0.5,0.5"/>
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
+        <Body width="23" height="9" density="30" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="14">
+            <RequiredSkill identifier="weapons" level="30" />
+            <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+            <RequiredItem identifier="incendium" count="1"/>
+        </Fabricate>
+        <Projectile launchimpulse="35.0" characterusable="false" hitscan="true" removeonhit="true">
+            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
+            <Attack structuredamage="11.25" targetforce="12" itemdamage="11.25" severlimbsprobability="0.01" penetration="0.6">
+                <Affliction identifier="gunshotwound" strength="22"/>
+                <Affliction identifier="explosiondamage" strength="39"/>
+                <Affliction identifier="stun" strength="2.6" probability="0.1"/>
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0"/>
+                <Explosion range="10" force="0.1" smoke="true" sparks="false" flames="true"/>
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Conditional entitytype="eq Structure"/>
+                <Conditional hastag="eq door"/>
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1"/>
+            </StatusEffect>
+        </Projectile>
+    </Item>
+    <Item name="" identifier="3006Fulgurium_VGB" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,rifleammo" impactsoundtag="impact_metal_light"  scale="0.5" maxstacksize="32" maxstacksizecharacterinventory="16">
+        <InventoryIcon texture="" sourcerect="0,0,64,64" depth="0.55" origin="0.5,0.5"/>
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5"/>
+        <Body width="23" height="9" density="30" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="14">
+            <RequiredSkill identifier="weapons" level="30" />
+            <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+            <RequiredItem identifier="carbon" count="1"/>
+        </Fabricate>
+        <Projectile launchimpulse="35.0" characterusable="false" hitscan="true" removeonhit="true">
+            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
+            <Attack structuredamage="11.25" targetforce="12" itemdamage="11.25" severlimbsprobability="0.01" penetration="0.9">
+                <Affliction identifier="gunshotwound" strength="22"/>
+                <Affliction identifier="bleeding" strength="48.75"/>
+                <Affliction identifier="electricshock" strength="13" probability="0.6"/>
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Conditional entitytype="eq Structure"/>
+                <Conditional hastag="eq door"/>
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1"/>
+            </StatusEffect>
+        </Projectile>
+    </Item>
 </Items>
