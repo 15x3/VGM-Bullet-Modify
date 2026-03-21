@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" nowhitespace="true" translatedname="English">
+    <entityname.smground>.45 FMJ</entityname.smground>
+    <entitydescription.smground>.45 caliber Full Metal Jacket round, the most basic SMG ammunition, can be loaded into SMG magazines</entitydescription.smground>
+    <entityname.45Blank_VGB>.45 Blank</entityname.45Blank_VGB>
+    <entitydescription.45Blank_VGB>A cartridge with only casing, fragile bullet, and a small primer - deals virtually no damage. Typically used for drills and weapon testing, or for security officers with excess energy to play around with</entitydescription.45Blank_VGB>
+    <entityname.45JHP_VGB>.45 JHP</entityname.45JHP_VGB>
+    <entitydescription.45JHP_VGB>.45 Jacketed Hollow Point round, primarily for unarmored wildlife. Causes high bleeding damage and more likely to stun targets.</entitydescription.45JHP_VGB>
+    <entityname.45AP_VGB>.45 AP</entityname.45AP_VGB>
+    <entitydescription.45AP_VGB>.45 pointed Armor-Piercing round, mainly for light armor targets. Due to bullet length, propellant is slightly reduced, resulting in slightly lower damage than standard rounds.</entitydescription.45AP_VGB>
+    <entityname.45Exp_VGB>.45 Explosive</entityname.45Exp_VGB>
+    <entitydescription.45Exp_VGB>.45 explosive round, average damage but very likely to knock targets off balance. Primarily used for breaching structures</entitydescription.45Exp_VGB>
+    <entityname.45Chloralhydrate_VGB>.45 Chemical Sedative</entityname.45Chloralhydrate_VGB>
+    <entitydescription.45Chloralhydrate_VGB>.45 hypodermic round loaded with chloral hydrate - a professional riot control round that not only stuns targets but can knock them unconscious for a short time. More shots = better effect.</entitydescription.45Chloralhydrate_VGB>
+    <entityname.45Opium_VGB>.45 Medicinal Opium</entityname.45Opium_VGB>
+    <entitydescription.45Opium_VGB>.45 hypodermic round loaded with medicinal opium solution - not for treating others. Instead, it slowly accumulates opioid overdose in the target, preventing them from using morphine to save themselves</entitydescription.45Opium_VGB>
+    <entityname.45Sufforin_VGB>.45 Sufforin Toxin</entityname.45Sufforin_VGB>
+    <entitydescription.45Sufforin_VGB>.45 hypodermic round loaded with Sufforin toxin, slowly accumulates Sufforin in the target. Each round contains minimal toxin - requires sustained fire to take effect</entitydescription.45Sufforin_VGB>
+    <entityname.45Morbusine_VGB>.45 Morbusine Toxin</entityname.45Morbusine_VGB>
+    <entitydescription.45Morbusine_VGB>.45 hypodermic round loaded with Morbusine toxin, slowly accumulates Morbusine in the target. Each round contains minimal toxin - requires sustained fire to take effect</entitydescription.45Morbusine_VGB>
+    <entityname.45Cyanide_VGB>.45 Cyanide Toxin</entityname.45Cyanide_VGB>
+    <entitydescription.45Cyanide_VGB>.45 hypodermic round loaded with Cyanide toxin, slowly accumulates Cyanide in the target. Each round contains minimal toxin - requires sustained fire to take effect</entitydescription.45Cyanide_VGB>
+    <entityname.45Calyx_VGB>.45 Calyx Dirty Bomb</entityname.45Calyx_VGB>
+    <entitydescription.45Calyx_VGB>.45 hypodermic round carrying a small amount of Velonaceps Calyx eggs. Theoretically capable of infecting multiple hosts with a single dose, but given most eggs die on impact, actual transmission efficiency is quite luck-dependent.</entitydescription.45Calyx_VGB>
+    <entityname.45Physicorium_VGB>.45 Physicorium AP</entityname.45Physicorium_VGB>
+    <entitydescription.45Physicorium_VGB>.45 alien pointed AP round using Physicorium bullet - uses harder bullet material without sacrificing muzzle velocity. Exceptional armor penetration.</entitydescription.45Physicorium_VGB>
+    <entityname.45Dementonite_VGB>.45 Dementonite Gravity</entityname.45Dementonite_VGB>
+    <entitydescription.45Dementonite_VGB>.45 FMJ round using Dementonite bullet - causes minor gravity disruption in enemies, leading to severe deep tissue damage and inducing psychotic symptoms</entitydescription.45Dementonite_VGB>
+    <entityname.45Incendium_VGB>.45 Incendium HE</entityname.45Incendium_VGB>
+    <entitydescription.45Incendium_VGB>.45 explosive round using Incendium bullet - Incendium explosive makes its tissue damage comparable to small grenades</entitydescription.45Incendium_VGB>
+    <entityname.45Fulgurium_VGB>.45 Fulgurium Shock</entityname.45Fulgurium_VGB>
+    <entitydescription.45Fulgurium_VGB>Luxurious .45 FMJ round using Fulgurium - causes shock effects, quickly incapacitating targets</entitydescription.45Fulgurium_VGB>
+    <entityname.45ERASER_VGB>Antai Technology™ .45 "ERASER"</entityname.45ERASER_VGB>
+    <entitydescription.45ERASER_VGB>This round is incompatible with any magazine - it can only be loaded directly into the chamber \nEtched on the primer: "Extreme Pragmatism" \nHolding it gives you an ominous feeling \nBest not used indoors</entitydescription.45ERASER_VGB>
+    <entityname.38Blank_VGB>.38 Blank</entityname.38Blank_VGB>
+    <entitydescription.38Blank_VGB>.38 caliber cartridge with only casing, fragile bullet, and small primer - deals virtually no damage. Typically used for drills and weapon testing</entitydescription.38Blank_VGB>
+    <entityname.38JHP_VGB>.38 JHP</entityname.38JHP_VGB>
+    <entitydescription.38JHP_VGB>.38 caliber Jacketed Hollow Point round, excellent against unarmored wildlife. Causes high bleeding damage and more likely to stun targets.</entitydescription.38JHP_VGB>
+    <entityname.38AP_VGB>.38 AP</entityname.38AP_VGB>
+    <entitydescription.38AP_VGB>.38 pointed Armor-Piercing round, mainly for light armor targets. Sacrifices some damage for armor penetration</entitydescription.38AP_VGB>
+    <entityname.38Exp_VGB>.38 Explosive</entityname.38Exp_VGB>
+    <entitydescription.38Exp_VGB>.38 explosive round, average damage but very likely to knock targets off balance.</entitydescription.38Exp_VGB>
+    <entityname.38Chloralhydrate_VGB>.38 Chemical Sedative</entityname.38Chloralhydrate_VGB>
+    <entitydescription.38Chloralhydrate_VGB>.38 hypodermic round loaded with chloral hydrate - a professional riot control round that not only stuns targets but can knock them unconscious for a short time. More shots = better effect</entitydescription.38Chloralhydrate_VGB>
+    <entityname.38Opium_VGB>.38 Medicinal Opium</entityname.38Opium_VGB>
+    <entitydescription.38Opium_VGB>.38 hypodermic round loaded with medicinal opium solution - not for treating others. Instead, it slowly accumulates opioid overdose in the target, preventing them from using morphine to save themselves</entitydescription.38Opium_VGB>
+    <entityname.38Sufforin_VGB>.38 Sufforin Toxin</entityname.38Sufforin_VGB>
+    <entitydescription.38Sufforin_VGB>.38 hypodermic round loaded with Sufforin toxin, slowly accumulates Sufforin in the target. Each round contains minimal toxin - requires sustained fire to take effect</entitydescription.38Sufforin_VGB>
+    <entityname.38Morbusine_VGB>.38 Morbusine Toxin</entityname.38Morbusine_VGB>
+    <entitydescription.38Morbusine_VGB>.38 hypodermic round loaded with Morbusine toxin, slowly accumulates Morbusine in the target. Each round contains minimal toxin - requires sustained fire to take effect</entitydescription.38Morbusine_VGB>
+    <entityname.38Cyanide_VGB>.38 Cyanide Toxin</entityname.38Cyanide_VGB>
+    <entitydescription.38Cyanide_VGB>.38 hypodermic round loaded with Cyanide toxin, slowly accumulates Cyanide in the target. Each round contains minimal toxin - requires sustained fire to take effect</entitydescription.38Cyanide_VGB>
+    <entityname.38Calyx_VGB>.38 Calyx Dirty Bomb</entityname.38Calyx_VGB>
+    <entitydescription.38Calyx_VGB>.38 hypodermic round carrying a small amount of Velonaceps Calyx eggs. Theoretically capable of infecting multiple hosts with a single dose, but given most eggs die on impact, actual transmission efficiency is quite luck-dependent</entitydescription.38Calyx_VGB>
+    <entityname.38Physicorium_VGB>.38 Physicorium AP</entityname.38Physicorium_VGB>
+    <entitydescription.38Physicorium_VGB>.38 alien pointed AP round using Physicorium bullet - uses harder bullet material without sacrificing muzzle velocity. Exceptional armor penetration.</entitydescription.38Physicorium_VGB>
+    <entityname.38Dementonite_VGB>.38 Dementonite Gravity</entityname.38Dementonite_VGB>
+    <entitydescription.38Dementonite_VGB>.38 FMJ round using Dementonite bullet - causes minor gravity disruption in enemies, leading to severe deep tissue damage and inducing psychotic symptoms</entitydescription.38Dementonite_VGB>
+    <entityname.38Incendium_VGB>.38 Incendium HE</entityname.38Incendium_VGB>
+    <entitydescription.38Incendium_VGB>.38 explosive round using Incendium bullet - Incendium explosive makes its tissue damage comparable to small grenades</entitydescription.38Incendium_VGB>
+    <entityname.38Fulgurium_VGB>.38 Fulgurium Shock</entityname.38Fulgurium_VGB>
+    <entitydescription.38Fulgurium_VGB>Luxurious .38 FMJ round using Fulgurium - causes shock effects, quickly incapacitating targets</entitydescription.38Fulgurium_VGB>
+    <entityname.3006Blank_VGB>.30-06 Blank</entityname.3006Blank_VGB>
+    <entitydescription.3006Blank_VGB>.30-06 caliber cartridge with only casing, fragile bullet, and small primer - deals virtually no damage. Typically used for drills and weapon testing</entitydescription.3006Blank_VGB>
+    <entityname.3006JHP_VGB>.30-06 JHP</entityname.3006JHP_VGB>
+    <entitydescription.3006JHP_VGB>.30-06 full-power Jacketed Hollow Point round, excellent against unarmored wildlife. Causes very high bleeding damage and more likely to stun targets</entitydescription.3006JHP_VGB>
+    <entityname.3006AP_VGB>.30-06 AP</entityname.3006AP_VGB>
+    <entitydescription.3006AP_VGB>.30-06 pointed Armor-Piercing round, mainly for medium armor targets. Sacrifices some damage for superior armor penetration</entitydescription.3006AP_VGB>
+    <entityname.3006Exp_VGB>.30-06 Explosive</entityname.3006Exp_VGB>
+    <entitydescription.3006Exp_VGB>.30-06 explosive round, high damage mainly for breaching structures and engaging large targets</entitydescription.3006Exp_VGB>
+    <entityname.3006Chloralhydrate_VGB>.30-06 Chemical Sedative</entityname.3006Chloralhydrate_VGB>
+    <entitydescription.3006Chloralhydrate_VGB>.30-06 hypodermic round loaded with chloral hydrate - a professional riot control round that not only stuns targets but can knock them unconscious for a short time</entitydescription.3006Chloralhydrate_VGB>
+    <entityname.3006Opium_VGB>.30-06 Medicinal Opium</entityname.3006Opium_VGB>
+    <entitydescription.3006Opium_VGB>.30-06 hypodermic round loaded with medicinal opium solution - not for treating others. Instead, it slowly accumulates opioid overdose in the target, preventing them from using morphine to save themselves</entitydescription.3006Opium_VGB>
+    <entityname.3006Sufforin_VGB>.30-06 Sufforin Toxin</entityname.3006Sufforin_VGB>
+    <entitydescription.3006Sufforin_VGB>.30-06 hypodermic round loaded with Sufforin toxin, slowly accumulates Sufforin in the target. Each round contains minimal toxin - requires 4-5 consecutive shots to take effect</entitydescription.3006Sufforin_VGB>
+    <entityname.3006Morbusine_VGB>.30-06 Morbusine Toxin</entityname.3006Morbusine_VGB>
+    <entitydescription.3006Morbusine_VGB>.30-06 hypodermic round loaded with Morbusine toxin, slowly accumulates Morbusine in the target. Each round contains minimal toxin - requires 4-5 consecutive shots to take effect</entitydescription.3006Morbusine_VGB>
+    <entityname.3006Cyanide_VGB>.30-06 Cyanide Toxin</entityname.3006Cyanide_VGB>
+    <entitydescription.3006Cyanide_VGB>.30-06 hypodermic round loaded with Cyanide toxin, slowly accumulates Cyanide in the target. Each round contains minimal toxin - requires 4-5 consecutive shots to take effect</entitydescription.3006Cyanide_VGB>
+    <entityname.3006Calyx_VGB>.30-06 Calyx Dirty Bomb</entityname.3006Calyx_VGB>
+    <entitydescription.3006Calyx_VGB>.30-06 hypodermic round carrying a small amount of Velonaceps Calyx eggs. Theoretically capable of infecting multiple hosts with a single dose, but given most eggs die on impact, actual transmission efficiency is quite luck-dependent\n.30-06 rounds have higher infection probability than .45 rounds</entitydescription.3006Calyx_VGB>
+    <entityname.3006Physicorium_VGB>.30-06 Physicorium AP</entityname.3006Physicorium_VGB>
+    <entitydescription.3006Physicorium_VGB>.30-06 alien pointed AP round using Physicorium bullet - uses harder bullet material without sacrificing muzzle velocity. Exceptional armor penetration.</entitydescription.3006Physicorium_VGB>
+    <entityname.3006Dementonite_VGB>.30-06 Dementonite Gravity</entityname.3006Dementonite_VGB>
+    <entitydescription.3006Dementonite_VGB>.30-06 FMJ round using Dementonite bullet - causes minor gravity disruption in enemies, leading to severe deep tissue damage and inducing psychotic symptoms</entitydescription.3006Dementonite_VGB>
+    <entityname.3006Incendium_VGB>.30-06 Incendium HE</entityname.3006Incendium_VGB>
+    <entitydescription.3006Incendium_VGB>.30-06 explosive round using Incendium bullet - Incendium explosive makes its tissue damage comparable to medium grenades</entitydescription.3006Incendium_VGB>
+    <entityname.3006Fulgurium_VGB>.30-06 Fulgurium Shock</entityname.3006Fulgurium_VGB>
+    <entitydescription.3006Fulgurium_VGB>Luxurious .30-06 FMJ round using Fulgurium - causes shock effects, quickly incapacitating targets</entitydescription.3006Fulgurium_VGB>
+    <entityname.60Blank_VGB>.60 Blank</entityname.60Blank_VGB>
+    <entitydescription.60Blank_VGB>.60 hand cannon cartridge with only casing, fragile bullet, and small primer - deals virtually no damage. Typically used for drills and weapon testing</entitydescription.60Blank_VGB>
+    <entityname.60JHP_VGB>.60 JHP</entityname.60JHP_VGB>
+    <entitydescription.60JHP_VGB>The .60's already terrifying kinetic energy transfer combined with special hollow point bullets - blowing a bandit's head off should be no problem</entitydescription.60JHP_VGB>
+    <entityname.60AP_VGB>.60 AP</entityname.60AP_VGB>
+    <entitydescription.60AP_VGB>Performance very close to Old Earth's popular .50 BMG round - deals devastating damage to most armored small creatures</entitydescription.60AP_VGB>
+    <entityname.60Exp_VGB>.60 Explosive</entityname.60Exp_VGB>
+    <entitydescription.60Exp_VGB>An explosive surprise in the barrel</entitydescription.60Exp_VGB>
+    <entityname.68Blank_VGB>6.8mm Blank</entityname.68Blank_VGB>
+    <entitydescription.68Blank_VGB>6.8mm cartridge with only casing, fragile bullet, and small primer - deals virtually no damage. Typically used for drills and weapon testing</entitydescription.68Blank_VGB>
+    <entityname.68JHP_VGB>6.8mm JHP</entityname.68JHP_VGB>
+    <entitydescription.68JHP_VGB>6.8mm Jacketed Hollow Point round, assault rifle standard ammunition. Excellent against unarmored wildlife, causes high bleeding damage</entitydescription.68JHP_VGB>
+    <entityname.68AP_VGB>6.8mm AP</entityname.68AP_VGB>
+    <entitydescription.68AP_VGB>6.8mm pointed Armor-Piercing round, mainly for light armor targets</entitydescription.68AP_VGB>
+    <entityname.68Exp_VGB>6.8mm Explosive</entityname.68Exp_VGB>
+    <entitydescription.68Exp_VGB>6.8mm explosive round, average damage but very likely to knock targets off balance. Mainly used for breaching structures</entitydescription.68Exp_VGB>
+    <entityname.68Rev_VGB>6.8mm "Revolutionary" Overpressure</entityname.68Rev_VGB>
+    <entitydescription.68Rev_VGB>Improved 6.8mm round - "Revolutionary" uses AP-HE warhead + composite overpressure propellant combo, unlocking 6.8mm's potential\nThe only problem: "Revolutionary" causes irreversible damage to assault rifles. Long-term use will eventually destroy the weapon.</entitydescription.68Rev_VGB>
+    <entityname.556Blank_VGB>5.56mm Blank</entityname.556Blank_VGB>
+    <entitydescription.556Blank_VGB>5.56mm cartridge with only casing, fragile bullet, and small primer - deals virtually no damage. Typically used for drills and weapon testing</entitydescription.556Blank_VGB>
+    <entityname.556JHP_VGB>5.56mm JHP</entityname.556JHP_VGB>
+    <entitydescription.556JHP_VGB>5.56mm machine gun dedicated Jacketed Hollow Point round - low single-shot damage but extremely high rate of fire, suitable for engaging unarmored cluster targets</entitydescription.556JHP_VGB>
+    <entityname.556AP_VGB>5.56mm AP</entityname.556AP_VGB>
+    <entitydescription.556AP_VGB>5.56mm machine gun dedicated Armor-Piercing round, mainly for suppressive fire. High rate of fire compensates for limited single-shot armor penetration</entitydescription.556AP_VGB>
+    <entityname.556Exp_VGB>5.56mm Explosive</entityname.556Exp_VGB>
+    <entitydescription.556Exp_VGB>5.56mm machine gun dedicated explosive round - limited single-shot power but high rate of fire accumulates explosive effects. Mainly for suppressive fire and breaching</entitydescription.556Exp_VGB>
+    <entityname.EmptySmgMag_VGM>Empty SMG Magazine</entityname.EmptySmgMag_VGM>
+    <entitydescription.EmptySmgMag_VGM>An empty SMG magazine, needs to be loaded with corresponding ammunition</entitydescription.EmptySmgMag_VGM>
+    <entityname.SmgMagBlank_VGM>.45 Blank Magazine</entityname.SmgMagBlank_VGM>
+    <entitydescription.SmgMagBlank_VGM>SMG magazine loaded with .45 blanks, for drills and training</entitydescription.SmgMagBlank_VGM>
+    <entityname.smgmagazine>.45 FMJ Magazine</entityname.smgmagazine>
+    <entitydescription.smgmagazine>SMG magazine loaded with .45 FMJ rounds, the most basic ammunition configuration</entitydescription.smgmagazine>
+    <entityname.SmgMagJHP_VGM>.45 JHP Magazine</entityname.SmgMagJHP_VGM>
+    <entitydescription.SmgMagJHP_VGM>SMG magazine loaded with .45 JHP rounds, excellent against unarmored targets</entitydescription.SmgMagJHP_VGM>
+    <entityname.SmgMagAP_VGM>.45 AP Magazine</entityname.SmgMagAP_VGM>
+    <entitydescription.SmgMagAP_VGM>SMG magazine loaded with .45 AP rounds, can penetrate light armor</entitydescription.SmgMagAP_VGM>
+    <entityname.SmgMagExp_VGM>.45 Explosive Magazine</entityname.SmgMagExp_VGM>
+    <entitydescription.SmgMagExp_VGM>SMG magazine loaded with .45 explosive rounds, can be used for breaching structures</entitydescription.SmgMagExp_VGM>
+    <entityname.SmgMagChloralhydrate_VGM>.45 Chemical Sedative Magazine</entityname.SmgMagChloralhydrate_VGM>
+    <entitydescription.SmgMagChloralhydrate_VGM>SMG magazine loaded with .45 chemical sedative rounds, for riot control and non-lethal takedowns</entitydescription.SmgMagChloralhydrate_VGM>
+    <entityname.SmgMagOpium_VGM>.45 Medicinal Opium Magazine</entityname.SmgMagOpium_VGM>
+    <entitydescription.SmgMagOpium_VGM>SMG magazine loaded with .45 medicinal opium rounds, prevents targets from using morphine to save themselves</entitydescription.SmgMagOpium_VGM>
+    <entityname.SmgMagSufforin_VGM>.45 Sufforin Toxin Magazine</entityname.SmgMagSufforin_VGM>
+    <entitydescription.SmgMagSufforin_VGM>SMG magazine loaded with .45 Sufforin toxin rounds, accumulates Sufforin in targets</entitydescription.SmgMagSufforin_VGM>
+    <entityname.SmgMagMorbusine_VGM>.45 Morbusine Toxin Magazine</entityname.SmgMagMorbusine_VGM>
+    <entitydescription.SmgMagMorbusine_VGM>SMG magazine loaded with .45 Morbusine toxin rounds, accumulates Morbusine in targets</entitydescription.SmgMagMorbusine_VGM>
+    <entityname.SmgMagCyanide_VGM>.45 Cyanide Toxin Magazine</entityname.SmgMagCyanide_VGM>
+    <entitydescription.SmgMagCyanide_VGM>SMG magazine loaded with .45 Cyanide toxin rounds, accumulates Cyanide in targets</entitydescription.SmgMagCyanide_VGM>
+    <entityname.SmgMagCalyx_VGM>.45 Calyx Dirty Bomb Magazine</entityname.SmgMagCalyx_VGM>
+    <entitydescription.SmgMagCalyx_VGM>.45 SMG magazine carrying small amount of Velonaceps Calyx eggs. Less efficient than direct injection, but can still spread infection</entitydescription.SmgMagCalyx_VGM>
+    <entityname.SmgMagPhysicorium_VGM>.45 Physicorium AP Magazine</entityname.SmgMagPhysicorium_VGM>
+    <entitydescription.SmgMagPhysicorium_VGM>SMG magazine loaded with .45 Physicorium AP rounds, exceptional armor penetration</entitydescription.SmgMagPhysicorium_VGM>
+    <entityname.SmgMagDementonite_VGM>.45 Dementonite Gravity Magazine</entityname.SmgMagDementonite_VGM>
+    <entitydescription.SmgMagDementonite_VGM>SMG magazine loaded with .45 Dementonite gravity rounds, causes deep tissue damage and induces psychosis</entitydescription.SmgMagDementonite_VGM>
+    <entityname.SmgMagIncendium_VGM>.45 Incendium HE Magazine</entityname.SmgMagIncendium_VGM>
+    <entitydescription.SmgMagIncendium_VGM>SMG magazine loaded with .45 Incendium HE rounds, tissue damage comparable to small grenades</entitydescription.SmgMagIncendium_VGM>
+    <entityname.SmgMagFulgurium_VGM>.45 Fulgurium Shock Magazine</entityname.SmgMagFulgurium_VGM>
+    <entitydescription.SmgMagFulgurium_VGM>SMG magazine loaded with .45 Fulgurium shock rounds, quickly incapacitates targets</entitydescription.SmgMagFulgurium_VGM>
+    <entityname.EmptySmgLongMag_VGM>Empty SMG Extended Magazine</entityname.EmptySmgLongMag_VGM>
+    <entitydescription.EmptySmgLongMag_VGM>An empty SMG extended magazine, needs to be loaded with corresponding ammunition</entitydescription.EmptySmgLongMag_VGM>
+    <entityname.SmgLongMagBlank_VGM>.45 Blank Extended Magazine</entityname.SmgLongMagBlank_VGM>
+    <entitydescription.SmgLongMagBlank_VGM>SMG extended magazine loaded with .45 blanks, for drills and training</entitydescription.SmgLongMagBlank_VGM>
+    <entityname.SmgLongMagJHP_VGM>.45 JHP Extended Magazine</entityname.SmgLongMagJHP_VGM>
+    <entitydescription.SmgLongMagJHP_VGM>SMG extended magazine loaded with .45 JHP rounds, excellent against unarmored targets</entitydescription.SmgLongMagJHP_VGM>
+    <entityname.SmgLongMagAP_VGM>.45 AP Extended Magazine</entityname.SmgLongMagAP_VGM>
+    <entitydescription.SmgLongMagAP_VGM>SMG extended magazine loaded with .45 AP rounds, can penetrate light armor</entitydescription.SmgLongMagAP_VGM>
+    <entityname.SmgLongMagExp_VGM>.45 Explosive Extended Magazine</entityname.SmgLongMagExp_VGM>
+    <entitydescription.SmgLongMagExp_VGM>SMG extended magazine loaded with .45 explosive rounds, can be used for breaching structures</entitydescription.SmgLongMagExp_VGM>
+    <entityname.SmgLongMagChloralhydrate_VGM>.45 Chemical Sedative Extended Magazine</entityname.SmgLongMagChloralhydrate_VGM>
+    <entitydescription.SmgLongMagChloralhydrate_VGM>SMG extended magazine loaded with .45 chemical sedative rounds, for riot control and non-lethal takedowns</entitydescription.SmgLongMagChloralhydrate_VGM>
+    <entityname.SmgLongMagOpium_VGM>.45 Medicinal Opium Extended Magazine</entityname.SmgLongMagOpium_VGM>
+    <entitydescription.SmgLongMagOpium_VGM>SMG extended magazine loaded with .45 medicinal opium rounds, prevents targets from using morphine to save themselves</entitydescription.SmgLongMagOpium_VGM>
+    <entityname.SmgLongMagSufforin_VGM>.45 Sufforin Toxin Extended Magazine</entityname.SmgLongMagSufforin_VGM>
+    <entitydescription.SmgLongMagSufforin_VGM>SMG extended magazine loaded with .45 Sufforin toxin rounds, accumulates Sufforin in targets</entitydescription.SmgLongMagSufforin_VGM>
+    <entityname.SmgLongMagMorbusine_VGM>.45 Morbusine Toxin Extended Magazine</entityname.SmgLongMagMorbusine_VGM>
+    <entitydescription.SmgLongMagMorbusine_VGM>SMG extended magazine loaded with .45 Morbusine toxin rounds, accumulates Morbusine in targets</entitydescription.SmgLongMagMorbusine_VGM>
+    <entityname.SmgLongMagCyanide_VGM>.45 Cyanide Toxin Extended Magazine</entityname.SmgLongMagCyanide_VGM>
+    <entitydescription.SmgLongMagCyanide_VGM>SMG extended magazine loaded with .45 Cyanide toxin rounds, accumulates Cyanide in targets</entitydescription.SmgLongMagCyanide_VGM>
+    <entityname.SmgLongMagCalyx_VGM>.45 Calyx Dirty Bomb Extended Magazine</entityname.SmgLongMagCalyx_VGM>
+    <entitydescription.SmgLongMagCalyx_VGM>.45 SMG extended magazine carrying small amount of Velonaceps Calyx eggs. Less efficient than direct injection, but can still spread infection</entitydescription.SmgLongMagCalyx_VGM>
+    <entityname.SmgLongMagPhysicorium_VGM>.45 Physicorium AP Extended Magazine</entityname.SmgLongMagPhysicorium_VGM>
+    <entitydescription.SmgLongMagPhysicorium_VGM>SMG extended magazine loaded with .45 Physicorium AP rounds, exceptional armor penetration</entitydescription.SmgLongMagPhysicorium_VGM>
+    <entityname.SmgLongMagDementonite_VGM>.45 Dementonite Gravity Extended Magazine</entityname.SmgLongMagDementonite_VGM>
+    <entitydescription.SmgLongMagDementonite_VGM>SMG extended magazine loaded with .45 Dementonite gravity rounds, causes deep tissue damage and induces psychosis</entitydescription.SmgLongMagDementonite_VGM>
+    <entityname.SmgLongMagIncendium_VGM>.45 Incendium HE Extended Magazine</entityname.SmgLongMagIncendium_VGM>
+    <entitydescription.SmgLongMagIncendium_VGM>SMG extended magazine loaded with .45 Incendium HE rounds, tissue damage comparable to small grenades</entitydescription.SmgLongMagIncendium_VGM>
+    <entityname.SmgLongMagFulgurium_VGM>.45 Fulgurium Shock Extended Magazine</entityname.SmgLongMagFulgurium_VGM>
+    <entitydescription.SmgLongMagFulgurium_VGM>SMG extended magazine loaded with .45 Fulgurium shock rounds, quickly incapacitates targets</entitydescription.SmgLongMagFulgurium_VGM>
+    <entityname.smgDFuelLongMagVGM>.45 Depleted Fuel Extended Magazine</entityname.smgDFuelLongMagVGM>
+    <entitydescription.smgDFuelLongMagVGM>SMG extended magazine loaded with .45 depleted fuel rounds, causes radiation damage and effectively penetrates armor</entitydescription.smgDFuelLongMagVGM>
+    <entityname.EmptySmgDrumMag_VGM>Empty SMG Drum Magazine</entityname.EmptySmgDrumMag_VGM>
+    <entitydescription.EmptySmgDrumMag_VGM>An empty SMG drum magazine, needs to be loaded with corresponding ammunition</entitydescription.EmptySmgDrumMag_VGM>
+    <entityname.SmgDrumMagBlank_VGM>.45 Blank Drum Magazine</entityname.SmgDrumMagBlank_VGM>
+    <entitydescription.SmgDrumMagBlank_VGM>SMG drum magazine loaded with .45 blanks, for drills and training</entitydescription.SmgDrumMagBlank_VGM>
+    <entityname.SmgDrumMagJHP_VGM>.45 JHP Drum Magazine</entityname.SmgDrumMagJHP_VGM>
+    <entitydescription.SmgDrumMagJHP_VGM>SMG drum magazine loaded with .45 JHP rounds, excellent against unarmored targets</entitydescription.SmgDrumMagJHP_VGM>
+    <entityname.SmgDrumMagAP_VGM>.45 AP Drum Magazine</entityname.SmgDrumMagAP_VGM>
+    <entitydescription.SmgDrumMagAP_VGM>SMG drum magazine loaded with .45 AP rounds, can penetrate light armor</entitydescription.SmgDrumMagAP_VGM>
+    <entityname.SmgDrumMagExp_VGM>.45 Explosive Drum Magazine</entityname.SmgDrumMagExp_VGM>
+    <entitydescription.SmgDrumMagExp_VGM>SMG drum magazine loaded with .45 explosive rounds, can be used for breaching structures</entitydescription.SmgDrumMagExp_VGM>
+    <entityname.SmgDrumMagChloralhydrate_VGM>.45 Chemical Sedative Drum Magazine</entityname.SmgDrumMagChloralhydrate_VGM>
+    <entitydescription.SmgDrumMagChloralhydrate_VGM>SMG drum magazine loaded with .45 chemical sedative rounds, for riot control and non-lethal takedowns</entitydescription.SmgDrumMagChloralhydrate_VGM>
+    <entityname.SmgDrumMagOpium_VGM>.45 Medicinal Opium Drum Magazine</entityname.SmgDrumMagOpium_VGM>
+    <entitydescription.SmgDrumMagOpium_VGM>SMG drum magazine loaded with .45 medicinal opium rounds, prevents targets from using morphine to save themselves</entitydescription.SmgDrumMagOpium_VGM>
+    <entityname.SmgDrumMagSufforin_VGM>.45 Sufforin Toxin Drum Magazine</entityname.SmgDrumMagSufforin_VGM>
+    <entitydescription.SmgDrumMagSufforin_VGM>SMG drum magazine loaded with .45 Sufforin toxin rounds, accumulates Sufforin in targets</entitydescription.SmgDrumMagSufforin_VGM>
+    <entityname.SmgDrumMagMorbusine_VGM>.45 Morbusine Toxin Drum Magazine</entityname.SmgDrumMagMorbusine_VGM>
+    <entitydescription.SmgDrumMagMorbusine_VGM>SMG drum magazine loaded with .45 Morbusine toxin rounds, accumulates Morbusine in targets</entitydescription.SmgDrumMagMorbusine_VGM>
+    <entityname.SmgDrumMagCyanide_VGM>.45 Cyanide Toxin Drum Magazine</entityname.SmgDrumMagCyanide_VGM>
+    <entitydescription.SmgDrumMagCyanide_VGM>SMG drum magazine loaded with .45 Cyanide toxin rounds, accumulates Cyanide in targets</entitydescription.SmgDrumMagCyanide_VGM>
+    <entityname.SmgDrumMagCalyx_VGM>.45 Calyx Dirty Bomb Drum Magazine</entityname.SmgDrumMagCalyx_VGM>
+    <entitydescription.SmgDrumMagCalyx_VGM>.45 SMG drum magazine carrying small amount of Velonaceps Calyx eggs. Less efficient than direct injection, but can still spread infection</entitydescription.SmgDrumMagCalyx_VGM>
+    <entityname.SmgDrumMagPhysicorium_VGM>.45 Physicorium AP Drum Magazine</entityname.SmgDrumMagPhysicorium_VGM>
+    <entitydescription.SmgDrumMagPhysicorium_VGM>SMG drum magazine loaded with .45 Physicorium AP rounds, exceptional armor penetration</entitydescription.SmgDrumMagPhysicorium_VGM>
+    <entityname.SmgDrumMagDementonite_VGM>.45 Dementonite Gravity Drum Magazine</entityname.SmgDrumMagDementonite_VGM>
+    <entitydescription.SmgDrumMagDementonite_VGM>SMG drum magazine loaded with .45 Dementonite gravity rounds, causes deep tissue damage and induces psychosis</entitydescription.SmgDrumMagDementonite_VGM>
+    <entityname.SmgDrumMagIncendium_VGM>.45 Incendium HE Drum Magazine</entityname.SmgDrumMagIncendium_VGM>
+    <entitydescription.SmgDrumMagIncendium_VGM>SMG drum magazine loaded with .45 Incendium HE rounds, tissue damage comparable to small grenades</entitydescription.SmgDrumMagIncendium_VGM>
+    <entityname.SmgDrumMagFulgurium_VGM>.45 Fulgurium Shock Drum Magazine</entityname.SmgDrumMagFulgurium_VGM>
+    <entitydescription.SmgDrumMagFulgurium_VGM>SMG drum magazine loaded with .45 Fulgurium shock rounds, quickly incapacitates targets</entitydescription.SmgDrumMagFulgurium_VGM>
+    <entityname.smgDFuelDrumMagVGM>.45 Depleted Fuel Drum Magazine</entityname.smgDFuelDrumMagVGM>
+    <entitydescription.smgDFuelDrumMagVGM>SMG drum magazine loaded with .45 depleted fuel rounds, causes radiation damage and effectively penetrates armor</entitydescription.smgDFuelDrumMagVGM>
+    <entityname.EmptyAssaultMag_VGM>Empty Assault Rifle Magazine</entityname.EmptyAssaultMag_VGM>
+    <entitydescription.EmptyAssaultMag_VGM>An empty assault rifle magazine, needs to be loaded with corresponding ammunition</entitydescription.EmptyAssaultMag_VGM>
+    <entityname.AssaultMagBlank_VGM>6.8mm Blank Magazine</entityname.AssaultMagBlank_VGM>
+    <entitydescription.AssaultMagBlank_VGM>Assault rifle magazine loaded with 6.8mm blanks, for drills and training</entitydescription.AssaultMagBlank_VGM>
+    <entityname.assaultriflemagazine>Assault Rifle Magazine</entityname.assaultriflemagazine>
+    <entitydescription.assaultriflemagazine>Assault rifle magazine loaded with 6.8mm FMJ rounds, the most basic ammunition configuration</entitydescription.assaultriflemagazine>
+    <entityname.AssaultMagJHP_VGM>6.8mm JHP Magazine</entityname.AssaultMagJHP_VGM>
+    <entitydescription.AssaultMagJHP_VGM>Assault rifle magazine loaded with 6.8mm JHP rounds, excellent against unarmored targets</entitydescription.AssaultMagJHP_VGM>
+    <entityname.AssaultMagAP_VGM>6.8mm AP Magazine</entityname.AssaultMagAP_VGM>
+    <entitydescription.AssaultMagAP_VGM>Assault rifle magazine loaded with 6.8mm AP rounds, can penetrate light armor</entitydescription.AssaultMagAP_VGM>
+    <entityname.AssaultMagExp_VGM>6.8mm Explosive Magazine</entityname.AssaultMagExp_VGM>
+    <entitydescription.AssaultMagExp_VGM>Assault rifle magazine loaded with 6.8mm explosive rounds, can be used for breaching structures</entitydescription.AssaultMagExp_VGM>
+    <entityname.AssaultMagRev_VGM>6.8mm Overpressure Magazine</entityname.AssaultMagRev_VGM>
+    <entitydescription.AssaultMagRev_VGM>Assault rifle magazine loaded with 6.8mm overpressure rounds. WARNING: These rounds cause irreversible damage to the rifle</entitydescription.AssaultMagRev_VGM>
+    <entityname.EmptyAssaultMagLong_VGM>Empty Assault Rifle Extended Magazine</entityname.EmptyAssaultMagLong_VGM>
+    <entitydescription.EmptyAssaultMagLong_VGM>An empty assault rifle extended magazine, needs to be loaded with corresponding ammunition</entitydescription.EmptyAssaultMagLong_VGM>
+    <entityname.AssaultMagLongBlank_VGM>6.8mm Blank Extended Magazine</entityname.AssaultMagLongBlank_VGM>
+    <entitydescription.AssaultMagLongBlank_VGM>Assault rifle extended magazine loaded with 6.8mm blanks, for drills and training</entitydescription.AssaultMagLongBlank_VGM>
+    <entityname.assaultriflemagazinelong>Assault Rifle Extended Magazine</entityname.assaultriflemagazinelong>
+    <entitydescription.assaultriflemagazinelong>Assault rifle extended magazine loaded with 6.8mm FMJ rounds, provides increased ammunition capacity</entitydescription.assaultriflemagazinelong>
+    <entityname.AssaultMagLongJHP_VGM>6.8mm JHP Extended Magazine</entityname.AssaultMagLongJHP_VGM>
+    <entitydescription.AssaultMagLongJHP_VGM>Assault rifle extended magazine loaded with 6.8mm JHP rounds, excellent against unarmored targets</entitydescription.AssaultMagLongJHP_VGM>
+    <entityname.AssaultMagLongAP_VGM>6.8mm AP Extended Magazine</entityname.AssaultMagLongAP_VGM>
+    <entitydescription.AssaultMagLongAP_VGM>Assault rifle extended magazine loaded with 6.8mm AP rounds, can penetrate light armor</entitydescription.AssaultMagLongAP_VGM>
+    <entityname.AssaultMagLongExp_VGM>6.8mm Explosive Extended Magazine</entityname.AssaultMagLongExp_VGM>
+    <entitydescription.AssaultMagLongExp_VGM>Assault rifle extended magazine loaded with 6.8mm explosive rounds, can be used for breaching structures</entitydescription.AssaultMagLongExp_VGM>
+    <entityname.AssaultMagLongRev_VGM>6.8mm Overpressure Extended Magazine</entityname.AssaultMagLongRev_VGM>
+    <entitydescription.AssaultMagLongRev_VGM>Assault rifle extended magazine loaded with 6.8mm overpressure rounds. WARNING: These rounds cause irreversible damage to the rifle</entitydescription.AssaultMagLongRev_VGM>
+    <entityname.EmptyAssaultMagDrum_VGM>Empty Assault Rifle Drum Magazine</entityname.EmptyAssaultMagDrum_VGM>
+    <entitydescription.EmptyAssaultMagDrum_VGM>An empty assault rifle drum magazine, needs to be loaded with corresponding ammunition</entitydescription.EmptyAssaultMagDrum_VGM>
+    <entityname.AssaultMagDrumBlank_VGM>6.8mm Blank Drum Magazine</entityname.AssaultMagDrumBlank_VGM>
+    <entitydescription.AssaultMagDrumBlank_VGM>Assault rifle drum magazine loaded with 6.8mm blanks, for drills and training</entitydescription.AssaultMagDrumBlank_VGM>
+    <entityname.assaultriflemagazinedrum>Assault Rifle Drum Magazine</entityname.assaultriflemagazinedrum>
+    <entitydescription.assaultriflemagazinedrum>Assault rifle drum magazine loaded with 6.8mm FMJ rounds, provides maximum ammunition capacity</entitydescription.assaultriflemagazinedrum>
+    <entityname.AssaultMagDrumJHP_VGM>6.8mm JHP Drum Magazine</entityname.AssaultMagDrumJHP_VGM>
+    <entitydescription.AssaultMagDrumJHP_VGM>Assault rifle drum magazine loaded with 6.8mm JHP rounds, excellent against unarmored targets</entitydescription.AssaultMagDrumJHP_VGM>
+    <entityname.AssaultMagDrumAP_VGM>6.8mm AP Drum Magazine</entityname.AssaultMagDrumAP_VGM>
+    <entitydescription.AssaultMagDrumAP_VGM>Assault rifle drum magazine loaded with 6.8mm AP rounds, can penetrate light armor</entitydescription.AssaultMagDrumAP_VGM>
+    <entityname.AssaultMagDrumExp_VGM>6.8mm Explosive Drum Magazine</entityname.AssaultMagDrumExp_VGM>
+    <entitydescription.AssaultMagDrumExp_VGM>Assault rifle drum magazine loaded with 6.8mm explosive rounds, can be used for breaching structures</entitydescription.AssaultMagDrumExp_VGM>
+    <entityname.AssaultMagDrumRev_VGM>6.8mm Overpressure Drum Magazine</entityname.AssaultMagDrumRev_VGM>
+    <entitydescription.AssaultMagDrumRev_VGM>Assault rifle drum magazine loaded with 6.8mm overpressure rounds. WARNING: These rounds cause irreversible damage to the rifle</entitydescription.AssaultMagDrumRev_VGM>
+    <entityname.EmptyHmgMag_VGM>Empty Heavy Machine Gun Magazine</entityname.EmptyHmgMag_VGM>
+    <entitydescription.EmptyHmgMag_VGM>An empty heavy machine gun magazine, needs to be loaded with corresponding ammunition</entitydescription.EmptyHmgMag_VGM>
+    <entityname.HmgMagBlank_VGM>5.56mm Blank Magazine</entityname.HmgMagBlank_VGM>
+    <entitydescription.HmgMagBlank_VGM>Heavy machine gun magazine loaded with 5.56mm blanks, for drills and training</entitydescription.HmgMagBlank_VGM>
+    <entityname.HmgMagJHP_VGM>5.56mm JHP Magazine</entityname.HmgMagJHP_VGM>
+    <entitydescription.HmgMagJHP_VGM>Heavy machine gun magazine loaded with 5.56mm JHP rounds, suitable for engaging cluster targets</entitydescription.HmgMagJHP_VGM>
+    <entityname.HmgMagAP_VGM>5.56mm AP Magazine</entityname.HmgMagAP_VGM>
+    <entitydescription.HmgMagAP_VGM>Heavy machine gun magazine loaded with 5.56mm AP rounds, for suppressive fire</entitydescription.HmgMagAP_VGM>
+    <entityname.HmgMagExp_VGM>5.56mm Explosive Magazine</entityname.HmgMagExp_VGM>
+    <entitydescription.HmgMagExp_VGM>Heavy machine gun magazine loaded with 5.56mm explosive rounds, for suppressive fire and breaching</entitydescription.HmgMagExp_VGM>
+    <entityname.EmptyHmgMagDrum_VGM>Empty Heavy Machine Gun Drum Magazine</entityname.EmptyHmgMagDrum_VGM>
+    <entitydescription.EmptyHmgMagDrum_VGM>An empty heavy machine gun drum magazine, needs to be loaded with corresponding ammunition</entitydescription.EmptyHmgMagDrum_VGM>
+    <entityname.HmgMagDrumBlank_VGM>5.56mm Blank Drum Magazine</entityname.HmgMagDrumBlank_VGM>
+    <entitydescription.HmgMagDrumBlank_VGM>Heavy machine gun drum magazine loaded with 5.56mm blanks, for drills and training</entitydescription.HmgMagDrumBlank_VGM>
+    <entityname.HmgMagDrumJHP_VGM>5.56mm JHP Drum Magazine</entityname.HmgMagDrumJHP_VGM>
+    <entitydescription.HmgMagDrumJHP_VGM>Heavy machine gun drum magazine loaded with 5.56mm JHP rounds, suitable for engaging cluster targets</entitydescription.HmgMagDrumJHP_VGM>
+    <entityname.HmgMagDrumAP_VGM>5.56mm AP Drum Magazine</entityname.HmgMagDrumAP_VGM>
+    <entitydescription.HmgMagDrumAP_VGM>Heavy machine gun drum magazine loaded with 5.56mm AP rounds, for suppressive fire</entitydescription.HmgMagDrumAP_VGM>
+    <entityname.HmgMagDrumExp_VGM>5.56mm Explosive Drum Magazine</entityname.HmgMagDrumExp_VGM>
+    <entitydescription.HmgMagDrumExp_VGM>Heavy machine gun drum magazine loaded with 5.56mm explosive rounds, for suppressive fire and breaching</entitydescription.HmgMagDrumExp_VGM>
+    <entityname.AmmoBox_VGM>Ammunition Storage Box</entityname.AmmoBox_VGM>
+    <entitydescription.AmmoBox_VGM>A specialized box for storing handheld weapon ammunition, can hold over a thousand rounds. Features multiple compartments for easy ammunition organization</entitydescription.AmmoBox_VGM>
+    <entityname.NoRopeSpear_VGB>Ropeless Spear</entityname.NoRopeSpear_VGB>
+    <entitydescription.NoRopeSpear_VGB>Standard spear without rope - can be shot at long range, but difficult to retrieve if missed</entitydescription.NoRopeSpear_VGB>
+    <entityname.ToolSpear_VGB>Tool Spear</entityname.ToolSpear_VGB>
+    <entitydescription.ToolSpear_VGB>Spear with fixture and firing pin - activates loaded items on impact\nCan load many things: from flares to explosives, but not all items can be triggered by spear impact</entitydescription.ToolSpear_VGB>
+    <entityname.12gBirdShot_VGB>12G Birdshot</entityname.12gBirdShot_VGB>
+    <entitydescription.12gBirdShot_VGB>Contains 16 small pellets. Low single-shot damage but wide coverage, suitable for small fast creatures and unarmored targets</entitydescription.12gBirdShot_VGB>
+    <entityname.12gDestructionShot_VGB>12G Destruction Shot</entityname.12gDestructionShot_VGB>
+    <entitydescription.12gDestructionShot_VGB>Breaching-specialized 12G birdshot using fragments instead of pellets - can blast through standard security doors in two shots. Not suitable for engaging creatures</entitydescription.12gDestructionShot_VGB>
+    <entityname.12gArrowShot_VGB>12G Arrow Shot</entityname.12gArrowShot_VGB>
+    <entitydescription.12gArrowShot_VGB>Contains 5 heavy arrow-shaped pellets. Enhances armor penetration at the cost of fewer pellets</entitydescription.12gArrowShot_VGB>
+    <entityname.12gRaptorKiller_VGB>"Dragon Slayer" 12G Arrow Shot</entityname.12gRaptorKiller_VGB>
+    <entitydescription.12gRaptorKiller_VGB>12G arrow shot designed against raptors, coated with raptor essence</entitydescription.12gRaptorKiller_VGB>
+    <entityname.12gCalyxKiller_VGB>"Insecticide" 12G Arrow Shot</entityname.12gCalyxKiller_VGB>
+    <entitydescription.12gCalyxKiller_VGB>Arrow shot designed against Velonaceps Calyx, coated with Calyxanide.\nCan also be used to treat Calyx infestation - of course, the method involves shooting yourself.</entitydescription.12gCalyxKiller_VGB>
+    <entityname.12gFlashShot_VGB>12G Flash Shot</entityname.12gFlashShot_VGB>
+    <entitydescription.12gFlashShot_VGB>12-gauge flash round - non-lethal ammunition causing blindness and sensory overload. Suitable for riot control and temporary escape</entitydescription.12gFlashShot_VGB>
+    <entityname.12gFlareShot_VGB>12G Flare Shot</entityname.12gFlareShot_VGB>
+    <entitydescription.12gFlareShot_VGB>Flare round launched from shotgun, emits yellow flash</entitydescription.12gFlareShot_VGB>
+    <entityname.12gDragonShot_VGB>12G Dragon's Breath</entityname.12gDragonShot_VGB>
+    <entitydescription.12gDragonShot_VGB>12G shotgun round loaded with flammable material - can efficiently start fires or ignite others</entitydescription.12gDragonShot_VGB>
+    <subcategory.VGB>Vanilla Weapon Modification (VGM) Pack #1 - Vanilla Ammo Expansion</subcategory.VGB>
+</infotexts>

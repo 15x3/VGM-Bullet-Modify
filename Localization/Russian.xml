@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Russian" nowhitespace="true" translatedname="Русский">
+    <entityname.smground>.45 ОБТ</entityname.smground>
+    <entitydescription.smground>.45 калибра патрон с оболочечной пулей, наиболее базовые боеприпасы для пистолета-пулемёта. Можно заряжать в магазины ПП</entitydescription.smground>
+    <entityname.45Blank_VGB>.45 холостой</entityname.45Blank_VGB>
+    <entitydescription.45Blank_VGB>Патрон с гильзой, хрупкой пулей и малым количеством капсюля - практически не наносит урона. Обычно используется для учений и испытаний оружия, или для офицеров безопасности с избытком энергии</entitydescription.45Blank_VGB>
+    <entityname.45JHP_VGB>.45 ЭП</entityname.45JHP_VGB>
+    <entitydescription.45JHP_VGB>.45 патрон с экспансивной пулей, в основном против небронированной дикой природы. Вызывает высокий кровотечение и с большей вероятностью оглушает цели.</entitydescription.45JHP_VGB>
+    <entityname.45AP_VGB>.45 БП</entityname.45AP_VGB>
+    <entitydescription.45AP_VGB>.45 остроконечный бронебойный патрон, в основном для целей с лёгкой бронёй. Из-за длины пули заряд пороха немного уменьшен, что снижает урон по сравнению со стандартными патронами.</entitydescription.45AP_VGB>
+    <entityname.45Exp_VGB>.45 взрывной</entityname.45Exp_VGB>
+    <entitydescription.45Exp_VGB>.45 взрывной патрон, средний урон но с высокой вероятностью сбивания цели с ног. В основном используется для вскрытия конструкций</entitydescription.45Exp_VGB>
+    <entityname.45Chloralhydrate_VGB>.45 химический седативный</entityname.45Chloralhydrate_VGB>
+    <entitydescription.45Chloralhydrate_VGB>.45 игольчатый патрон с хлоралгидратом - профессиональный патрон для подавления беспорядков, который не только оглушает цели, но и может кратковременно их усыплять. Больше выстрелов - лучше эффект.</entitydescription.45Chloralhydrate_VGB>
+    <entityname.45Opium_VGB>.45 медицинский опиум</entityname.45Opium_VGB>
+    <entitydescription.45Opium_VGB>.45 игольчатый патрон с раствором медицинского опиума - не для лечения других. Напротив, он медленно накапливает передозировку опиоидов в цели, предотвращая использование морфия для спасения</entitydescription.45Opium_VGB>
+    <entityname.45Sufforin_VGB>.45 токсин срафорина</entityname.45Sufforin_VGB>
+    <entitydescription.45Sufforin_VGB>.45 игольчатый патрон с токсином срафорина, медленно накапливает срафорин в цели. Каждый патрон содержит минимальное количество токсина - требуется длительный огонь для эффекта</entitydescription.45Sufforin_VGB>
+    <entityname.45Morbusine_VGB>.45 токсин морбузина</entityname.45Morbusine_VGB>
+    <entitydescription.45Morbusine_VGB>.45 игольчатый патрон с токсином морбузина, медленно накапливает морбузин в цели. Каждый патрон содержит минимальное количество токсина - требуется длительный огонь для эффекта</entitydescription.45Morbusine_VGB>
+    <entityname.45Cyanide_VGB>.45 токсин цианида</entityname.45Cyanide_VGB>
+    <entitydescription.45Cyanide_VGB>.45 игольчатый патрон с токсином цианида, медленно накапливает цианид в цели. Каждый патрон содержит минимальное количество токсина - требуется длительный огонь для эффекта</entitydescription.45Cyanide_VGB>
+    <entityname.45Calyx_VGB>.45 грязная бомба каликса</entityname.45Calyx_VGB>
+    <entitydescription.45Calyx_VGB>.45 игольчатый патрон с небольшим количеством яиц паразита каликса. Теоретически способен заразить несколько хозяев одной дозой, но поскольку большинство яиц погибает при ударе, фактическая эффективность заражения зависит от удачи.</entitydescription.45Calyx_VGB>
+    <entityname.45Physicorium_VGB>.45 БП физикориума</entityname.45Physicorium_VGB>
+    <entitydescription.45Physicorium_VGB>.45 инопланетный остроконечный бронебойный патрон с пулей из физикориума - использует более твёрдый материал пули без Sacrificing начальной скорости. Исключительное пробитие брони.</entitydescription.45Physicorium_VGB>
+    <entityname.45Dementonite_VGB>.45 гравитационный дементонита</entityname.45Dementonite_VGB>
+    <entitydescription.45Dementonite_VGB>.45 патрон с оболочечной пулей из дементонита - вызывает небольшие гравитационные нарушения у врагов, приводя к серьёзным повреждениям глубоких тканей и вызывающим психотические симптомы</entitydescription.45Dementonite_VGB>
+    <entityname.45Incendium_VGB>.45 ФТ инцендия</entityname.45Incendium_VGB>
+    <entitydescription.45Incendium_VGB>.45 взрывной патрон с пулей из инцендия - взрывчатка инцендия делает его повреждения тканей сопоставимыми с малыми гранатами</entitydescription.45Incendium_VGB>
+    <entityname.45Fulgurium_VGB>.45 электрошок фульгурия</entityname.45Fulgurium_VGB>
+    <entitydescription.45Fulgurium_VGB>Роскошный .45 патрон с оболочечной пулей из фульгурия - вызывает эффекты удара током, быстро выводя цели из строя</entitydescription.45Fulgurium_VGB>
+    <entityname.45ERASER_VGB>Антай Технолоджи™ .45 "СТИРАТЕЛЬ"</entityname.45ERASER_VGB>
+    <entitydescription.45ERASER_VGB>Этот патрон не совместим ни с какими магазинами - его можно зарядить только непосредственно в патронник \nНа капсюле выгравировано: "Экстремальный прагматизм" \nВ руке вызывает недоброе предчувствие \nЛучше не использовать в помещении</entitydescription.45ERASER_VGB>
+    <entityname.38Blank_VGB>.38 холостой</entityname.38Blank_VGB>
+    <entitydescription.38Blank_VGB>.38 калибра патрон с гильзой, хрупкой пулей и малым капсюлем - практически не наносит урона. Обычно используется для учений и испытаний оружия</entitydescription.38Blank_VGB>
+    <entityname.38JHP_VGB>.38 ЭП</entityname.38JHP_VGB>
+    <entitydescription.38JHP_VGB>.38 калибра патрон с экспансивной пулей, отлично против небронированной дикой природы. Вызывает высокий кровотечение и с большей вероятностью оглушает цели.</entitydescription.38JHP_VGB>
+    <entityname.38AP_VGB>.38 БП</entityname.38AP_VGB>
+    <entitydescription.38AP_VGB>.38 остроконечный бронебойный патрон, в основном для целей с лёгкой бронёй. Жертвует частью урона ради пробития брони</entitydescription.38AP_VGB>
+    <entityname.38Exp_VGB>.38 взрывной</entityname.38Exp_VGB>
+    <entitydescription.38Exp_VGB>.38 взрывной патрон, средний урон но с высокой вероятностью сбивания цели с ног.</entitydescription.38Exp_VGB>
+    <entityname.38Chloralhydrate_VGB>.38 химический седативный</entityname.38Chloralhydrate_VGB>
+    <entitydescription.38Chloralhydrate_VGB>.38 игольчатый патрон с хлоралгидратом - профессиональный патрон для подавления беспорядков, который не только оглушает цели, но и может кратковременно их усыплять. Больше выстрелов - лучше эффект</entitydescription.38Chloralhydrate_VGB>
+    <entityname.38Opium_VGB>.38 медицинский опиум</entityname.38Opium_VGB>
+    <entitydescription.38Opium_VGB>.38 игольчатый патрон с раствором медицинского опиума - не для лечения других. Напротив, он медленно накапливает передозировку опиоидов в цели, предотвращая использование морфия для спасения</entitydescription.38Opium_VGB>
+    <entityname.38Sufforin_VGB>.38 токсин срафорина</entityname.38Sufforin_VGB>
+    <entitydescription.38Sufforin_VGB>.38 игольчатый патрон с токсином срафорина, медленно накапливает срафорин в цели. Каждый патрон содержит минимальное количество токсина - требуется длительный огонь для эффекта</entitydescription.38Sufforin_VGB>
+    <entityname.38Morbusine_VGB>.38 токсин морбузина</entityname.38Morbusine_VGB>
+    <entitydescription.38Morbusine_VGB>.38 игольчатый патрон с токсином морбузина, медленно накапливает морбузин в цели. Каждый патрон содержит минимальное количество токсина - требуется длительный огонь для эффекта</entitydescription.38Morbusine_VGB>
+    <entityname.38Cyanide_VGB>.38 токсин цианида</entityname.38Cyanide_VGB>
+    <entitydescription.38Cyanide_VGB>.38 игольчатый патрон с токсином цианида, медленно накапливает цианид в цели. Каждый патрон содержит минимальное количество токсина - требуется длительный огонь для эффекта</entitydescription.38Cyanide_VGB>
+    <entityname.38Calyx_VGB>.38 грязная бомба каликса</entityname.38Calyx_VGB>
+    <entitydescription.38Calyx_VGB>.38 игольчатый патрон с небольшим количеством яиц паразита каликса. Теоретически способен заразить несколько хозяев одной дозой, но поскольку большинство яиц погибает при ударе, фактическая эффективность заражения зависит от удачи</entitydescription.38Calyx_VGB>
+    <entityname.38Physicorium_VGB>.38 БП физикориума</entityname.38Physicorium_VGB>
+    <entitydescription.38Physicorium_VGB>.38 инопланетный остроконечный бронебойный патрон с пулей из физикориума - использует более твёрдый материал пули без потери начальной скорости. Исключительное пробитие брони.</entitydescription.38Physicorium_VGB>
+    <entityname.38Dementonite_VGB>.38 гравитационный дементонита</entityname.38Dementonite_VGB>
+    <entitydescription.38Dementonite_VGB>.38 патрон с оболочечной пулей из дементонита - вызывает небольшие гравитационные нарушения у врагов, приводя к серьёзным повреждениям глубоких тканей и вызывающим психотические симптомы</entitydescription.38Dementonite_VGB>
+    <entityname.38Incendium_VGB>.38 ФТ инцендия</entityname.38Incendium_VGB>
+    <entitydescription.38Incendium_VGB>.38 взрывной патрон с пулей из инцендия - взрывчатка инцендия делает его повреждения тканей сопоставимыми с малыми гранатами</entitydescription.38Incendium_VGB>
+    <entityname.38Fulgurium_VGB>.38 электрошок фульгурия</entityname.38Fulgurium_VGB>
+    <entitydescription.38Fulgurium_VGB>Роскошный .38 патрон с оболочечной пулей из фульгурия - вызывает эффекты удара током, быстро выводя цели из строя</entitydescription.38Fulgurium_VGB>
+    <entityname.3006Blank_VGB>.30-06 холостой</entityname.3006Blank_VGB>
+    <entitydescription.3006Blank_VGB>.30-06 калибра патрон с гильзой, хрупкой пулей и малым капсюлем - практически не наносит урона. Обычно используется для учений и испытаний оружия</entitydescription.3006Blank_VGB>
+    <entityname.3006JHP_VGB>.30-06 ЭП</entityname.3006JHP_VGB>
+    <entitydescription.3006JHP_VGB>.30-06 полнобоевой патрон с экспансивной пулей, отлично против небронированной дикой природы. Вызывает очень высокий кровотечение и с большей вероятностью оглушает цели</entitydescription.3006JHP_VGB>
+    <entityname.3006AP_VGB>.30-06 БП</entityname.3006AP_VGB>
+    <entitydescription.3006AP_VGB>.30-06 остроконечный бронебойный патрон, в основном для целей со средней бронёй. Жертвует частью урона ради превосходного пробития брони</entitydescription.3006AP_VGB>
+    <entityname.3006Exp_VGB>.30-06 взрывной</entityname.3006Exp_VGB>
+    <entitydescription.3006Exp_VGB>.30-06 взрывной патрон, высокий урон в основном для вскрытия конструкций и борьбы с крупными целями</entitydescription.3006Exp_VGB>
+    <entityname.3006Chloralhydrate_VGB>.30-06 химический седативный</entityname.3006Chloralhydrate_VGB>
+    <entitydescription.3006Chloralhydrate_VGB>.30-06 игольчатый патрон с хлоралгидратом - профессиональный патрон для подавления беспорядков, который не только оглушает цели, но и может кратковременно их усыплять</entitydescription.3006Chloralhydrate_VGB>
+    <entityname.3006Opium_VGB>.30-06 медицинский опиум</entityname.3006Opium_VGB>
+    <entitydescription.3006Opium_VGB>.30-06 игольчатый патрон с раствором медицинского опиума - не для лечения других. Напротив, он медленно накапливает передозировку опиоидов в цели, предотвращая использование морфия для спасения</entitydescription.3006Opium_VGB>
+    <entityname.3006Sufforin_VGB>.30-06 токсин срафорина</entityname.3006Sufforin_VGB>
+    <entitydescription.3006Sufforin_VGB>.30-06 игольчатый патрон с токсином срафорина, медленно накапливает срафорин в цели. Каждый патрон содержит минимальное количество токсина - требуется 4-5 последовательных выстрелов для эффекта</entitydescription.3006Sufforin_VGB>
+    <entityname.3006Morbusine_VGB>.30-06 токсин морбузина</entityname.3006Morbusine_VGB>
+    <entitydescription.3006Morbusine_VGB>.30-06 игольчатый патрон с токсином морбузина, медленно накапливает морбузин в цели. Каждый патрон содержит минимальное количество токсина - требуется 4-5 последовательных выстрелов для эффекта</entitydescription.3006Morbusine_VGB>
+    <entityname.3006Cyanide_VGB>.30-06 токсин цианида</entityname.3006Cyanide_VGB>
+    <entitydescription.3006Cyanide_VGB>.30-06 игольчатый патрон с токсином цианида, медленно накапливает цианид в цели. Каждый патрон содержит минимальное количество токсина - требуется 4-5 последовательных выстрелов для эффекта</entitydescription.3006Cyanide_VGB>
+    <entityname.3006Calyx_VGB>.30-06 грязная бомба каликса</entityname.3006Calyx_VGB>
+    <entitydescription.3006Calyx_VGB>.30-06 игольчатый патрон с небольшим количеством яиц паразита каликса. Теоретически способен заразить несколько хозяев одной дозой, но поскольку большинство яиц погибает при ударе, фактическая эффективность заражения зависит от удачи\n.30-06 патроны имеют более высокую вероятность заражения, чем .45 патроны</entitydescription.3006Calyx_VGB>
+    <entityname.3006Physicorium_VGB>.30-06 БП физикориума</entityname.3006Physicorium_VGB>
+    <entitydescription.3006Physicorium_VGB>.30-06 инопланетный остроконечный бронебойный патрон с пулей из физикориума - использует более твёрдый материал пули без потери начальной скорости. Исключительное пробитие брони.</entitydescription.3006Physicorium_VGB>
+    <entityname.3006Dementonite_VGB>.30-06 гравитационный дементонита</entityname.3006Dementonite_VGB>
+    <entitydescription.3006Dementonite_VGB>.30-06 патрон с оболочечной пулей из дементонита - вызывает небольшие гравитационные нарушения у врагов, приводя к серьёзным повреждениям глубоких тканей и вызывающим психотические симптомы</entitydescription.3006Dementonite_VGB>
+    <entityname.3006Incendium_VGB>.30-06 ФТ инцендия</entityname.3006Incendium_VGB>
+    <entitydescription.3006Incendium_VGB>.30-06 взрывной патрон с пулей из инцендия - взрывчатка инцендия делает его повреждения тканей сопоставимыми со средними гранатами</entitydescription.3006Incendium_VGB>
+    <entityname.3006Fulgurium_VGB>.30-06 электрошок фульгурия</entityname.3006Fulgurium_VGB>
+    <entitydescription.3006Fulgurium_VGB>Роскошный .30-06 патрон с оболочечной пулей из фульгурия - вызывает эффекты удара током, быстро выводя цели из строя</entitydescription.3006Fulgurium_VGB>
+    <entityname.60Blank_VGB>.60 холостой</entityname.60Blank_VGB>
+    <entitydescription.60Blank_VGB>.60 калибра патрон для ручной пушки с гильзой, хрупкой пулей и малым капсюлем - практически не наносит урона. Обычно используется для учений и испытаний оружия</entitydescription.60Blank_VGB>
+    <entityname.60JHP_VGB>.60 ЭП</entityname.60JHP_VGB>
+    <entitydescription.60JHP_VGB>Уже ужасающая передача кинетической энергии .60 в сочетании со специальными экспансивными пулями - снести голову бандиту не составит труда</entitydescription.60JHP_VGB>
+    <entityname.60AP_VGB>.60 БП</entityname.60AP_VGB>
+    <entitydescription.60AP_VGB>Характеристики очень близки к популярному на Старой Земле патрону .50 BMG - наносит разрушительный урон большинству бронированных существ малого размера</entitydescription.60AP_VGB>
+    <entityname.60Exp_VGB>.60 взрывной</entityname.60Exp_VGB>
+    <entitydescription.60Exp_VGB>Взрывной сюрприз в стволе</entitydescription.60Exp_VGB>
+    <entityname.68Blank_VGB>6.8мм холостой</entityname.68Blank_VGB>
+    <entitydescription.68Blank_VGB>6.8мм патрон с гильзой, хрупкой пулей и малым капсюлем - практически не наносит урона. Обычно используется для учений и испытаний оружия</entitydescription.68Blank_VGB>
+    <entityname.68JHP_VGB>6.8мм ЭП</entityname.68JHP_VGB>
+    <entitydescription.68JHP_VGB>6.8мм патрон с экспансивной пулей, стандартные боеприпасы для штурмовой винтовки. Отлично против небронированной дикой природы, вызывает высокий кровотечение</entitydescription.68JHP_VGB>
+    <entityname.68AP_VGB>6.8мм БП</entityname.68AP_VGB>
+    <entitydescription.68AP_VGB>6.8мм остроконечный бронебойный патрон, в основном для целей с лёгкой бронёй</entitydescription.68AP_VGB>
+    <entityname.68Exp_VGB>6.8мм взрывной</entityname.68Exp_VGB>
+    <entitydescription.68Exp_VGB>6.8мм взрывной патрон, средний урон но с высокой вероятностью сбивания цели с ног. В основном используется для вскрытия конструкций</entitydescription.68Exp_VGB>
+    <entityname.68Rev_VGB>6.8мм "Революционер" избыточного давления</entityname.68Rev_VGB>
+    <entitydescription.68Rev_VGB>Улучшенный патрон 6.8мм - "Революционер" использует комбинацию бронебойно-фугасной пули + составного избыточного давления метательного заряда, раскрывая потенциал 6.8мм\nЕдинственная проблема: "Революционер" вызывает необратимые повреждения штурмовой винтовки. Долгосрочное использование в конечном итоге уничтожит оружие.</entitydescription.68Rev_VGB>
+    <entityname.556Blank_VGB>5.56мм холостой</entityname.556Blank_VGB>
+    <entitydescription.556Blank_VGB>5.56мм патрон с гильзой, хрупкой пулей и малым капсюлем - практически не наносит урона. Обычно используется для учений и испытаний оружия</entitydescription.556Blank_VGB>
+    <entityname.556JHP_VGB>5.56мм ЭП</entityname.556JHP_VGB>
+    <entitydescription.556JHP_VGB>5.56мм патрон с экспансивной пулей для пулемёта - низкий урон одиночным выстрелом но экстремально высокая скорострельность, подходит для борьбы с группами небронированных целей</entitydescription.556JHP_VGB>
+    <entityname.556AP_VGB>5.56мм БП</entityname.556AP_VGB>
+    <entitydescription.556AP_VGB>5.56мм бронебойный патрон для пулемёта, в основном для подавляющего огня. Высокая скорострельность компенсирует ограниченное пробитие одиночными выстрелами</entitydescription.556AP_VGB>
+    <entityname.556Exp_VGB>5.56мм взрывной</entityname.556Exp_VGB>
+    <entitydescription.556Exp_VGB>5.56мм взрывной патрон для пулемёта - ограниченная мощность одиночного выстрела но высокая скорострельность накапливает взрывные эффекты. В основном для подавляющего огня и вскрытия</entitydescription.556Exp_VGB>
+    <entityname.EmptySmgMag_VGM>Пустой магазин ПП</entityname.EmptySmgMag_VGM>
+    <entitydescription.EmptySmgMag_VGM>Пустой магазин для пистолета-пулемёта, необходимо зарядить соответствующими патронами</entitydescription.EmptySmgMag_VGM>
+    <entityname.SmgMagBlank_VGM>Магазин .45 холостых</entityname.SmgMagBlank_VGM>
+    <entitydescription.SmgMagBlank_VGM>Магазин ПП с .45 холостыми патронами, для учений и тренировки</entitydescription.SmgMagBlank_VGM>
+    <entityname.smgmagazine>Магазин .45 ОБТ</entityname.smgmagazine>
+    <entitydescription.smgmagazine>Магазин ПП с .45 патронами с оболочечной пулей, самая базовая конфигурация боеприпасов</entitydescription.smgmagazine>
+    <entityname.SmgMagJHP_VGM>Магазин .45 ЭП</entityname.SmgMagJHP_VGM>
+    <entitydescription.SmgMagJHP_VGM>Магазин ПП с .45 патронами с экспансивной пулей, отлично против небронированных целей</entitydescription.SmgMagJHP_VGM>
+    <entityname.SmgMagAP_VGM>Магазин .45 БП</entityname.SmgMagAP_VGM>
+    <entitydescription.SmgMagAP_VGM>Магазин ПП с .45 бронебойными патронами, пробивает лёгкую броню</entitydescription.SmgMagAP_VGM>
+    <entityname.SmgMagExp_VGM>Магазин .45 взрывных</entityname.SmgMagExp_VGM>
+    <entitydescription.SmgMagExp_VGM>Магазин ПП с .45 взрывными патронами, можно использовать для вскрытия конструкций</entitydescription.SmgMagExp_VGM>
+    <entityname.SmgMagChloralhydrate_VGM>Магазин .45 хим. седативных</entityname.SmgMagChloralhydrate_VGM>
+    <entitydescription.SmgMagChloralhydrate_VGM>Магазин ПП с .45 химическими седативными патронами, для подавления беспорядков и нелетального обезвреживания</entitydescription.SmgMagChloralhydrate_VGM>
+    <entityname.SmgMagOpium_VGM>Магазин .45 мед. опиума</entityname.SmgMagOpium_VGM>
+    <entitydescription.SmgMagOpium_VGM>Магазин ПП с .45 патронами медицинского опиума, предотвращает использование морфия целями для спасения</entitydescription.SmgMagOpium_VGM>
+    <entityname.SmgMagSufforin_VGM>Магазин .45 токсина срафорина</entityname.SmgMagSufforin_VGM>
+    <entitydescription.SmgMagSufforin_VGM>Магазин ПП с .45 патронами токсина срафорина, накапливает срафорин в целях</entitydescription.SmgMagSufforin_VGM>
+    <entityname.SmgMagMorbusine_VGM>Магазин .45 токсина морбузина</entityname.SmgMagMorbusine_VGM>
+    <entitydescription.SmgMagMorbusine_VGM>Магазин ПП с .45 патронами токсина морбузина, накапливает морбузин в целях</entitydescription.SmgMagMorbusine_VGM>
+    <entityname.SmgMagCyanide_VGM>Магазин .45 токсина цианида</entityname.SmgMagCyanide_VGM>
+    <entitydescription.SmgMagCyanide_VGM>Магазин ПП с .45 патронами токсина цианида, накапливает цианид в целях</entitydescription.SmgMagCyanide_VGM>
+    <entityname.SmgMagCalyx_VGM>Магазин .45 гряз. бомбы каликса</entityname.SmgMagCalyx_VGM>
+    <entitydescription.SmgMagCalyx_VGM>.45 магазин ПП с небольшим количеством яиц паразита каликса. Менее эффективно, чем прямая инъекция, но всё ещё может распространять инфекцию</entitydescription.SmgMagCalyx_VGM>
+    <entityname.SmgMagPhysicorium_VGM>Магазин .45 БП физикориума</entityname.SmgMagPhysicorium_VGM>
+    <entitydescription.SmgMagPhysicorium_VGM>Магазин ПП с .45 бронебойными патронами физикориума, исключительное пробитие брони</entitydescription.SmgMagPhysicorium_VGM>
+    <entityname.SmgMagDementonite_VGM>Магазин .45 гравит. дементонита</entityname.SmgMagDementonite_VGM>
+    <entitydescription.SmgMagDementonite_VGM>Магазин ПП с .45 гравитационными патронами дементонита, вызывает повреждения глубоких тканей и вызывает психоз</entitydescription.SmgMagDementonite_VGM>
+    <entityname.SmgMagIncendium_VGM>Магазин .45 ФТ инцендия</entityname.SmgMagIncendium_VGM>
+    <entitydescription.SmgMagIncendium_VGM>Магазин ПП с .45 фугасно-термическими патронами инцендия, повреждения тканей сопоставимы с малыми гранатами</entitydescription.SmgMagIncendium_VGM>
+    <entityname.SmgMagFulgurium_VGM>Магазин .45 электрошок фульгурия</entityname.SmgMagFulgurium_VGM>
+    <entitydescription.SmgMagFulgurium_VGM>Магазин ПП с .45 электрошоковыми патронами фульгурия, быстро выводит цели из строя</entitydescription.SmgMagFulgurium_VGM>
+    <entityname.EmptySmgLongMag_VGM>Пустой расширенный магазин ПП</entityname.EmptySmgLongMag_VGM>
+    <entitydescription.EmptySmgLongMag_VGM>Пустой расширенный магазин для пистолета-пулемёта, необходимо зарядить соответствующими патронами</entitydescription.EmptySmgLongMag_VGM>
+    <entityname.SmgLongMagBlank_VGM>Расш. магазин .45 холостых</entityname.SmgLongMagBlank_VGM>
+    <entitydescription.SmgLongMagBlank_VGM>Расширенный магазин ПП с .45 холостыми патронами, для учений и тренировки</entitydescription.SmgLongMagBlank_VGM>
+    <entityname.SmgLongMagJHP_VGM>Расш. магазин .45 ЭП</entityname.SmgLongMagJHP_VGM>
+    <entitydescription.SmgLongMagJHP_VGM>Расширенный магазин ПП с .45 патронами с экспансивной пулей, отлично против небронированных целей</entitydescription.SmgLongMagJHP_VGM>
+    <entityname.SmgLongMagAP_VGM>Расш. магазин .45 БП</entityname.SmgLongMagAP_VGM>
+    <entitydescription.SmgLongMagAP_VGM>Расширенный магазин ПП с .45 бронебойными патронами, пробивает лёгкую броню</entitydescription.SmgLongMagAP_VGM>
+    <entityname.SmgLongMagExp_VGM>Расш. магазин .45 взрывных</entityname.SmgLongMagExp_VGM>
+    <entitydescription.SmgLongMagExp_VGM>Расширенный магазин ПП с .45 взрывными патронами, можно использовать для вскрытия конструкций</entitydescription.SmgLongMagExp_VGM>
+    <entityname.SmgLongMagChloralhydrate_VGM>Расш. магазин .45 хим. седативных</entityname.SmgLongMagChloralhydrate_VGM>
+    <entitydescription.SmgLongMagChloralhydrate_VGM>Расширенный магазин ПП с .45 химическими седативными патронами, для подавления беспорядков и нелетального обезвреживания</entitydescription.SmgLongMagChloralhydrate_VGM>
+    <entityname.SmgLongMagOpium_VGM>Расш. магазин .45 мед. опиума</entityname.SmgLongMagOpium_VGM>
+    <entitydescription.SmgLongMagOpium_VGM>Расширенный магазин ПП с .45 патронами медицинского опиума, предотвращает использование морфия целями для спасения</entitydescription.SmgLongMagOpium_VGM>
+    <entityname.SmgLongMagSufforin_VGM>Расш. магазин .45 токсина срафорина</entityname.SmgLongMagSufforin_VGM>
+    <entitydescription.SmgLongMagSufforin_VGM>Расширенный магазин ПП с .45 патронами токсина срафорина, накапливает срафорин в целях</entitydescription.SmgLongMagSufforin_VGM>
+    <entityname.SmgLongMagMorbusine_VGM>Расш. магазин .45 токсина морбузина</entityname.SmgLongMagMorbusine_VGM>
+    <entitydescription.SmgLongMagMorbusine_VGM>Расширенный магазин ПП с .45 патронами токсина морбузина, накапливает морбузин в целях</entitydescription.SmgLongMagMorbusine_VGM>
+    <entityname.SmgLongMagCyanide_VGM>Расш. магазин .45 токсина цианида</entityname.SmgLongMagCyanide_VGM>
+    <entitydescription.SmgLongMagCyanide_VGM>Расширенный магазин ПП с .45 патронами токсина цианида, накапливает цианид в целях</entitydescription.SmgLongMagCyanide_VGM>
+    <entityname.SmgLongMagCalyx_VGM>Расш. магазин .45 гряз. бомбы каликса</entityname.SmgLongMagCalyx_VGM>
+    <entitydescription.SmgLongMagCalyx_VGM>.45 расширенный магазин ПП с небольшим количеством яиц паразита каликса. Менее эффективно, чем прямая инъекция, но всё ещё может распространять инфекцию</entitydescription.SmgLongMagCalyx_VGM>
+    <entityname.SmgLongMagPhysicorium_VGM>Расш. магазин .45 БП физикориума</entityname.SmgLongMagPhysicorium_VGM>
+    <entitydescription.SmgLongMagPhysicorium_VGM>Расширенный магазин ПП с .45 бронебойными патронами физикориума, исключительное пробитие брони</entitydescription.SmgLongMagPhysicorium_VGM>
+    <entityname.SmgLongMagDementonite_VGM>Расш. магазин .45 гравит. дементонита</entityname.SmgLongMagDementonite_VGM>
+    <entitydescription.SmgLongMagDementonite_VGM>Расширенный магазин ПП с .45 гравитационными патронами дементонита, вызывает повреждения глубоких тканей и вызывает психоз</entitydescription.SmgLongMagDementonite_VGM>
+    <entityname.SmgLongMagIncendium_VGM>Расш. магазин .45 ФТ инцендия</entityname.SmgLongMagIncendium_VGM>
+    <entitydescription.SmgLongMagIncendium_VGM>Расширенный магазин ПП с .45 фугасно-термическими патронами инцендия, повреждения тканей сопоставимы с малыми гранатами</entitydescription.SmgLongMagIncendium_VGM>
+    <entityname.SmgLongMagFulgurium_VGM>Расш. магазин .45 электрошок фульгурия</entityname.SmgLongMagFulgurium_VGM>
+    <entitydescription.SmgLongMagFulgurium_VGM>Расширенный магазин ПП с .45 электрошоковыми патронами фульгурия, быстро выводит цели из строя</entitydescription.SmgLongMagFulgurium_VGM>
+    <entityname.smgDFuelLongMagVGM>Расш. магазин .45 истощённого топлива</entityname.smgDFuelLongMagVGM>
+    <entitydescription.smgDFuelLongMagVGM>Расширенный магазин ПП с .45 патронами истощённого топлива, вызывает радиационный урон и эффективно пробивает броню</entitydescription.smgDFuelLongMagVGM>
+    <entityname.EmptySmgDrumMag_VGM>Пустой барабанный магазин ПП</entityname.EmptySmgDrumMag_VGM>
+    <entitydescription.EmptySmgDrumMag_VGM>Пустой барабанный магазин для пистолета-пулемёта, необходимо зарядить соответствующими патронами</entitydescription.EmptySmgDrumMag_VGM>
+    <entityname.SmgDrumMagBlank_VGM>Барабан .45 холостых</entityname.SmgDrumMagBlank_VGM>
+    <entitydescription.SmgDrumMagBlank_VGM>Барабанный магазин ПП с .45 холостыми патронами, для учений и тренировки</entitydescription.SmgDrumMagBlank_VGM>
+    <entityname.SmgDrumMagJHP_VGM>Барабан .45 ЭП</entityname.SmgDrumMagJHP_VGM>
+    <entitydescription.SmgDrumMagJHP_VGM>Барабанный магазин ПП с .45 патронами с экспансивной пулей, отлично против небронированных целей</entitydescription.SmgDrumMagJHP_VGM>
+    <entityname.SmgDrumMagAP_VGM>Барабан .45 БП</entityname.SmgDrumMagAP_VGM>
+    <entitydescription.SmgDrumMagAP_VGM>Барабанный магазин ПП с .45 бронебойными патронами, пробивает лёгкую броню</entitydescription.SmgDrumMagAP_VGM>
+    <entityname.SmgDrumMagExp_VGM>Барабан .45 взрывных</entityname.SmgDrumMagExp_VGM>
+    <entitydescription.SmgDrumMagExp_VGM>Барабанный магазин ПП с .45 взрывными патронами, можно использовать для вскрытия конструкций</entitydescription.SmgDrumMagExp_VGM>
+    <entityname.SmgDrumMagChloralhydrate_VGM>Барабан .45 хим. седативных</entityname.SmgDrumMagChloralhydrate_VGM>
+    <entitydescription.SmgDrumMagChloralhydrate_VGM>Барабанный магазин ПП с .45 химическими седативными патронами, для подавления беспорядков и нелетального обезвреживания</entitydescription.SmgDrumMagChloralhydrate_VGM>
+    <entityname.SmgDrumMagOpium_VGM>Барабан .45 мед. опиума</entityname.SmgDrumMagOpium_VGM>
+    <entitydescription.SmgDrumMagOpium_VGM>Барабанный магазин ПП с .45 патронами медицинского опиума, предотвращает использование морфия целями для спасения</entitydescription.SmgDrumMagOpium_VGM>
+    <entityname.SmgDrumMagSufforin_VGM>Барабан .45 токсина срафорина</entityname.SmgDrumMagSufforin_VGM>
+    <entitydescription.SmgDrumMagSufforin_VGM>Барабанный магазин ПП с .45 патронами токсина срафорина, накапливает срафорин в целях</entitydescription.SmgDrumMagSufforin_VGM>
+    <entityname.SmgDrumMagMorbusine_VGM>Барабан .45 токсина морбузина</entityname.SmgDrumMagMorbusine_VGM>
+    <entitydescription.SmgDrumMagMorbusine_VGM>Барабанный магазин ПП с .45 патронами токсина морбузина, накапливает морбузин в целях</entitydescription.SmgDrumMagMorbusine_VGM>
+    <entityname.SmgDrumMagCyanide_VGM>Барабан .45 токсина цианида</entityname.SmgDrumMagCyanide_VGM>
+    <entitydescription.SmgDrumMagCyanide_VGM>Барабанный магазин ПП с .45 патронами токсина цианида, накапливает цианид в целях</entitydescription.SmgDrumMagCyanide_VGM>
+    <entityname.SmgDrumMagCalyx_VGM>Барабан .45 гряз. бомбы каликса</entityname.SmgDrumMagCalyx_VGM>
+    <entitydescription.SmgDrumMagCalyx_VGM>.45 барабанный магазин ПП с небольшим количеством яиц паразита каликса. Менее эффективно, чем прямая инъекция, но всё ещё может распространять инфекцию</entitydescription.SmgDrumMagCalyx_VGM>
+    <entityname.SmgDrumMagPhysicorium_VGM>Барабан .45 БП физикориума</entityname.SmgDrumMagPhysicorium_VGM>
+    <entitydescription.SmgDrumMagPhysicorium_VGM>Барабанный магазин ПП с .45 бронебойными патронами физикориума, исключительное пробитие брони</entitydescription.SmgDrumMagPhysicorium_VGM>
+    <entityname.SmgDrumMagDementonite_VGM>Барабан .45 гравит. дементонита</entityname.SmgDrumMagDementonite_VGM>
+    <entitydescription.SmgDrumMagDementonite_VGM>Барабанный магазин ПП с .45 гравитационными патронами дементонита, вызывает повреждения глубоких тканей и вызывает психоз</entitydescription.SmgDrumMagDementonite_VGM>
+    <entityname.SmgDrumMagIncendium_VGM>Барабан .45 ФТ инцендия</entityname.SmgDrumMagIncendium_VGM>
+    <entitydescription.SmgDrumMagIncendium_VGM>Барабанный магазин ПП с .45 фугасно-термическими патронами инцендия, повреждения тканей сопоставимы с малыми гранатами</entitydescription.SmgDrumMagIncendium_VGM>
+    <entityname.SmgDrumMagFulgurium_VGM>Барабан .45 электрошок фульгурия</entityname.SmgDrumMagFulgurium_VGM>
+    <entitydescription.SmgDrumMagFulgurium_VGM>Барабанный магазин ПП с .45 электрошоковыми патронами фульгурия, быстро выводит цели из строя</entitydescription.SmgDrumMagFulgurium_VGM>
+    <entityname.smgDFuelDrumMagVGM>Барабан .45 истощённого топлива</entityname.smgDFuelDrumMagVGM>
+    <entitydescription.smgDFuelDrumMagVGM>Барабанный магазин ПП с .45 патронами истощённого топлива, вызывает радиационный урон и эффективно пробивает броню</entitydescription.smgDFuelDrumMagVGM>
+    <entityname.EmptyAssaultMag_VGM>Пустой магазин штурмовой винтовки</entityname.EmptyAssaultMag_VGM>
+    <entitydescription.EmptyAssaultMag_VGM>Пустой магазин для штурмовой винтовки, необходимо зарядить соответствующими патронами</entitydescription.EmptyAssaultMag_VGM>
+    <entityname.AssaultMagBlank_VGM>Магазин 6.8мм холостых</entityname.AssaultMagBlank_VGM>
+    <entitydescription.AssaultMagBlank_VGM>Магазин штурмовой винтовки с 6.8мм холостыми патронами, для учений и тренировки</entitydescription.AssaultMagBlank_VGM>
+    <entityname.assaultriflemagazine>Магазин штурмовой винтовки</entityname.assaultriflemagazine>
+    <entitydescription.assaultriflemagazine>Магазин штурмовой винтовки с 6.8мм патронами с оболочечной пулей, самая базовая конфигурация боеприпасов</entitydescription.assaultriflemagazine>
+    <entityname.AssaultMagJHP_VGM>Магазин 6.8мм ЭП</entityname.AssaultMagJHP_VGM>
+    <entitydescription.AssaultMagJHP_VGM>Магазин штурмовой винтовки с 6.8мм патронами с экспансивной пулей, отлично против небронированных целей</entitydescription.AssaultMagJHP_VGM>
+    <entityname.AssaultMagAP_VGM>Магазин 6.8мм БП</entityname.AssaultMagAP_VGM>
+    <entitydescription.AssaultMagAP_VGM>Магазин штурмовой винтовки с 6.8мм бронебойными патронами, пробивает лёгкую броню</entitydescription.AssaultMagAP_VGM>
+    <entityname.AssaultMagExp_VGM>Магазин 6.8мм взрывных</entityname.AssaultMagExp_VGM>
+    <entitydescription.AssaultMagExp_VGM>Магазин штурмовой винтовки с 6.8мм взрывными патронами, можно использовать для вскрытия конструкций</entitydescription.AssaultMagExp_VGM>
+    <entityname.AssaultMagRev_VGM>Магазин 6.8мм изб. давления</entityname.AssaultMagRev_VGM>
+    <entitydescription.AssaultMagRev_VGM>Магазин штурмовой винтовки с 6.8мм патронами избыточного давления. ВНИМАНИЕ: эти патроны вызывают необратимые повреждения винтовки</entitydescription.AssaultMagRev_VGM>
+    <entityname.EmptyAssaultMagLong_VGM>Пустой расш. magasin штурмовой винтовки</entityname.EmptyAssaultMagLong_VGM>
+    <entitydescription.EmptyAssaultMagLong_VGM>Пустой расширенный магазин для штурмовой винтовки, необходимо зарядить соответствующими патронами</entitydescription.EmptyAssaultMagLong_VGM>
+    <entityname.AssaultMagLongBlank_VGM>Расш. magasin 6.8мм холостых</entityname.AssaultMagLongBlank_VGM>
+    <entitydescription.AssaultMagLongBlank_VGM>Расширенный магазин штурмовой винтовки с 6.8мм холостыми патронами, для учений и тренировки</entitydescription.AssaultMagLongBlank_VGM>
+    <entityname.assaultriflemagazinelong>Расширенный магазин штурмовой винтовки</entityname.assaultriflemagazinelong>
+    <entitydescription.assaultriflemagazinelong>Расширенный магазин штурмовой винтовки с 6.8мм патронами с оболочечной пулей, предоставляет увеличенную ёмкость боеприпасов</entitydescription.assaultriflemagazinelong>
+    <entityname.AssaultMagLongJHP_VGM>Расш. magasin 6.8мм ЭП</entityname.AssaultMagLongJHP_VGM>
+    <entitydescription.AssaultMagLongJHP_VGM>Расширенный магазин штурмовой винтовки с 6.8мм патронами с экспансивной пулей, отлично против небронированных целей</entitydescription.AssaultMagLongJHP_VGM>
+    <entityname.AssaultMagLongAP_VGM>Расш. magasin 6.8мм БП</entityname.AssaultMagLongAP_VGM>
+    <entitydescription.AssaultMagLongAP_VGM>Расширенный магазин штурмовой винтовки с 6.8мм бронебойными патронами, пробивает лёгкую броню</entitydescription.AssaultMagLongAP_VGM>
+    <entityname.AssaultMagLongExp_VGM>Расш. magasin 6.8мм взрывных</entityname.AssaultMagLongExp_VGM>
+    <entitydescription.AssaultMagLongExp_VGM>Расширенный магазин штурмовой винтовки с 6.8мм взрывными патронами, можно использовать для вскрытия конструкций</entitydescription.AssaultMagLongExp_VGM>
+    <entityname.AssaultMagLongRev_VGM>Расш. magasin 6.8мм изб. давления</entityname.AssaultMagLongRev_VGM>
+    <entitydescription.AssaultMagLongRev_VGM>Расширенный магазин штурмовой винтовки с 6.8мм патронами избыточного давления. ВНИМАНИЕ: эти патроны вызывают необратимые повреждения винтовки</entitydescription.AssaultMagLongRev_VGM>
+    <entityname.EmptyAssaultMagDrum_VGM>Пустой барабанный magasin штурмовой винтовки</entityname.EmptyAssaultMagDrum_VGM>
+    <entitydescription.EmptyAssaultMagDrum_VGM>Пустой барабанный магазин для штурмовой винтовки, необходимо зарядить соответствующими патронами</entitydescription.EmptyAssaultMagDrum_VGM>
+    <entityname.AssaultMagDrumBlank_VGM>Барабан 6.8мм холостых</entityname.AssaultMagDrumBlank_VGM>
+    <entitydescription.AssaultMagDrumBlank_VGM>Барабанный магазин штурмовой винтовки с 6.8мм холостыми патронами, для учений и тренировки</entitydescription.AssaultMagDrumBlank_VGM>
+    <entityname.assaultriflemagazinedrum>Барабанный магазин штурмовой винтовки</entityname.assaultriflemagazinedrum>
+    <entitydescription.assaultriflemagazinedrum>Барабанный магазин штурмовой винтовки с 6.8мм патронами с оболочечной пулей, предоставляет максимальную ёмкость боеприпасов</entitydescription.assaultriflemagazinedrum>
+    <entityname.AssaultMagDrumJHP_VGM>Барабан 6.8мм ЭП</entityname.AssaultMagDrumJHP_VGM>
+    <entitydescription.AssaultMagDrumJHP_VGM>Барабанный магазин штурмовой винтовки с 6.8мм патронами с экспансивной пулей, отлично против небронированных целей</entitydescription.AssaultMagDrumJHP_VGM>
+    <entityname.AssaultMagDrumAP_VGM>Барабан 6.8мм БП</entityname.AssaultMagDrumAP_VGM>
+    <entitydescription.AssaultMagDrumAP_VGM>Барабанный магазин штурмовой винтовки с 6.8мм бронебойными патронами, пробивает лёгкую броню</entitydescription.AssaultMagDrumAP_VGM>
+    <entityname.AssaultMagDrumExp_VGM>Барабан 6.8мм взрывных</entityname.AssaultMagDrumExp_VGM>
+    <entitydescription.AssaultMagDrumExp_VGM>Барабанный магазин штурмовой винтовки с 6.8мм взрывными патронами, можно использовать для вскрытия конструкций</entitydescription.AssaultMagDrumExp_VGM>
+    <entityname.AssaultMagDrumRev_VGM>Барабан 6.8мм изб. давления</entityname.AssaultMagDrumRev_VGM>
+    <entitydescription.AssaultMagDrumRev_VGM>Барабанный магазин штурмовой винтовки с 6.8мм патронами избыточного давления. ВНИМАНИЕ: эти патроны вызывают необратимые повреждения винтовки</entitydescription.AssaultMagDrumRev_VGM>
+    <entityname.EmptyHmgMag_VGM>Пустой магазин пулемёта</entityname.EmptyHmgMag_VGM>
+    <entitydescription.EmptyHmgMag_VGM>Пустой магазин для пулемёта, необходимо зарядить соответствующими патронами</entitydescription.EmptyHmgMag_VGM>
+    <entityname.HmgMagBlank_VGM>Магазин 5.56мм холостых</entityname.HmgMagBlank_VGM>
+    <entitydescription.HmgMagBlank_VGM>Магазин пулемёта с 5.56мм холостыми патронами, для учений и тренировки</entitydescription.HmgMagBlank_VGM>
+    <entityname.HmgMagJHP_VGM>Магазин 5.56мм ЭП</entityname.HmgMagJHP_VGM>
+    <entitydescription.HmgMagJHP_VGM>Магазин пулемёта с 5.56мм патронами с экспансивной пулей, подходит для борьбы с группами целей</entitydescription.HmgMagJHP_VGM>
+    <entityname.HmgMagAP_VGM>Магазин 5.56мм БП</entityname.HmgMagAP_VGM>
+    <entitydescription.HmgMagAP_VGM>Магазин пулемёта с 5.56мм бронебойными патронами, для подавляющего огня</entitydescription.HmgMagAP_VGM>
+    <entityname.HmgMagExp_VGM>Магазин 5.56мм взрывных</entityname.HmgMagExp_VGM>
+    <entitydescription.HmgMagExp_VGM>Магазин пулемёта с 5.56мм взрывными патронами, для подавляющего огня и вскрытия</entitydescription.HmgMagExp_VGM>
+    <entityname.EmptyHmgMagDrum_VGM>Пустой барабанный магазин пулемёта</entityname.EmptyHmgMagDrum_VGM>
+    <entitydescription.EmptyHmgMagDrum_VGM>Пустой барабанный магазин для пулемёта, необходимо зарядить соответствующими патронами</entitydescription.EmptyHmgMagDrum_VGM>
+    <entityname.HmgMagDrumBlank_VGM>Барабан 5.56мм холостых</entityname.HmgMagDrumBlank_VGM>
+    <entitydescription.HmgMagDrumBlank_VGM>Барабанный магазин пулемёта с 5.56мм холостыми патронами, для учений и тренировки</entitydescription.HmgMagDrumBlank_VGM>
+    <entityname.HmgMagDrumJHP_VGM>Барабан 5.56мм ЭП</entityname.HmgMagDrumJHP_VGM>
+    <entitydescription.HmgMagDrumJHP_VGM>Барабанный магазин пулемёта с 5.56мм патронами с экспансивной пулей, подходит для борьбы с группами целей</entitydescription.HmgMagDrumJHP_VGM>
+    <entityname.HmgMagDrumAP_VGM>Барабан 5.56мм БП</entityname.HmgMagDrumAP_VGM>
+    <entitydescription.HmgMagDrumAP_VGM>Барабанный магазин пулемёта с 5.56мм бронебойными патронами, для подавляющего огня</entitydescription.HmgMagDrumAP_VGM>
+    <entityname.HmgMagDrumExp_VGM>Барабан 5.56мм взрывных</entityname.HmgMagDrumExp_VGM>
+    <entitydescription.HmgMagDrumExp_VGM>Барабанный магазин пулемёта с 5.56мм взрывными патронами, для подавляющего огня и вскрытия</entitydescription.HmgMagDrumExp_VGM>
+    <entityname.AmmoBox_VGM>Ящик для хранения боеприпасов</entityname.AmmoBox_VGM>
+    <entitydescription.AmmoBox_VGM>Специализированный ящик для хранения боеприпасов ручного оружия, может вместить более тысячи патронов. Имеет несколько отсеков для удобной сортировки боеприпасов</entitydescription.AmmoBox_VGM>
+    <entityname.NoRopeSpear_VGB>Гарпун без троса</entityname.NoRopeSpear_VGB>
+    <entitydescription.NoRopeSpear_VGB>Стандартный гарпун без троса - можно выстрелить на большое расстояние, но сложно подобрать, если промахнулся</entitydescription.NoRopeSpear_VGB>
+    <entityname.ToolSpear_VGB>Инструментальный гарпун</entityname.ToolSpear_VGB>
+    <entitydescription.ToolSpear_VGB>Гарпун с креплением и ударником - активирует загруженные предметы при ударе\nМожет загружать многое: от светящихших палочек до взрывчатки, но не все предметы могут быть активированы ударом гарпуна</entitydescription.ToolSpear_VGB>
+    <entityname.12gBirdShot_VGB>12G дробь</entityname.12gBirdShot_VGB>
+    <entitydescription.12gBirdShot_VGB>Содержит 16 мелких дробин. Низкий урон одиночным выстрелом но широкий охват, подходит для маленьких быстрых существ и небронированных целей</entitydescription.12gBirdShot_VGB>
+    <entityname.12gDestructionShot_VGB>12G разрушительный</entityname.12gDestructionShot_VGB>
+    <entitydescription.12gDestructionShot_VGB>Специализированный для вскрытия 12G патрон с дробью, использующий фрагменты вместо дробин - может пробить стандартную дверь безопасности двумя выстрелами. Не подходит для борьбы с существами</entitydescription.12gDestructionShot_VGB>
+    <entityname.12gArrowShot_VGB>12G стрелковый</entityname.12gArrowShot_VGB>
+    <entitydescription.12gArrowShot_VGB>Содержит 5 тяжёлых стрелковидных дробин. Усиливает пробитие брони ценой уменьшения количества дробин</entitydescription.12gArrowShot_VGB>
+    <entityname.12gRaptorKiller_VGB>"Убийца драконов" 12G стрелковый</entityname.12gRaptorKiller_VGB>
+    <entitydescription.12gRaptorKiller_VGB>12G стрелковый патрон разработан против рапторов, покрыт эссенцией раптора</entitydescription.12gRaptorKiller_VGB>
+    <entityname.12gCalyxKiller_VGB>"Инсектицид" 12G стрелковый</entityname.12gCalyxKiller_VGB>
+    <entitydescription.12gCalyxKiller_VGB>Стрелковый патрон разработан против Velonaceps Calyx, покрыт калексанидом.\nТакже можно использовать для лечения инфицирования каликсом - конечно, метод заключается в выстреле в себя.</entitydescription.12gCalyxKiller_VGB>
+    <entityname.12gFlashShot_VGB>12G светошумовой</entityname.12gFlashShot_VGB>
+    <entitydescription.12gFlashShot_VGB>12-калибровый светошумовой патрон - нелетальные боеприпасы вызывающие слепоту и сенсорную перегрузку. Подходит для подавления беспорядков и временного побега</entitydescription.12gFlashShot_VGB>
+    <entityname.12gFlareShot_VGB>12G осветительный</entityname.12gFlareShot_VGB>
+    <entitydescription.12gFlareShot_VGB>Осветительный патрон запускаемый из дробовика, излучает жёлтую вспышку</entitydescription.12gFlareShot_VGB>
+    <entityname.12gDragonShot_VGB>12G "дыхание дракона"</entityname.12gDragonShot_VGB>
+    <entitydescription.12gDragonShot_VGB>12G дробовой патрон заряженный легковоспламеняющимся веществом - может эффективно начинать пожары или поджигать других</entitydescription.12gDragonShot_VGB>
+    <subcategory.VGB>Модификация ванильного оружия (VGM) пакет №1 - Расширение ванильных боеприпасов</subcategory.VGB>
+</infotexts>
