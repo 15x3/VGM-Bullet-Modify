@@ -6,5 +6,6 @@
   <Item file="%ModDir%/Ammos/harpoon.xml" />
   <Item file="%ModDir%/Ammos/12Gammos.xml" />
   <Item file="%ModDir%/Ammos/556ammos.xml" />
+  <Item file="%ModDir%/Others/others.xml" />
   <Text file="%ModDir%/Localization/Chinese.xml" />
 </contentpackage>

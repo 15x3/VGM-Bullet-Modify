@@ -212,7 +212,7 @@
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
-    <Item name="" identifier="38Chloralhydrate_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
+    <!-- <Item name="" identifier="38Chloralhydrate_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="revolver" amount="6" spawnprobability="1" />
         <PreferredContainer primary="armcab" amount="6" spawnprobability="1" notpvp="true" />
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="6" spawnprobability="0.2" />
@@ -255,8 +255,8 @@
             </StatusEffect>
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
-    </Item>
-    <Item name="" identifier="38Opium_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
+    </Item> -->
+    <!-- <Item name="" identifier="38Opium_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="revolver" amount="6" spawnprobability="1" />
         <PreferredContainer primary="armcab" amount="6" spawnprobability="1" notpvp="true" />
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="6" spawnprobability="0.2" />
@@ -300,8 +300,8 @@
             </StatusEffect>
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
-    </Item>
-    <Item name="" identifier="38Sufforin_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
+    </Item> -->
+    <!-- <Item name="" identifier="38Sufforin_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="revolver" amount="6" spawnprobability="1" />
         <PreferredContainer primary="armcab" amount="6" spawnprobability="1" notpvp="true" />
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="6" spawnprobability="0.2" />
@@ -344,8 +344,8 @@
             </StatusEffect>
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
-    </Item>
-    <Item name="" identifier="38Morbusine_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
+    </Item> -->
+    <!-- <Item name="" identifier="38Morbusine_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="revolver" amount="6" spawnprobability="1" />
         <PreferredContainer primary="armcab" amount="6" spawnprobability="1" notpvp="true" />
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="6" spawnprobability="0.2" />
@@ -388,8 +388,8 @@
             </StatusEffect>
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
-    </Item>
-    <Item name="" identifier="38Cyanide_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
+    </Item> -->
+    <!-- <Item name="" identifier="38Cyanide_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="revolver" amount="6" spawnprobability="1" />
         <PreferredContainer primary="armcab" amount="6" spawnprobability="1" notpvp="true" />
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="6" spawnprobability="0.2" />
@@ -433,8 +433,8 @@
             </StatusEffect>
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
-    </Item>
-    <Item name="" identifier="38Calyx_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
+    </Item> -->
+    <!-- <Item name="" identifier="38Calyx_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="revolver" amount="6" spawnprobability="1" />
         <PreferredContainer primary="armcab" amount="6" spawnprobability="1" notpvp="true" />
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="6" spawnprobability="0.2" />
@@ -477,8 +477,8 @@
             </StatusEffect>
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
-    </Item>
-    <Item name="" identifier="38Physicorium_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
+    </Item> -->
+    <!-- <Item name="" identifier="38Physicorium_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="revolver" amount="6" spawnprobability="1" />
         <PreferredContainer primary="armcab" amount="6" spawnprobability="1" notpvp="true" />
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="6" spawnprobability="0.2" />
@@ -519,8 +519,8 @@
             </StatusEffect>
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
-    </Item>
-    <Item name="" identifier="38Dementonite_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
+    </Item> -->
+    <!-- <Item name="" identifier="38Dementonite_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="revolver" amount="6" spawnprobability="1" />
         <PreferredContainer primary="armcab" amount="6" spawnprobability="1" notpvp="true" />
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="6" spawnprobability="0.2" />
@@ -561,8 +561,8 @@
             </StatusEffect>
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
-    </Item>
-    <Item name="" identifier="38Incendium_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
+    </Item> -->
+    <!-- <Item name="" identifier="38Incendium_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="revolver" amount="6" spawnprobability="1" />
         <PreferredContainer primary="armcab" amount="6" spawnprobability="1" notpvp="true" />
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="6" spawnprobability="0.2" />
@@ -604,8 +604,8 @@
             </StatusEffect>
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
-    </Item>
-    <Item name="" identifier="38Fulgurium_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
+    </Item> -->
+    <!-- <Item name="" identifier="38Fulgurium_VGB" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,handheldammo,pistolammoitem" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="revolver" amount="6" spawnprobability="1" />
         <PreferredContainer primary="armcab" amount="6" spawnprobability="1" notpvp="true" />
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" minamount="1" maxamount="6" spawnprobability="0.2" />
@@ -646,5 +646,5 @@
             </StatusEffect>
         </Projectile>
         <Upgrade gameversion="0.10.0.0" scale="0.5" />
-    </Item>
+    </Item> -->
 </Items>
