@@ -780,7 +780,7 @@
                 </StatusEffect>
             </ItemContainer>
         </Item>
-        <Item name="" identifier="68Blank_VGB"  category="Weapon" subcategory="VGB" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,riflemanbonus,assaultrifleammo" impactsoundtag="impact_metal_light"  scale="0.5">
+        <Item name="" identifier="assaultrifleround"  category="Weapon" subcategory="VGB" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,riflemanbonus,assaultrifleammo" impactsoundtag="impact_metal_light"  scale="0.5">
             <InventoryIcon texture="%ModDir%/Ammos/68ammos.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
             <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
             <Body width="40" height="14" density="30" />
