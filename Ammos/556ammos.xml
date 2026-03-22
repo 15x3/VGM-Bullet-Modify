@@ -28,7 +28,7 @@
             </StatusEffect>
         </Projectile>
     </Item> -->
-    <Item name="" identifier="556Blank_VGB"  category="Weapon" subcategory="VGB"  interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,hmgammo" impactsoundtag="impact_metal_light" scale="0.5">
+    <Item name="" identifier="556Blank_VGB"  category="Weapon" subcategory="VGB" maxstacksize="64" maxstacksizecharacterinventory="32" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,hmgammo" impactsoundtag="impact_metal_light" scale="0.5">
         <InventoryIcon texture="%ModDir%/Ammos/556ammos.png" sourcerect="64,0,64,64" origin="0.5,0.5" />
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
         <Body width="17" height="6" density="30" />
@@ -53,7 +53,7 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="556JHP_VGB"  category="Weapon" subcategory="VGB"  interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,hmgammo" impactsoundtag="impact_metal_light" scale="0.5">
+    <Item name="" identifier="556JHP_VGB"  category="Weapon" subcategory="VGB" maxstacksize="64" maxstacksizecharacterinventory="32" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,hmgammo" impactsoundtag="impact_metal_light" scale="0.5">
         <InventoryIcon texture="%ModDir%/Ammos/556ammos.png" sourcerect="128,0,64,64" origin="0.5,0.5" />
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
         <Body width="17" height="6" density="30" />
@@ -82,7 +82,7 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="556AP_VGB"  category="Weapon" subcategory="VGB"  interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,hmgammo" impactsoundtag="impact_metal_light" scale="0.5">
+    <Item name="" identifier="556AP_VGB"  category="Weapon" subcategory="VGB" maxstacksize="64" maxstacksizecharacterinventory="32" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,hmgammo" impactsoundtag="impact_metal_light" scale="0.5">
         <InventoryIcon texture="%ModDir%/Ammos/556ammos.png" sourcerect="192,0,64,64" origin="0.5,0.5" />
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
         <Body width="17" height="6" density="30" />
@@ -111,7 +111,7 @@
             </StatusEffect>
         </Projectile>
     </Item>
-    <Item name="" identifier="556Exp_VGB"  category="Weapon" subcategory="VGB"  interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,hmgammo" impactsoundtag="impact_metal_light" scale="0.5">
+    <Item name="" identifier="556Exp_VGB"  category="Weapon" subcategory="VGB" maxstacksize="64" maxstacksizecharacterinventory="32" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,hmgammo" impactsoundtag="impact_metal_light" scale="0.5">
         <InventoryIcon texture="%ModDir%/Ammos/556ammos.png" sourcerect="256,0,64,64" origin="0.5,0.5" />
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
         <Body width="17" height="6" density="30" />

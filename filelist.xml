@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="VGM Bullet Modify" modversion="prototype" corepackage="False" gameversion="1.9.8.0">
-  <Item file="%ModDir%/Mags/Override.xml" />
+<contentpackage name="VGM Bullet Modify" modversion="1.0" corepackage="False" gameversion="1.9.8.0">
+  <Item file="%ModDir%/Others/Override.xml" />
   <Item file="%ModDir%/Mags/SmgMags.xml" />
+  <Item file="%ModDir%/Mags/AssaultMags.xml" />
+  <Item file="%ModDir%/Mags/HmgMags.xml" />
   <Item file="%ModDir%/Ammos/45ammos.xml" />
   <Item file="%ModDir%/Ammos/harpoon.xml" />
   <Item file="%ModDir%/Ammos/12Gammos.xml" />
@@ -12,4 +14,6 @@
   <Item file="%ModDir%/Ammos/3006ammos.xml" />
   <Item file="%ModDir%/Others/others.xml" />
   <Text file="%ModDir%/Localization/Chinese.xml" />
+  <Text file="%ModDir%/Localization/English.xml" />
+  <Text file="%ModDir%/Localization/Russian.xml" />
 </contentpackage>

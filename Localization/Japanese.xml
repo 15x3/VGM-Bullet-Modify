@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Japanese" nowhitespace="true" translatedname="日本語">
+    <!-- 12番口径弾薬 -->
+    <entityname.12gBirdShot_VGB>12G バードショット</entityname.12gBirdShot_VGB>
+    <entitydescription.12gBirdShot_VGB>16個の小さなペレットが含まれています。単発のダメージは低いですが範囲が広く、小型の速い生物や非装甲目標に適しています</entitydescription.12gBirdShot_VGB>
+    <entityname.12gDestructionShot_VGB>12G 破壊弾</entityname.12gDestructionShot_VGB>
+    <entitydescription.12gDestructionShot_VGB>破壊能力に特化した12G バードショット。大量の破片がペレットの代わりに使用され、標準のセキュリティドアを2発で貫通できます。生物に対しては不向きです</entitydescription.12gDestructionShot_VGB>
+    <entityname.12gArrowShot_VGB>12G アローショット</entityname.12gArrowShot_VGB>
+    <entitydescription.12gArrowShot_VGB>5個の重型アローペ形ペレットが含まれています。ペレット数を減らす代わりに装甲貫通能力を強化しました</entitydescription.12gArrowShot_VGB>
+    <entityname.12gRaptorKiller_VGB>「ドラゴンスレイヤー」12G アローショット</entityname.12gRaptorKiller_VGB>
+    <entitydescription.12gRaptorKiller_VGB>ラプター対策用に設計された12G アローショット。弾体にラプターのエキスが塗布されています</entitydescription.12gRaptorKiller_VGB>
+    <entityname.12gCalyxKiller_VGB>「殺虫剤」12G アローショット</entityname.12gCalyxKiller_VGB>
+    <entitydescription.12gCalyxKiller_VGB>ヴェロノケプス・カリクス対策に設計されたアローショット。弾体にカルキサイドが塗布されています。\n必要に応じてカリクス感染症を緩和することもできます——もちろん、使用方法は自分に向けて撃つことです。</entitydescription.12gCalyxKiller_VGB>
+    <entityname.12gFlashShot_VGB>12G 閃光弾</entityname.12gFlashShot_VGB>
+    <entitydescription.12gFlashShot_VGB>12番口径の閃光弾。失明と感覚過負荷を引き起こす非致死的弾薬。暴動鎮圧と一時的な回避に適しています</entitydescription.12gFlashShot_VGB>
+    <entityname.12gFlareShot_VGB>12G 照明弾</entityname.12gFlareShot_VGB>
+    <entitydescription.12gFlareShot_VGB>散弾銃から発射される照明弾。黄色い閃光を放ちます</entitydescription.12gFlareShot_VGB>
+    <entityname.12gDragonShot_VGB>12G ドラゴンブレス</entityname.12gDragonShot_VGB>
+    <entitydescription.12gDragonShot_VGB>可燃性物質が充填された12G 散弾。効率的に火災を引き起こしたり、他者に火をつけたりできます</entitydescription.12gDragonShot_VGB>
+
+    <!-- .45口径弾薬 -->
+    <entityname.smground>.45 FMJ</entityname.smground>
+    <entitydescription.smground>.45口径フルメタルジャケット弾。最も基本的なSMG弾薬で、SMGマガジンに装填できます</entitydescription.smground>
+    <entityname.45Blank_VGB>.45 空包弾</entityname.45Blank_VGB>
+    <entitydescription.45Blank_VGB>薬莢のみ、脆い弾頭、そして少量のプライマーからなるカートリッジで、ほとんどダメージを与えません。通常、演習や武器テストに使用されますが、エネルギーを持て余めた警備官が遊ぶために撃つこともあります</entitydescription.45Blank_VGB>
+    <entityname.45JHP_VGB>.45 JHP</entityname.45JHP_VGB>
+    <entitydescription.45JHP_VGB>.45 ジャケットedホローポイント弾。主に非装甲の野生生物に使用します。高い出血ダメージを与え、目標をスタンさせやすいです。</entitydescription.45JHP_VGB>
+    <entityname.45AP_VGB>.45 AP</entityname.45AP_VGB>
+    <entitydescription.45AP_VGB>.45 ポイントed装甲貫通弾。主に軽装甲目標向けです。弾丸の長さにより、装薬がわずかに減り、ベース弾薬よりもダメージ能力がやや低くなります。</entitydescription.45AP_VGB>
+    <entityname.45Exp_VGB>.45 爆破裂</entityname.45Exp_VGB>
+    <entitydescription.45Exp_VGB>.45 爆破裂。爆発/銃撃複合ダメージを与え、船体構造物の破壊にも優れています</entitydescription.45Exp_VGB>
+    <entityname.45Chloralhydrate_VGB>.45 化学的鎮静弾</entityname.45Chloralhydrate_VGB>
+    <entitydescription.45Chloralhydrate_VGB>クロラールハイドレートが充填された.45 皮下注射弾。プロフェッショナルな暴動鎮圧弾薬で、目標をスタンさせるだけでなく、短時間昏倒させることもできます。撃つほど効果が高まります。</entitydescription.45Chloralhydrate_VGB>
+    <entityname.45Opium_VGB>.45 医用アヘン弾</entityname.45Opium_VGB>
+    <entitydescription.45Opium_VGB>医用アヘン溶液が充填された.45 皮下注射弾。これは他者を治療するためのものではありません。その逆で、目標の体内で徐々にアヘン剤の過剰摂取を蓄積させ、モルヒネによる自救を阻止することを目的としています</entitydescription.45Opium_VGB>
+    <entityname.45Sufforin_VGB>.45 サッフォリン毒弾</entityname.45Sufforin_VGB>
+    <entitydescription.45Sufforin_VGB>サッフォリン毒素が充填された.45 皮下注射弾。目標の体内でサッフォリンを徐々に蓄積させます。各弾丸の毒素含有量は非常に少なく、効果を発揮するには一定時間継続して射撃する必要があります</entitydescription.45Sufforin_VGB>
+    <entityname.45Morbusine_VGB>.45 モルビシン毒弾</entityname.45Morbusine_VGB>
+    <entitydescription.45Morbusine_VGB>モルビシン毒素が充填された.45 皮下注射弾。目標の体内でモルビシンを徐々に蓄積させます。各弾丸の毒素含有量は非常に少なく、効果を発揮するには一定時間継続して射撃する必要があります</entitydescription.45Morbusine_VGB>
+    <entityname.45Cyanide_VGB>.45 シアン化物毒弾</entityname.45Cyanide_VGB>
+    <entitydescription.45Cyanide_VGB>シアン化物毒素が充填された.45 皮下注射弾。目標の体内でシアン化物を徐々に蓄積させます。各弾丸の毒素含有量は非常に少なく、効果を発揮するには一定時間継続して射撃する必要があります</entitydescription.45Cyanide_VGB>
+    <entityname.45Calyx_VGB>.45 カリクス汚染弾</entityname.45Calyx_VGB>
+    <entitydescription.45Calyx_VGB>少量のヴェロノケプス・カリクス卵を運ぶ.45 皮下注射弾。理論上、単回の投与量で複数の宿主に感染できますが、大多数の卵が衝突の瞬間に死ぬことを考慮すると、実際の伝播効率はかなり運に左右されます。</entitydescription.45Calyx_VGB>
+    <entityname.45Physicorium_VGB>.45 フィジコリウムAP</entityname.45Physicorium_VGB>
+    <entitydescription.45Physicorium_VGB>フィジコリウム弾頭を使用した.45 異星ポイントed装甲貫通弾。弾丸初速を犠牲にすることなく、より堅い弾頭素材に切り替えています。優れた装甲貫通性能。</entitydescription.45Physicorium_VGB>
+    <entityname.45Dementonite_VGB>.45 デメントナイト重力弾</entityname.45Dementonite_VGB>
+    <entitydescription.45Dementonite_VGB>デメントナイト弾頭を使用した.45 FMJ弾。敵の体内で小規模な重力乱流を引き起こし、深刻な深部組織損傷を招き、精神病的症状を誘発します</entitydescription.45Dementonite_VGB>
+    <entityname.45Incendium_VGB>.45 インシンディウムHE</entityname.45Incendium_VGB>
+    <entitydescription.45Incendium_VGB>インシンディウム弾頭を使用した.45 爆破裂。インシンディウム爆薬により、その組織破壊力は小型手榴弾に匹敵します</entitydescription.45Incendium_VGB>
+    <entityname.45Fulgurium_VGB>.45 フルグリウム衝撃弾</entityname.45Fulgurium_VGB>
+    <entitydescription.45Fulgurium_VGB>豪華なフルグリウムを使用した.45 FMJ弾。衝撃効果を引き起こし、目標を迅速に戦闘不能にします</entitydescription.45Fulgurium_VGB>
+    <entityname.45ERASER_VGB>アンテイ・テクノロジー™ .45「イレイザー」</entityname.45ERASER_VGB>
+    <entitydescription.45ERASER_VGB>この弾丸はどのマガジンとも互換性がありません。直接薬室に装填して発射するしかできません\nプライマーに刻印されています：「究極の実用主義」\n手にすると不吉な予感がします\n屋内での使用は避けるのがベストです</entitydescription.45ERASER_VGB>
+
+    <!-- .38口径弾薬 -->
+    <entityname.38Blank_VGB>.38 空包弾</entityname.38Blank_VGB>
+    <entitydescription.38Blank_VGB>薬莢のみ、脆い弾頭、そして少量のプライマーからなる.38口径弾丸。ほとんどダメージを与えません。通常、演習や武器テストに使用されます</entitydescription.38Blank_VGB>
+    <entityname.38JHP_VGB>.38 JHP</entityname.38JHP_VGB>
+    <entitydescription.38JHP_VGB>.38口径ジャケットedホローポイント弾。非装甲の野生生物に対して優秀で、高い出血ダメージを与え、目標をスタンさせやすいです。</entitydescription.38JHP_VGB>
+    <entityname.38AP_VGB>.38 AP</entityname.38AP_VGB>
+    <entitydescription.38AP_VGB>.38 ポイントed装甲貫通弾。主に軽装甲目標向けです。装甲貫通性能を得るためにダメージ能力を一部犠牲にします</entitydescription.38AP_VGB>
+    <entityname.38Exp_VGB>.38 爆破裂</entityname.38Exp_VGB>
+    <entitydescription.38Exp_VGB>.38 爆破裂。爆発/銃撃複合ダメージを与え、船体構造物の破壊にも優れています</entitydescription.38Exp_VGB>
+    <entityname.38Chloralhydrate_VGB>.38 化学的鎮静弾</entityname.38Chloralhydrate_VGB>
+    <entitydescription.38Chloralhydrate_VGB>クロラールハイドレートが充填された.38 皮下注射弾。プロフェッショナルな暴動鎮圧弾薬で、目標をスタンさせるだけでなく、短時間昏倒させることもできます。撃つほど効果が高まります</entitydescription.38Chloralhydrate_VGB>
+    <entityname.38Opium_VGB>.38 医用アヘン弾</entityname.38Opium_VGB>
+    <entitydescription.38Opium_VGB>医用アヘン溶液が充填された.38 皮下注射弾。これは他者を治療するためのものではありません。その逆で、目標の体内で徐々にアヘン剤の過剰摂取を蓄積させ、モルヒネによる自救を阻止することを目的としています</entitydescription.38Opium_VGB>
+    <entityname.38Sufforin_VGB>.38 サッフォリン毒弾</entityname.38Sufforin_VGB>
+    <entitydescription.38Sufforin_VGB>サッフォリン毒素が充填された.38 皮下注射弾。目標の体内でサッフォリンを徐々に蓄積させます。各弾丸の毒素含有量は非常に少なく、効果を発揮するには一定時間継続して射撃する必要があります</entitydescription.38Sufforin_VGB>
+    <entityname.38Morbusine_VGB>.38 モルビシン毒弾</entityname.38Morbusine_VGB>
+    <entitydescription.38Morbusine_VGB>モルビシン毒素が充填された.38 皮下注射弾。目標の体内でモルビシンを徐々に蓄積させます。各弾丸の毒素含有量は非常に少なく、効果を発揮するには一定時間継続して射撃する必要があります</entitydescription.38Morbusine_VGB>
+    <entityname.38Cyanide_VGB>.38 シアン化物毒弾</entityname.38Cyanide_VGB>
+    <entitydescription.38Cyanide_VGB>シアン化物毒素が充填された.38 皮下注射弾。目標の体内でシアン化物を徐々に蓄積させます。各弾丸の毒素含有量は非常に少なく、効果を発揮するには一定時間継続して射撃する必要があります</entitydescription.38Cyanide_VGB>
+    <entityname.38Calyx_VGB>.38 カリクス汚染弾</entityname.38Calyx_VGB>
+    <entitydescription.38Calyx_VGB>少量のヴェロノケプス・カリクス卵を運ぶ.38 皮下注射弾。理論上、単回の投与量で複数の宿主に感染できますが、大多数の卵が衝突の瞬間に死ぬことを考慮すると、実際の伝播効率はかなり運に左右されます</entitydescription.38Calyx_VGB>
+    <entityname.38Physicorium_VGB>.38 フィジコリウムAP</entityname.38Physicorium_VGB>
+    <entitydescription.38Physicorium_VGB>フィジコリウム弾頭を使用した.38 異星ポイントed装甲貫通弾。弾丸初速を犠牲にすることなく、より堅い弾頭素材に切り替えています。優れた装甲貫通性能。</entitydescription.38Physicorium_VGB>
+    <entityname.38Dementonite_VGB>.38 デメントナイト重力弾</entityname.38Dementonite_VGB>
+    <entitydescription.38Dementonite_VGB>デメントナイト弾頭を使用した.38 FMJ弾。敵の体内で小規模な重力乱流を引き起こし、深刻な深部組織損傷を招き、精神病的症状を誘発します</entitydescription.38Dementonite_VGB>
+    <entityname.38Incendium_VGB>.38 インシンディウムHE</entityname.38Incendium_VGB>
+    <entitydescription.38Incendium_VGB>インシンディウム弾頭を使用した.38 爆破裂。インシンディウム爆薬により、その組織破壊力は小型手榴弾に匹敵します</entitydescription.38Incendium_VGB>
+    <entityname.38Fulgurium_VGB>.38 フルグリウム衝撃弾</entityname.38Fulgurium_VGB>
+    <entitydescription.38Fulgurium_VGB>豪華なフルグリウムを使用した.38 FMJ弾。衝撃効果を引き起こし、目標を迅速に戦闘不能にします</entitydescription.38Fulgurium_VGB>
+
+    <!-- .30-06口径弾薬 -->
+    <entityname.3006Blank_VGB>.30-06 空包弾</entityname.3006Blank_VGB>
+    <entitydescription.3006Blank_VGB>薬莢のみ、脆い弾頭、そして少量のプライマーからなる.30-06口径弾丸。ほとんどダメージを与えません。通常、演習や武器テストに使用されます</entitydescription.3006Blank_VGB>
+    <entityname.3006JHP_VGB>.30-06 JHP</entityname.3006JHP_VGB>
+    <entitydescription.3006JHP_VGB>.30-06 フルパワージャケットedホローポイント弾。非装甲の野生生物に対して優秀で、非常に高い出血ダメージを与え、目標をスタンさせやすいです</entitydescription.3006JHP_VGB>
+    <entityname.3006AP_VGB>.30-06 AP</entityname.3006AP_VGB>
+    <entitydescription.3006AP_VGB>.30-06 ポイントed装甲貫通弾。主に中装甲目標向けです。より優れた装甲貫通性能を得るためにダメージ能力を一部犠牲にします</entitydescription.3006AP_VGB>
+    <entityname.3006Exp_VGB>.30-06 爆破裂</entityname.3006Exp_VGB>
+    <entitydescription.3006Exp_VGB>.30-06 爆破裂。ダメージ能力が高く、主に構造物の破壊と大型目標の戦闘に使用されます</entitydescription.3006Exp_VGB>
+    <entityname.3006Chloralhydrate_VGB>.30-06 化学的鎮静弾</entityname.3006Chloralhydrate_VGB>
+    <entitydescription.3006Chloralhydrate_VGB>クロラールハイドレートが充填された.30-06 皮下注射弾。プロフェッショナルな暴動鎮圧弾薬で、目標をスタンさせるだけでなく、短時間昏倒させることもできます</entitydescription.3006Chloralhydrate_VGB>
+    <entityname.3006Opium_VGB>.30-06 医用アヘン弾</entityname.3006Opium_VGB>
+    <entitydescription.3006Opium_VGB>医用アヘン溶液が充填された.30-06 皮下注射弾。これは他者を治療するためのものではありません。その逆で、目標の体内で徐々にアヘン剤の過剰摂取を蓄積させ、モルヒネによる自救を阻止することを目的としています</entitydescription.3006Opium_VGB>
+    <entityname.3006Sufforin_VGB>.30-06 サッフォリン毒弾</entityname.3006Sufforin_VGB>
+    <entitydescription.3006Sufforin_VGB>サッフォリン毒素が充填された.30-06 皮下注射弾。目標の体内でサッフォリンを徐々に蓄積させます。各弾丸の毒素含有量は非常に少なく、効果を発揮するには4-5発の連続射撃が必要です</entitydescription.3006Sufforin_VGB>
+    <entityname.3006Morbusine_VGB>.30-06 モルビシン毒弾</entityname.3006Morbusine_VGB>
+    <entitydescription.3006Morbusine_VGB>モルビシン毒素が充填された.30-06 皮下注射弾。目標の体内でモルビシンを徐々に蓄積させます。各弾丸の毒素含有量は非常に少なく、効果を発揮するには4-5発の連続射撃が必要です</entitydescription.3006Morbusine_VGB>
+    <entityname.3006Cyanide_VGB>.30-06 シアン化物毒弾</entityname.3006Cyanide_VGB>
+    <entitydescription.3006Cyanide_VGB>シアン化物毒素が充填された.30-06 皮下注射弾。目標の体内でシアン化物を徐々に蓄積させます。各弾丸の毒素含有量は非常に少なく、効果を発揮するには4-5発の連続射撃が必要です</entitydescription.3006Cyanide_VGB>
+    <entityname.3006Calyx_VGB>.30-06 カリクス汚染弾</entityname.3006Calyx_VGB>
+    <entitydescription.3006Calyx_VGB>少量のヴェロノケプス・カリクス卵を運ぶ.30-06 皮下注射弾。理論上、単回の投与量で複数の宿主に感染できますが、大多数の卵が衝突の瞬間に死ぬことを考慮すると、実際の伝播効率はかなり運に左右されます\n.30-06弾丸は.45弾丸よりも高い感染確率を持ちます</entitydescription.3006Calyx_VGB>
+    <entityname.3006Physicorium_VGB>.30-06 フィジコリウムAP</entityname.3006Physicorium_VGB>
+    <entitydescription.3006Physicorium_VGB>フィジコリウム弾頭を使用した.30-06 異星ポイントed装甲貫通弾。弾丸初速を犠牲にすることなく、より堅い弾頭素材に切り替えています。優れた装甲貫通性能。</entitydescription.3006Physicorium_VGB>
+    <entityname.3006Dementonite_VGB>.30-06 デメントナイト重力弾</entityname.3006Dementonite_VGB>
+    <entitydescription.3006Dementonite_VGB>デメントナイト弾頭を使用した.30-06 FMJ弾。敵の体内で小規模な重力乱流を引き起こし、深刻な深部組織損傷を招き、精神病的症状を誘発します</entitydescription.3006Dementonite_VGB>
+    <entityname.3006Incendium_VGB>.30-06 インシンディウムHE</entityname.3006Incendium_VGB>
+    <entitydescription.3006Incendium_VGB>インシンディウム弾頭を使用した.30-06 爆破裂。インシンディウム爆薬により、その組織破壊力は中型手榴弾に匹敵します</entitydescription.3006Incendium_VGB>
+    <entityname.3006Fulgurium_VGB>.30-06 フルグリウム衝撃弾</entityname.3006Fulgurium_VGB>
+    <entitydescription.3006Fulgurium_VGB>豪華なフルグリウムを使用した.30-06 FMJ弾。衝撃効果を引き起こし、目標を迅速に戦闘不能にします</entitydescription.3006Fulgurium_VGB>
+
+    <!-- .60口径弾薬 -->
+    <entityname.60Blank_VGB>.60 空包弾</entityname.60Blank_VGB>
+    <entitydescription.60Blank_VGB>薬莢のみ、脆い弾頭、そして少量のプライマーからなる.60ハンドキャノン弾丸。ほとんどダメージを与えません。通常、演習や武器テストに使用されます</entitydescription.60Blank_VGB>
+    <entityname.60JHP_VGB>.60 JHP</entityname.60JHP_VGB>
+    <entitydescription.60JHP_VGB>.60のもとも恐ろしい運動エネルギー伝達能力に特別なホローポイント弾頭を組み合わせれば、強盗の頭を吹き飛ばすのは造作もないでしょう</entitydescription.60JHP_VGB>
+    <entityname.60AP_VGB>.60 AP</entityname.60AP_VGB>
+    <entitydescription.60AP_VGB>この弾薬の性能は旧地球で人気の.50 BMG弾薬に非常に近く、ほとんどの装甲小型生物に壊滅的なダメージを与えることができます</entitydescription.60AP_VGB>
+    <entityname.60Exp_VGB>.60 爆破裂</entityname.60Exp_VGB>
+    <entitydescription.60Exp_VGB>銃身内の爆発サプライズ</entitydescription.60Exp_VGB>
+
+    <!-- 6.8mm口径弾薬 -->
+    <entityname.68Blank_VGB>6.8mm 空包弾</entityname.68Blank_VGB>
+    <entitydescription.68Blank_VGB>薬莢のみ、脆い弾頭、そして少量のプライマーからなる6.8mm弾丸。ほとんどダメージを与えません。通常、演習や武器テストに使用されます</entitydescription.68Blank_VGB>
+    <entityname.68JHP_VGB>6.8mm JHP</entityname.68JHP_VGB>
+    <entitydescription.68JHP_VGB>6.8mm ジャケットedホローポイント弾。アサルトライフル標準弾薬。非装甲の野生生物に対して優秀で、高い出血ダメージを与えます</entitydescription.68JHP_VGB>
+    <entityname.68AP_VGB>6.8mm AP</entityname.68AP_VGB>
+    <entitydescription.68AP_VGB>6.8mm ポイントed装甲貫通弾。主に軽装甲目標向けです</entitydescription.68AP_VGB>
+    <entityname.68Exp_VGB>6.8mm 爆破裂</entityname.68Exp_VGB>
+    <entitydescription.68Exp_VGB>6.8mm 爆破裂。爆発/銃撃複合ダメージを与え、船体構造物の破壊にも優れています</entitydescription.68Exp_VGB>
+    <entityname.68Rev_VGB>6.8mm「レボリューショナリー」過圧弾</entityname.68Rev_VGB>
+    <entitydescription.68Rev_VGB>既存の6.8mm弾丸の改良型。「レボリューショナリー」は装甲貫通爆発弾頭+複合過圧推進組合せを採用し、6.8口径の潜在能力を完全に解放しました\n唯一の問題は、「レボリューショナリー」がアサルトライフルに不可逆的な損傷を与えることです。長期使用すると最終的に武器が廃棄されます。</entitydescription.68Rev_VGB>
+
+    <!-- 5.56mm口径弾薬 -->
+    <entityname.556Blank_VGB>5.56mm 空包弾</entityname.556Blank_VGB>
+    <entitydescription.556Blank_VGB>薬莢のみ、脆い弾頭、そして少量のプライマーからなる5.56mm弾丸。ほとんどダメージを与えません。通常、演習や武器テストに使用されます</entitydescription.556Blank_VGB>
+    <entityname.556JHP_VGB>5.56mm JHP</entityname.556JHP_VGB>
+    <entitydescription.556JHP_VGB>5.56mm 重機関銃専用ジャケットedホローポイント弾。単発ダメージは低いが発射レートが極めて高く、非装甲集団目標に対処するのに適しています</entitydescription.556JHP_VGB>
+    <entityname.556AP_VGB>5.56mm AP</entityname.556AP_VGB>
+    <entitydescription.556AP_VGB>5.56mm 重機関銃専用装甲貫通弾。主に制圧射撃に使用します。高発射レートにより単発の装甲貫通能力の不足を補います</entitydescription.556AP_VGB>
+    <entityname.556Exp_VGB>5.56mm 爆破裂</entityname.556Exp_VGB>
+    <entitydescription.556Exp_VGB>5.56mm 重機関銃専用爆破裂。単発の威力は限定的ですが、高発射レートにより爆発効果を蓄積できます。主に制圧射撃と破壊に使用されます</entitydescription.556Exp_VGB>
+
+    <!-- SMGマガジン -->
+    <entityname.EmptySmgMag_VGM>空のSMGマガジン</entityname.EmptySmgMag_VGM>
+    <entitydescription.EmptySmgMag_VGM>空のSMGマガジン。対応する弾薬を装填する必要があります</entitydescription.EmptySmgMag_VGM>
+    <entityname.SmgMagBlank_VGM>.45 空包弾マガジン</entityname.SmgMagBlank_VGM>
+    <entitydescription.SmgMagBlank_VGM>.45 空包弾が装填されたSMGマガジン。演習と訓練に使用します</entitydescription.SmgMagBlank_VGM>
+    <entityname.smgmagazine>.45 FMJマガジン</entityname.smgmagazine>
+    <entitydescription.smgmagazine>.45 FMJ弾が装填されたSMGマガジン。最も基本的な弾薬構成</entitydescription.smgmagazine>
+    <entityname.SmgMagFMJ_VGB>.45 FMJマガジン</entityname.SmgMagFMJ_VGB>
+    <entitydescription.SmgMagFMJ_VGB>.45 FMJ弾が装填されたSMGマガジン。最も基本的な弾薬構成</entitydescription.SmgMagFMJ_VGB>
+    <entityname.SmgMagJHP_VGM>.45 JHPマガジン</entityname.SmgMagJHP_VGM>
+    <entitydescription.SmgMagJHP_VGM>.45 JHP弾が装填されたSMGマガジン。非装甲目標に対して優秀</entitydescription.SmgMagJHP_VGM>
+    <entityname.SmgMagAP_VGM>.45 APマガジン</entityname.SmgMagAP_VGM>
+    <entitydescription.SmgMagAP_VGM>.45 AP弾が装填されたSMGマガジン。軽装甲を貫通できます</entitydescription.SmgMagAP_VGM>
+    <entityname.SmgMagExp_VGM>.45 爆破裂マガジン</entityname.SmgMagExp_VGM>
+    <entitydescription.SmgMagExp_VGM>.45 爆破裂が装填されたSMGマガジン。構造物の破壊に使用できます</entitydescription.SmgMagExp_VGM>
+    <entityname.SmgMagChloralhydrate_VGM>.45 化学的鎮静弾マガジン</entityname.SmgMagChloralhydrate_VGM>
+    <entitydescription.SmgMagChloralhydrate_VGM>.45 化学的鎮静弾が装填されたSMGマガジン。暴動鎮圧と非致命的制圧に使用します</entitydescription.SmgMagChloralhydrate_VGM>
+    <entityname.SmgMagOpium_VGM>.45 医用アヘンマガジン</entityname.SmgMagOpium_VGM>
+    <entitydescription.SmgMagOpium_VGM>.45 医用アヘン弾が装填されたSMGマガジン。目標がモルヒネによる自救を使用するのを阻止します</entitydescription.SmgMagOpium_VGM>
+    <entityname.SmgMagSufforin_VGM>.45 サッフォリン毒弾マガジン</entityname.SmgMagSufforin_VGM>
+    <entitydescription.SmgMagSufforin_VGM>.45 サッフォリン毒素弾が装填されたSMGマガジン。目標の体内でサッフォリンを蓄積させます</entitydescription.SmgMagSufforin_VGM>
+    <entityname.SmgMagMorbusine_VGM>.45 モルビシン毒弾マガジン</entityname.SmgMagMorbusine_VGM>
+    <entitydescription.SmgMagMorbusine_VGM>.45 モルビシン毒素弾が装填されたSMGマガジン。目標の体内でモルビシンを蓄積させます</entitydescription.SmgMagMorbusine_VGM>
+    <entityname.SmgMagCyanide_VGM>.45 シアン化物毒弾マガジン</entityname.SmgMagCyanide_VGM>
+    <entitydescription.SmgMagCyanide_VGM>.45 シアン化物毒素弾が装填されたSMGマガジン。目標の体内でシアン化物を蓄積させます</entitydescription.SmgMagCyanide_VGM>
+    <entityname.SmgMagCalyx_VGM>.45 カリクス汚染弾マガジン</entityname.SmgMagCalyx_VGM>
+    <entitydescription.SmgMagCalyx_VGM>少量のヴェロノケプス・カリクス卵を運ぶ.45 SMGマガジン。直接注射よりも効率は劣りますが、まだ感染を広げる機会があります</entitydescription.SmgMagCalyx_VGM>
+    <entityname.SmgMagPhysicorium_VGM>.45 フィジコリウムAPマガジン</entityname.SmgMagPhysicorium_VGM>
+    <entitydescription.SmgMagPhysicorium_VGM>.45 フィジコリウムAP弾が装填されたSMGマガジン。優れた装甲貫通性能</entitydescription.SmgMagPhysicorium_VGM>
+    <entityname.SmgMagDementonite_VGM>.45 デメントナイト重力弾マガジン</entityname.SmgMagDementonite_VGM>
+    <entitydescription.SmgMagDementonite_VGM>.45 デメントナイト重力弾が装填されたSMGマガジン。深部組織損傷を与え、精神病を誘発します</entitydescription.SmgMagDementonite_VGM>
+    <entityname.SmgMagIncendium_VGM>.45 インシンディウムHEマガジン</entityname.SmgMagIncendium_VGM>
+    <entitydescription.SmgMagIncendium_VGM>.45 インシンディウムHE弾が装填されたSMGマガジン。組織破壊力は小型手榴弾に匹敵</entitydescription.SmgMagIncendium_VGM>
+    <entityname.SmgMagFulgurium_VGM>.45 フルグリウム衝撃弾マガジン</entityname.SmgMagFulgurium_VGM>
+    <entitydescription.SmgMagFulgurium_VGM>.45 フルグリウム衝撃弾が装填されたSMGマガジン。目標を迅速に戦闘不能にします</entitydescription.SmgMagFulgurium_VGM>
+
+    <entityname.EmptySmgLongMag_VGM>空のSMG延長マガジン</entityname.EmptySmgLongMag_VGM>
+    <entitydescription.EmptySmgLongMag_VGM>空のSMG延長マガジン。対応する弾薬を装填する必要があります</entitydescription.EmptySmgLongMag_VGM>
+    <entityname.SmgLongMagBlank_VGM>.45 空包弾延長マガジン</entityname.SmgLongMagBlank_VGM>
+    <entitydescription.SmgLongMagBlank_VGM>.45 空包弾が装填されたSMG延長マガジン。演習と訓練に使用します</entitydescription.SmgLongMagBlank_VGM>
+    <entityname.smgLongmagVGM>.45 FMJ延長マガジン</entityname.smgLongmagVGM>
+    <entitydescription.smgLongmagVGM>.45 FMJ弾が装填されたSMG延長マガジン。より多くの弾薬容量を提供します</entitydescription.smgLongmagVGM>
+    <entityname.SmgLongMagJHP_VGM>.45 JHP延長マガジン</entityname.SmgLongMagJHP_VGM>
+    <entitydescription.SmgLongMagJHP_VGM>.45 JHP弾が装填されたSMG延長マガジン。非装甲目標に対して優秀</entitydescription.SmgLongMagJHP_VGM>
+    <entityname.SmgLongMagAP_VGM>.45 AP延長マガジン</entityname.SmgLongMagAP_VGM>
+    <entitydescription.SmgLongMagAP_VGM>.45 AP弾が装填されたSMG延長マガジン。軽装甲を貫通できます</entitydescription.SmgLongMagAP_VGM>
+    <entityname.SmgLongMagExp_VGM>.45 爆破裂延長マガジン</entityname.SmgLongMagExp_VGM>
+    <entitydescription.SmgLongMagExp_VGM>.45 爆破裂が装填されたSMG延長マガジン。構造物の破壊に使用できます</entitydescription.SmgLongMagExp_VGM>
+    <entityname.SmgLongMagChloralhydrate_VGM>.45 化学的鎮静弾延長マガジン</entityname.SmgLongMagChloralhydrate_VGM>
+    <entitydescription.SmgLongMagChloralhydrate_VGM>.45 化学的鎮静弾が装填されたSMG延長マガジン。暴動鎮圧と非致死的制圧に使用します</entitydescription.SmgLongMagChloralhydrate_VGM>
+    <entityname.SmgLongMagOpium_VGM>.45 医用アヘン延長マガジン</entityname.SmgLongMagOpium_VGM>
+    <entitydescription.SmgLongMagOpium_VGM>.45 医用アヘン弾が装填されたSMG延長マガジン。目標がモルヒネによる自救を使用するのを阻止します</entitydescription.SmgLongMagOpium_VGM>
+    <entityname.SmgLongMagSufforin_VGM>.45 サッフォリン毒弾延長マガジン</entityname.SmgLongMagSufforin_VGM>
+    <entitydescription.SmgLongMagSufforin_VGM>.45 サッフォリン毒素弾が装填されたSMG延長マガジン。目標の体内でサッフォリンを蓄積させます</entitydescription.SmgLongMagSufforin_VGM>
+    <entityname.SmgLongMagMorbusine_VGM>.45 モルビシン毒弾延長マガジン</entityname.SmgLongMagMorbusine_VGM>
+    <entitydescription.SmgLongMagMorbusine_VGM>.45 モルビシン毒素弾が装填されたSMG延長マガジン。目標の体内でモルビシンを蓄積させます</entitydescription.SmgLongMagMorbusine_VGM>
+    <entityname.SmgLongMagCyanide_VGM>.45 シアン化物毒弾延長マガジン</entityname.SmgLongMagCyanide_VGM>
+    <entitydescription.SmgLongMagCyanide_VGM>.45 シアン化物毒素弾が装填されたSMG延長マガジン。目標の体内でシアン化物を蓄積させます</entitydescription.SmgLongMagCyanide_VGM>
+    <entityname.SmgLongMagCalyx_VGM>.45 カリクス汚染弾延長マガジン</entityname.SmgLongMagCalyx_VGM>
+    <entitydescription.SmgLongMagCalyx_VGM>少量のヴェロノケプス・カリクス卵を運ぶ.45 SMG延長マガジン。直接注射よりも効率は劣りますが、まだ感染を広げる機会があります</entitydescription.SmgLongMagCalyx_VGM>
+    <entityname.SmgLongMagPhysicorium_VGM>.45 フィジコリウムAP延長マガジン</entityname.SmgLongMagPhysicorium_VGM>
+    <entitydescription.SmgLongMagPhysicorium_VGM>.45 フィジコリウムAP弾が装填されたSMG延長マガジン。優れた装甲貫通性能</entitydescription.SmgLongMagPhysicorium_VGM>
+    <entityname.SmgLongMagDementonite_VGM>.45 デメントナイト重力弾延長マガジン</entityname.SmgLongMagDementonite_VGM>
+    <entitydescription.SmgLongMagDementonite_VGM>.45 デメントナイト重力弾が装填されたSMG延長マガジン。深部組織損傷を与え、精神病を誘発します</entitydescription.SmgLongMagDementonite_VGM>
+    <entityname.SmgLongMagIncendium_VGM>.45 インシンディウムHE延長マガジン</entityname.SmgLongMagIncendium_VGM>
+    <entitydescription.SmgLongMagIncendium_VGM>.45 インシンディウムHE弾が装填されたSMG延長マガジン。組織破壊力は小型手榴弾に匹敵</entitydescription.SmgLongMagIncendium_VGM>
+    <entityname.SmgLongMagFulgurium_VGM>.45 フルグリウム衝撃弾延長マガジン</entityname.SmgLongMagFulgurium_VGM>
+    <entitydescription.SmgLongMagFulgurium_VGM>.45 フルグリウム衝撃弾が装填されたSMG延長マガジン。目標を迅速に戦闘不能にします</entitydescription.SmgLongMagFulgurium_VGM>
+    <entityname.smgDFuelLongMagVGM>.45 減損燃料延長マガジン</entityname.smgDFuelLongMagVGM>
+    <entitydescription.smgDFuelLongMagVGM>.45 減損燃料弾が装填されたSMG延長マガジン。放射線ダメージを与え、効果的に装甲を貫通します</entitydescription.smgDFuelLongMagVGM>
+
+    <entityname.EmptySmgDrumMag_VGM>空のSMGドラムマガジン</entityname.EmptySmgDrumMag_VGM>
+    <entitydescription.EmptySmgDrumMag_VGM>空のSMGドラムマガジン。対応する弾薬を装填する必要があります</entitydescription.EmptySmgDrumMag_VGM>
+    <entityname.SmgDrumMagBlank_VGM>.45 空包弾ドラムマガジン</entityname.SmgDrumMagBlank_VGM>
+    <entitydescription.SmgDrumMagBlank_VGM>.45 空包弾が装填されたSMGドラムマガジン。演習と訓練に使用します</entitydescription.SmgDrumMagBlank_VGM>
+    <entityname.smgDrummagVGM>.45 FMJドラムマガジン</entityname.smgDrummagVGM>
+    <entitydescription.smgDrummagVGM>.45 FMJ弾が装填されたSMGドラムマガジン。最大の弾薬容量を提供します</entitydescription.smgDrummagVGM>
+    <entityname.SmgDrumMagJHP_VGM>.45 JHPドラムマガジン</entityname.SmgDrumMagJHP_VGM>
+    <entitydescription.SmgDrumMagJHP_VGM>.45 JHP弾が装填されたSMGドラムマガジン。非装甲目標に対して優秀</entitydescription.SmgDrumMagJHP_VGM>
+    <entityname.SmgDrumMagAP_VGM>.45 APドラムマガジン</entityname.SmgDrumMagAP_VGM>
+    <entitydescription.SmgDrumMagAP_VGM>.45 AP弾が装填されたSMGドラムマガジン。軽装甲を貫通できます</entitydescription.SmgDrumMagAP_VGM>
+    <entityname.SmgDrumMagExp_VGM>.45 爆破裂ドラムマガジン</entityname.SmgDrumMagExp_VGM>
+    <entitydescription.SmgDrumMagExp_VGM>.45 爆破裂が装填されたSMGドラムマガジン。構造物の破壊に使用できます</entitydescription.SmgDrumMagExp_VGM>
+    <entityname.SmgDrumMagChloralhydrate_VGM>.45 化学的鎮静弾ドラムマガジン</entityname.SmgDrumMagChloralhydrate_VGM>
+    <entitydescription.SmgDrumMagChloralhydrate_VGM>.45 化学的鎮静弾が装填されたSMGドラムマガジン。暴動鎮圧と非致死的制圧に使用します</entitydescription.SmgDrumMagChloralhydrate_VGM>
+    <entityname.SmgDrumMagOpium_VGM>.45 医用アヘンドラムマガジン</entityname.SmgDrumMagOpium_VGM>
+    <entitydescription.SmgDrumMagOpium_VGM>.45 医用アヘン弾が装填されたSMGドラムマガジン。目標がモルヒネによる自救を使用するのを阻止します</entitydescription.SmgDrumMagOpium_VGM>
+    <entityname.SmgDrumMagSufforin_VGM>.45 サッフォリン毒弾ドラムマガジン</entityname.SmgDrumMagSufforin_VGM>
+    <entitydescription.SmgDrumMagSufforin_VGM>.45 サッフォリン毒素弾が装填されたSMGドラムマガジン。目標の体内でサッフォリンを蓄積させます</entitydescription.SmgDrumMagSufforin_VGM>
+    <entityname.SmgDrumMagMorbusine_VGM>.45 モルビシン毒弾ドラムマガジン</entityname.SmgDrumMagMorbusine_VGM>
+    <entitydescription.SmgDrumMagMorbusine_VGM>.45 モルビシン毒素弾が装填されたSMGドラムマガジン。目標の体内でモルビシンを蓄積させます</entitydescription.SmgDrumMagMorbusine_VGM>
+    <entityname.SmgDrumMagCyanide_VGM>.45 シアン化物毒弾ドラムマガジン</entityname.SmgDrumMagCyanide_VGM>
+    <entitydescription.SmgDrumMagCyanide_VGM>.45 シアン化物毒素弾が装填されたSMGドラムマガジン。目標の体内でシアン化物を蓄積させます</entitydescription.SmgDrumMagCyanide_VGM>
+    <entityname.SmgDrumMagCalyx_VGM>.45 カリクス汚染弾ドラムマガジン</entityname.SmgDrumMagCalyx_VGM>
+    <entitydescription.SmgDrumMagCalyx_VGM>少量のヴェロノケプス・カリクス卵を運ぶ.45 SMGドラムマガジン。直接注射よりも効率は劣りますが、まだ感染を広げる機会があります</entitydescription.SmgDrumMagCalyx_VGM>
+    <entityname.SmgDrumMagPhysicorium_VGM>.45 フィジコリウムAPドラムマガジン</entityname.SmgDrumMagPhysicorium_VGM>
+    <entitydescription.SmgDrumMagPhysicorium_VGM>.45 フィジコリウムAP弾が装填されたSMGドラムマガジン。優れた装甲貫通性能</entitydescription.SmgDrumMagPhysicorium_VGM>
+    <entityname.SmgDrumMagDementonite_VGM>.45 デメントナイト重力弾ドラムマガジン</entityname.SmgDrumMagDementonite_VGM>
+    <entitydescription.SmgDrumMagDementonite_VGM>.45 デメントナイト重力弾が装填されたSMGドラムマガジン。深部組織損傷を与え、精神病を誘発します</entitydescription.SmgDrumMagDementonite_VGM>
+    <entityname.SmgDrumMagIncendium_VGM>.45 インシンディウムHEドラムマガジン</entityname.SmgDrumMagIncendium_VGM>
+    <entitydescription.SmgDrumMagIncendium_VGM>.45 インシンディウムHE弾が装填されたSMGドラムマガジン。組織破壊力は小型手榴弾に匹敵</entitydescription.SmgDrumMagIncendium_VGM>
+    <entityname.SmgDrumMagFulgurium_VGM>.45 フルグリウム衝撃弾ドラムマガジン</entityname.SmgDrumMagFulgurium_VGM>
+    <entitydescription.SmgDrumMagFulgurium_VGM>.45 フルグリウム衝撃弾が装填されたSMGドラムマガジン。目標を迅速に戦闘不能にします</entitydescription.SmgDrumMagFulgurium_VGM>
+    <entityname.smgDFuelDrumMagVGM>.45 減損燃料ドラムマガジン</entityname.smgDFuelDrumMagVGM>
+    <entitydescription.smgDFuelDrumMagVGM>.45 減損燃料弾が装填されたSMGドラムマガジン。放射線ダメージを与え、効果的に装甲を貫通します</entitydescription.smgDFuelDrumMagVGM>
+
+    <!-- アサルトライフルマガジン -->
+    <entityname.EmptyAssaultMag_VGM>空のアサルトライフルマガジン</entityname.EmptyAssaultMag_VGM>
+    <entitydescription.EmptyAssaultMag_VGM>空のアサルトライフルマガジン。対応する弾薬を装填する必要があります</entitydescription.EmptyAssaultMag_VGM>
+    <entityname.AssaultMagBlank_VGM>6.8mm 空包弾マガジン</entityname.AssaultMagBlank_VGM>
+    <entitydescription.AssaultMagBlank_VGM>6.8mm 空包弾が装填されたアサルトライフルマガジン。演習と訓練に使用します</entitydescription.AssaultMagBlank_VGM>
+    <entityname.assaultriflemagazine>アサルトライフルマガジン</entityname.assaultriflemagazine>
+    <entitydescription.assaultriflemagazine>6.8mm FMJ弾が装填されたアサルトライフルマガジン。最も基本的な弾薬構成</entitydescription.assaultriflemagazine>
+    <entityname.AssaultMagJHP_VGM>6.8mm JHPマガジン</entityname.AssaultMagJHP_VGM>
+    <entitydescription.AssaultMagJHP_VGM>6.8mm JHP弾が装填されたアサルトライフルマガジン。非装甲目標に対して優秀</entitydescription.AssaultMagJHP_VGM>
+    <entityname.AssaultMagAP_VGM>6.8mm APマガジン</entityname.AssaultMagAP_VGM>
+    <entitydescription.AssaultMagAP_VGM>6.8mm AP弾が装填されたアサルトライフルマガジン。軽装甲を貫通できます</entitydescription.AssaultMagAP_VGM>
+    <entityname.AssaultMagExp_VGM>6.8mm 爆破裂マガジン</entityname.AssaultMagExp_VGM>
+    <entitydescription.AssaultMagExp_VGM>6.8mm 爆破裂が装填されたアサルトライフルマガジン。構造物の破壊に使用できます</entitydescription.AssaultMagExp_VGM>
+    <entityname.AssaultMagRev_VGM>6.8mm 過圧弾マガジン</entityname.AssaultMagRev_VGM>
+    <entitydescription.AssaultMagRev_VGM>6.8mm 過圧弾が装填されたアサルトライフルマガジン。警告：この弾薬はライフルに不可逆的な損傷を与えます</entitydescription.AssaultMagRev_VGM>
+
+    <entityname.EmptyAssaultMagLong_VGM>空のアサルトライフル延長マガジン</entityname.EmptyAssaultMagLong_VGM>
+    <entitydescription.EmptyAssaultMagLong_VGM>空のアサルトライフル延長マガジン。対応する弾薬を装填する必要があります</entitydescription.EmptyAssaultMagLong_VGM>
+    <entityname.AssaultMagLongBlank_VGM>6.8mm 空包弾延長マガジン</entityname.AssaultMagLongBlank_VGM>
+    <entitydescription.AssaultMagLongBlank_VGM>6.8mm 空包弾が装填されたアサルトライフル延長マガジン。演習と訓練に使用します</entitydescription.AssaultMagLongBlank_VGM>
+    <entityname.assaultrifleLongMagVGM>アサルトライフル延長マガジン</entityname.assaultrifleLongMagVGM>
+    <entitydescription.assaultrifleLongMagVGM>6.8mm FMJ弾が装填されたアサルトライフル延長マガジン。より多くの弾薬容量を提供します</entitydescription.assaultrifleLongMagVGM>
+    <entityname.assaultriflemagazinelong>アサルトライフル延長マガジン</entityname.assaultriflemagazinelong>
+    <entitydescription.assaultriflemagazinelong>6.8mm FMJ弾が装填されたアサルトライフル延長マガジン。より多くの弾薬容量を提供します</entitydescription.assaultriflemagazinelong>
+    <entityname.AssaultMagLongJHP_VGM>6.8mm JHP延長マガジン</entityname.AssaultMagLongJHP_VGM>
+    <entitydescription.AssaultMagLongJHP_VGM>6.8mm JHP弾が装填されたアサルトライフル延長マガジン。非装甲目標に対して優秀</entitydescription.AssaultMagLongJHP_VGM>
+    <entityname.AssaultMagLongAP_VGM>6.8mm AP延長マガジン</entityname.AssaultMagLongAP_VGM>
+    <entitydescription.AssaultMagLongAP_VGM>6.8mm AP弾が装填されたアサルトライフル延長マガジン。軽装甲を貫通できます</entitydescription.AssaultMagLongAP_VGM>
+    <entityname.AssaultMagLongExp_VGM>6.8mm 爆破裂延長マガジン</entityname.AssaultMagLongExp_VGM>
+    <entitydescription.AssaultMagLongExp_VGM>6.8mm 爆破裂が装填されたアサルトライフル延長マガジン。構造物の破壊に使用できます</entitydescription.AssaultMagLongExp_VGM>
+    <entityname.AssaultMagLongRev_VGM>6.8mm 過圧弾延長マガジン</entityname.AssaultMagLongRev_VGM>
+    <entitydescription.AssaultMagLongRev_VGM>6.8mm 過圧弾が装填されたアサルトライフル延長マガジン。警告：この弾薬はライフルに不可逆的な損傷を与えます</entitydescription.AssaultMagLongRev_VGM>
+
+    <entityname.EmptyAssaultMagDrum_VGM>空のアサルトライフルドラムマガジン</entityname.EmptyAssaultMagDrum_VGM>
+    <entitydescription.EmptyAssaultMagDrum_VGM>空のアサルトライフルドラムマガジン。対応する弾薬を装填する必要があります</entitydescription.EmptyAssaultMagDrum_VGM>
+    <entityname.AssaultMagDrumBlank_VGM>6.8mm 空包弾ドラムマガジン</entityname.AssaultMagDrumBlank_VGM>
+    <entitydescription.AssaultMagDrumBlank_VGM>6.8mm 空包弾が装填されたアサルトライフルドラムマガジン。演習と訓練に使用します</entitydescription.AssaultMagDrumBlank_VGM>
+    <entityname.assaultrifleDrumMagVGM>アサルトライフルドラムマガジン</entityname.assaultrifleDrumMagVGM>
+    <entitydescription.assaultrifleDrumMagVGM>6.8mm FMJ弾が装填されたアサルトライフルドラムマガジン。最大の弾薬容量を提供します</entitydescription.assaultrifleDrumMagVGM>
+    <entityname.assaultriflemagazinedrum>アサルトライフルドラムマガジン</entityname.assaultriflemagazinedrum>
+    <entitydescription.assaultriflemagazinedrum>6.8mm FMJ弾が装填されたアサルトライフルドラムマガジン。最大の弾薬容量を提供します</entitydescription.assaultriflemagazinedrum>
+    <entityname.AssaultMagDrumJHP_VGM>6.8mm JHPドラムマガジン</entityname.AssaultMagDrumJHP_VGM>
+    <entitydescription.AssaultMagDrumJHP_VGM>6.8mm JHP弾が装填されたアサルトライフルドラムマガジン。非装甲目標に対して優秀</entitydescription.AssaultMagDrumJHP_VGM>
+    <entityname.AssaultMagDrumAP_VGM>6.8mm APドラムマガジン</entityname.AssaultMagDrumAP_VGM>
+    <entitydescription.AssaultMagDrumAP_VGM>6.8mm AP弾が装填されたアサルトライフルドラムマガジン。軽装甲を貫通できます</entitydescription.AssaultMagDrumAP_VGM>
+    <entityname.AssaultMagDrumExp_VGM>6.8mm 爆破裂ドラムマガジン</entityname.AssaultMagDrumExp_VGM>
+    <entitydescription.AssaultMagDrumExp_VGM>6.8mm 爆破裂が装填されたアサルトライフルドラムマガジン。構造物の破壊に使用できます</entitydescription.AssaultMagDrumExp_VGM>
+    <entityname.AssaultMagDrumRev_VGM>6.8mm 過圧弾ドラムマガジン</entityname.AssaultMagDrumRev_VGM>
+    <entitydescription.AssaultMagDrumRev_VGM>6.8mm 過圧弾が装填されたアサルトライフルドラムマガジン。警告：この弾薬はライフルに不可逆的な損傷を与えます</entitydescription.AssaultMagDrumRev_VGM>
+
+    <!-- 重機関銃マガジン -->
+    <entityname.EmptyHmgMag_VGM>空の重機関銃マガジン</entityname.EmptyHmgMag_VGM>
+    <entitydescription.EmptyHmgMag_VGM>空の重機関銃マガジン。対応する弾薬を装填する必要があります</entitydescription.EmptyHmgMag_VGM>
+    <entityname.HmgMagBlank_VGM>5.56mm 空包弾マガジン</entityname.HmgMagBlank_VGM>
+    <entitydescription.HmgMagBlank_VGM>5.56mm 空包弾が装填された重機関銃マガジン。演習と訓練に使用します</entitydescription.HmgMagBlank_VGM>
+    <entityname.HmgMagJHP_VGM>5.56mm JHPマガジン</entityname.HmgMagJHP_VGM>
+    <entitydescription.HmgMagJHP_VGM>5.56mm JHP弾が装填された重機関銃マガジン。集団目標に対処するのに適しています</entitydescription.HmgMagJHP_VGM>
+    <entityname.HmgMagAP_VGM>5.56mm APマガジン</entityname.HmgMagAP_VGM>
+    <entitydescription.HmgMagAP_VGM>5.56mm AP弾が装填された重機関銃マガジン。制圧射撃に使用します</entitydescription.HmgMagAP_VGM>
+    <entityname.HmgMagExp_VGM>5.56mm 爆破裂マガジン</entityname.HmgMagExp_VGM>
+    <entitydescription.HmgMagExp_VGM>5.56mm 爆破裂が装填された重機関銃マガジン。制圧射撃と破壊に使用します</entitydescription.HmgMagExp_VGM>
+
+    <entityname.EmptyHmgMagDrum_VGM>空の重機関銃ドラムマガジン</entityname.EmptyHmgMagDrum_VGM>
+    <entitydescription.EmptyHmgMagDrum_VGM>空の重機関銃ドラムマガジン。対応する弾薬を装填する必要があります</entitydescription.EmptyHmgMagDrum_VGM>
+    <entityname.HmgMagDrumBlank_VGM>5.56mm 空包弾ドラムマガジン</entityname.HmgMagDrumBlank_VGM>
+    <entitydescription.HmgMagDrumBlank_VGM>5.56mm 空包弾が装填された重機関銃ドラムマガジン。演習と訓練に使用します</entitydescription.HmgMagDrumBlank_VGM>
+    <entityname.hmgDrumMagVGM>重機関銃ドラムマガジン</entityname.hmgDrumMagVGM>
+    <entitydescription.hmgDrumMagVGM>5.56mm FMJ弾が装填された重機関銃ドラムマガジン。最大の弾薬容量を提供します</entitydescription.hmgDrumMagVGM>
+    <entityname.HmgMagDrumJHP_VGM>5.56mm JHPドラムマガジン</entityname.HmgMagDrumJHP_VGM>
+    <entitydescription.HmgMagDrumJHP_VGM>5.56mm JHP弾が装填された重機関銃ドラムマガジン。集団目標に対処するのに適しています</entitydescription.HmgMagDrumJHP_VGM>
+    <entityname.HmgMagDrumAP_VGM>5.56mm APドラムマガジン</entityname.HmgMagDrumAP_VGM>
+    <entitydescription.HmgMagDrumAP_VGM>5.56mm AP弾が装填された重機関銃ドラムマガジン。制圧射撃に使用します</entitydescription.HmgMagDrumAP_VGM>
+    <entityname.HmgMagDrumExp_VGM>5.56mm 爆破裂ドラムマガジン</entityname.HmgMagDrumExp_VGM>
+    <entitydescription.HmgMagDrumExp_VGM>5.56mm 爆破裂が装填された重機関銃ドラムマガジン。制圧射撃と破壊に使用します</entitydescription.HmgMagDrumExp_VGM>
+
+    <!-- その他のアイテム -->
+    <entityname.AmmoBox_VGM>弾薬収納箱</entityname.AmmoBox_VGM>
+    <entitydescription.AmmoBox_VGM>携行武器弾薬の保管に特化した箱で、1000発以上の弾薬を収納できます。複数の仕切りがあり、弾薬の分類に便利です</entitydescription.AmmoBox_VGM>
+    <entityname.NoRopeSpear_VGB>ロープレススピア</entityname.NoRopeSpear_VGB>
+    <entitydescription.NoRopeSpear_VGB>ロープなしの標準的なスピア。遠くまで撃つことができますが、外すと回収が困難です</entitydescription.NoRopeSpear_VGB>
+    <entityname.ToolSpear_VGB>ツールスピア</entityname.ToolSpear_VGB>
+    <entitydescription.ToolSpear_VGB>フィクスチャーと撃針を備えたスピア。衝突時に装填されたアイテムを起動します\n照明弾から爆発物まで多くのものを装填できますが、すべてのアイテムがスピア衝突で起動できるわけではありません</entitydescription.ToolSpear_VGB>
+
+    <!-- サブカテゴリ名 -->
+    <subcategory.VGB>バニラ武器改造（VGM）パック#1 —— バニラ弾薬拡張</subcategory.VGB>
+</infotexts>

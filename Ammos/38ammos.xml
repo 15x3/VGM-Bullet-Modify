@@ -179,7 +179,7 @@
             <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="12" sold="false"/>
             <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="60" sold="false"/>
         </Price>
-        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" requiresrecipe="true" amount="24">
+        <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="24">
             <RequiredSkill identifier="weapons" level="30" />
             <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
             <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />

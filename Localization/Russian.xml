@@ -120,6 +120,8 @@
     <entitydescription.SmgMagBlank_VGM>Магазин ПП с .45 холостыми патронами, для учений и тренировки</entitydescription.SmgMagBlank_VGM>
     <entityname.smgmagazine>Магазин .45 ОБТ</entityname.smgmagazine>
     <entitydescription.smgmagazine>Магазин ПП с .45 патронами с оболочечной пулей, самая базовая конфигурация боеприпасов</entitydescription.smgmagazine>
+    <entityname.SmgMagFMJ_VGB>Магазин .45 ОБТ</entityname.SmgMagFMJ_VGB>
+    <entitydescription.SmgMagFMJ_VGB>Магазин ПП с .45 патронами с оболочечной пулей, самая базовая конфигурация боеприпасов</entitydescription.SmgMagFMJ_VGB>
     <entityname.SmgMagJHP_VGM>Магазин .45 ЭП</entityname.SmgMagJHP_VGM>
     <entitydescription.SmgMagJHP_VGM>Магазин ПП с .45 патронами с экспансивной пулей, отлично против небронированных целей</entitydescription.SmgMagJHP_VGM>
     <entityname.SmgMagAP_VGM>Магазин .45 БП</entityname.SmgMagAP_VGM>
@@ -148,6 +150,8 @@
     <entitydescription.SmgMagFulgurium_VGM>Магазин ПП с .45 электрошоковыми патронами фульгурия, быстро выводит цели из строя</entitydescription.SmgMagFulgurium_VGM>
     <entityname.EmptySmgLongMag_VGM>Пустой расширенный магазин ПП</entityname.EmptySmgLongMag_VGM>
     <entitydescription.EmptySmgLongMag_VGM>Пустой расширенный магазин для пистолета-пулемёта, необходимо зарядить соответствующими патронами</entitydescription.EmptySmgLongMag_VGM>
+    <entityname.smgLongmagVGM>Расш. магазин .45 ОБТ</entityname.smgLongmagVGM>
+    <entitydescription.smgLongmagVGM>Расширенный магазин ПП с .45 патронами с оболочечной пулей, предоставляет увеличенную ёмкость боеприпасов</entitydescription.smgLongmagVGM>
     <entityname.SmgLongMagBlank_VGM>Расш. магазин .45 холостых</entityname.SmgLongMagBlank_VGM>
     <entitydescription.SmgLongMagBlank_VGM>Расширенный магазин ПП с .45 холостыми патронами, для учений и тренировки</entitydescription.SmgLongMagBlank_VGM>
     <entityname.SmgLongMagJHP_VGM>Расш. магазин .45 ЭП</entityname.SmgLongMagJHP_VGM>
@@ -180,6 +184,8 @@
     <entitydescription.smgDFuelLongMagVGM>Расширенный магазин ПП с .45 патронами истощённого топлива, вызывает радиационный урон и эффективно пробивает броню</entitydescription.smgDFuelLongMagVGM>
     <entityname.EmptySmgDrumMag_VGM>Пустой барабанный магазин ПП</entityname.EmptySmgDrumMag_VGM>
     <entitydescription.EmptySmgDrumMag_VGM>Пустой барабанный магазин для пистолета-пулемёта, необходимо зарядить соответствующими патронами</entitydescription.EmptySmgDrumMag_VGM>
+    <entityname.smgDrummagVGM>Барабан .45 ОБТ</entityname.smgDrummagVGM>
+    <entitydescription.smgDrummagVGM>Барабанный магазин ПП с .45 патронами с оболочечной пулей, предоставляет максимальную ёмкость боеприпасов</entitydescription.smgDrummagVGM>
     <entityname.SmgDrumMagBlank_VGM>Барабан .45 холостых</entityname.SmgDrumMagBlank_VGM>
     <entitydescription.SmgDrumMagBlank_VGM>Барабанный магазин ПП с .45 холостыми патронами, для учений и тренировки</entitydescription.SmgDrumMagBlank_VGM>
     <entityname.SmgDrumMagJHP_VGM>Барабан .45 ЭП</entityname.SmgDrumMagJHP_VGM>
@@ -224,21 +230,23 @@
     <entitydescription.AssaultMagExp_VGM>Магазин штурмовой винтовки с 6.8мм взрывными патронами, можно использовать для вскрытия конструкций</entitydescription.AssaultMagExp_VGM>
     <entityname.AssaultMagRev_VGM>Магазин 6.8мм изб. давления</entityname.AssaultMagRev_VGM>
     <entitydescription.AssaultMagRev_VGM>Магазин штурмовой винтовки с 6.8мм патронами избыточного давления. ВНИМАНИЕ: эти патроны вызывают необратимые повреждения винтовки</entitydescription.AssaultMagRev_VGM>
-    <entityname.EmptyAssaultMagLong_VGM>Пустой расш. magasin штурмовой винтовки</entityname.EmptyAssaultMagLong_VGM>
+    <entityname.EmptyAssaultMagLong_VGM>Пустой расш. магазин штурмовой винтовки</entityname.EmptyAssaultMagLong_VGM>
     <entitydescription.EmptyAssaultMagLong_VGM>Пустой расширенный магазин для штурмовой винтовки, необходимо зарядить соответствующими патронами</entitydescription.EmptyAssaultMagLong_VGM>
-    <entityname.AssaultMagLongBlank_VGM>Расш. magasin 6.8мм холостых</entityname.AssaultMagLongBlank_VGM>
+    <entityname.assaultrifleLongMagVGM>Расширенный магазин штурмовой винтовки</entityname.assaultrifleLongMagVGM>
+    <entitydescription.assaultrifleLongMagVGM>Расширенный магазин штурмовой винтовки с 6.8мм патронами с оболочечной пулей, предоставляет увеличенную ёмкость боеприпасов</entitydescription.assaultrifleLongMagVGM>
+    <entityname.AssaultMagLongBlank_VGM>Расш. магазин 6.8мм холостых</entityname.AssaultMagLongBlank_VGM>
     <entitydescription.AssaultMagLongBlank_VGM>Расширенный магазин штурмовой винтовки с 6.8мм холостыми патронами, для учений и тренировки</entitydescription.AssaultMagLongBlank_VGM>
     <entityname.assaultriflemagazinelong>Расширенный магазин штурмовой винтовки</entityname.assaultriflemagazinelong>
     <entitydescription.assaultriflemagazinelong>Расширенный магазин штурмовой винтовки с 6.8мм патронами с оболочечной пулей, предоставляет увеличенную ёмкость боеприпасов</entitydescription.assaultriflemagazinelong>
-    <entityname.AssaultMagLongJHP_VGM>Расш. magasin 6.8мм ЭП</entityname.AssaultMagLongJHP_VGM>
+    <entityname.AssaultMagLongJHP_VGM>Расш. магазин 6.8мм ЭП</entityname.AssaultMagLongJHP_VGM>
     <entitydescription.AssaultMagLongJHP_VGM>Расширенный магазин штурмовой винтовки с 6.8мм патронами с экспансивной пулей, отлично против небронированных целей</entitydescription.AssaultMagLongJHP_VGM>
-    <entityname.AssaultMagLongAP_VGM>Расш. magasin 6.8мм БП</entityname.AssaultMagLongAP_VGM>
+    <entityname.AssaultMagLongAP_VGM>Расш. магазин 6.8мм БП</entityname.AssaultMagLongAP_VGM>
     <entitydescription.AssaultMagLongAP_VGM>Расширенный магазин штурмовой винтовки с 6.8мм бронебойными патронами, пробивает лёгкую броню</entitydescription.AssaultMagLongAP_VGM>
-    <entityname.AssaultMagLongExp_VGM>Расш. magasin 6.8мм взрывных</entityname.AssaultMagLongExp_VGM>
+    <entityname.AssaultMagLongExp_VGM>Расш. магазин 6.8мм взрывных</entityname.AssaultMagLongExp_VGM>
     <entitydescription.AssaultMagLongExp_VGM>Расширенный магазин штурмовой винтовки с 6.8мм взрывными патронами, можно использовать для вскрытия конструкций</entitydescription.AssaultMagLongExp_VGM>
-    <entityname.AssaultMagLongRev_VGM>Расш. magasin 6.8мм изб. давления</entityname.AssaultMagLongRev_VGM>
+    <entityname.AssaultMagLongRev_VGM>Расш. магазин 6.8мм изб. давления</entityname.AssaultMagLongRev_VGM>
     <entitydescription.AssaultMagLongRev_VGM>Расширенный магазин штурмовой винтовки с 6.8мм патронами избыточного давления. ВНИМАНИЕ: эти патроны вызывают необратимые повреждения винтовки</entitydescription.AssaultMagLongRev_VGM>
-    <entityname.EmptyAssaultMagDrum_VGM>Пустой барабанный magasin штурмовой винтовки</entityname.EmptyAssaultMagDrum_VGM>
+    <entityname.EmptyAssaultMagDrum_VGM>Пустой барабанный магазин штурмовой винтовки</entityname.EmptyAssaultMagDrum_VGM>
     <entitydescription.EmptyAssaultMagDrum_VGM>Пустой барабанный магазин для штурмовой винтовки, необходимо зарядить соответствующими патронами</entitydescription.EmptyAssaultMagDrum_VGM>
     <entityname.AssaultMagDrumBlank_VGM>Барабан 6.8мм холостых</entityname.AssaultMagDrumBlank_VGM>
     <entitydescription.AssaultMagDrumBlank_VGM>Барабанный магазин штурмовой винтовки с 6.8мм холостыми патронами, для учений и тренировки</entitydescription.AssaultMagDrumBlank_VGM>
@@ -252,6 +260,8 @@
     <entitydescription.AssaultMagDrumExp_VGM>Барабанный магазин штурмовой винтовки с 6.8мм взрывными патронами, можно использовать для вскрытия конструкций</entitydescription.AssaultMagDrumExp_VGM>
     <entityname.AssaultMagDrumRev_VGM>Барабан 6.8мм изб. давления</entityname.AssaultMagDrumRev_VGM>
     <entitydescription.AssaultMagDrumRev_VGM>Барабанный магазин штурмовой винтовки с 6.8мм патронами избыточного давления. ВНИМАНИЕ: эти патроны вызывают необратимые повреждения винтовки</entitydescription.AssaultMagDrumRev_VGM>
+    <entityname.assaultrifleDrumMagVGM>Барабанный магазин штурмовой винтовки</entityname.assaultrifleDrumMagVGM>
+    <entitydescription.assaultrifleDrumMagVGM>Барабанный магазин штурмовой винтовки с 6.8мм патронами с оболочечной пулей, предоставляет максимальную ёмкость боеприпасов</entitydescription.assaultrifleDrumMagVGM>
     <entityname.EmptyHmgMag_VGM>Пустой магазин пулемёта</entityname.EmptyHmgMag_VGM>
     <entitydescription.EmptyHmgMag_VGM>Пустой магазин для пулемёта, необходимо зарядить соответствующими патронами</entitydescription.EmptyHmgMag_VGM>
     <entityname.HmgMagBlank_VGM>Магазин 5.56мм холостых</entityname.HmgMagBlank_VGM>
@@ -264,6 +274,8 @@
     <entitydescription.HmgMagExp_VGM>Магазин пулемёта с 5.56мм взрывными патронами, для подавляющего огня и вскрытия</entitydescription.HmgMagExp_VGM>
     <entityname.EmptyHmgMagDrum_VGM>Пустой барабанный магазин пулемёта</entityname.EmptyHmgMagDrum_VGM>
     <entitydescription.EmptyHmgMagDrum_VGM>Пустой барабанный магазин для пулемёта, необходимо зарядить соответствующими патронами</entitydescription.EmptyHmgMagDrum_VGM>
+    <entityname.hmgDrumMagVGM>Барабанный магазин пулемёта</entityname.hmgDrumMagVGM>
+    <entitydescription.hmgDrumMagVGM>Барабанный магазин пулемёта с 5.56мм патронами с оболочечной пулей, предоставляет максимальную ёмкость боеприпасов</entitydescription.hmgDrumMagVGM>
     <entityname.HmgMagDrumBlank_VGM>Барабан 5.56мм холостых</entityname.HmgMagDrumBlank_VGM>
     <entitydescription.HmgMagDrumBlank_VGM>Барабанный магазин пулемёта с 5.56мм холостыми патронами, для учений и тренировки</entitydescription.HmgMagDrumBlank_VGM>
     <entityname.HmgMagDrumJHP_VGM>Барабан 5.56мм ЭП</entityname.HmgMagDrumJHP_VGM>

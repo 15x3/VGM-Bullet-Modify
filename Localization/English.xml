@@ -120,6 +120,8 @@
     <entitydescription.SmgMagBlank_VGM>SMG magazine loaded with .45 blanks, for drills and training</entitydescription.SmgMagBlank_VGM>
     <entityname.smgmagazine>.45 FMJ Magazine</entityname.smgmagazine>
     <entitydescription.smgmagazine>SMG magazine loaded with .45 FMJ rounds, the most basic ammunition configuration</entitydescription.smgmagazine>
+    <entityname.SmgMagFMJ_VGB>.45 FMJ Magazine</entityname.SmgMagFMJ_VGB>
+    <entitydescription.SmgMagFMJ_VGB>SMG magazine loaded with .45 FMJ rounds, the most basic ammunition configuration</entitydescription.SmgMagFMJ_VGB>
     <entityname.SmgMagJHP_VGM>.45 JHP Magazine</entityname.SmgMagJHP_VGM>
     <entitydescription.SmgMagJHP_VGM>SMG magazine loaded with .45 JHP rounds, excellent against unarmored targets</entitydescription.SmgMagJHP_VGM>
     <entityname.SmgMagAP_VGM>.45 AP Magazine</entityname.SmgMagAP_VGM>
@@ -148,6 +150,8 @@
     <entitydescription.SmgMagFulgurium_VGM>SMG magazine loaded with .45 Fulgurium shock rounds, quickly incapacitates targets</entitydescription.SmgMagFulgurium_VGM>
     <entityname.EmptySmgLongMag_VGM>Empty SMG Extended Magazine</entityname.EmptySmgLongMag_VGM>
     <entitydescription.EmptySmgLongMag_VGM>An empty SMG extended magazine, needs to be loaded with corresponding ammunition</entitydescription.EmptySmgLongMag_VGM>
+    <entityname.smgLongmagVGM>.45 FMJ Extended Magazine</entityname.smgLongmagVGM>
+    <entitydescription.smgLongmagVGM>SMG extended magazine loaded with .45 FMJ rounds, provides increased ammunition capacity</entitydescription.smgLongmagVGM>
     <entityname.SmgLongMagBlank_VGM>.45 Blank Extended Magazine</entityname.SmgLongMagBlank_VGM>
     <entitydescription.SmgLongMagBlank_VGM>SMG extended magazine loaded with .45 blanks, for drills and training</entitydescription.SmgLongMagBlank_VGM>
     <entityname.SmgLongMagJHP_VGM>.45 JHP Extended Magazine</entityname.SmgLongMagJHP_VGM>
@@ -180,6 +184,8 @@
     <entitydescription.smgDFuelLongMagVGM>SMG extended magazine loaded with .45 depleted fuel rounds, causes radiation damage and effectively penetrates armor</entitydescription.smgDFuelLongMagVGM>
     <entityname.EmptySmgDrumMag_VGM>Empty SMG Drum Magazine</entityname.EmptySmgDrumMag_VGM>
     <entitydescription.EmptySmgDrumMag_VGM>An empty SMG drum magazine, needs to be loaded with corresponding ammunition</entitydescription.EmptySmgDrumMag_VGM>
+    <entityname.smgDrummagVGM>.45 FMJ Drum Magazine</entityname.smgDrummagVGM>
+    <entitydescription.smgDrummagVGM>SMG drum magazine loaded with .45 FMJ rounds, provides maximum ammunition capacity</entitydescription.smgDrummagVGM>
     <entityname.SmgDrumMagBlank_VGM>.45 Blank Drum Magazine</entityname.SmgDrumMagBlank_VGM>
     <entitydescription.SmgDrumMagBlank_VGM>SMG drum magazine loaded with .45 blanks, for drills and training</entitydescription.SmgDrumMagBlank_VGM>
     <entityname.SmgDrumMagJHP_VGM>.45 JHP Drum Magazine</entityname.SmgDrumMagJHP_VGM>
@@ -252,6 +258,10 @@
     <entitydescription.AssaultMagDrumExp_VGM>Assault rifle drum magazine loaded with 6.8mm explosive rounds, can be used for breaching structures</entitydescription.AssaultMagDrumExp_VGM>
     <entityname.AssaultMagDrumRev_VGM>6.8mm Overpressure Drum Magazine</entityname.AssaultMagDrumRev_VGM>
     <entitydescription.AssaultMagDrumRev_VGM>Assault rifle drum magazine loaded with 6.8mm overpressure rounds. WARNING: These rounds cause irreversible damage to the rifle</entitydescription.AssaultMagDrumRev_VGM>
+    <entityname.assaultrifleDrumMagVGM>Assault Rifle Drum Magazine</entityname.assaultrifleDrumMagVGM>
+    <entitydescription.assaultrifleDrumMagVGM>Assault rifle drum magazine loaded with 6.8mm FMJ rounds, provides maximum ammunition capacity</entitydescription.assaultrifleDrumMagVGM>
+    <entityname.assaultrifleLongMagVGM>Assault Rifle Extended Magazine</entityname.assaultrifleLongMagVGM>
+    <entitydescription.assaultrifleLongMagVGM>Assault rifle extended magazine loaded with 6.8mm FMJ rounds, provides increased ammunition capacity</entitydescription.assaultrifleLongMagVGM>
     <entityname.EmptyHmgMag_VGM>Empty Heavy Machine Gun Magazine</entityname.EmptyHmgMag_VGM>
     <entitydescription.EmptyHmgMag_VGM>An empty heavy machine gun magazine, needs to be loaded with corresponding ammunition</entitydescription.EmptyHmgMag_VGM>
     <entityname.HmgMagBlank_VGM>5.56mm Blank Magazine</entityname.HmgMagBlank_VGM>
@@ -264,6 +274,8 @@
     <entitydescription.HmgMagExp_VGM>Heavy machine gun magazine loaded with 5.56mm explosive rounds, for suppressive fire and breaching</entitydescription.HmgMagExp_VGM>
     <entityname.EmptyHmgMagDrum_VGM>Empty Heavy Machine Gun Drum Magazine</entityname.EmptyHmgMagDrum_VGM>
     <entitydescription.EmptyHmgMagDrum_VGM>An empty heavy machine gun drum magazine, needs to be loaded with corresponding ammunition</entitydescription.EmptyHmgMagDrum_VGM>
+    <entityname.hmgDrumMagVGM>Heavy Machine Gun Drum Magazine</entityname.hmgDrumMagVGM>
+    <entitydescription.hmgDrumMagVGM>Heavy machine gun drum magazine loaded with 5.56mm FMJ rounds, provides maximum ammunition capacity</entitydescription.hmgDrumMagVGM>
     <entityname.HmgMagDrumBlank_VGM>5.56mm Blank Drum Magazine</entityname.HmgMagDrumBlank_VGM>
     <entitydescription.HmgMagDrumBlank_VGM>Heavy machine gun drum magazine loaded with 5.56mm blanks, for drills and training</entitydescription.HmgMagDrumBlank_VGM>
     <entityname.HmgMagDrumJHP_VGM>5.56mm JHP Drum Magazine</entityname.HmgMagDrumJHP_VGM>

@@ -443,6 +443,372 @@
             </StatusEffect>
         </Projectile>
     </Item>
-
+        <Item name="" identifier="hmgDrumMagVGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,hmgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+            <PreferredContainer primary="hmg" minamount="1" maxamount="1" spawnprobability="1" />
+            <PreferredContainer primary="armcab" secondary="secarmcab" />
+            <Price baseprice="666" sold="true" minleveldifficulty="65" displaynonempty="true">
+                <Price storeidentifier="merchantoutpost" multiplier="1.4" />
+                <Price storeidentifier="merchantcity" multiplier="1.25" />
+                <Price storeidentifier="merchantresearch" multiplier="1.25" />
+                <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="0" maxavailable="4" />
+                <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" minavailable="0" maxavailable="4" />
+                <Price storeidentifier="merchantmine" multiplier="1.25" />
+            </Price>
+            <Fabricate suitablefabricators="fabricatorVGM" requiredtime="35">
+                <RequiredSkill identifier="weapons" level="40" />
+                <RequiredItem identifier="magnesium" amount="2" />
+                <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
+                <RequiredItem tag="advmunition_core" description="fabricationdescription.advmunition_core" amount="2" />
+                <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="2" />
+                <RequiredItem identifier="hmgmagazine" mincondition="0.0" maxcondition="0.1" usecondition="false" />
+            </Fabricate>
+            <Fabricate suitablefabricators="fabricatorVGM" requiredtime="35" displayname="recycleitem">
+                <RequiredSkill identifier="weapons" level="40" />
+                <RequiredItem identifier="magnesium" amount="2" />
+                <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
+                <RequiredItem tag="advmunition_core" description="fabricationdescription.advmunition_core" amount="2" />
+                <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="2" />
+                <RequiredItem identifier="hmgDrumMagVGM" mincondition="0.0" maxcondition="0.1" usecondition="false" />
+            </Fabricate>
+            <Deconstruct time="15">
+                <Item identifier="steel" />
+            </Deconstruct>
+            <InventoryIcon texture="%ModDir%/Mags/hmgDrumMags.png" sourcerect="0,0,64,64" />
+            <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="208,88,29,37" depth="0.55" origin="0.5,0.5" />
+            <Body width="29" height="37" density="25" />
+            <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
+            </Holdable>
+            <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+                <SlotIcon slotindex="1" texture="%ModDir%/Others/icon.png" sourcerect="0,0,64,64" />
+                <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
+                    <Conditional condition="eq 99" />
+                    <SpawnItem identifiers="hmground" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
+                </StatusEffect>
+                <Containable items="hmground" >
+                    <StatusEffect type="OnRemoved" target="This" condition="-0.5" AllowWhenBroken="false">
+                        <Conditional condition="gt 0" />
+                    </StatusEffect>
+                    <StatusEffect type="OnRemoved" target="This" AllowWhenBroken="false">
+                        <Conditional condition="gt 0.001" />
+                        <SpawnItem identifiers="hmground" spawnposition="ThisInventory" spawnifinventoryfull="false" />
+                    </StatusEffect>
+                </Containable>
+                <SubContainer maxstacksize="32">
+                    <Containable identifier="hmground">
+                        <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true" >
+                            <Conditional TargetContainer="true" condition="eq 100" />
+                            <Remove />
+                            <SpawnItem identifiers="hmground" spawnposition="SameInventory" spawnifinventoryfull="false" />
+                        </StatusEffect>
+                        <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
+                            <Conditional TargetContainer="true" condition="lt 100" />
+                            <Remove /> </StatusEffect>
+                        <StatusEffect type="OnInserted" target="This" condition="0.5" AllowWhenBroken="true" disabledeltatime="true" />
+                    </Containable>
+                </SubContainer>
+                <StatusEffect type="OnBroken" target="This" AllowWhenBroken="true" disabledeltatime="true">
+                    <SpawnItem identifier="EmptyHmgMag_VGM" condition="0.0" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+                <StatusEffect type="Always" oneshot="true" target="This" condition="0.5" setvalue="true" delay="0.1" AllowWhenBroken="false">
+                    <Conditional condition="eq 0.1" />
+                    <SpawnItem identifiers="hmground" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
+                </StatusEffect>
+            </ItemContainer>
+        </Item>
+        <Item name="" identifier="hmgmagazine" maxstacksize="4" maxstacksizecharacterinventory="1" scale="0.5" category="Weapon" subcategory="VGB" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,hmgammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0">
+            <PreferredContainer primary="hmg" minamount="1" maxamount="1" spawnprobability="1" />
+            <PreferredContainer primary="armcab" secondary="secarmcab" />
+            <Price baseprice="330" sold="true" minleveldifficulty="65" displaynonempty="true">
+                <Price storeidentifier="merchantoutpost" multiplier="1.4" />
+                <Price storeidentifier="merchantcity" multiplier="1.25" />
+                <Price storeidentifier="merchantresearch" multiplier="1.25" />
+                <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="0" maxavailable="4" />
+                <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" minavailable="0" maxavailable="4" />
+                <Price storeidentifier="merchantmine" multiplier="1.25" />
+            </Price>
+            <Fabricate suitablefabricators="fabricator" requiredtime="35" requiresrecipe="true">
+                <RequiredSkill identifier="weapons" level="40" />
+                <RequiredItem identifier="magnesium" />
+                <RequiredItem identifier="titaniumaluminiumalloy" />
+                <RequiredItem tag="advmunition_core" description="fabricationdescription.advmunition_core" />
+                <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" />
+                <RequiredItem identifier="steel" />
+            </Fabricate>
+            <Deconstruct time="15">
+                <Item identifier="steel" />
+            </Deconstruct>
+            <InventoryIcon texture="%ModDir%/Mags/hmgMags.png" sourcerect="0,0,64,64" />
+            <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="208,88,29,37" depth="0.55" origin="0.5,0.5" />
+            <Body width="29" height="37" density="25" />
+            <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+                <SlotIcon slotindex="1" texture="%ModDir%/Others/icon.png" sourcerect="0,0,64,64" />
+                <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
+                    <Conditional condition="eq 99" />
+                    <SpawnItem identifiers="hmground" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
+                </StatusEffect>
+                <Containable items="hmground" >
+                    <StatusEffect type="OnRemoved" target="This" condition="-1.0" AllowWhenBroken="false">
+                        <Conditional condition="gt 0" />
+                    </StatusEffect>
+                    <StatusEffect type="OnRemoved" target="This" AllowWhenBroken="false">
+                        <Conditional condition="gt 0.001" />
+                        <SpawnItem identifiers="hmground" spawnposition="ThisInventory" spawnifinventoryfull="false" />
+                    </StatusEffect>
+                </Containable>
+                <SubContainer maxstacksize="32">
+                    <Containable identifier="hmground">
+                        <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true" >
+                            <Conditional TargetContainer="true" condition="eq 100" />
+                            <Remove />
+                            <SpawnItem identifiers="hmground" spawnposition="SameInventory" spawnifinventoryfull="false" />
+                        </StatusEffect>
+                        <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
+                            <Conditional TargetContainer="true" condition="lt 100" />
+                            <Remove /> </StatusEffect>
+                        <StatusEffect type="OnInserted" target="This" condition="1.0" AllowWhenBroken="true" disabledeltatime="true" />
+                    </Containable>
+                </SubContainer>
+                <StatusEffect type="OnBroken" target="This" AllowWhenBroken="true" disabledeltatime="true">
+                    <SpawnItem identifier="EmptyHmgMag_VGM" condition="0.0" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+                <StatusEffect type="Always" oneshot="true" target="This" condition="1.0" setvalue="true" delay="0.1" AllowWhenBroken="false">
+                    <Conditional condition="eq 0.1" />
+                    <SpawnItem identifiers="hmground" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
+                </StatusEffect>
+            </ItemContainer>
+            <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+        </Item>
+        <Item name="" identifier="hmground" category="Weapon" subcategory="VGB" maxstacksize="64" maxstacksizecharacterinventory="32" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,hmgammo" impactsoundtag="impact_metal_light" scale="0.5">
+            <InventoryIcon texture="%ModDir%/Ammos/556ammos.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
+            <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+            <Body width="17" height="6" density="30" />
+            <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+            <Fabricate suitablefabricators="fabricatorVGM" requiredtime="20" amount="120">
+                <RequiredSkill identifier="weapons" level="40" />
+                <RequiredItem identifier="magnesium" />
+                <RequiredItem identifier="titaniumaluminiumalloy" />
+                <RequiredItem tag="advmunition_core" description="fabricationdescription.advmunition_core" />
+                <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" />
+            </Fabricate>
+            <Projectile characterusable="false" hitscan="true" removeonhit="true">
+                <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
+                <Attack structuredamage="4" targetforce="7.5" itemdamage="4" severlimbsprobability="0.1" penetration="0.4">
+                    <Affliction identifier="gunshotwound" strength="12" />
+                    <Affliction identifier="bleeding" strength="10" />
+                    <Affliction identifier="stun" strength="0.1" />
+                    <Affliction identifier="stun" strength="0.5" probability="0.01" />
+                </Attack>
+                <StatusEffect type="OnImpact" target="UseTarget">
+                    <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2,2" />
+                </StatusEffect>
+                <StatusEffect type="OnImpact" target="UseTarget">
+                    <Conditional entitytype="eq Structure" />
+                    <Conditional hastag="eq door" />
+                    <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+                </StatusEffect>
+            </Projectile>
+        </Item>
+        <Item name="" identifier="assaultriflemagazine" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,assaultrifleammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" >
+            <PreferredContainer primary="assaultrifle" minamount="1" maxamount="1" spawnprobability="1"/>
+            <PreferredContainer primary="armcab" secondary="secarmcab"/>
+            <Price baseprice="300" sold="false" minleveldifficulty="60" displaynonempty="true">
+                <Price storeidentifier="merchantoutpost" multiplier="1.4" />
+                <Price storeidentifier="merchantcity" multiplier="1.25" />
+                <Price storeidentifier="merchantresearch" multiplier="1.25" />
+                <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="0" maxavailable="4" />
+                <Price storeidentifier="merchantmine" multiplier="1.25" />
+            </Price>
+            <Fabricate suitablefabricators="fabricator" requiredtime="35" requiresrecipe="true">
+                <RequiredSkill identifier="weapons" level="40" />
+                <RequiredItem identifier="magnesium" />
+                <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" />
+                <RequiredItem tag="advmunition_core" description="fabricationdescription.advmunition_core" />
+                <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" />
+                <RequiredItem identifier="steel" />
+            </Fabricate>
+            <Fabricate suitablefabricators="fabricator" requiredtime="35" displayname="recycleitem" requiresrecipe="true">
+                <RequiredSkill identifier="weapons" level="40" />
+                <RequiredItem identifier="magnesium" />
+                <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" />
+                <RequiredItem tag="advmunition_core" description="fabricationdescription.advmunition_core" />
+                <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" />
+                <RequiredItem identifier="assaultriflemagazine" mincondition="0.0" maxcondition="0.1" usecondition="false"/>
+            </Fabricate>
+            <Deconstruct time="15">
+                <Item identifier="steel" />
+            </Deconstruct>
+            <InventoryIcon texture="%ModDir%/Mags/assaultMags.png" sourcerect="0,0,64,64" />
+            <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="476,3,36,48" depth="0.55" origin="0.5,0.5" />
+            <Body width="28" height="40" density="25" />
+            <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
+            </Holdable>
+            <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+                <SlotIcon slotindex="1" texture="%ModDir%/Others/icon.png" sourcerect="0,0,64,64" />
+                <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
+                    <Conditional condition="eq 99" />
+                    <SpawnItem identifiers="assaultrifleround" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
+                </StatusEffect>
+                <Containable items="assaultrifleround" >
+                    <StatusEffect type="OnRemoved" target="This" condition="-3.3" AllowWhenBroken="false">
+                        <Conditional condition="gt 0" />
+                    </StatusEffect>
+                    <StatusEffect type="OnRemoved" target="This" AllowWhenBroken="false">
+                        <Conditional condition="gt 0.001" />
+                        <SpawnItem identifiers="assaultrifleround" spawnposition="ThisInventory" spawnifinventoryfull="false" />
+                    </StatusEffect>
+                </Containable>
+                <SubContainer maxstacksize="32">
+                    <Containable identifier="assaultrifleround">
+                        <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true" >
+                            <Conditional TargetContainer="true" condition="eq 100" />
+                            <Remove />
+                            <SpawnItem identifiers="assaultrifleround" spawnposition="SameInventory" spawnifinventoryfull="false" />
+                        </StatusEffect>
+                        <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
+                            <Conditional TargetContainer="true" condition="lt 100" />
+                            <Remove /> </StatusEffect>
+                        <StatusEffect type="OnInserted" target="This" condition="3.3" AllowWhenBroken="true" disabledeltatime="true" />
+                    </Containable>
+                </SubContainer>
+                <StatusEffect type="OnBroken" target="This" AllowWhenBroken="true" disabledeltatime="true">
+                    <SpawnItem identifier="EmptyAssaultMag_VGM" condition="0.0" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+                <StatusEffect type="Always" oneshot="true" target="This" condition="3.3" setvalue="true" delay="0.1" AllowWhenBroken="false">
+                    <Conditional condition="eq 0.1" />
+                    <SpawnItem identifiers="assaultrifleround" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
+                </StatusEffect>
+            </ItemContainer>
+        </Item>
+        <Item name="" identifier="assaultrifleLongMagVGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,assaultrifleammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+            <PreferredContainer primary="assaultrifle" minamount="1" maxamount="1" spawnprobability="1" />
+            <PreferredContainer primary="armcab" secondary="secarmcab" />
+            <Deconstruct time="10">
+                <Item identifier="steel" />
+            </Deconstruct>
+            <InventoryIcon texture="%ModDir%/Mags/assaultLongMags.png" sourcerect="0,0,64,64" />
+            <Sprite texture="%ModDir:Vanilla Gun Modify%/GunMods/mags_betadev.png" sourcerect="9,1,36,63" depth="0.55" origin="0.5,0.5" />
+            <Body width="28" height="40" density="25" />
+            <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
+            </Holdable>
+            <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+                <SlotIcon slotindex="1" texture="%ModDir%/Others/icon.png" sourcerect="0,0,64,64" />
+                <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
+                    <Conditional condition="eq 99" />
+                    <SpawnItem identifiers="assaultrifleround" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
+                </StatusEffect>
+                <Containable items="assaultrifleround" >
+                    <StatusEffect type="OnRemoved" target="This" condition="-2.2" AllowWhenBroken="false">
+                        <Conditional condition="gt 0" />
+                    </StatusEffect>
+                    <StatusEffect type="OnRemoved" target="This" AllowWhenBroken="false">
+                        <Conditional condition="gt 0.001" />
+                        <SpawnItem identifiers="assaultrifleround" spawnposition="ThisInventory" spawnifinventoryfull="false" />
+                    </StatusEffect>
+                </Containable>
+                <SubContainer maxstacksize="32">
+                    <Containable identifier="assaultrifleround">
+                        <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true" >
+                            <Conditional TargetContainer="true" condition="eq 100" />
+                            <Remove />
+                            <SpawnItem identifiers="assaultrifleround" spawnposition="SameInventory" spawnifinventoryfull="false" />
+                        </StatusEffect>
+                        <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
+                            <Conditional TargetContainer="true" condition="lt 100" />
+                            <Remove /> </StatusEffect>
+                        <StatusEffect type="OnInserted" target="This" condition="2.2" AllowWhenBroken="true" disabledeltatime="true" />
+                    </Containable>
+                </SubContainer>
+                <StatusEffect type="OnBroken" target="This" AllowWhenBroken="true" disabledeltatime="true">
+                    <SpawnItem identifier="EmptyAssaultMagLong_VGM" condition="0.0" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+                <StatusEffect type="Always" oneshot="true" target="This" condition="2.2" setvalue="true" delay="0.1" AllowWhenBroken="false">
+                    <Conditional condition="eq 0.1" />
+                    <SpawnItem identifiers="assaultrifleround" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
+                </StatusEffect>
+            </ItemContainer>
+        </Item>
+        <Item name="" identifier="assaultrifleDrumMagVGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,assaultrifleammo,handheldammo" impactsoundtag="impact_metal_light" condition="99.0" hideinmenus="true">
+            <PreferredContainer primary="assaultrifle" minamount="1" maxamount="1" spawnprobability="1" />
+            <PreferredContainer secondary="secarmcab" />
+            <Deconstruct time="10">
+                <Item identifier="steel" />
+            </Deconstruct>
+            <InventoryIcon texture="%ModDir%/Mags/assaultDrumMags.png" sourcerect="0,0,64,64" />
+            <Sprite texture="%ModDir:Vanilla Gun Modify%/GunMods/mags_betadev.png" sourcerect="62,1,40,68" depth="0.55" origin="0.5,0.5" />
+            <Body width="28" height="40" density="25" />
+            <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
+            </Holdable>
+            <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+                <SlotIcon slotindex="1" texture="%ModDir%/Others/icon.png" sourcerect="0,0,64,64" />
+                <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
+                    <Conditional condition="eq 99" />
+                    <SpawnItem identifiers="assaultrifleround" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
+                </StatusEffect>
+                <Containable items="assaultrifleround" >
+                    <StatusEffect type="OnRemoved" target="This" condition="-1.1" AllowWhenBroken="false">
+                        <Conditional condition="gt 0" />
+                    </StatusEffect>
+                    <StatusEffect type="OnRemoved" target="This" AllowWhenBroken="false">
+                        <Conditional condition="gt 0.001" />
+                        <SpawnItem identifiers="assaultrifleround" spawnposition="ThisInventory" spawnifinventoryfull="false" />
+                    </StatusEffect>
+                </Containable>
+                <SubContainer maxstacksize="32">
+                    <Containable identifier="assaultrifleround">
+                        <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true" >
+                            <Conditional TargetContainer="true" condition="eq 100" />
+                            <Remove />
+                            <SpawnItem identifiers="assaultrifleround" spawnposition="SameInventory" spawnifinventoryfull="false" />
+                        </StatusEffect>
+                        <StatusEffect type="OnInserted" target="Contained" AllowWhenBroken="false" disabledeltatime="true">
+                            <Conditional TargetContainer="true" condition="lt 100" />
+                            <Remove /> </StatusEffect>
+                        <StatusEffect type="OnInserted" target="This" condition="1.1" AllowWhenBroken="true" disabledeltatime="true" />
+                    </Containable>
+                </SubContainer>
+                <StatusEffect type="OnBroken" target="This" AllowWhenBroken="true" disabledeltatime="true">
+                    <SpawnItem identifier="EmptyAssaultMagDrum_VGM" condition="0.0" spawnposition="sameinventory" spawnifinventoryfull="true" />
+                    <Remove />
+                </StatusEffect>
+                <StatusEffect type="Always" oneshot="true" target="This" condition="1.1" setvalue="true" delay="0.1" AllowWhenBroken="false">
+                    <Conditional condition="eq 0.1" />
+                    <SpawnItem identifiers="assaultrifleround" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
+                </StatusEffect>
+            </ItemContainer>
+        </Item>
+        <Item name="" identifier="68Blank_VGB"  category="Weapon" subcategory="VGB" maxstacksize="32" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,riflemanbonus,assaultrifleammo" impactsoundtag="impact_metal_light"  scale="0.5">
+            <InventoryIcon texture="%ModDir%/Ammos/68ammos.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
+            <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+            <Body width="40" height="14" density="30" />
+            <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+            <Fabricate suitablefabricators="fabricator" requiredtime="20" amount="60">
+                <RequiredSkill identifier="weapons" level="40" />
+                <RequiredItem identifier="magnesium" />
+                <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" />
+                <RequiredItem tag="advmunition_core" description="fabricationdescription.advmunition_core" />
+                <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" />
+            </Fabricate>
+            <Projectile characterusable="false" hitscan="true" removeonhit="true">
+                <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
+                <Attack structuredamage="6" targetforce="7.5" itemdamage="6" severlimbsprobability="0.2" penetration="0.3">
+                    <Affliction identifier="gunshotwound" strength="25" />
+                    <Affliction identifier="bleeding" strength="15" />
+                    <Affliction identifier="stun" strength="0.25" />
+                    <Affliction identifier="stun" strength="0.5" probability="0.2" />
+                </Attack>
+                <StatusEffect type="OnImpact" target="UseTarget">
+                    <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2,2" />
+                </StatusEffect>
+                <StatusEffect type="OnImpact" target="UseTarget">
+                    <Conditional entitytype="eq Structure" />
+                    <Conditional hastag="eq door" />
+                    <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+                </StatusEffect>
+            </Projectile>
+        </Item>
     </Override>
 </Items>

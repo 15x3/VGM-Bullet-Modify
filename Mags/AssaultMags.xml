@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
     <Item name="" identifier="EmptyAssaultMag_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,assaultrifleammo,handheldammo" impactsoundtag="impact_metal_light">
-        <InventoryIcon texture="" sourcerect="0,0,64,64" />
-        <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.54" sourcerect="146,157,21,44" origin="0.5,0.5" />
-        <Body width="14" height="40" density="25" />
+        <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="476,3,36,48" origin="0.5,0.5" />
+        <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="476,3,36,48" depth="0.55" origin="0.5,0.5" />
+        <Body width="28" height="40" density="25" />
         <Fabricate suitablefabricators="fabricatorVGM" requiredtime="30">
             <RequiredSkill identifier="weapons" level="30" />
             <RequiredItem identifier="steel" />
         </Fabricate>
         <ItemContainer capacity="1" maxstacksize="1" keepopenwhenequipped="true" movableframe="true" ShowConditionInContainedStateIndicator="true"  containedstateindicatorstyle="bullet">
+            <SlotIcon slotindex="0" texture="%ModDir%/Others/icon.png" sourcerect="0,0,64,64" />
             <Containable items="assaultrifleround">
                 <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
                     <SpawnItem identifier="assaultriflemagazine" condition="0.001" spawnposition="sameinventory"  spawnifinventoryfull="true" />
@@ -62,12 +63,13 @@
         <Deconstruct time="10">
             <Item identifier="steel" />
         </Deconstruct>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" />
-        <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.54" sourcerect="146,157,21,44" origin="0.5,0.5" />
-        <Body width="14" height="40" density="25" />
+        <InventoryIcon texture="%ModDir%/Mags/assaultMags.png" sourcerect="64,0,64,64" />
+        <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="476,3,36,48" depth="0.55" origin="0.5,0.5" />
+        <Body width="28" height="40" density="25" />
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
         </Holdable>
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <SlotIcon slotindex="1" texture="%ModDir%/Others/icon.png" sourcerect="0,0,64,64" />
             <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
                 <Conditional condition="eq 99" />
                 <SpawnItem identifiers="68Blank_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
@@ -109,12 +111,13 @@
         <Deconstruct time="10">
             <Item identifier="steel" />
         </Deconstruct>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" />
-        <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.54" sourcerect="146,157,21,44" origin="0.5,0.5" />
-        <Body width="14" height="40" density="25" />
+        <InventoryIcon texture="%ModDir%/Mags/assaultMags.png" sourcerect="128,0,64,64" />
+        <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="476,3,36,48" depth="0.55" origin="0.5,0.5" />
+        <Body width="28" height="40" density="25" />
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
         </Holdable>
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <SlotIcon slotindex="1" texture="%ModDir%/Others/icon.png" sourcerect="0,0,64,64" />
             <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
                 <Conditional condition="eq 99" />
                 <SpawnItem identifiers="68JHP_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
@@ -156,12 +159,13 @@
         <Deconstruct time="10">
             <Item identifier="steel" />
         </Deconstruct>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" />
-        <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.54" sourcerect="146,157,21,44" origin="0.5,0.5" />
-        <Body width="14" height="40" density="25" />
+        <InventoryIcon texture="%ModDir%/Mags/assaultMags.png" sourcerect="192,0,64,64" />
+        <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="476,3,36,48" depth="0.55" origin="0.5,0.5" />
+        <Body width="28" height="40" density="25" />
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
         </Holdable>
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <SlotIcon slotindex="1" texture="%ModDir%/Others/icon.png" sourcerect="0,0,64,64" />
             <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
                 <Conditional condition="eq 99" />
                 <SpawnItem identifiers="68AP_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
@@ -203,12 +207,13 @@
         <Deconstruct time="10">
             <Item identifier="steel" />
         </Deconstruct>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" />
-        <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.54" sourcerect="146,157,21,44" origin="0.5,0.5" />
-        <Body width="14" height="40" density="25" />
+        <InventoryIcon texture="%ModDir%/Mags/assaultMags.png" sourcerect="256,0,64,64" />
+        <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="476,3,36,48" depth="0.55" origin="0.5,0.5" />
+        <Body width="28" height="40" density="25" />
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
         </Holdable>
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <SlotIcon slotindex="1" texture="%ModDir%/Others/icon.png" sourcerect="0,0,64,64" />
             <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
                 <Conditional condition="eq 99" />
                 <SpawnItem identifiers="68Exp_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
@@ -250,20 +255,22 @@
         <Deconstruct time="10">
             <Item identifier="steel" />
         </Deconstruct>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" />
-        <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.54" sourcerect="146,157,21,44" origin="0.5,0.5" />
-        <Body width="14" height="40" density="25" />
-        <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
-        </Holdable>
+        <InventoryIcon texture="%ModDir%/Mags/assaultMags.png" sourcerect="320,0,64,64" />
+        <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="476,3,36,48" depth="0.55" origin="0.5,0.5" />
+        <Body width="28" height="40" density="25" />
+        <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <SlotIcon slotindex="1" texture="%ModDir%/Others/icon.png" sourcerect="0,0,64,64" />
             <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
                 <Conditional condition="eq 99" />
                 <SpawnItem identifiers="68Rev_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
             </StatusEffect>
+            <StatusEffect type="OnUse" target="Parent" condition="-33" AllowWhenBroken="true"/>
             <Containable items="68Rev_VGB" >
                 <StatusEffect type="OnRemoved" target="This" condition="-3.3" AllowWhenBroken="false">
                     <Conditional condition="gt 0" />
                 </StatusEffect>
+                <!-- <StatusEffect type="OnDamaged" target="Parent" condition="-0.5" AllowWhenBroken="false" /> -->
                 <StatusEffect type="OnRemoved" target="This" AllowWhenBroken="false">
                     <Conditional condition="gt 0.001" />
                     <SpawnItem identifiers="68Rev_VGB" spawnposition="ThisInventory" spawnifinventoryfull="false" />
@@ -294,17 +301,18 @@
     </Item>
     <!-- 突击步枪长弹匣，45发弹容 -->
     <Item name="" identifier="EmptyAssaultMagLong_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,assaultrifleammo,handheldammo" impactsoundtag="impact_metal_light">
-        <InventoryIcon texture="" sourcerect="0,0,64,64" />
-        <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.54" sourcerect="146,157,21,44" origin="0.5,0.5" />
-        <Body width="14" height="40" density="25" />
+        <InventoryIcon texture="%ModDir:Vanilla Gun Modify%/GunMods/mags_betadev.png" sourcerect="9,1,36,63" origin="0.5,0.5" />
+        <Sprite texture="%ModDir:Vanilla Gun Modify%/GunMods/mags_betadev.png" sourcerect="9,1,36,63" depth="0.55" origin="0.5,0.5" />
+        <Body width="28" height="40" density="25" />
         <Fabricate suitablefabricators="fabricatorVGM" requiredtime="30">
-            <RequiredSkill identifier="weapons" level="30" />
-            <RequiredItem identifier="steel" />
+            <RequiredSkill identifier="weapons" level="45" />
+            <RequiredItem identifier="steel" amount="2"/>
         </Fabricate>
         <ItemContainer capacity="1" maxstacksize="1" keepopenwhenequipped="true" movableframe="true" ShowConditionInContainedStateIndicator="true"  containedstateindicatorstyle="bullet">
+            <SlotIcon slotindex="0" texture="%ModDir%/Others/icon.png" sourcerect="0,0,64,64" />
             <Containable items="assaultrifleround">
                 <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
-                    <SpawnItem identifier="assaultriflemagazinelong" condition="0.001" spawnposition="sameinventory"  spawnifinventoryfull="true" />
+                    <SpawnItem identifier="assaultrifleLongMagVGM" condition="0.001" spawnposition="sameinventory"  spawnifinventoryfull="true" />
                     <SpawnItem identifier="assaultrifleround" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
                     <Remove />
                 </StatusEffect>
@@ -355,12 +363,13 @@
         <Deconstruct time="10">
             <Item identifier="steel" />
         </Deconstruct>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" />
-        <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.54" sourcerect="146,157,21,44" origin="0.5,0.5" />
-        <Body width="14" height="40" density="25" />
+        <InventoryIcon texture="%ModDir%/Mags/assaultLongMags.png" sourcerect="64,0,64,64" />
+        <Sprite texture="%ModDir:Vanilla Gun Modify%/GunMods/mags_betadev.png" sourcerect="9,1,36,63" depth="0.55" origin="0.5,0.5" />
+        <Body width="28" height="40" density="25" />
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
         </Holdable>
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <SlotIcon slotindex="1" texture="%ModDir%/Others/icon.png" sourcerect="0,0,64,64" />
             <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
                 <Conditional condition="eq 99" />
                 <SpawnItem identifiers="68Blank_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
@@ -402,12 +411,13 @@
         <Deconstruct time="10">
             <Item identifier="steel" />
         </Deconstruct>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" />
-        <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.54" sourcerect="146,157,21,44" origin="0.5,0.5" />
-        <Body width="14" height="40" density="25" />
+        <InventoryIcon texture="%ModDir%/Mags/assaultLongMags.png" sourcerect="128,0,64,64" />
+        <Sprite texture="%ModDir:Vanilla Gun Modify%/GunMods/mags_betadev.png" sourcerect="9,1,36,63" depth="0.55" origin="0.5,0.5" />
+        <Body width="28" height="40" density="25" />
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
         </Holdable>
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <SlotIcon slotindex="1" texture="%ModDir%/Others/icon.png" sourcerect="0,0,64,64" />
             <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
                 <Conditional condition="eq 99" />
                 <SpawnItem identifiers="68JHP_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
@@ -449,12 +459,13 @@
         <Deconstruct time="10">
             <Item identifier="steel" />
         </Deconstruct>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" />
-        <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.54" sourcerect="146,157,21,44" origin="0.5,0.5" />
-        <Body width="14" height="40" density="25" />
+        <InventoryIcon texture="%ModDir%/Mags/assaultLongMags.png" sourcerect="192,0,64,64" />
+        <Sprite texture="%ModDir:Vanilla Gun Modify%/GunMods/mags_betadev.png" sourcerect="9,1,36,63" depth="0.55" origin="0.5,0.5" />
+        <Body width="28" height="40" density="25" />
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
         </Holdable>
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <SlotIcon slotindex="1" texture="%ModDir%/Others/icon.png" sourcerect="0,0,64,64" />
             <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
                 <Conditional condition="eq 99" />
                 <SpawnItem identifiers="68AP_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
@@ -496,12 +507,13 @@
         <Deconstruct time="10">
             <Item identifier="steel" />
         </Deconstruct>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" />
-        <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.54" sourcerect="146,157,21,44" origin="0.5,0.5" />
-        <Body width="14" height="40" density="25" />
+        <InventoryIcon texture="%ModDir%/Mags/assaultLongMags.png" sourcerect="256,0,64,64" />
+        <Sprite texture="%ModDir:Vanilla Gun Modify%/GunMods/mags_betadev.png" sourcerect="9,1,36,63" depth="0.55" origin="0.5,0.5" />
+        <Body width="28" height="40" density="25" />
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
         </Holdable>
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <SlotIcon slotindex="1" texture="%ModDir%/Others/icon.png" sourcerect="0,0,64,64" />
             <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
                 <Conditional condition="eq 99" />
                 <SpawnItem identifiers="68Exp_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
@@ -543,16 +555,18 @@
         <Deconstruct time="10">
             <Item identifier="steel" />
         </Deconstruct>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" />
-        <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.54" sourcerect="146,157,21,44" origin="0.5,0.5" />
-        <Body width="14" height="40" density="25" />
+        <InventoryIcon texture="%ModDir%/Mags/assaultLongMags.png" sourcerect="320,0,64,64" />
+        <Sprite texture="%ModDir:Vanilla Gun Modify%/GunMods/mags_betadev.png" sourcerect="9,1,36,63" depth="0.55" origin="0.5,0.5" />
+        <Body width="28" height="40" density="25" />
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
         </Holdable>
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <SlotIcon slotindex="1" texture="%ModDir%/Others/icon.png" sourcerect="0,0,64,64" />
             <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
                 <Conditional condition="eq 99" />
                 <SpawnItem identifiers="68Rev_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
             </StatusEffect>
+            <StatusEffect type="OnUse" target="Parent" condition="-33" AllowWhenBroken="true"/>
             <Containable items="68Rev_VGB" >
                 <StatusEffect type="OnRemoved" target="This" condition="-2.2" AllowWhenBroken="false">
                     <Conditional condition="gt 0" />
@@ -587,17 +601,18 @@
     </Item>
     <!-- 突击步枪弹鼓，90发弹容 -->
     <Item name="" identifier="EmptyAssaultMagDrum_VGM" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5"  category="Weapon" subcategory="VGB"  cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,assaultrifleammo,handheldammo" impactsoundtag="impact_metal_light">
-        <InventoryIcon texture="" sourcerect="0,0,64,64" />
-        <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.54" sourcerect="146,157,21,44" origin="0.5,0.5" />
-        <Body width="14" height="40" density="25" />
+        <InventoryIcon texture="%ModDir:Vanilla Gun Modify%/GunMods/mags_betadev.png" sourcerect="62,1,40,68" origin="0.5,0.5" />
+        <Sprite texture="%ModDir:Vanilla Gun Modify%/GunMods/mags_betadev.png" sourcerect="62,1,40,68" depth="0.55" origin="0.5,0.5" />
+        <Body width="28" height="40" density="25" />
         <Fabricate suitablefabricators="fabricatorVGM" requiredtime="30">
-            <RequiredSkill identifier="weapons" level="30" />
-            <RequiredItem identifier="steel" />
+            <RequiredSkill identifier="weapons" level="60" />
+            <RequiredItem identifier="steel" amount="3"/>
         </Fabricate>
         <ItemContainer capacity="1" maxstacksize="1" keepopenwhenequipped="true" movableframe="true" ShowConditionInContainedStateIndicator="true"  containedstateindicatorstyle="bullet">
+            <SlotIcon slotindex="0" texture="%ModDir%/Others/icon.png" sourcerect="0,0,64,64" />
             <Containable items="assaultrifleround">
                 <StatusEffect type="OnContaining" target="This" AllowWhenBroken="true" interval="0.5">
-                    <SpawnItem identifier="assaultriflemagazinedrum" condition="0.001" spawnposition="sameinventory"  spawnifinventoryfull="true" />
+                    <SpawnItem identifier="assaultrifleDrumMagVGM" condition="0.001" spawnposition="sameinventory"  spawnifinventoryfull="true" />
                     <SpawnItem identifier="assaultrifleround" spawnposition="ContainedInventory" spawnifinventoryfull="true" />
                     <Remove />
                 </StatusEffect>
@@ -648,12 +663,13 @@
         <Deconstruct time="10">
             <Item identifier="steel" />
         </Deconstruct>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" />
-        <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.54" sourcerect="146,157,21,44" origin="0.5,0.5" />
-        <Body width="14" height="40" density="25" />
+        <InventoryIcon texture="%ModDir%/Mags/assaultDrumMags.png" sourcerect="64,0,64,64" />
+        <Sprite texture="%ModDir:Vanilla Gun Modify%/GunMods/mags_betadev.png" sourcerect="62,1,40,68" depth="0.55" origin="0.5,0.5" />
+        <Body width="28" height="40" density="25" />
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
         </Holdable>
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <SlotIcon slotindex="1" texture="%ModDir%/Others/icon.png" sourcerect="0,0,64,64" />
             <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
                 <Conditional condition="eq 99" />
                 <SpawnItem identifiers="68Blank_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
@@ -695,12 +711,13 @@
         <Deconstruct time="10">
             <Item identifier="steel" />
         </Deconstruct>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" />
-        <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.54" sourcerect="146,157,21,44" origin="0.5,0.5" />
-        <Body width="14" height="40" density="25" />
+        <InventoryIcon texture="%ModDir%/Mags/assaultDrumMags.png" sourcerect="128,0,64,64" />
+        <Sprite texture="%ModDir:Vanilla Gun Modify%/GunMods/mags_betadev.png" sourcerect="62,1,40,68" depth="0.55" origin="0.5,0.5" />
+        <Body width="28" height="40" density="25" />
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
         </Holdable>
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <SlotIcon slotindex="1" texture="%ModDir%/Others/icon.png" sourcerect="0,0,64,64" />
             <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
                 <Conditional condition="eq 99" />
                 <SpawnItem identifiers="68JHP_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
@@ -742,12 +759,13 @@
         <Deconstruct time="10">
             <Item identifier="steel" />
         </Deconstruct>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" />
-        <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.54" sourcerect="146,157,21,44" origin="0.5,0.5" />
-        <Body width="14" height="40" density="25" />
+        <InventoryIcon texture="%ModDir%/Mags/assaultDrumMags.png" sourcerect="192,0,64,64" />
+        <Sprite texture="%ModDir:Vanilla Gun Modify%/GunMods/mags_betadev.png" sourcerect="62,1,40,68" depth="0.55" origin="0.5,0.5" />
+        <Body width="28" height="40" density="25" />
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
         </Holdable>
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <SlotIcon slotindex="1" texture="%ModDir%/Others/icon.png" sourcerect="0,0,64,64" />
             <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
                 <Conditional condition="eq 99" />
                 <SpawnItem identifiers="68AP_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
@@ -789,12 +807,13 @@
         <Deconstruct time="10">
             <Item identifier="steel" />
         </Deconstruct>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" />
-        <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.54" sourcerect="146,157,21,44" origin="0.5,0.5" />
-        <Body width="14" height="40" density="25" />
+        <InventoryIcon texture="%ModDir%/Mags/assaultDrumMags.png" sourcerect="256,0,64,64" />
+        <Sprite texture="%ModDir:Vanilla Gun Modify%/GunMods/mags_betadev.png" sourcerect="62,1,40,68" depth="0.55" origin="0.5,0.5" />
+        <Body width="28" height="40" density="25" />
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
         </Holdable>
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <SlotIcon slotindex="1" texture="%ModDir%/Others/icon.png" sourcerect="0,0,64,64" />
             <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
                 <Conditional condition="eq 99" />
                 <SpawnItem identifiers="68Exp_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
@@ -836,16 +855,18 @@
         <Deconstruct time="10">
             <Item identifier="steel" />
         </Deconstruct>
-        <InventoryIcon texture="" sourcerect="0,0,64,64" />
-        <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.54" sourcerect="146,157,21,44" origin="0.5,0.5" />
-        <Body width="14" height="40" density="25" />
+        <InventoryIcon texture="%ModDir%/Mags/assaultDrumMags.png" sourcerect="256,0,64,64" />
+        <Sprite texture="%ModDir:Vanilla Gun Modify%/GunMods/mags_betadev.png" sourcerect="62,1,40,68" depth="0.55" origin="0.5,0.5" />
+        <Body width="28" height="40" density="25" />
         <Holdable canBeCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
         </Holdable>
         <ItemContainer hideitems="true" capacity="1" maxstacksize="1" drawinventory="true" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+            <SlotIcon slotindex="1" texture="%ModDir%/Others/icon.png" sourcerect="0,0,64,64" />
             <StatusEffect type="Always" oneshot="true" target="This" delay="0.05" condition="100" AllowWhenBroken="false">
                 <Conditional condition="eq 99" />
                 <SpawnItem identifiers="68Rev_VGB" spawnposition="ThisInventory" targetcontainer="1" spawnifinventoryfull="false" />
             </StatusEffect>
+            <StatusEffect type="OnUse" target="Parent" condition="-33" AllowWhenBroken="true"/>
             <Containable items="68Rev_VGB" >
                 <StatusEffect type="OnRemoved" target="This" condition="-1.1" AllowWhenBroken="false">
                     <Conditional condition="gt 0" />
